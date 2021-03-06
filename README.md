@@ -1,1 +1,1 @@
-# twoooooda.github.io
+Example site modified from https://github.com/gohugoio/hugoBasicExample
