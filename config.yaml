@@ -38,7 +38,7 @@ params:
         subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         avatar:
             local: false
-            src: static/img/icon.png
+            src: /static/img/icon.png
 
     article:
         math: false
