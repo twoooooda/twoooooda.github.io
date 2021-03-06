@@ -37,7 +37,7 @@ params:
         emoji: 🍥
         subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         avatar:
-            local: true
+            local: false
             src: img/icon.png
 
     article:
