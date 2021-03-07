@@ -38,8 +38,12 @@
     <loc>http://twoooooda.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://twoooooda.github.io/search/</loc>
+    <loc>http://twoooooda.github.io/categories/gihub/</loc>
   </url><url>
-    <loc>http://twoooooda.github.io/categories/test/</loc>
+    <loc>http://twoooooda.github.io/categories/hugo/</loc>
+  </url><url>
+    <loc>http://twoooooda.github.io/categories/markdown/</loc>
+  </url><url>
+    <loc>http://twoooooda.github.io/search/</loc>
   </url>
 </urlset>

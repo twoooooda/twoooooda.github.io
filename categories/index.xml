@@ -17,11 +17,29 @@
     </item>
     
     <item>
-      <title>Test</title>
-      <link>http://twoooooda.github.io/categories/test/</link>
+      <title>GitHub</title>
+      <link>http://twoooooda.github.io/categories/gihub/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://twoooooda.github.io/categories/test/</guid>
+      <guid>http://twoooooda.github.io/categories/gihub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HUGO</title>
+      <link>http://twoooooda.github.io/categories/hugo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://twoooooda.github.io/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>http://twoooooda.github.io/categories/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://twoooooda.github.io/categories/markdown/</guid>
       <description></description>
     </item>
     
