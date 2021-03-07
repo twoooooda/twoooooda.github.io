@@ -1,7 +1,7 @@
 ---
 title: "diary"
-description: "いっとりうむのとりとめのない日記です。"
-slug: "test"
+description: "いっとりうむの、とりとめのない日記です。"
+slug: "diary"
 image: "diary.png"
 style:
     background: "#2a9d8f"
