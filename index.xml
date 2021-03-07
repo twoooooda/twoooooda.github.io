@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Example Site</title>
+        <title>いっとりうむの足跡</title>
         <link>http://twoooooda.github.io/</link>
-        <description>Recent content on Example Site</description>
+        <description>Recent content on いっとりうむの足跡</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="http://twoooooda.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>ja-jp</language>
+        <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://twoooooda.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Chinese Test</title>
         <link>http://twoooooda.github.io/p/test-chinese/</link>
         <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>

@@ -2,14 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://twoooooda.github.io/about/</loc>
+    <lastmod>2021-03-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://twoooooda.github.io/page/</loc>
+    <lastmod>2021-03-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://twoooooda.github.io/</loc>
+    <lastmod>2021-03-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://twoooooda.github.io/categories/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://twoooooda.github.io/p/test-chinese/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://twoooooda.github.io/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://twoooooda.github.io/post/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
@@ -22,9 +28,6 @@
   </url><url>
     <loc>http://twoooooda.github.io/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://twoooooda.github.io/page/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://twoooooda.github.io/tags/css/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
@@ -79,9 +82,6 @@
   </url><url>
     <loc>http://twoooooda.github.io/p/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://twoooooda.github.io/about/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://twoooooda.github.io/search/</loc>
   </url>
