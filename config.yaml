@@ -1,11 +1,11 @@
 baseurl: http://twoooooda.github.io
-languageCode: en-us
+languageCode: ja-jp
 theme: hugo-theme-stack
 paginate: 5
-title: Example Site
+title: いっとりうむの足跡
 
 # Change it to your Disqus shortname before using
-disqusShortname: hugo-theme-stack
+disqusShortname: 
 
 # GA Tracking ID
 googleAnalytics:
@@ -35,7 +35,7 @@ params:
 
     sidebar:
         emoji: 🤔
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: 私の日記や知見、ポートフォリオ等を書き散らすブログです。
         avatar:
             local: false
             src: /img/icon.png
@@ -47,7 +47,7 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: true
+        enabled: false
         provider: disqus
 
         utterances:
@@ -75,7 +75,7 @@ params:
     opengraph:
         twitter:
             # Your Twitter username
-            site:
+            site: twoooooda
 
             # Available values: summary, summary_large_image
             card: summary_large_image
