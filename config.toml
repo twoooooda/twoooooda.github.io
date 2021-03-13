@@ -14,7 +14,7 @@ disableLanguages        = []
   unsafe                = true
 
 [outputs]
-  home                  = ["html", "json", "rss"]
+  home                  = ["html", "json", "rss", "css"]
 
 [params]
   enableCDN             = false
