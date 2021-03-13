@@ -374,3 +374,5 @@ disableLanguages        = []
   mastodon              = "example.com/@example"
   # Email
   email                 = "example"
+
+publishDir="docs"
