@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web on いっとりうむの足跡</title>
+    <link>https://example.com/tags/web/</link>
+    <description>Recent content in web on いっとりうむの足跡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello, world！</title>
+      <link>https://example.com/blog/hello/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/blog/hello/</guid>
+      <description>苦悩の末 　最近急にはてなブログやnoteとは違う個人ブログが欲しくなり、静的サイトジェネレーターであるHUGOと、勉強がてらGitHub Pages、Actionsを使ってブログを作ってみました。実はサイト作成にあたり数日間に渡り大変苦労したのですが、その話はHUGO等の使い方とともにまとめようと思います。
+ではまた。</description>
+    </item>
+    
+  </channel>
+</rss>

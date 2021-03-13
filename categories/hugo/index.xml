@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HUGO on いっとりうむの足跡</title>
+    <link>https://example.com/categories/hugo/</link>
+    <description>Recent content in HUGO on いっとりうむの足跡</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language><atom:link href="https://example.com/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
