@@ -276,7 +276,7 @@ disableLanguages        = []
     weight              = 7
 
   [Languages.zh-TW]
-    LanguageCode        = ""
+    LanguageCode        = "zh-TW"
     LanguageName        = "中文 (正體)"
     weight              = 8
 
