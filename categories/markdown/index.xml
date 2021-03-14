@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Markdown on いっとりうむの足跡</title>
-    <link>https://example.com/categories/markdown/</link>
+    <link>http://twoooooda.github.io/categories/markdown/</link>
     <description>Recent content in Markdown on いっとりうむの足跡</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja</language><atom:link href="https://example.com/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <language>ja</language><atom:link href="http://twoooooda.github.io/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Hugo Future Imperfect Slim po polsku</title>
-    <link>https://example.com/pl/categories/</link>
+    <link>http://twoooooda.github.io/pl/categories/</link>
     <description>Recent content in Categories on Hugo Future Imperfect Slim po polsku</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pl</language><atom:link href="https://example.com/pl/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>pl</language><atom:link href="http://twoooooda.github.io/pl/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

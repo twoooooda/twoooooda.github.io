@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>いっとりうむの足跡</title>
-    <link>https://example.com/zh-tw/</link>
+    <link>http://twoooooda.github.io/zh-tw/</link>
     <description>Recent content on いっとりうむの足跡</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-TW</language><atom:link href="https://example.com/zh-tw/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-TW</language><atom:link href="http://twoooooda.github.io/zh-tw/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
