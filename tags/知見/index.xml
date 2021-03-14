@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on いっとりうむの足跡</title>
-    <link>http://twoooooda.github.io/blog/</link>
-    <description>Recent content in Blog on いっとりうむの足跡</description>
+    <title>知見 on いっとりうむの足跡</title>
+    <link>http://twoooooda.github.io/tags/%E7%9F%A5%E8%A6%8B/</link>
+    <description>Recent content in 知見 on いっとりうむの足跡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://twoooooda.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hello, world！</title>
-      <link>http://twoooooda.github.io/blog/hello/</link>
-      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://twoooooda.github.io/blog/hello/</guid>
-      <description>苦悩の末 　最近急にはてなブログやnoteとは違う個人ブログが欲しくなり、静的サイトジェネレーターであるHUGOと、勉強がてらGitHub Pages、Actionsを使ってブログを作ってみました。実はサイト作成にあたり数日間に渡り大変苦労したのですが、その話はHUGO等の使い方とともにまとめようと思います。
-ではまた。</description>
-    </item>
-    
+    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://twoooooda.github.io/tags/%E7%9F%A5%E8%A6%8B/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>静的サイトジェネレータ”HUGO”で個人ブログをつくり、GitHub Pagesで公開する</title>
       <link>http://twoooooda.github.io/blog/hugo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</link>
