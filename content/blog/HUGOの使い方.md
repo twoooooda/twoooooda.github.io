@@ -12,9 +12,10 @@ categories = [
     "HUGO",
     "Web"
 ]
+
+[[images]]
 src = "img/2021/hugo.png"
 
-toc=true
 draft=true
 +++
 
