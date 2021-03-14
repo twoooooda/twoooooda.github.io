@@ -32,7 +32,7 @@ $ hugo version hugo v0.81.0-59D15C97 windows/amd64 ....  2.GitHubの準備 　�
 $ cd &amp;lt;UserName&amp;gt;.github.io $ git branch source $ git checkout source $ hugo new site blog  自分はsourceブランチ直下で作業したかったので、blogフォルダ内の内容をsourceブランチ直下に移動させました(blogフォルダは削除)。
 4.テーマを導入する 　HUGO公式のthemeページからテーマを選んで、自分のリポジトリにサブモジュールとして追加します。例としてこのブログのテーマ(Hugo Future Imperfect Slim)を用います。
 $ git submodule add https://github.com/pacollins/hugo-future-imperfect-slim.git themes/hugo-future-imperfect-slim  サブモジュール化ができたら、themes/hugo-future-imperfect-slim/exampleSite 内のファイルやフォルダをまるっとブランチ直下にコピーします。それと同時に、もともとあったconfig.tomlは消しておきます(configファイルが競合するため)。
-5. 試運転してみる 　$ hugo serverでローカルにサーバーをたてて、http://localhost:1313にアクセスするとサイトの内容を確認できます。ここまでが正しくなされているとDemoサイトと同じ状態になっているはずです。</description>
+5. 試運転してみる 　$ hugo serverでローカルにサーバーをたてて、http://localhost:1313にアクセスするとサイトの内容を確認できます。ここまでが正しくなされているとテーマのDemoサイトと同じ状態になっているはずです。</description>
     </item>
     
   </channel>

@@ -323,7 +323,13 @@ $ hugo new site blog
 <p>サブモジュール化ができたら、themes/hugo-future-imperfect-slim/<strong>exampleSite</strong> 内のファイルやフォルダをまるっとブランチ直下にコピーします。それと同時に、もともとあったconfig.tomlは消しておきます(configファイルが競合するため)。<br>
 <br></p>
 <h1 id="5-試運転してみる">5. 試運転してみる</h1>
-<p>　<code>$ hugo server</code>でローカルにサーバーをたてて、<a href="http://localhost:1313/">http://localhost:1313</a>にアクセスするとサイトの内容を確認できます。ここまでが正しくなされているとDemoサイトと同じ状態になっているはずです。</p>
+<p>　<code>$ hugo server</code>でローカルにサーバーをたてて、<a href="http://localhost:1313/">http://localhost:1313</a>にアクセスするとサイトの内容を確認できます。ここまでが正しくなされているとテーマのDemoサイトと同じ状態になっているはずです。<br>
+<br></p>
+<h1 id="6github-actionsの設定">6.GitHub Actionsの設定</h1>
+<p>　<strong>GitHub Actions</strong>とは、リポジトリにコミット等があった時にそれを検知して自動的にデプロイする機能(?)らしいです(今回の場合)。自分は雰囲気で使っているので詳しくは知りません。<br>
+　sourceブランチの下に、.github/workflows/<strong>main.yml</strong>を作成します。<a href="https://reona.dev/posts/20200331">Reonaさんのブログ</a>を参考にしてmain.ymlに記載のあるデプロイ先ブランチとかを編集しました。</p>
+<p>　ここまでやってきたことをまるっとコミットすると、Actionsが働いてmainブランチにデプロイされ、ページが公開されるはずです。<br>
+<br></p>
 <h1 id="参考サイト">参考サイト</h1>
 <ul>
 <li><a href="https://dev.to/mshr_h/hugo-github-pages-35me">Hugo+Github Pagesで新しい個人ウェブサイトを作った</a></li>
