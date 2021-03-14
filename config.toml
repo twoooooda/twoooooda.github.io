@@ -40,7 +40,7 @@ disableLanguages        = []
     iOSColor            = "#ffffff"
 
   [params.header]
-    navbarTitle         = "Future Imperfect"
+    navbarTitle         = "いっとりうむの足跡"
     dynamicTitles       = true
     searchMenu          = true
     shareMenu           = true
