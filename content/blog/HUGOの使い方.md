@@ -25,7 +25,7 @@ src = "img/2021/hugo.png"
 
 
 # 1.HUGOのインストール
-　基本的には、HUGOの公式サイトにある[Quick Start](https://gohugo.io/getting-started/quick-start/)に従ってHUGOをインストールしていきます。自分はWindows環境なので、[Chocolatey](https://chocolatey.org/install)というパッケージマネージャを使ってインストールしました。以降はコマンドプロンプト上で、`choco install hugo -confirm`を実行するとHUGOがインストールされるはずです。`hugo version`でバージョンが確認できたらインストールされています。
+　基本的には、HUGOの公式サイトにある[Quick Start](https://gohugo.io/getting-started/quick-start/)に従ってHUGOをインストールしていきます。自分はWindows環境なので、[Chocolatey](https://chocolatey.org/install)というパッケージマネージャを使ってインストールしました。以降はコマンドプロンプト上で、`$ choco install hugo -confirm`を実行するとHUGOがインストールされるはずです。`$ hugo version`でバージョンが確認できたらインストールされています。
 
     $ hugo version
     hugo v0.81.0-59D15C97 windows/amd64 ....  
@@ -38,7 +38,7 @@ src = "img/2021/hugo.png"
 <br>
 
 # 3.サイトのひな形を作る
-　まずsourceブランチを作り、その下にHUGOのコマンドでファイルを作っていきます。`hugo new site <フォルダ名>`でHUGOを使う上で最小限のファイルとフォルダを作成できます。
+　まずsourceブランチを作り、その下にHUGOのコマンドでファイルを作っていきます。`$ hugo new site <フォルダ名>`でHUGOを使う上で最小限のファイルとフォルダを作成できます。
 
     $ cd <UserName>.github.io
     $ git branch source
@@ -59,17 +59,29 @@ src = "img/2021/hugo.png"
 
 # 5. 試運転してみる
 　`$ hugo server`でローカルにサーバーをたてて、[http://localhost:1313](http://localhost:1313/)にアクセスするとサイトの内容を確認できます。ここまでが正しくなされているとテーマのDemoサイトと同じ状態になっているはずです。  
+　また、`$ hugo`でサイトのデータをビルドできます(/publicが生成される)。
 <br>
 
 # 6.GitHub Actionsの設定
-　**GitHub Actions**とは、リポジトリにコミット等があった時にそれを検知して自動的にデプロイする機能(?)らしいです(今回の場合)。自分は雰囲気で使っているので詳しくは知りません。  
+　**GitHub Actions**とは、リポジトリにコミット等があった時にそれを検知して自動的にデプロイとかする機能(?)らしいです(今回の場合)。自分は雰囲気で使っているので詳しくは知りません。  
 　sourceブランチの下に、.github/workflows/**main.yml**を作成します。[Reonaさんのブログ](https://reona.dev/posts/20200331)を参考にしてmain.ymlに記載のあるデプロイ先ブランチとかを編集しました。  
   
-　ここまでやってきたことをまるっとコミットすると、Actionsが働いてmainブランチにデプロイされ、ページが公開されるはずです。  
+　ここまでやってきたことをまるっとsourceブランチにコミットすると、Actionsが働いてmainブランチにデプロイされ、ページが公開されるはずです。  
 <br>
 
+# 7. 設定を編集する
+　config.tomlを見てみると、設定の項目がズラリとならんでいます。ここでサイトを自分用にするための設定をしていきます(サイトの名前、アイコン、URLなど)。  
+　ここで、アイコンに設定したい画像等をconfig.tomlから指定するのですが、そういうのは基本 **/static**に保存して、パスを指定するようです。追加のcssで見た目を変えたい時も、/themesの中には書かず、/layouts/partials内とかに書くようです(細かいところはテーマによって変わるのでテーマのDocumentを読んでね)。  
+<br>
 
+# 8.記事を追加する
+　サイトの枠組みが完成したら、あとはサンプルの記事を削除して、自分の記事を追加していきます。`$ hugo new <フォルダ名>/<ファイル名>`で新しい記事を追加できます。基本的に記事は全てMarkdown形式で書きます。
+
+    例) $ hugo new content/blog/article_2021-01-01.md  
+<br>  
+<br>  
 
 # 参考サイト
 * [Hugo+Github Pagesで新しい個人ウェブサイトを作った](https://dev.to/mshr_h/hugo-github-pages-35me)
 * [Hugo + GitHub Pages + GitHub Actions で独自ドメインのウェブサイトを構築する](https://zenn.dev/nikaera/articles/hugo-github-actions-for-github-pages)
+* [GitHub Pages × Hugo で技術ブログを始めた](https://reona.dev/posts/20200331)
