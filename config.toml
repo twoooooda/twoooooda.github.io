@@ -6,7 +6,7 @@ title                   = "いっとりうむの足跡"
 theme                   = "hugo-future-imperfect-slim"
 paginate                = 3
 disqusShortname         = ""
-googleAnalytics         = ""
+googleAnalytics         = "G-00G1C9QR57"
 pluralizeListTitles     = false
 disableLanguages        = []
 
