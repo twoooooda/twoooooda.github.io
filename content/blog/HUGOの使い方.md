@@ -9,7 +9,6 @@ tags = [
     "hugo"
 ]
 categories = [
-    "HUGO",
     "Web"
 ]
 
