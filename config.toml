@@ -33,7 +33,7 @@ disableLanguages        = ["pl", "fr", "pt", "de", "es", "zh-cn", "zh-tw", "nl"]
   [params.meta]
     description         = "A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo."
     author              = "HTML5UP and Hugo"
-    favicon             = "img/main/icon.png"
+    favicon             = "static/img/main/icon.png"
     svg                 = true
     faviconVersion      = "1"
     msColor             = "#ffffff"
