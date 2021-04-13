@@ -26,9 +26,9 @@ src = "img/2021/hugo.png"
 <br>
 
 # ではどうするか
-　[当サイトのテーマ](https://themes.gohugo.io/hugo-future-imperfect-slim/)を例にすると、`/themes/hugo-future-imperfect-slim/layouts/partials/site-footer.html`を書き換えたい場合、該当のファイルを`/layouts/partials/`にコピー＆ペーストすると、そちらの方が先に読み込まれるので結果的に編集して上書きが可能なわけです。
+　[当サイトのテーマ](https://themes.gohugo.io/hugo-future-imperfect-slim/)を例にすると、`/themes/hugo-future-imperfect-slim/layouts/partials/site-sidebar.html`を書き換えたい場合、該当のファイルを`/layouts/partials/`にコピー＆ペーストすると、そちらの方が先に読み込まれるので結果的に編集して上書きが可能なわけです。
 <br>
-　あとはAmazonのアフィリエイトリンクのHTMLコードを生成して、上記のsite-footer.htmlに書き込むとちゃんと表示されました。
+　あとはAmazonのアフィリエイトリンクのHTMLコードを生成して、上記のsite-sidebar.htmlに書き込むとちゃんと表示されました。
 <br>
 <br>
 
