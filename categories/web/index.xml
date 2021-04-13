@@ -6,11 +6,11 @@
     <description>Recent content in Web on いっとりうむの足跡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://twoooooda.github.io/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://twoooooda.github.io/categories/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>静的サイトジェネレータ”HUGO”で個人ブログをつくり、GitHub Pagesで公開する</title>
       <link>http://twoooooda.github.io/blog/hugo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</link>
-      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>http://twoooooda.github.io/blog/hugo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</guid>
       <description>はじめに 　自分は最近、当ブログを静的サイトジェネレータであるHUGOを用いて作成しました。HUGO自体はわかってしまえばごく簡単に導入、使用できるんですが、いかんせん自分がweb系、GitHubに関して無知であったためハマりポイントをことごとく踏み抜いていき、結局公開までかなり時間がかかってしまいました。なので覚えているうちに使い方や参考サイトをまとめようと思います。

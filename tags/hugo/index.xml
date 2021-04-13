@@ -6,21 +6,11 @@
     <description>Recent content in hugo on いっとりうむの足跡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://twoooooda.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hello, world！</title>
-      <link>http://twoooooda.github.io/blog/hello/</link>
-      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>http://twoooooda.github.io/blog/hello/</guid>
-      <description>苦悩の末 　最近急にはてなブログやnoteとは違う個人ブログが欲しくなり、静的サイトジェネレーターであるHUGOと、勉強がてらGitHub Pages、Actionsを使ってブログを作ってみました。実はサイト作成にあたり数日間に渡り大変苦労したのですが、その話はHUGO等の使い方とともにまとめようと思います。
-ではまた。</description>
-    </item>
-    
+    <lastBuildDate>Mon, 08 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://twoooooda.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>静的サイトジェネレータ”HUGO”で個人ブログをつくり、GitHub Pagesで公開する</title>
       <link>http://twoooooda.github.io/blog/hugo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</link>
-      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 08 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>http://twoooooda.github.io/blog/hugo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</guid>
       <description>はじめに 　自分は最近、当ブログを静的サイトジェネレータであるHUGOを用いて作成しました。HUGO自体はわかってしまえばごく簡単に導入、使用できるんですが、いかんせん自分がweb系、GitHubに関して無知であったためハマりポイントをことごとく踏み抜いていき、結局公開までかなり時間がかかってしまいました。なので覚えているうちに使い方や参考サイトをまとめようと思います。
@@ -33,6 +23,16 @@ $ cd &amp;lt;UserName&amp;gt;.github.io $ git branch source $ git checkout sourc
 4.テーマを導入する 　HUGO公式のthemeページからテーマを選んで、自分のリポジトリにサブモジュールとして追加します。例としてこのブログのテーマ(Hugo Future Imperfect Slim)を用います。
 $ git submodule add https://github.com/pacollins/hugo-future-imperfect-slim.git themes/hugo-future-imperfect-slim  サブモジュール化ができたら、themes/hugo-future-imperfect-slim/exampleSite 内のファイルやフォルダをまるっとブランチ直下にコピーします。それと同時に、もともとあったconfig.tomlは消しておきます(configファイルが競合するため)。
 5. 試運転してみる 　$ hugo serverでローカルにサーバーをたてて、http://localhost:1313にアクセスするとサイトの内容を確認できます。ここまでが正しくなされているとテーマのDemoサイトと同じ状態になっているはずです。</description>
+    </item>
+    
+    <item>
+      <title>Hello, world！</title>
+      <link>http://twoooooda.github.io/blog/hello/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://twoooooda.github.io/blog/hello/</guid>
+      <description>苦悩の末 　最近急にはてなブログやnoteとは違う個人ブログが欲しくなり、静的サイトジェネレーターであるHUGOと、勉強がてらGitHub Pages、Actionsを使ってブログを作ってみました。実はサイト作成にあたり数日間に渡り大変苦労したのですが、その話はHUGO等の使い方とともにまとめようと思います。
+ではまた。</description>
     </item>
     
   </channel>
