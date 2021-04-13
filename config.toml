@@ -31,8 +31,7 @@ disableLanguages        = ["pl", "fr", "pt", "de", "es", "zh-cn", "zh-tw", "nl"]
   hideEmptyStats        = false
 
   [params.meta]
-    description         = "A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo."
-    author              = "HTML5UP and Hugo"
+    description         = "私の日記や知見、ポートフォリオ等を書き散らすブログです。"
     favicon             = "static/img/main/icon.png"
     svg                 = true
     faviconVersion      = "1"
