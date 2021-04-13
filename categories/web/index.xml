@@ -6,7 +6,16 @@
     <description>Recent content in Web on いっとりうむの足跡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 08 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://twoooooda.github.io/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://twoooooda.github.io/categories/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HUGOで作ったサイトにアマゾンのアフィリンクを貼る</title>
+      <link>http://twoooooda.github.io/blog/hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E8%B2%BC%E3%82%8B/</link>
+      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://twoooooda.github.io/blog/hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E8%B2%BC%E3%82%8B/</guid>
+      <description>HUGOの仕様 　静的サイトジェネレータ &amp;ldquo;HUGO&amp;rdquo; は、テーマの制作者がGitHubに上げているリポジトリをサブモジュールとして使うことで自分のサイトにテーマを導入します。ゆえに、テーマのレイアウトに関わるコードを直接書き換えることはできません(ローカルファイルは書き換えられますが)。 しかしHUGOの仕様として、/staticや/layouts以下のフォルダやファイルが優先して読み込まれるというものがあります。 ではどうするか 　当サイトのテーマを例にすると、/themes/hugo-future-imperfect-slim/layouts/partials/site-footer.htmlを書き換えたい場合、該当のファイルを/layouts/partials/にコピー＆ペーストすると、そちらの方が先に読み込まれるので結果的に編集して上書きが可能なわけです。 あとはAmazonのアフィリエイトリンクのHTMLコードを生成して、上記のsite-footer.htmlに内に書き込むとちゃんと表示されました。 </description>
+    </item>
+    
     <item>
       <title>静的サイトジェネレータ”HUGO”で個人ブログをつくり、GitHub Pagesで公開する</title>
       <link>http://twoooooda.github.io/blog/hugo%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</link>
