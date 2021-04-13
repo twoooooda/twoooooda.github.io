@@ -1,5 +1,13 @@
 <footer id="site-footer">
+    <center>
+        <iframe
+            src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ez&f=ifr&linkID=c1e8c761ada394f526d039202ecd5d0d&t=twoooooda-22&tracking_id=twoooooda-22"
+            width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;"
+            frameborder="0"></iframe>
+    </center>
+
     {{ if or (.Site.Params.footer.rssFooter) (.Site.Params.footer.socialFooter) }}
+
     <ul class="socnet-icons">
         {{ if .Site.Params.footer.rssFooter }}{{ partial "rss-icon" . }}{{ end }}
         {{ if .Site.Params.footer.socialFooter }}{{ partial "socnet-icon" . }}{{ end }}
@@ -12,11 +20,6 @@
         <br>
         {{ i18n "attribution" . | safeHTML }}
     </p>
-    <center>
-        <iframe
-            src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ez&f=ifr&linkID=c1e8c761ada394f526d039202ecd5d0d&t=twoooooda-22&tracking_id=twoooooda-22"
-            width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;"
-            frameborder="0"></iframe>
-    </center>
+
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
