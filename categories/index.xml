@@ -2,62 +2,62 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on いっとりうむの足跡</title>
-    <link>http://twoooooda.github.io/categories/</link>
+    <link>https://twoooooda.github.io/categories/</link>
     <description>Recent content in Categories on いっとりうむの足跡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://twoooooda.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web</title>
-      <link>http://twoooooda.github.io/categories/web/</link>
+      <link>https://twoooooda.github.io/categories/web/</link>
       <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://twoooooda.github.io/categories/web/</guid>
+      <guid>https://twoooooda.github.io/categories/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Unity</title>
-      <link>http://twoooooda.github.io/categories/unity/</link>
+      <link>https://twoooooda.github.io/categories/unity/</link>
       <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://twoooooda.github.io/categories/unity/</guid>
+      <guid>https://twoooooda.github.io/categories/unity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>diary</title>
-      <link>http://twoooooda.github.io/categories/diary/</link>
+      <link>https://twoooooda.github.io/categories/diary/</link>
       <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://twoooooda.github.io/categories/diary/</guid>
+      <guid>https://twoooooda.github.io/categories/diary/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GitHub</title>
-      <link>http://twoooooda.github.io/categories/gihub/</link>
+      <link>https://twoooooda.github.io/categories/gihub/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://twoooooda.github.io/categories/gihub/</guid>
+      <guid>https://twoooooda.github.io/categories/gihub/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HUGO</title>
-      <link>http://twoooooda.github.io/categories/hugo/</link>
+      <link>https://twoooooda.github.io/categories/hugo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://twoooooda.github.io/categories/hugo/</guid>
+      <guid>https://twoooooda.github.io/categories/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markdown</title>
-      <link>http://twoooooda.github.io/categories/markdown/</link>
+      <link>https://twoooooda.github.io/categories/markdown/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://twoooooda.github.io/categories/markdown/</guid>
+      <guid>https://twoooooda.github.io/categories/markdown/</guid>
       <description></description>
     </item>
     

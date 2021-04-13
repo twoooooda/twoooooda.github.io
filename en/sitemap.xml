@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://twoooooda.github.io/en/categories/</loc>
+    <loc>https://twoooooda.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://twoooooda.github.io/categories/"
+                href="https://twoooooda.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://twoooooda.github.io/en/categories/"
+                href="https://twoooooda.github.io/en/categories/"
                 />
   </url><url>
-    <loc>http://twoooooda.github.io/en/tags/</loc>
+    <loc>https://twoooooda.github.io/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://twoooooda.github.io/tags/"
+                href="https://twoooooda.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://twoooooda.github.io/en/tags/"
+                href="https://twoooooda.github.io/en/tags/"
                 />
   </url><url>
-    <loc>http://twoooooda.github.io/en/</loc>
+    <loc>https://twoooooda.github.io/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
-                href="http://twoooooda.github.io/"
+                href="https://twoooooda.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://twoooooda.github.io/en/"
+                href="https://twoooooda.github.io/en/"
                 />
   </url>
 </urlset>

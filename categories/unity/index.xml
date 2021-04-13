@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Unity on いっとりうむの足跡</title>
-    <link>http://twoooooda.github.io/categories/unity/</link>
+    <link>https://twoooooda.github.io/categories/unity/</link>
     <description>Recent content in Unity on いっとりうむの足跡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="http://twoooooda.github.io/categories/unity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.github.io/categories/unity/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Unityで蚊っぽい動きをするやつを作る</title>
-      <link>http://twoooooda.github.io/blog/unity%E3%81%A7%E8%9A%8A%E3%82%92%E4%BD%9C%E3%82%8B/</link>
+      <link>https://twoooooda.github.io/blog/unity%E3%81%A7%E8%9A%8A%E3%82%92%E4%BD%9C%E3%82%8B/</link>
       <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
       
-      <guid>http://twoooooda.github.io/blog/unity%E3%81%A7%E8%9A%8A%E3%82%92%E4%BD%9C%E3%82%8B/</guid>
+      <guid>https://twoooooda.github.io/blog/unity%E3%81%A7%E8%9A%8A%E3%82%92%E4%BD%9C%E3%82%8B/</guid>
       <description>はじめに 　少し前にOculus Quest2を購入し、しばらくハンドトラッキングで遊んでいたんですが、急に『手で蚊を潰すVRゲーム』を作りたくなったのでとりあえず蚊っぽい挙動をするナニカを作りました。 1.スクリプト 　やっていることはごく簡単で、数フレームに一回ランダムでRotationの値を変更し、Z方向に常に力を加え続けているだけです。
 using UnityEngine; public class Move_mosquite : MonoBehaviour { Rigidbody rb; public float freq, speed, power; void Start() { rb = this.GetComponent&amp;lt;Rigidbody&amp;gt;(); } void Update() { rb.velocity = rb.velocity.normalized * speed; //変数speedで速度の設定  rb.AddForce(this.transform.forward * power * Time.deltaTime, ForceMode.Force); //Z方向(forward)に力を加え続ける  if (Random.value &amp;lt; freq) //Rotationを変更する頻度を設定。毎フレームだと頻繁過ぎるので。  { transform.eulerAngles = new Vector3(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)); } } } 
 このままでは無限にどっかいってしまうので、適当にコライダーをつけるとか、壁に近づくと力を受けるとかにするといいかもしれません。
