@@ -1,6 +1,6 @@
 # For a description of these parameters, please visit the theme wiki.
 # https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
-baseurl                 = "http://twoooooda.github.io/"
+baseurl                 = "https://twoooooda.github.io/"
 DefaultContentLanguage  = "ja"
 title                   = "いっとりうむの足跡"
 theme                   = "hugo-future-imperfect-slim"
