@@ -9,7 +9,7 @@ tags = [
     "hugo"
 ]
 categories = [
-    "diary",
+    "Diary",
 ]
 [[images]]
   src = "img/2021/publicdomainq-0012425opp.jpg"
