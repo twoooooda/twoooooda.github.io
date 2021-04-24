@@ -5,4 +5,8 @@
   and follow the formatting and style given.
 */
 
-
+ body{
+       /* 背景色指定 */
+    background-color:#e9e96f;
+    color:#f59292;
+    }
