@@ -16,6 +16,12 @@
     {{ end }}
     {{ if ge (len (where site.RegularPages "Type" "in" site.Params.mainSections)) (.Site.Params.sidebar.postAmount |
     default 5) }}
+    <center>
+      <iframe
+        src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ez&f=ifr&linkID=c1e8c761ada394f526d039202ecd5d0d&t=twoooooda-22&tracking_id=twoooooda-22"
+        width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;"
+        frameborder="0"></iframe>
+    </center>
     <footer>
       <a href="{{ ( .Site.Params.viewMorePostsLink | default " blog") | relLangURL }}" class="button">{{ i18n "see_more"
         }}</a>
@@ -44,11 +50,7 @@
   </section>
   {{ end }}
   {{ end }}
-  <center>
-    <iframe
-      src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=12&l=ez&f=ifr&linkID=c1e8c761ada394f526d039202ecd5d0d&t=twoooooda-22&tracking_id=twoooooda-22"
-      width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
-  </center>
+
   {{ if .Site.Params.sidebar.about }}
   <section id="mini-bio">
     <header>

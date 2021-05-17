@@ -6,6 +6,7 @@ description = "HUGOで作ったサイトにアマゾンのリンクを貼る方�
 
 tags = [
     "知見",
+    "備忘録",
     "web",
     "HUGO"
 ]
