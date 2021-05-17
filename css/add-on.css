@@ -10,3 +10,13 @@
     background-color:#ddf8f3;
     color:#241c22;
     }
+
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  text-transform: none;
+}
+
+a.article-category-link {
+  font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  text-decoration: none;
+}
