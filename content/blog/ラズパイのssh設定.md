@@ -1,7 +1,7 @@
 +++
 author = "twoooooda"
 title = "ラズパイに公開鍵認証でssh接続するまで"
-date = "2021-06-04"
+date = "2021-06-03"
 description = "さっき買ってきたRaspberry piに公開鍵認証でssh接続するまでの方法を備忘録としてまとめます。"
 tags = [
     "知見",
@@ -226,3 +226,6 @@ ssh raspi
 ```
 **[参考記事](https://zenn.dev/ryo_kawamata/articles/raspberrypi-auth-setting)** 
 <br>
+<br>
+
+以上です。ファイル名や環境は各々によって違うのでそこは適宜変更をおねがいします。
