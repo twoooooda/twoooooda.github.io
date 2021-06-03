@@ -5,13 +5,13 @@
   and follow the formatting and style given.
 */
 
- body{
+body{
        /* 背景色指定 */
     background-color:#ddf8f3;
     color:#241c22;
     }
 
-  h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
   text-transform: none;
 }
@@ -19,4 +19,16 @@
 a.article-category-link {
   font-family: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
   text-decoration: none;
+}
+
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+  padding: 0.4em;
+  color: #494949;
+  background: #f8fbff;
+  border-left: solid 5px #00319c;
+  letter-spacing: 0;
 }
