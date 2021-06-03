@@ -1,7 +1,7 @@
 +++
 author = "twoooooda"
 title = "ラズパイに公開鍵認証でssh接続するまで"
-date = "2021-06-03"
+date = "2021-04-03"
 description = "さっき買ってきたRaspberry piに公開鍵認証でssh接続するまでの方法を備忘録としてまとめます。"
 tags = [
     "知見",
