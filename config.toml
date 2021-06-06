@@ -43,7 +43,7 @@ disableLanguages        = ["pl", "fr", "pt", "de", "es", "zh-cn", "zh-tw", "nl"]
     dynamicTitles       = true
     searchMenu          = true
     shareMenu           = true
-    languageMenu        = true
+    languageMenu        = false
 
   [params.intro]
     header                = "いっとりうむの足跡"
