@@ -28,7 +28,7 @@ src = "img/2021//20211001_iphone/IMG_3890.JPEG"
 # 本題
 個人的にApple製品は配送よりも、Apple Storeに直接受け取りに行く方が体験として好きです。なので今回もApple Store心斎橋に受け取りに行きました。受け取りは9/30に行きました。
 
-<img src="/img/2021/20211001_iphone/IMG_3882.JPEG" width="500">
+<img src="/img/2021/20211001_iphone/imag.jpg" width="500">
 <br>
 <br>
 
