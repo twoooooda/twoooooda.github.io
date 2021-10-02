@@ -11,8 +11,10 @@ tags = [
 categories = [
     "Diary",
 ]
-[[images]]
-  src = "img/2021/publicdomainq-0012425opp.jpg"
+
+series = ["Themes Guide"]
+aliases = ["migrate-from-jekyl"]
+image = "publicdomainq-0012425opp.jpg"
 +++
 
 # 苦悩の末

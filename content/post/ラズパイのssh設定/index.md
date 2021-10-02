@@ -12,8 +12,9 @@ categories = [
     "Raspberrypi"
 ]
 
-[[images]]
-src = "img/2021/raspi.jpeg"
+series = ["Themes Guide"]
+aliases = ["migrate-from-jekyl"]
+image = "raspi.jpeg"
 +++
 
 # はじめに

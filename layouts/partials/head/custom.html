@@ -1,14 +1,15 @@
 <style>
 	/// Overwrite CSS variable
 	:root {
-		--article-font-family: "Merriweather", var(--base-font-family);
+		--base-font-family: "Noto Sans JP";
+		--article-font-family: "Dela Gothic One", var(--base-font-family);
 	}
 </style>
 
 <script>
 	(function () {
 		const customFont = document.createElement('link');
-		customFont.href = "<https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap>";
+		customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap";
 
 		customFont.type = "text/css";
 		customFont.rel = "stylesheet";
