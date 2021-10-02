@@ -178,7 +178,25 @@ menu:
           pre: home
           params:
               ### For demonstration purpose, the home link will be open in a new tab
-              newTab: true
+              newTab: false
+
+        - identifier: GitHub
+          name: GitHub
+          url: https://github.com/twoooooda/
+          weight: -2
+          pre: github
+          params:
+              newTab: true          
+          
+        - identifier: Twitter
+          name: Twitter
+          url: https://twitter.com/twoooooda
+          weight: -3
+          pre: twitter
+          params:
+              newTab: true   
+
+
 
 related:
     includeNewer: true
@@ -202,4 +220,3 @@ markup:
         startLevel: 2
     highlight:
         noClasses: false
-
