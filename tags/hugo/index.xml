@@ -25,7 +25,7 @@
       <description>はじめに 　自分は最近、当ブログを静的サイトジェネレータであるHUGOを用いて作成しました。HUGO自体はわかってしまえばごく簡単に導入、使用できるんですが、いかんせん自分がweb系、GitHubに関して無知であったためハマりポイントをことごとく踏み抜いていき、結局公開までかなり時間がかかってしまいました。なので覚えているうちに使い方や参考サイトをまとめようと思います。
 　ちなみにデプロイ方法等は我流でやっていますが、いろんな方法があるみたいなのであくまで一例としてお読み頂けたら光栄です。
 1.HUGOのインストール 　基本的には、HUGOの公式サイトにあるQuick Startに従ってHUGOをインストールしていきます。自分はWindows環境なので、Chocolateyというパッケージマネージャを使ってインストールしました。以降はコマンドプロンプト上で、$ choco install hugo -confirmを実行するとHUGOがインストールされるはずです。$ hugo versionでバージョンが確認できたらインストールされています。
-$ hugo version hugo v0.81.0-59D15C97 windows/amd64 ....  2.GitHubの準備 　自分のGitHubのページにて、[UserName].github.ioという名前でリポジトリを作ります。リポジトリ名をこうすることでGitHubさんがPages用のリポジトリだと勝手に判断してくれます。なのでリポジトリ名がページのURLhttp://&amp;lt;UserName&amp;gt;.github.ioになります。あとはこのリポジトリをクローンして取り敢えず環境は完成です。
+$ hugo version hugo v0.81.0-59D15C97 windows/amd64 ....  2.GitHubの準備 　自分のGitHubのページにて、[UserName].github.ioという名前でリポジトリを作ります。リポジトリ名をこうすることでGitHubさんがPages用のリポジトリだと勝手に判断してくれます。なのでリポジトリ名がページのURLhttps://&amp;lt;UserName&amp;gt;.github.ioになります。あとはこのリポジトリをクローンして取り敢えず環境は完成です。
 　一般的なのはソースコード用のリポジトリを別で作り、ビルド結果だけをPages用のリポジトリにあげる方法らしいのですが、自分はリポジトリが増えるのが嫌だったので、souceブランチをソースコード用、mainブランチをデプロイ用のブランチにしました。
 3.サイトのひな形を作る 　まずsourceブランチを作り、その下にHUGOのコマンドでファイルを作っていきます。$ hugo new site &amp;lt;フォルダ名&amp;gt;でHUGOを使う上で最小限のファイルとフォルダを作成できます。
 $ cd &amp;lt;UserName&amp;gt;.github.io $ git branch source $ git checkout source $ hugo new site blog  自分はsourceブランチ直下で作業したかったので、blogフォルダ内の内容をsourceブランチ直下に移動させました(blogフォルダは削除)。

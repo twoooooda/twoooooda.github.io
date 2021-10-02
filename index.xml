@@ -424,7 +424,7 @@ hugo v0.81.0-59D15C97 windows/amd64 ....
 &lt;/code&gt;&lt;/pre&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;h2 id=&#34;2githubの準備&#34;&gt;2.GitHubの準備&lt;/h2&gt;
-&lt;p&gt;　自分のGitHubのページにて、[UserName].github.ioという名前でリポジトリを作ります。リポジトリ名をこうすることでGitHubさんがPages用のリポジトリだと勝手に判断してくれます。なのでリポジトリ名がページのURL&lt;code&gt;http://&amp;lt;UserName&amp;gt;.github.io&lt;/code&gt;になります。あとはこのリポジトリをクローンして取り敢えず環境は完成です。&lt;/p&gt;
+&lt;p&gt;　自分のGitHubのページにて、[UserName].github.ioという名前でリポジトリを作ります。リポジトリ名をこうすることでGitHubさんがPages用のリポジトリだと勝手に判断してくれます。なのでリポジトリ名がページのURL&lt;code&gt;https://&amp;lt;UserName&amp;gt;.github.io&lt;/code&gt;になります。あとはこのリポジトリをクローンして取り敢えず環境は完成です。&lt;/p&gt;
 &lt;p&gt;　一般的なのはソースコード用のリポジトリを別で作り、ビルド結果だけをPages用のリポジトリにあげる方法らしいのですが、自分はリポジトリが増えるのが嫌だったので、souceブランチをソースコード用、mainブランチをデプロイ用のブランチにしました。&lt;/p&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;h2 id=&#34;3サイトのひな形を作る&#34;&gt;3.サイトのひな形を作る&lt;/h2&gt;
