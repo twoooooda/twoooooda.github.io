@@ -15,16 +15,17 @@ categories = [
     "Unity"
 ]
 
-[[images]]
-src = "/ka.png"
+series = ["Themes Guide"]
+aliases = ["migrate-from-jekyl"]
+image = "ka.png"
 +++
 
-# はじめに
+## はじめに
 　 少し前にOculus Quest2を購入し、しばらくハンドトラッキングで遊んでいたんですが、急に『手で蚊を潰すVRゲーム』を作りたくなったのでとりあえず蚊っぽい挙動をするナニカを作りました。 
 <br> 
 <br>
 
-# 1.スクリプト
+## スクリプト
 　やっていることはごく簡単で、数フレームに一回ランダムでRotationの値を変更し、Z方向に常に力を加え続けているだけです。
 
 ```cs:Move_mosquite.cs
@@ -58,7 +59,7 @@ public class Move_mosquite : MonoBehaviour
 <br>
 なお、当方めちゃくちゃ初心者なのでもっと効率的なやり方や、もっとリアルになるやり方があるかもしれませんのであしからず....
 
-# 完成例
+## 完成例
 
 {{< youtube SFOzY6yHWQc >}} 
 
