@@ -32,8 +32,6 @@
         <h1 class="site-name"><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
         <h2 class="site-description">{{ .Site.Params.sidebar.subtitle }}</h2>
 
-
-
     </header>
 
     <ol class="menu" id="main-menu">
@@ -50,12 +48,11 @@
                 <span>{{- .Name -}}</span>
             </a>
         </li>
-        {{ end }}
-
         <iframe
-            src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=8&l=ez&f=ifr&linkID=7bd6d32da3aea92f153c941ac2ac429b&t=twoooooda0c-22&tracking_id=twoooooda0c-22"
-            width="120" height="240" scrolling="no" border="0" marginwidth="0" style="border:none;"
-            frameborder="0"></iframe>
+            src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=6&l=ez&f=ifr&linkID=55c40cc2932a1b7a5c279dba56b38597&t=twoooooda0c-22&tracking_id=twoooooda0c-22"
+            width="120" height="150" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0">
+        </iframe>
+        {{ end }}
 
         {{ if (default false .Site.Params.colorScheme.toggle) }}
         <li id="dark-mode-toggle">
@@ -65,4 +62,5 @@
         </li>
         {{ end }}
     </ol>
+
 </aside>
