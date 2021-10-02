@@ -15,8 +15,9 @@ categories = [
     "Web"
 ]
 
-[[images]]
-src = "img/2021/hugo.png"
+series = ["Themes Guide"]
+aliases = ["migrate-from-jekyl"]
+image = "hugo.png"
 +++
 
 # HUGOの仕様

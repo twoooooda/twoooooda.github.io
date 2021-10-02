@@ -1,0 +1,33 @@
+:root {
+    @include respond(md) {
+        --main-top-padding: 35px;
+    }
+
+    @include respond(xl) {
+        --main-top-padding: 50px;
+    }
+
+    --body-background: #e0fcf7;
+
+    --accent-color: #34495e;
+    --accent-color-darker: #2c3e50;
+    --accent-color-text: #fff;
+    --body-text-color: #a1a1a1;
+
+    --tag-border-radius: 4px;
+
+    --section-separation: 40px;
+
+    --scrollbar-thumb: hsl(0, 0%, 85%);
+    --scrollbar-track: var(--body-background);
+
+    &[data-scheme="dark"] {
+        --body-background: #303030;
+        --accent-color: #ecf0f1;
+        --accent-color-darker: #bdc3c7;
+        --accent-color-text: #000;
+        --body-text-color: rgba(255, 255, 255, 0.7);
+        --scrollbar-thumb: #424242;
+        --scrollbar-track: var(--body-background);
+    }
+}

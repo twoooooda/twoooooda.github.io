@@ -16,7 +16,7 @@ categories = [
 ]
 
 [[images]]
-src = "img/2021/ka.png"
+src = "/ka.png"
 +++
 
 # はじめに

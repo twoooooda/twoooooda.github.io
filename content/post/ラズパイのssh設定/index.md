@@ -7,6 +7,7 @@ tags = [
     "知見",
     "備忘録",
     "Raspberrypi",
+	"ガジェット"
 ]
 categories = [
     "Raspberrypi"
@@ -17,11 +18,11 @@ aliases = ["migrate-from-jekyl"]
 image = "raspi.jpeg"
 +++
 
-# はじめに
+## はじめに
 　家に余ってたラズパイをテレビの録画サーバーにしようと思い、部屋の奥から引っ張り出してきたのはいいですが、初期設定もsshの接続設定も何もしてなかったので勉強がてらやってみました、例の如くやらないといけないことが複数サイトに渡って散らばっていたので、備忘録として一通りまとめます。なお、ラズパイのOSはインストール済み, 有線LAN接続なのを前提とし、ラズパイからモニターにはなるべく出力せずに設定することを目指します。   
 <br>
 
-# ホストのPCからラズパイにssh接続する
+## ホストのPCからラズパイにssh接続する
 　OSをインストールしたmicroSDカードをラズパイに挿す前に, microSDカードの直下にsshという空のファイル(拡張子も無し)を作っておきます。こうすることでラズパイのGUIを触らずにsshをオンにできます。
 <br>
 
@@ -38,7 +39,7 @@ $ ssh pi@raspberrypi.local
 
 <br>
 
-# IPアドレスの固定
+## IPアドレスの固定
 　インターネットに繋げるたびにIPアドレスが変わると困るので、まずはラズパイのIPアドレスを固定します。ラズパイのIPアドレス固定の前に、ホストのPCのターミナルで以下を実行します。
 ```
 $ ipconfig /all
@@ -72,8 +73,8 @@ static domain_name_servers=192.168.x.OOO
 <br>
 
 
-# ユーザーの追加, 権限の付与
-## 新しいユーザーの追加
+## ユーザーの追加, 権限の付与
+### 新しいユーザーの追加
 　デフォルトユーザーである「pi」とは別のユーザーを作成し、権限をそちらに移行します。sshを介してラズパイのターミナルにて、
 ```
 pi@raspberrypi:~$ sudo adduser |newuser|
@@ -84,7 +85,7 @@ pi@raspberrypi:~$ sudo adduser |newuser|
 <br>
 <br>
 
-## 権限の付与
+### 権限の付与
 　「pi」ユーザーの権限を新しいユーザーに追加します。まずは「pi」ユーザーの権限を確認するために以下を実行します。
 ```
 pi@raspberrypi:~$ groups pi
@@ -98,7 +99,7 @@ pi@raspberrypi:~$ sudo usermod -G pi,adm,dialout,cdrom,sudo,audio,video,plugdev,
 <br>
 <br>
 
-## 「pi」ユーザーのホームフォルダのコピー
+### 「pi」ユーザーのホームフォルダのコピー
 　「pi」ユーザーのホームフォルダの内容をnewuserのホームフォルダにコピーします。
 ```
 pi@raspberrypi:~$ sudo cp -r /home/pi/* /home/newuser
@@ -106,7 +107,7 @@ pi@raspberrypi:~$ sudo cp -r /home/pi/* /home/newuser
 <br>
 <br>
 
-# デフォルトユーザー(pi)の無効化
+## デフォルトユーザー(pi)の無効化
 　ラズパイを起動する度に「pi」ユーザーに勝手にログインされると困るので、「pi」ユーザーへの自動ログインをオフにして、ついでに「pi」ユーザーを無効化します。
 ```
 pi@raspberrypi:~$ sudo nano /etc/lightdm/lightdm.conf
@@ -133,8 +134,8 @@ pi@raspberrypi:~$ sudo usermod --expiredate 1 pi
 <br>
 <br>
 
-# 鍵ペアの生成と送信、設定
-## 鍵の生成と送信
+## 鍵ペアの生成と送信、設定
+### 鍵の生成と送信
 　公開鍵認証とは、パスワードの代わりに公開鍵(ホスト側のPC)と秘密鍵(ラズパイ)のペアで認証する方法です。まずはホストのPCに鍵ペアを生成するディレクトリ及び鍵ペアを作ります。
 ```
 $ mkdir ~/.ssh/raspberrypi
@@ -155,7 +156,7 @@ $ scp ~/.ssh/raspberrypi/id_rsa.pub newuser@raspberrypi:~
 ```
 <br>
 
-## 公開鍵の設定
+### 公開鍵の設定
 
 　ラズパイにパスワード認証でログインし、鍵を管理する`.ssh`を作ります。
 ```
