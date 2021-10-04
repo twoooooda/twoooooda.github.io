@@ -132,6 +132,7 @@ params:
             - search
             - archives
             - tag-cloud
+            - ad
 
         archives:
             limit: 5
@@ -167,7 +168,7 @@ params:
             enabled: true
 
     customCSS: /static/css/add-on.css
-    
+
 ### Custom menu
 ### See https://docs.stack.jimmycai.com/configuration/custom-menu.html
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
