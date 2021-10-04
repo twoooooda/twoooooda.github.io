@@ -32,7 +32,7 @@ params:
 
     footer:
         since: 2020
-        customText:
+        customText: 
 
     dateFormat:
         published: Jan 02, 2006
@@ -166,6 +166,8 @@ params:
         content:
             enabled: true
 
+    customCSS: /static/css/add-on.css
+    
 ### Custom menu
 ### See https://docs.stack.jimmycai.com/configuration/custom-menu.html
 ### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
@@ -196,8 +198,6 @@ menu:
           params:
               newTab: true   
 
-
-
 related:
     includeNewer: true
     threshold: 60
@@ -220,3 +220,5 @@ markup:
         startLevel: 2
     highlight:
         noClasses: false
+
+
