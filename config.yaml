@@ -132,7 +132,6 @@ params:
             - search
             - archives
             - tag-cloud
-            - ad
 
         archives:
             limit: 5
