@@ -14,8 +14,6 @@ categories = [
 
 +++
 
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 [前回記事](https://twoooooda.github.io/p/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/)のとおり、先日発売されたiPhone13 mini を買うことにしました。幸いにして私は物持ちがすこぶる良く、2年前のiPhone11の状態もほぼ無傷だったので、Apple公式の下取りサービスである「Apple Trade In」を使ってiPhone11を下取りに出すことにしました。
 
 ## Apple Trade Inとは
