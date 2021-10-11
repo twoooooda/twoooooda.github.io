@@ -33,15 +33,6 @@
         </div>
         {{ end }}
 
-        {{ if .Site.Params.article.readingTime }}
-        <div>
-            {{ partial "helper/icon" "clock" }}
-            <time class="article-time--reading">
-                {{ T "article.readingTime" .ReadingTime }}
-            </time>
-        </div>
-        {{ end }}
-
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
             data-show-count="false">Tweet</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
