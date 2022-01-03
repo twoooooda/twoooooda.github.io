@@ -1,7 +1,7 @@
 +++
 author = "twoooooda"
 title = "AutoHotKeyを導入してみた"
-date = "2022-01-03"
+date = "2022-01-04"
 description = "キーボードについて調べていくうちに、AutoHotKeyというものに行きつきました。"
 tags = [
     "日記",
