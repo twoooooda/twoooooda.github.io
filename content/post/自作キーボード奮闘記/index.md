@@ -6,7 +6,8 @@ description = "オタクもすなる自作キーボードというふものを�
 tags = [
     "日記",
     "ガジェット",
-    "散財"
+    "散財", 
+    "MyNewGear"
 ]
 categories = [
     "ガジェット"

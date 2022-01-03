@@ -6,7 +6,8 @@ description = "iPhone 13 min 128GB (product)RED買いました。"
 tags = [
     "日記",
     "ガジェット",
-    "散財"
+    "散財",
+    "MyNewGear"
 ]
 categories = [
     "散財"

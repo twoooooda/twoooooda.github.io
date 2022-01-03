@@ -5,8 +5,7 @@ date = "2021-10-03"
 description = "iPhoneの購入代金を少しでも楽に取り返すために「Apple Trade In」を利用してみました。"
 tags = [
     "日記",
-    "ガジェット",
-    "散財"
+    "体験レポ"
 ]
 categories = [
     "体験レポ"
