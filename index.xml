@@ -7,38 +7,6 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
         <lastBuildDate>Mon, 03 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>AutoHotKeyを導入してみた</title>
-        <link>https://twoooooda.github.io/p/autohotkey%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
-        <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://twoooooda.github.io/p/autohotkey%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
-        <description>&lt;h2 id=&#34;導入を考えたきっかけ&#34;&gt;導入を考えたきっかけ&lt;/h2&gt;
-&lt;p&gt;　&lt;a class=&#34;link&#34; href=&#34;https://twoooooda.github.io/p/%E7%A7%81%E3%81%AE%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E5%A5%AE%E9%97%98%E8%A8%98/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;以前の記事&lt;/a&gt;でも述べた通り、対応しているファームウェアがマジのゴミで、キー割り当てを変えられなかったので、いろいろ調べているうちにAutoHotKeyというものを見つけました。&lt;/p&gt;
-&lt;h2 id=&#34;autohotkeyとは&#34;&gt;AutoHotKeyとは？&lt;/h2&gt;
-&lt;p&gt;　独自のプログラミング言語を用いて、キーボードのキー操作によりかなり柔軟なショートカットの作成や、普段あまり使わないキーを全く別のキーとして割り当てたり、メディアコントロールやPCのシステム操作を割り当てたりできます。&lt;a class=&#34;link&#34; href=&#34;https://fuchiaz.com/usage-autohotkey/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;参考&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;導入方法&#34;&gt;導入方法&lt;/h2&gt;
-&lt;p&gt;　基本的に&lt;a class=&#34;link&#34; href=&#34;https://fuchiaz.com/auto-hot-key/#AutoHotkey&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;このサイト&lt;/a&gt;に従ってインストールして、拡張子を&lt;code&gt;.ahk&lt;/code&gt;としたテキストファイルを作り、そこに任意のショートカットやキーの割り当てを記述していきます。記法や文法、決まりごとは&lt;a class=&#34;link&#34; href=&#34;https://so-zou.jp/software/tool/system/auto-hot-key/introduction/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;日本語のリファレンス(?)&lt;/a&gt;があるので、そちらを参照してください。&lt;/p&gt;
-&lt;p&gt;　このAutoHotKeyというソフトは、拡張子が&lt;code&gt;.ahk&lt;/code&gt;のファイル、あるいは&lt;code&gt;.ahk&lt;/code&gt;のファイルから作成した&lt;code&gt;.exe&lt;/code&gt;の実行ファイルを起動し、タスクトレイで常駐させておかなければなりません。なので、PC起動時に自動で該当のファイルが起動するようにしておくと便利です。私は&lt;a class=&#34;link&#34; href=&#34;https://kiryusblog.com/autohotkey-autorun/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちらのサイト&lt;/a&gt;を参考に設定しました。&lt;/p&gt;
-&lt;h2 id=&#34;実際に使う&#34;&gt;実際に使う&lt;/h2&gt;
-&lt;p&gt;　私がこのAutoHotKeyでやりたかったのは、&amp;quot;&lt;strong&gt;キーボード右上のPageUp、PageDownのキーをメディアの再生一時停止、次の曲ボタンへ割り当て&lt;/strong&gt;&amp;quot; です。実際のコードはごく簡単なもので、以下のように書いたら思った通りに動いてくれました。&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#InstallKeybdHook
-#UseHook
-
-PgUp::Media_Play_Pause
-PgDn::Media_Next
-return
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;また、便利だと聞いたので&lt;a class=&#34;link&#34; href=&#34;https://www.karakaram.com/alt-ime-on-off/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;こちらのサイト&lt;/a&gt;を参考に、左右Altの空打ちで日本語入力と英字入力を切り変えられるようにしました。私は起動しないといけない実行ファイルが増えると嫌なので、実際に使うときはPageUp/Downキーをメディアコントロールに割り当てるコードと、&lt;code&gt;alt-ime-ahk.ahk&lt;/code&gt;の内容を一つのファイルに統合しています(ファイル名を&lt;code&gt;general.ahk&lt;/code&gt;としています)。&lt;/p&gt;
-&lt;h2 id=&#34;導入してみて&#34;&gt;導入してみて&lt;/h2&gt;
-&lt;p&gt;　導入してしばらく使ってみましたが、&lt;strong&gt;とてもとても便利です。&lt;/strong&gt; タスクトレイに入るアイコンが一つ増えるのが最初は少し抵抗がありましたが。それを補って余りある恩恵を受けています。今後新しくショートカットが欲しくなったり、割り当てを変えたい時が来れば今使っている&lt;code&gt;general.ahk&lt;/code&gt;ファイルに追記すればいいだけなので、使い方を多少覚えていればこれからもっと気軽に便利にしていくことができると思います。&lt;/p&gt;
-</description>
-        </item>
-        <item>
         <title>私の自作キーボード奮闘記</title>
         <link>https://twoooooda.github.io/p/%E7%A7%81%E3%81%AE%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E5%A5%AE%E9%97%98%E8%A8%98/</link>
         <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
