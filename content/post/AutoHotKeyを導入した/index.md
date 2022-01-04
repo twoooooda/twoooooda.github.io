@@ -10,7 +10,7 @@ tags = [
     "プログラミング"
 ]
 categories = [
-    "dialy"
+    "diary"
 ]
 
 series = ["Themes Guide"]
