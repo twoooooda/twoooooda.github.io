@@ -6,7 +6,22 @@
     <description>Recent content in 知見 on いっとりうむの足跡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 03 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.github.io/tags/%E7%9F%A5%E8%A6%8B/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.github.io/tags/%E7%9F%A5%E8%A6%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AutoHotKeyを導入してみた</title>
+      <link>https://twoooooda.github.io/p/autohotkey%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://twoooooda.github.io/p/autohotkey%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <description>導入を考えたきっかけ 　以前の記事でも述べた通り、自作キーボードに対応しているファームウェアがマジのゴミで、キー割り当てを変えられなかったので、いろいろ調べているうちにAutoHotKeyというものを見つけました。
+AutoHotKeyとは？ 　独自のプログラミング言語を用いて、キーボードのキー操作によるかなり柔軟なショートカットの作成や、普段あまり使わないキーを全く別のキーとして割り当てたり、メディアコントロールやPCのシステム操作を割り当てたりできます。参考
+導入方法 　基本的にこのサイトに従ってインストールして、拡張子を.ahkとしたテキストファイルを作り、そこに任意のショートカットやキーの割り当てを記述していきます。記法や文法、決まりごとは日本語のリファレンス(?)があるので、そちらを参照してください。
+　このAutoHotKeyを使う場合、拡張子が.ahkのファイル、あるいは.ahkのファイルから作成した.exeの実行ファイルを起動し、タスクトレイで常駐させておかなければなりません。なので、PC起動時に自動で該当のファイルが起動するようにしておくと便利です。私はこちらのサイトを参考に設定しました。
+実際に使う 　私がこのAutoHotKeyでやりたかったのは、&amp;quot;キーボード右上のPageUp、PageDownのキーをメディアの再生一時停止、次の曲ボタンへ割り当て&amp;quot; です。実際のコードはごく簡単なもので、以下のように書いたら思った通りに動いてくれました。
+#InstallKeybdHook #UseHook PgUp::Media_Play_Pause PgDn::Media_Next return また、便利だと聞いたのでこちらのサイトを参考に、左右Altの空打ちで日本語入力と英字入力を切り変えられるようにしました。私は起動しないといけない実行ファイルが増えると嫌なので、実際に使うときはPageUp/Downキーをメディアコントロールに割り当てるコードと、alt-ime-ahk.ahkの内容を一つのファイルに統合しています(ファイル名をgeneral.ahkとしています)。
+導入してみて 　導入してしばらく使ってみましたが、とてもとても便利です。 タスクトレイに入るアイコンが一つ増えるのが最初は少し抵抗がありましたが。それを補って余りある恩恵を受けています。今後新しくショートカットが欲しくなったり、割り当てを変えたい時が来れば今使っているgeneral.ahkファイルに追記すればいいだけなので、使い方を多少覚えていればこれからもっと気軽に便利にしていくことができると思います。</description>
+    </item>
+    
     <item>
       <title>ラズパイに公開鍵認証でssh接続するまで</title>
       <link>https://twoooooda.github.io/p/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/</link>
