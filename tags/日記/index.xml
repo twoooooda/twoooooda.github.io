@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日記 on いっとりうむの足跡</title>
-    <link>https://twoooooda.github.io/tags/%E6%97%A5%E8%A8%98/</link>
+    <link>https://twoooooda.net/tags/%E6%97%A5%E8%A8%98/</link>
     <description>Recent content in 日記 on いっとりうむの足跡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.github.io/tags/%E6%97%A5%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/tags/%E6%97%A5%E8%A8%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AutoHotKeyを導入してみた</title>
-      <link>https://twoooooda.github.io/p/autohotkey%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
+      <link>https://twoooooda.net/p/autohotkey%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</link>
       <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://twoooooda.github.io/p/autohotkey%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
+      <guid>https://twoooooda.net/p/autohotkey%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/</guid>
       <description>導入を考えたきっかけ 　以前の記事でも述べた通り、自作キーボードに対応しているファームウェアがマジのゴミで、キー割り当てを変えられなかったので、いろいろ調べているうちにAutoHotKeyというものを見つけました。
 AutoHotKeyとは？ 　独自のプログラミング言語を用いて、キーボードのキー操作によるかなり柔軟なショートカットの作成や、普段あまり使わないキーを全く別のキーとして割り当てたり、メディアコントロールやPCのシステム操作を割り当てたりできます。参考
 導入方法 　基本的にこのサイトに従ってインストールして、拡張子を.ahkとしたテキストファイルを作り、そこに任意のショートカットやキーの割り当てを記述していきます。記法や文法、決まりごとは日本語のリファレンス(?)があるので、そちらを参照してください。
@@ -24,10 +24,10 @@ AutoHotKeyとは？ 　独自のプログラミング言語を用いて、キー
     
     <item>
       <title>私の自作キーボード奮闘記</title>
-      <link>https://twoooooda.github.io/p/%E7%A7%81%E3%81%AE%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E5%A5%AE%E9%97%98%E8%A8%98/</link>
+      <link>https://twoooooda.net/p/%E7%A7%81%E3%81%AE%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E5%A5%AE%E9%97%98%E8%A8%98/</link>
       <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://twoooooda.github.io/p/%E7%A7%81%E3%81%AE%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E5%A5%AE%E9%97%98%E8%A8%98/</guid>
+      <guid>https://twoooooda.net/p/%E7%A7%81%E3%81%AE%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E5%A5%AE%E9%97%98%E8%A8%98/</guid>
       <description>しばらく前から自作キーボードの沼というものに興味があり、年が明けたら入るお年玉をアテに思い切って作ってみることにしました。
 用いたパーツ PCB、ケース 　ケース、基板、プレート等がセットになっているTom980というコンパクトなフルサイズキーボード自作キット(98キー)を買いました。フルカラーLEDつき、ホットスワップ方式ではんだ付けがいらないというのも高得点です。安価ながらなかなかいいキットだと思います。アリエクスプレスで買いました。
  本体   付属品(見切れてる方は普通のUSB端子です) 
@@ -43,10 +43,10 @@ lubeが大変だった 　大変でした&amp;hellip; 自作キーボードと�
     
     <item>
       <title>Apple公式下取りサービス「Apple Trade In」利用レビュー</title>
-      <link>https://twoooooda.github.io/p/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</link>
+      <link>https://twoooooda.net/p/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</link>
       <pubDate>Sun, 03 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://twoooooda.github.io/p/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</guid>
+      <guid>https://twoooooda.net/p/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</guid>
       <description>前回記事のとおり、先日発売されたiPhone13 mini を買うことにしました。幸いにして私は物持ちがすこぶる良く、2年前のiPhone11の状態もほぼ無傷だったので、Apple公式の下取りサービスである「Apple Trade In」を使ってiPhone11を下取りに出すことにしました。
 Apple Trade Inとは 前述の通り、Apple社が公式で行っているApple製品下取りサービスです。AppleがiPhone6 Plus(下取り価格約3,000円)から、iPhone12 ProMax(最大84,000円)までのシリーズを引き取り、相応の値段を購入額から割り引くというよくある感じのサービスです。iPhone6以前の機種は無料で回収されるのみとのこと。
 利用手順  まずはiPhoneの新規購入画面で、サービスに関係する基本的なフォームを入力します。今回はiPhone11 64GBモデルなので最大33000円で下取ってくれるようです。      ↑をきちんと入力して新規購入の決済を完了すると、しばらくして追加の情報を入力するためのリンクがメールで届きます。私の場合は9/28に決済を済ませた後すぐにメールが来ました。
@@ -64,10 +64,10 @@ Apple Trade Inとは 前述の通り、Apple社が公式で行っているApple�
     
     <item>
       <title>iPhone 13 mini買ったよー</title>
-      <link>https://twoooooda.github.io/p/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/</link>
+      <link>https://twoooooda.net/p/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/</link>
       <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://twoooooda.github.io/p/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/</guid>
+      <guid>https://twoooooda.net/p/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/</guid>
       <description>私は今まで2019年モデルのiPhone11 64GBを使っていたのですが、購入当初からデカいし重いなぁと思い続けていました。そこで、先日のAppleの製品発表会で発表されたiPhone 13 miniを買うことにしました。 13のminiにした理由 普段家にいるときは大抵の場合、デスクトップPCに向かって作業したり暇を潰しており、さらに巷を賑わしている流行り病のせいでその習慣には拍車がかかっていました。動画を見たりするのももちろんPCで見るので、iPhone11のような大きめのディスプレイを持つスマホは全く必要ありませんでした。しかも、昨年11月に発売されたiPad Air 4も所持しているので、スマホの存在理由といったら移動時間などの空き時間にSNSを確認したり、mobile Suicaやpaypayでの支払いくらいなので、これを機に思い切ってスマホを小型化させることにした次第です。 本題 個人的にApple製品は配送よりも、Apple Storeに直接受け取りに行く方が体験として好きです。なので今回もApple Store心斎橋に受け取りに行きました。受け取りは9/30に行きました。
  心斎橋前の様子 
 受け取りの手順としては、事前決済の時に発行される注文番号あるいは専用QRコードをスタッフに見せるだけで、製品を受け取れました。事前のAppleからのメールには「公共機関が発行した写真付きの身分証明書」が必要と書いてありましたが、特に提出は求められませんでした(学生証とか保険証とか住民票とか用意したのに～)。 受け取れた～   

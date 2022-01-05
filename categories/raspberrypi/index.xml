@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rspberrypi on いっとりうむの足跡</title>
-    <link>https://twoooooda.github.io/categories/raspberrypi/</link>
+    <link>https://twoooooda.net/categories/raspberrypi/</link>
     <description>Recent content in Rspberrypi on いっとりうむの足跡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Thu, 03 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.github.io/categories/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Jun 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ラズパイに公開鍵認証でssh接続するまで</title>
-      <link>https://twoooooda.github.io/p/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/</link>
+      <link>https://twoooooda.net/p/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/</link>
       <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://twoooooda.github.io/p/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/</guid>
+      <guid>https://twoooooda.net/p/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/</guid>
       <description>はじめに 　家に余ってたラズパイをテレビの録画サーバーにしようと思い、部屋の奥から引っ張り出してきたのはいいですが、初期設定もsshの接続設定も何もしてなかったので勉強がてらやってみました、例の如くやらないといけないことが複数サイトに渡って散らばっていたので、備忘録として一通りまとめます。なお、ラズパイのOSはインストール済み, 有線LAN接続なのを前提とし、ラズパイからモニターにはなるべく出力せずに設定することを目指します。
 ホストのPCからラズパイにssh接続する 　OSをインストールしたmicroSDカードをラズパイに挿す前に, microSDカードの直下にsshという空のファイル(拡張子も無し)を作っておきます。こうすることでラズパイのGUIを触らずにsshをオンにできます。 ※7/28追記OSが入ったSDカードを覗くと、bootとrootfsというパーティションにわかれている場合がありますが、sshを有効化するにはboot直下に置くのが正解らしいです。
 　ラズパイに接続して操作するホストのPCのターミナルから、以下のコマンドを叩くだけでssh接続できます(デフォルトユーザーにログインする場合)。 $ ssh pi@raspberrypi.local IPアドレスの固定 　インターネットに繋げるたびにIPアドレスが変わると困るので、まずはラズパイのIPアドレスを固定します。ラズパイのIPアドレス固定の前に、ホストのPCのターミナルで以下を実行します。
