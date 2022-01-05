@@ -4,6 +4,6 @@ description: "テクノロジーって最高～"
 slug: "markdown"
 image: "IMG_4085.JPEG"
 style:
-    background: "#2a9d8f"
+    background: "#6495ed"
     color: "#fff"
 ---

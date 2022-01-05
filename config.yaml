@@ -1,4 +1,4 @@
-baseurl: https://twoooooda.github.io/
+baseurl: https://twoooooda.net/
 languageCode: ja-jp
 theme: hugo-theme-stack
 paginate: 5
@@ -31,7 +31,7 @@ params:
     favicon: img/icon.png
 
     footer:
-        since: 2020
+        since: 2021
         customText: 
 
     dateFormat:
