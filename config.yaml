@@ -142,7 +142,7 @@ params:
     opengraph:
         twitter:
             # Your Twitter username
-            site:
+            site: twoooooda
 
             # Available values: summary, summary_large_image
             card: summary_large_image
