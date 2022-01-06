@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja-jp">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='ようやく投稿ができる....'><title>Hello, world！</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='キーボードについて調べていくうちに、AutoHotKeyというものに行きつきました。'><title>AutoHotKeyを導入してみた</title>
 
-<link rel='canonical' href='https://twoooooda.net/p/hello-world/'>
+<link rel='canonical' href='https://twoooooda.net/post/autohotkey%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='Hello, world！'>
-<meta property='og:description' content='ようやく投稿ができる....'>
-<meta property='og:url' content='https://twoooooda.net/p/hello-world/'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='AutoHotKeyを導入してみた'>
+<meta property='og:description' content='キーボードについて調べていくうちに、AutoHotKeyというものに行きつきました。'>
+<meta property='og:url' content='https://twoooooda.net/post/autohotkey%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/'>
 <meta property='og:site_name' content='いっとりうむの足跡'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='diary' /><meta property='article:tag' content='web' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2021-03-07T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-03-07T00:00:00&#43;00:00'/><meta property='og:image' content='https://twoooooda.net/p/hello-world/publicdomainq-0012425opp.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='日記' /><meta property='article:tag' content='知見' /><meta property='article:tag' content='備忘録' /><meta property='article:tag' content='プログラミング' /><meta property='article:published_time' content='2022-01-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-01-04T00:00:00&#43;00:00'/>
 <meta name="twitter:site" content="@twoooooda">
-    <meta name="twitter:creator" content="@twoooooda"><meta name="twitter:title" content="Hello, world！">
-<meta name="twitter:description" content="ようやく投稿ができる...."><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://twoooooda.net/p/hello-world/publicdomainq-0012425opp.jpg' />
+    <meta name="twitter:creator" content="@twoooooda"><meta name="twitter:title" content="AutoHotKeyを導入してみた">
+<meta name="twitter:description" content="キーボードについて調べていくうちに、AutoHotKeyというものに行きつきました。">
 <link rel="shortcut icon" href="img/icon.png" />
 <style>
 	
@@ -89,20 +88,8 @@
         </div>
     
 <main class="main full-width">
-    <article class="has-image main-article">
+    <article class="main-article">
     <header class="article-header">
-        <div class="article-image">
-            <a href="/p/hello-world/">
-                <img src="/p/hello-world/publicdomainq-0012425opp_hue0196f60387db8aea3d95157114df97e_86903_800x0_resize_q75_box.jpg"
-                        srcset="/p/hello-world/publicdomainq-0012425opp_hue0196f60387db8aea3d95157114df97e_86903_800x0_resize_q75_box.jpg 800w, /p/hello-world/publicdomainq-0012425opp_hue0196f60387db8aea3d95157114df97e_86903_1600x0_resize_q75_box.jpg 1600w"
-                        width="800" 
-                        height="450" 
-                        loading="lazy"
-                        alt="Featured image of post Hello, world！" />
-                
-            </a>
-        </div>
-    
 
     <div class="article-details">
     
@@ -116,12 +103,12 @@
     
 
     <h2 class="article-title">
-        <a href="/p/hello-world/">Hello, world！</a>
+        <a href="/post/autohotkey%E3%82%92%E5%B0%8E%E5%85%A5%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F/">AutoHotKeyを導入してみた</a>
     </h2>
 
     
     <h3 class="article-subtitle">
-        ようやく投稿ができる....
+        キーボードについて調べていくうちに、AutoHotKeyというものに行きつきました。
     </h3>
     
 
@@ -138,7 +125,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-            <time class="article-time--published">Mar 07, 2021</time>
+            <time class="article-time--published">Jan 04, 2022</time>
         </div>
         
 
@@ -154,9 +141,30 @@
 </header>
 
     <section class="article-content">
-    <h2 id="苦悩の末">苦悩の末</h2>
-<p>　最近急にはてなブログやnoteとは違う個人ブログが欲しくなり、静的サイトジェネレーターであるHUGOと、勉強がてらGitHub Pages、Actionsを使ってブログを作ってみました。実はサイト作成にあたり数日間に渡り大変苦労したのですが、その話はHUGO等の使い方とともにまとめようと思います。</p>
-<p>ではまた。</p>
+    <h2 id="導入を考えたきっかけ">導入を考えたきっかけ</h2>
+<p>　<a class="link" href="https://twoooooda.github.io/p/%E7%A7%81%E3%81%AE%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E5%A5%AE%E9%97%98%E8%A8%98/"  target="_blank" rel="noopener"
+    >以前の記事</a>でも述べた通り、自作キーボードに対応しているファームウェアがマジのゴミで、キー割り当てを変えられなかったので、いろいろ調べているうちにAutoHotKeyというものを見つけました。</p>
+<h2 id="autohotkeyとは">AutoHotKeyとは？</h2>
+<p>　独自のプログラミング言語を用いて、キーボードのキー操作によるかなり柔軟なショートカットの作成や、普段あまり使わないキーを全く別のキーとして割り当てたり、メディアコントロールやPCのシステム操作を割り当てたりできます。<a class="link" href="https://fuchiaz.com/usage-autohotkey/"  target="_blank" rel="noopener"
+    >参考</a></p>
+<h2 id="導入方法">導入方法</h2>
+<p>　基本的に<a class="link" href="https://fuchiaz.com/auto-hot-key/#AutoHotkey"  target="_blank" rel="noopener"
+    >このサイト</a>に従ってインストールして、拡張子を<code>.ahk</code>としたテキストファイルを作り、そこに任意のショートカットやキーの割り当てを記述していきます。記法や文法、決まりごとは<a class="link" href="https://so-zou.jp/software/tool/system/auto-hot-key/introduction/"  target="_blank" rel="noopener"
+    >日本語のリファレンス(?)</a>があるので、そちらを参照してください。</p>
+<p>　このAutoHotKeyを使う場合、拡張子が<code>.ahk</code>のファイル、あるいは<code>.ahk</code>のファイルから作成した<code>.exe</code>の実行ファイルを起動し、タスクトレイで常駐させておかなければなりません。なので、PC起動時に自動で該当のファイルが起動するようにしておくと便利です。私は<a class="link" href="https://kiryusblog.com/autohotkey-autorun/"  target="_blank" rel="noopener"
+    >こちらのサイト</a>を参考に設定しました。</p>
+<h2 id="実際に使う">実際に使う</h2>
+<p>　私がこのAutoHotKeyでやりたかったのは、&quot;<strong>キーボード右上のPageUp、PageDownのキーをメディアの再生一時停止、次の曲ボタンへ割り当て</strong>&quot; です。実際のコードはごく簡単なもので、以下のように書いたら思った通りに動いてくれました。</p>
+<pre tabindex="0"><code>#InstallKeybdHook
+#UseHook
+
+PgUp::Media_Play_Pause
+PgDn::Media_Next
+return
+</code></pre><p>また、便利だと聞いたので<a class="link" href="https://www.karakaram.com/alt-ime-on-off/"  target="_blank" rel="noopener"
+    >こちらのサイト</a>を参考に、左右Altの空打ちで日本語入力と英字入力を切り変えられるようにしました。私は起動しないといけない実行ファイルが増えると嫌なので、実際に使うときはPageUp/Downキーをメディアコントロールに割り当てるコードと、<code>alt-ime-ahk.ahk</code>の内容を一つのファイルに統合しています(ファイル名を<code>general.ahk</code>としています)。</p>
+<h2 id="導入してみて">導入してみて</h2>
+<p>　導入してしばらく使ってみましたが、<strong>とてもとても便利です。</strong> タスクトレイに入るアイコンが一つ増えるのが最初は少し抵抗がありましたが。それを補って余りある恩恵を受けています。今後新しくショートカットが欲しくなったり、割り当てを変えたい時が来れば今使っている<code>general.ahk</code>ファイルに追記すればいいだけなので、使い方を多少覚えていればこれからもっと気軽に便利にしていくことができると思います。</p>
 
 </section>
 
@@ -165,11 +173,13 @@
     
     <section class="article-tags">
         
-            <a href="/tags/diary/">diary</a>
+            <a href="/tags/%E6%97%A5%E8%A8%98/">日記</a>
         
-            <a href="/tags/web/">web</a>
+            <a href="/tags/%E7%9F%A5%E8%A6%8B/">知見</a>
         
-            <a href="/tags/hugo/">hugo</a>
+            <a href="/tags/%E5%82%99%E5%BF%98%E9%8C%B2/">備忘録</a>
+        
+            <a href="/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>
         
     </section>
 
@@ -201,11 +211,33 @@
                 
                     
 <article class="has-image">
-    <a href="/p/%E9%9D%99%E7%9A%84%E3%82%B5%E3%82%A4%E3%83%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%BFhugo%E3%81%A7%E5%80%8B%E4%BA%BA%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8Agithub-pages%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B/">
+    <a href="/post/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/">
         
         
             <div class="article-image">
-                <img src="/p/%E9%9D%99%E7%9A%84%E3%82%B5%E3%82%A4%E3%83%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%AC%E3%83%BC%E3%82%BFhugo%E3%81%A7%E5%80%8B%E4%BA%BA%E3%83%96%E3%83%AD%E3%82%B0%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8Agithub-pages%E3%81%A7%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B/hugo.3c9951dc5a0adef164656504a0fcbf99_huf7d3afa2f430d9e649302b30f29baa77_18815_250x150_fill_box_smart1_3.png" 
+                <img src="/post/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/raspi.d0370c04b83072f72eb44b3916eb649b_hu3014bcf64fc94ed1ca971c6720f7e4d8_1117001_250x150_fill_q75_box_smart1.jpeg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-0DcMBLgwcvcutEs5Futkmw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">ラズパイに公開鍵認証でssh接続するまで</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/post/hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E8%B2%BC%E3%82%8B/">
+        
+        
+            <div class="article-image">
+                <img src="/post/hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E8%B2%BC%E3%82%8B/hugo.3c9951dc5a0adef164656504a0fcbf99_huf7d3afa2f430d9e649302b30f29baa77_18815_250x150_fill_box_smart1_3.png" 
                         width="250" 
                         height="150" 
                         loading="lazy" 
@@ -216,7 +248,29 @@
         
 
         <div class="article-details">
-            <h2 class="article-title">静的サイトジェネレータ”HUGO”で個人ブログをつくり、GitHub Pagesで公開する</h2>
+            <h2 class="article-title">HUGOで作ったサイトにアマゾンのアフィリンクを貼る</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/post/unity%E3%81%A7%E8%9A%8A%E3%81%A3%E3%81%BD%E3%81%84%E5%8B%95%E3%81%8D%E3%82%92%E3%81%99%E3%82%8B%E3%82%84%E3%81%A4%E3%82%92%E4%BD%9C%E3%82%8B/">
+        
+        
+            <div class="article-image">
+                <img src="/post/unity%E3%81%A7%E8%9A%8A%E3%81%A3%E3%81%BD%E3%81%84%E5%8B%95%E3%81%8D%E3%82%92%E3%81%99%E3%82%8B%E3%82%84%E3%81%A4%E3%82%92%E4%BD%9C%E3%82%8B/ka.819c860a6d2d690858871af6588fce51_hu369738b2c9ff44a1da8d56d35405a246_309257_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="" 
+                        data-hash="md5-gZyGCm0taQhYhxr2WI/OUQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Unityで蚊っぽい動きをするやつを作る</h2>
         </div>
     </a>
 </article>
@@ -346,7 +400,11 @@
                 <div class="widget--toc">
                     <nav id="TableOfContents">
   <ol>
-    <li><a href="#苦悩の末">苦悩の末</a></li>
+    <li><a href="#導入を考えたきっかけ">導入を考えたきっかけ</a></li>
+    <li><a href="#autohotkeyとは">AutoHotKeyとは？</a></li>
+    <li><a href="#導入方法">導入方法</a></li>
+    <li><a href="#実際に使う">実際に使う</a></li>
+    <li><a href="#導入してみて">導入してみて</a></li>
   </ol>
 </nav>
                 </div>
