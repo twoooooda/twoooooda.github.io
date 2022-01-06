@@ -16,7 +16,7 @@ categories = [
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 image = "IMG_4085.JPEG"
-slug="Keybord built by my self"
+slug="Keybord built by myself"
 +++
 
 しばらく前から**自作キーボード**の沼というものに興味があり、年が明けたら入るお年玉をアテに思い切って作ってみることにしました。
