@@ -18,6 +18,7 @@ categories = [
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 image = "ka.png"
+slug="Mosquite in Unity"
 +++
 
 ## はじめに

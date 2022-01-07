@@ -16,6 +16,7 @@ categories = [
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 image = ""
+slug="Introduce AutoHotKey"
 +++
 
 ## 導入を考えたきっかけ
