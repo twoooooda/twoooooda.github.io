@@ -55,7 +55,7 @@ pi@raspberrypi:~$ sudo usermod -G pi,adm,dialout,cdrom,sudo,audio,video,plugdev,
       
       <guid>https://twoooooda.net/post/mosquite-in-unity/</guid>
       <description>はじめに 　少し前にOculus Quest2を購入し、しばらくハンドトラッキングで遊んでいたんですが、急に『手で蚊を潰すVRゲーム』を作りたくなったのでとりあえず蚊っぽい挙動をするナニカを作りました。 スクリプト 　やっていることはごく簡単で、数フレームに一回ランダムでRotationの値を変更し、Z方向に常に力を加え続けているだけです。
-using UnityEngine; public class Move_mosquite : MonoBehaviour { Rigidbody rb; public float freq, speed, power; void Start() { rb = this.GetComponent&amp;lt;Rigidbody&amp;gt;(); } void Update() { rb.velocity = rb.velocity.normalized * speed; //変数speedで速度の設定  rb.AddForce(this.transform.forward * power * Time.deltaTime, ForceMode.Force); //Z方向(forward)に力を加え続ける  if (Random.value &amp;lt; freq) //Rotationを変更する頻度を設定。毎フレームだと頻繁過ぎるので。  { transform.eulerAngles = new Vector3(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)); } } } このままでは無限にどっかいってしまうので、適当にコライダーをつけるとか、壁に近づくと力を受けるとかにするといいかもしれません。なお、当方めちゃくちゃ初心者なのでもっと効率的なやり方や、もっとリアルになるやり方があるかもしれませんのであしからず&amp;hellip;.
+using UnityEngine; public class Move_mosquite : MonoBehaviour { Rigidbody rb; public float freq, speed, power; void Start() { rb = this.GetComponent&amp;lt;Rigidbody&amp;gt;(); } void Update() { rb.velocity = rb.velocity.normalized * speed; //変数speedで速度の設定 rb.AddForce(this.transform.forward * power * Time.deltaTime, ForceMode.Force); //Z方向(forward)に力を加え続ける if (Random.value &amp;lt; freq) //Rotationを変更する頻度を設定。毎フレームだと頻繁過ぎるので。 { transform.eulerAngles = new Vector3(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)); } } } このままでは無限にどっかいってしまうので、適当にコライダーをつけるとか、壁に近づくと力を受けるとかにするといいかもしれません。なお、当方めちゃくちゃ初心者なのでもっと効率的なやり方や、もっとリアルになるやり方があるかもしれませんのであしからず&amp;hellip;.
 完成例   </description>
     </item>
     

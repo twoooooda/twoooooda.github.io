@@ -163,30 +163,30 @@
 <!-- raw HTML omitted --></p>
 <h2 id="スクリプト">スクリプト</h2>
 <p>　やっていることはごく簡単で、数フレームに一回ランダムでRotationの値を変更し、Z方向に常に力を加え続けているだけです。</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cs:Move_mosquite.cs" data-lang="cs:Move_mosquite.cs"><span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
-
-<span class="k">public</span> <span class="k">class</span> <span class="nc">Move_mosquite</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="n">Rigidbody</span> <span class="n">rb</span><span class="p">;</span>
-    <span class="k">public</span> <span class="kt">float</span> <span class="n">freq</span><span class="p">,</span> <span class="n">speed</span><span class="p">,</span> <span class="n">power</span><span class="p">;</span>
-
-    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">rb</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">Rigidbody</span><span class="p">&gt;();</span>
-    <span class="p">}</span>
-
-    <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">rb</span><span class="p">.</span><span class="n">velocity</span> <span class="p">=</span> <span class="n">rb</span><span class="p">.</span><span class="n">velocity</span><span class="p">.</span><span class="n">normalized</span> <span class="p">*</span> <span class="n">speed</span><span class="p">;</span> <span class="c1">//変数speedで速度の設定
-</span><span class="c1"></span>        <span class="n">rb</span><span class="p">.</span><span class="n">AddForce</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">forward</span> <span class="p">*</span> <span class="n">power</span> <span class="p">*</span> <span class="n">Time</span><span class="p">.</span><span class="n">deltaTime</span><span class="p">,</span> <span class="n">ForceMode</span><span class="p">.</span><span class="n">Force</span><span class="p">);</span> <span class="c1">//Z方向(forward)に力を加え続ける
-</span><span class="c1"></span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">Random</span><span class="p">.</span><span class="k">value</span> <span class="p">&lt;</span> <span class="n">freq</span><span class="p">)</span> <span class="c1">//Rotationを変更する頻度を設定。毎フレームだと頻繁過ぎるので。
-</span><span class="c1"></span>        <span class="p">{</span>
-            <span class="n">transform</span><span class="p">.</span><span class="n">eulerAngles</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">360</span><span class="p">),</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">360</span><span class="p">),</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">360</span><span class="p">));</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div><!-- raw HTML omitted -->
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cs:Move_mosquite.cs" data-lang="cs:Move_mosquite.cs"><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">public</span> <span class="k">class</span> <span class="nc">Move_mosquite</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Rigidbody</span> <span class="n">rb</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="kt">float</span> <span class="n">freq</span><span class="p">,</span> <span class="n">speed</span><span class="p">,</span> <span class="n">power</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">rb</span> <span class="p">=</span> <span class="k">this</span><span class="p">.</span><span class="n">GetComponent</span><span class="p">&lt;</span><span class="n">Rigidbody</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">rb</span><span class="p">.</span><span class="n">velocity</span> <span class="p">=</span> <span class="n">rb</span><span class="p">.</span><span class="n">velocity</span><span class="p">.</span><span class="n">normalized</span> <span class="p">*</span> <span class="n">speed</span><span class="p">;</span> <span class="c1">//変数speedで速度の設定</span>
+</span></span><span class="line"><span class="cl">        <span class="n">rb</span><span class="p">.</span><span class="n">AddForce</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="n">transform</span><span class="p">.</span><span class="n">forward</span> <span class="p">*</span> <span class="n">power</span> <span class="p">*</span> <span class="n">Time</span><span class="p">.</span><span class="n">deltaTime</span><span class="p">,</span> <span class="n">ForceMode</span><span class="p">.</span><span class="n">Force</span><span class="p">);</span> <span class="c1">//Z方向(forward)に力を加え続ける</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">Random</span><span class="p">.</span><span class="k">value</span> <span class="p">&lt;</span> <span class="n">freq</span><span class="p">)</span> <span class="c1">//Rotationを変更する頻度を設定。毎フレームだと頻繁過ぎるので。</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">transform</span><span class="p">.</span><span class="n">eulerAngles</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Vector3</span><span class="p">(</span><span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">360</span><span class="p">),</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">360</span><span class="p">),</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">360</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><!-- raw HTML omitted -->
 <p>このままでは無限にどっかいってしまうので、適当にコライダーをつけるとか、壁に近づくと力を受けるとかにするといいかもしれません。<!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
 なお、当方めちゃくちゃ初心者なのでもっと効率的なやり方や、もっとリアルになるやり方があるかもしれませんのであしからず&hellip;.</p>
@@ -453,10 +453,6 @@
         document.head.appendChild(customFont);
     }());
 </script>
-<center>
-    <iframe
-        src="https://rcm-fe.amazon-adsystem.com/e/cm?o=9&p=48&l=ur1&category=music&f=ifr&linkID=7fbaa5c88e84094474760e12fe63edc9&t=626239-22&tracking_id=626239-22"
-        width="728" height="90" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
-</center>
+
     </body>
 </html>
