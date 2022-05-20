@@ -6,7 +6,28 @@
     <description>Recent content in diary on いっとりうむの足跡</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/diary/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/diary/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>atcoder-cliを導入してみた</title>
+      <link>https://twoooooda.net/post/introduce-atcoder-cli/</link>
+      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://twoooooda.net/post/introduce-atcoder-cli/</guid>
+      <description>いきさつ 　ここ最近、諸事情あって競技プログラミングで有名なatcoderに参戦したのですが、atcoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていたatcoder-cliというものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。
+参考文献
+AtCoder 環境構築 for Python
+コマンドラインツールatcoder-cliを公開しました（作成者様のサイト）
+atcoder-cli チュートリアル（作成者様謹製のチュートリアル） atcoder-cliとは？ 　atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的にPythonでAtcoderに参戦することを前提に進めていきます。
+環境    Python（Anaconda） 3.8.8     pip 22.0.4   npm 6.14.6    導入方法 　基本的にはさっきのチュートリアルに従ってatcoder-cliと、セットでほぼ使うであろう online-judge-toolsも一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。
+Node.js・npmのインストール
+インストールコマンド 　online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。
+ &amp;gt; pip install online-judge-tools &amp;gt; npm install -g atcoder-cli そして、以下のコマンドが使用できればインストールされています。
+&amp;gt; acc -h ログイン 　atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtcoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。
+&amp;gt; oj login https://atcoder.jp/ 次にatcoder-cliの方にログイン。
+&amp;gt; acc login ここで、Linux等のCUIに普段から触れていると慣れているかもしれませんが、パスワードを入れる時に一見して入力できていないように見えるかもしれません。が、見えないようになっているだけで入力できています、大丈夫です。
+Configファイルの編集 　問題を解くときに、毎回main.pyの作成や問題用ディレクトリを作るのは面倒なので、自動化します。そのためにConfig.jsonを編集します。まずはConfigの場所の確認から。</description>
+    </item>
+    
     <item>
       <title>AutoHotKeyを導入してみた</title>
       <link>https://twoooooda.net/post/introduce-autohotkey/</link>

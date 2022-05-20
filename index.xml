@@ -6,7 +6,169 @@
         <description>Recent content on いっとりうむの足跡</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
-        <lastBuildDate>Tue, 04 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>atcoder-cliを導入してみた</title>
+        <link>https://twoooooda.net/post/introduce-atcoder-cli/</link>
+        <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/introduce-atcoder-cli/</guid>
+        <description>&lt;h2 id=&#34;いきさつ&#34;&gt;いきさつ&lt;/h2&gt;
+&lt;p&gt;　ここ最近、諸事情あって競技プログラミングで有名なatcoderに参戦したのですが、atcoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていた&lt;strong&gt;atcoder-cli&lt;/strong&gt;というものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。&lt;br&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;br&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;strong&gt;参考文献&lt;/strong&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://scrapbox.io/hitech/%F0%9F%8F%83_AtCoder_%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89_for_Python&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AtCoder 環境構築 for Python&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;コマンドラインツールatcoder-cliを公開しました（作成者様のサイト）&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;atcoder-cli チュートリアル（作成者様謹製のチュートリアル）&lt;/a&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;atcoder-cliとは&#34;&gt;atcoder-cliとは？&lt;/h2&gt;
+&lt;p&gt;　atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的にPythonでAtcoderに参戦することを前提に進めていきます。&lt;/p&gt;
+&lt;h3 id=&#34;環境&#34;&gt;環境&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Python（Anaconda）&lt;/th&gt;
+&lt;th&gt;3.8.8&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;pip&lt;/td&gt;
+&lt;td&gt;22.0.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;npm&lt;/td&gt;
+&lt;td&gt;6.14.6&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;導入方法&#34;&gt;導入方法&lt;/h2&gt;
+&lt;p&gt;　基本的には&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;さっきのチュートリアル&lt;/a&gt;に従ってatcoder-cliと、セットでほぼ使うであろう &lt;strong&gt;online-judge-tools&lt;/strong&gt;も一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://qiita.com/mk185/items/7ad004bf202f400daea1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Node.js・npmのインストール&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;インストールコマンド&#34;&gt;インストールコマンド&lt;/h3&gt;
+&lt;p&gt;　online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; &amp;gt; pip install online-judge-tools
+ &amp;gt; npm install -g atcoder-cli
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;そして、以下のコマンドが使用できればインストールされています。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc -h
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;ログイン&#34;&gt;ログイン&lt;/h3&gt;
+&lt;p&gt;　atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtcoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; oj login https://atcoder.jp/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;次にatcoder-cliの方にログイン。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc login
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ここで、Linux等のCUIに普段から触れていると慣れているかもしれませんが、パスワードを入れる時に一見して入力できていないように見えるかもしれません。が、見えないようになっているだけで入力できています、大丈夫です。&lt;/p&gt;
+&lt;h3 id=&#34;configファイルの編集&#34;&gt;Configファイルの編集&lt;/h3&gt;
+&lt;p&gt;　問題を解くときに、毎回main.pyの作成や問題用ディレクトリを作るのは面倒なので、自動化します。そのためにConfig.jsonを編集します。まずはConfigの場所の確認から。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc config-dir
+C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\atcoder-cli-nodejs\Config
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;環境によってファイルの場所はまちまちになるかと思います。ファイルを開いて、以下みたいな感じに&lt;code&gt;&amp;quot;default-test-dirname-format&amp;quot;&lt;/code&gt;と&lt;code&gt;&amp;quot;default-template&amp;quot;:&amp;quot;python&amp;quot;&lt;/code&gt;を変更します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;oj-path&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\\ProgramData\\Anaconda3\\Scripts\\oj.exe&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-contest-dirname-format&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;{ContestID}&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-task-dirname-format&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;{tasklabel}&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-test-dirname-format&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-task-choice&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;inquire&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-template&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;python&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;次に、上のConfig.jsonがあった&lt;code&gt;Config&lt;/code&gt;フォルダに&lt;code&gt;python&lt;/code&gt;フォルダを作り、その中に&lt;code&gt;main.py&lt;/code&gt;と&lt;code&gt;template.json&lt;/code&gt;を作ります。&lt;code&gt;main.py&lt;/code&gt;の中身は空でも大丈夫で、&lt;code&gt;template.json&lt;/code&gt;は以下。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;nt&#34;&gt;&amp;#34;task&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;nt&#34;&gt;&amp;#34;program&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;             &lt;span class=&#34;s2&#34;&gt;&amp;#34;main.py&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;nt&#34;&gt;&amp;#34;submit&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;main.py&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;使ってみる&#34;&gt;使ってみる&lt;/h2&gt;
+&lt;h3 id=&#34;解答用フォルダ作成&#34;&gt;解答用フォルダ作成&lt;/h3&gt;
+&lt;p&gt;　ようやく使用法編です。今回は&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;&lt;/code&gt;の中に&lt;code&gt;atcoder&lt;/code&gt;というフォルダを作り、その中で作業することとします（ここは自由です）。問題は仮にabc250のa問題を解くとしましょう。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd atcoder
+&amp;gt; acc new abc250
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;&amp;gt; acc new abc000&lt;/code&gt;でその回の解答用フォルダとテストケースのダウンロードが可能です。すると、以下のように問題のリストが表示され、Spaceキーで問題の選択、Enterキーでフォルダ作成ができます。aキー -&amp;gt; Enterで全問を一括で選択できます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;abc250/contest.acc.json created.
+create project of AtCoder Beginner Contest 250
+? select tasks (Press &amp;lt;space&amp;gt; to select, &amp;lt;a&amp;gt; to toggle all, &amp;lt;i&amp;gt; to invert selection)
+&amp;gt;(*) A Adjacent Squares
+ ( ) B Enlarged Checker Board
+ ( ) C Adjacent Swaps
+ ( ) D 250-like Number
+ ( ) E Prefix Equality
+ ( ) F One Fourth
+ ( ) G Stonks
+(Move up and down to reveal more choices)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;仮に全選択すると解答用フォルダはこんな感じになっているかと思います。a問題を解くときは、&lt;code&gt;a&lt;/code&gt;フォルダにある&lt;code&gt;main.py&lt;/code&gt;にコードを書いていきます。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 47; 
+			flex-basis: 113px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21.png&#34; data-size=&#34;316x667&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21.png&#34;
+			width=&#34;316&#34;
+			height=&#34;667&#34;
+			srcset=&#34;https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21_hucab9eb727b6d5577ba1da6e926988ada_25521_480x0_resize_box_3.png 480w, https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21_hucab9eb727b6d5577ba1da6e926988ada_25521_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解答テストケース検証&#34;&gt;解答、テストケース検証&lt;/h3&gt;
+&lt;p&gt;　&lt;code&gt;main.py&lt;/code&gt;に解答を書き終えたら、テストします。コンソールから&lt;code&gt;a&lt;/code&gt;フォルダに移動してから、以下を実行します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd abc250/a
+&amp;gt; oj t -c &amp;#34;python main.py&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;すると、テストケースの検証結果が返ってきます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;\abc250\a&amp;gt; oj t -c &amp;#34;python main.py&amp;#34;
+[INFO] online-judge-tools 11.5.1 (+ online-judge-api-client 10.10.0)
+[INFO] 6 cases found
+[WARNING] GNU time is not available: time
+
+[INFO] sample-1
+[INFO] time: 0.065499 sec
+[SUCCESS] AC
+
+[INFO] sample-2
+[INFO] time: 0.050322 sec
+[SUCCESS] AC
+
+[INFO] sample-3
+[INFO] time: 0.049653 sec
+[SUCCESS] AC
+
+[INFO] sample-4
+[INFO] time: 0.051948 sec
+[SUCCESS] AC
+
+[INFO] sample-5
+[INFO] time: 0.046560 sec
+[SUCCESS] AC
+
+[INFO] sample-6
+[INFO] time: 0.046376 sec
+[SUCCESS] AC
+
+[INFO] slowest: 0.065499 sec  (for sample-1)
+[SUCCESS] test success: 6 cases
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;いい感じにACが出てていい感じですね。&lt;/p&gt;
+&lt;h3 id=&#34;提出&#34;&gt;提出&lt;/h3&gt;
+&lt;p&gt;　テスト結果がいい感じだったので提出します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc submit main.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;提出すると、自動的にAtcoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。&lt;/p&gt;
+&lt;h3 id=&#34;問題追加&#34;&gt;問題追加&lt;/h3&gt;
+&lt;p&gt;　例えば、&lt;a class=&#34;link&#34; href=&#34;https://twoooooda.net/post/introduce-atcoder-cli/#%e8%a7%a3%e7%ad%94%e7%94%a8%e3%83%95%e3%82%a9%e3%83%ab%e3%83%80%e4%bd%9c%e6%88%90&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;4.1&lt;/a&gt;でa問題のフォルダのみを作成し、後にb問題も解きたくなったとき、以下のコマンドで追加ができます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc add
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;そうすると、同じような問題選択画面が表示され、任意の問題を追加できます。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>AutoHotKeyを導入してみた</title>
         <link>https://twoooooda.net/post/introduce-autohotkey/</link>
         <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
