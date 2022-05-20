@@ -13,7 +13,7 @@
         
         <guid>https://twoooooda.net/post/introduce-atcoder-cli/</guid>
         <description>&lt;h2 id=&#34;いきさつ&#34;&gt;いきさつ&lt;/h2&gt;
-&lt;p&gt;　ここ最近、諸事情あって競技プログラミングで有名なatcoderに参戦したのですが、atcoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていた&lt;strong&gt;atcoder-cli&lt;/strong&gt;というものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。&lt;br&gt;
+&lt;p&gt;　ここ最近、諸事情あって競技プログラミングで有名なAtCoderに参戦したのですが、AtCoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていた&lt;strong&gt;atcoder-cli&lt;/strong&gt;というものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。&lt;br&gt;
 &lt;!-- raw HTML omitted --&gt;&lt;br&gt;
 &lt;!-- raw HTML omitted --&gt;
 &lt;strong&gt;参考文献&lt;/strong&gt;&lt;br&gt;
@@ -25,7 +25,12 @@
     &gt;atcoder-cli チュートリアル（作成者様謹製のチュートリアル）&lt;/a&gt;
 &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 &lt;h2 id=&#34;atcoder-cliとは&#34;&gt;atcoder-cliとは？&lt;/h2&gt;
-&lt;p&gt;　atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的にPythonでAtcoderに参戦することを前提に進めていきます。&lt;/p&gt;
+&lt;p&gt;　atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的に&lt;strong&gt;Python&lt;/strong&gt;でAtCoderに参戦することを前提に進めていきます。&lt;/p&gt;
+&lt;h2 id=&#34;導入方法&#34;&gt;導入方法&lt;/h2&gt;
+&lt;p&gt;　基本的には&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;さっきのチュートリアル&lt;/a&gt;に従ってatcoder-cliと、セットでほぼ使うであろう &lt;strong&gt;online-judge-tools&lt;/strong&gt;も一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://qiita.com/mk185/items/7ad004bf202f400daea1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Node.js・npmのインストール&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&#34;環境&#34;&gt;環境&lt;/h3&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -45,12 +50,7 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;導入方法&#34;&gt;導入方法&lt;/h2&gt;
-&lt;p&gt;　基本的には&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;さっきのチュートリアル&lt;/a&gt;に従ってatcoder-cliと、セットでほぼ使うであろう &lt;strong&gt;online-judge-tools&lt;/strong&gt;も一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。&lt;br&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://qiita.com/mk185/items/7ad004bf202f400daea1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Node.js・npmのインストール&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;インストールコマンド&#34;&gt;インストールコマンド&lt;/h3&gt;
+&lt;h3 id=&#34;インストール&#34;&gt;インストール&lt;/h3&gt;
 &lt;p&gt;　online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; &amp;gt; pip install online-judge-tools
  &amp;gt; npm install -g atcoder-cli
@@ -160,11 +160,11 @@ create project of AtCoder Beginner Contest 250
 &lt;h3 id=&#34;提出&#34;&gt;提出&lt;/h3&gt;
 &lt;p&gt;　テスト結果がいい感じだったので提出します。&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc submit main.py
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;提出すると、自動的にAtcoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;提出すると、自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。&lt;/p&gt;
 &lt;h3 id=&#34;問題追加&#34;&gt;問題追加&lt;/h3&gt;
-&lt;p&gt;　例えば、&lt;a class=&#34;link&#34; href=&#34;https://twoooooda.net/post/introduce-atcoder-cli/#%e8%a7%a3%e7%ad%94%e7%94%a8%e3%83%95%e3%82%a9%e3%83%ab%e3%83%80%e4%bd%9c%e6%88%90&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;4.1&lt;/a&gt;でa問題のフォルダのみを作成し、後にb問題も解きたくなったとき、以下のコマンドで追加ができます。&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc add
+&lt;p&gt;　例えば、4.1でa問題のフォルダのみを作成し、後にb問題以降も解きたくなったとき、&lt;code&gt;abc250&lt;/code&gt;のフォルダに戻り、以下のコマンドで追加ができます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd ..（一つ上の階層に戻る）
+&amp;gt; acc add
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;そうすると、同じような問題選択画面が表示され、任意の問題を追加できます。&lt;/p&gt;
 </description>
         </item>
