@@ -24,9 +24,9 @@ slug="Introduce-atcoder-cli"
 <br>  
 <br>
 **参考文献**  
-[AtCoder 環境構築 for Python](https://scrapbox.io/hitech/%F0%9F%8F%83_AtCoder_%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89_for_Python)  
-[コマンドラインツールatcoder-cliを公開しました（作成者様のサイト）](http://tatamo.81.la/blog/2018/12/07/atcoder-cli/)  
-[atcoder-cli チュートリアル（作成者様謹製のチュートリアル）](http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/)
+- [AtCoder 環境構築 for Python](https://scrapbox.io/hitech/%F0%9F%8F%83_AtCoder_%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89_for_Python)  
+- [コマンドラインツールatcoder-cliを公開しました（作成者様のサイト）](http://tatamo.81.la/blog/2018/12/07/atcoder-cli/)  
+- [atcoder-cli チュートリアル（作成者様謹製のチュートリアル）](http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/)
 <br>  
 
 
@@ -37,7 +37,7 @@ slug="Introduce-atcoder-cli"
   
 ## 導入方法
 　基本的には[さっきのチュートリアル](http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/)に従ってatcoder-cliと、セットでほぼ使うであろう **online-judge-tools**も一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。  
-[Node.js・npmのインストール](https://qiita.com/mk185/items/7ad004bf202f400daea1)
+[Node.js・npmのインストール](https://dev.macha795.com/windows10-node-js-npm-install/)
   
 ### 環境
 | Python（Anaconda） | 3.8.8  |
@@ -61,7 +61,7 @@ slug="Introduce-atcoder-cli"
 <br>
 
 ### ログイン
-　atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtcoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。
+　atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtCoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。
 ```
 > oj login https://atcoder.jp/
 ```
@@ -129,7 +129,7 @@ create project of AtCoder Beginner Contest 250
 ![](2022-05-21.png) 
 
 ### 解答、テストケース検証
-　`main.py`に解答を書き終えたら、テストします。コンソールから`a`フォルダに移動してから、以下を実行します。
+　`main.py`に解答を書き終えたら、テストします。コンソールから`a`フォルダに移動して、以下を実行します。
 ```
 > cd abc250/a
 > oj t -c "python main.py"
@@ -175,10 +175,10 @@ C:\Users\<username>\abc250\a> oj t -c "python main.py"
 ```
 > acc submit main.py
 ```
-提出すると、自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。
+提出に成功すると、自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。
 
 ### 問題追加
-　例えば、4.1でa問題のフォルダのみを作成し、後にb問題以降も解きたくなったとき、`abc250`のフォルダに戻り、以下のコマンドで追加ができます。
+　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、`abc250`のフォルダに戻り、``acc add``で追加ができます。
 ```
 > cd ..（一つ上の階層に戻る）
 > acc add
