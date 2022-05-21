@@ -148,20 +148,22 @@
 <p>　ここ最近、諸事情あって競技プログラミングで有名なAtCoderに参戦したのですが、AtCoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていた<strong>atcoder-cli</strong>というものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。<br>
 <!-- raw HTML omitted --><br>
 <!-- raw HTML omitted -->
-<strong>参考文献</strong><br>
-<a class="link" href="https://scrapbox.io/hitech/%F0%9F%8F%83_AtCoder_%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89_for_Python"  target="_blank" rel="noopener"
-    >AtCoder 環境構築 for Python</a><br>
-<a class="link" href="http://tatamo.81.la/blog/2018/12/07/atcoder-cli/"  target="_blank" rel="noopener"
-    >コマンドラインツールatcoder-cliを公開しました（作成者様のサイト）</a><br>
-<a class="link" href="http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/"  target="_blank" rel="noopener"
+<strong>参考文献</strong></p>
+<ul>
+<li><a class="link" href="https://scrapbox.io/hitech/%F0%9F%8F%83_AtCoder_%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89_for_Python"  target="_blank" rel="noopener"
+    >AtCoder 環境構築 for Python</a></li>
+<li><a class="link" href="http://tatamo.81.la/blog/2018/12/07/atcoder-cli/"  target="_blank" rel="noopener"
+    >コマンドラインツールatcoder-cliを公開しました（作成者様のサイト）</a></li>
+<li><a class="link" href="http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/"  target="_blank" rel="noopener"
     >atcoder-cli チュートリアル（作成者様謹製のチュートリアル）</a>
-<!-- raw HTML omitted --></p>
+<!-- raw HTML omitted --></li>
+</ul>
 <h2 id="atcoder-cliとは">atcoder-cliとは？</h2>
 <p>　atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的に<strong>Python</strong>でAtCoderに参戦することを前提に進めていきます。</p>
 <h2 id="導入方法">導入方法</h2>
 <p>　基本的には<a class="link" href="http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/"  target="_blank" rel="noopener"
     >さっきのチュートリアル</a>に従ってatcoder-cliと、セットでほぼ使うであろう <strong>online-judge-tools</strong>も一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。<br>
-<a class="link" href="https://qiita.com/mk185/items/7ad004bf202f400daea1"  target="_blank" rel="noopener"
+<a class="link" href="https://dev.macha795.com/windows10-node-js-npm-install/"  target="_blank" rel="noopener"
     >Node.js・npmのインストール</a></p>
 <h3 id="環境">環境</h3>
 <table>
@@ -190,7 +192,7 @@
 <pre tabindex="0"><code>&gt; acc -h
 </code></pre><!-- raw HTML omitted -->
 <h3 id="ログイン">ログイン</h3>
-<p>　atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtcoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。</p>
+<p>　atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtCoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。</p>
 <pre tabindex="0"><code>&gt; oj login https://atcoder.jp/
 </code></pre><p>次にatcoder-cliの方にログイン。</p>
 <pre tabindex="0"><code>&gt; acc login
@@ -253,7 +255,7 @@ create project of AtCoder Beginner Contest 250
 	
 </figure></p>
 <h3 id="解答テストケース検証">解答、テストケース検証</h3>
-<p>　<code>main.py</code>に解答を書き終えたら、テストします。コンソールから<code>a</code>フォルダに移動してから、以下を実行します。</p>
+<p>　<code>main.py</code>に解答を書き終えたら、テストします。コンソールから<code>a</code>フォルダに移動して、以下を実行します。</p>
 <pre tabindex="0"><code>&gt; cd abc250/a
 &gt; oj t -c &#34;python main.py&#34;
 </code></pre><p>すると、テストケースの検証結果が返ってきます。</p>
@@ -292,9 +294,9 @@ create project of AtCoder Beginner Contest 250
 <h3 id="提出">提出</h3>
 <p>　テスト結果がいい感じだったので提出します。</p>
 <pre tabindex="0"><code>&gt; acc submit main.py
-</code></pre><p>提出すると、自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。</p>
+</code></pre><p>提出に成功すると、自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。</p>
 <h3 id="問題追加">問題追加</h3>
-<p>　例えば、4.1でa問題のフォルダのみを作成し、後にb問題以降も解きたくなったとき、<code>abc250</code>のフォルダに戻り、以下のコマンドで追加ができます。</p>
+<p>　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、<code>abc250</code>のフォルダに戻り、<code>acc add</code>で追加ができます。</p>
 <pre tabindex="0"><code>&gt; cd ..（一つ上の階層に戻る）
 &gt; acc add
 </code></pre><p>そうすると、同じような問題選択画面が表示され、任意の問題を追加できます。</p>
