@@ -92,7 +92,7 @@ C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\atcoder-cli-nodejs\Config
 &lt;p&gt;　ようやく使用法編です。今回は&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;&lt;/code&gt;の中に&lt;code&gt;atcoder&lt;/code&gt;というフォルダを作り、その中で作業することとします（ここは自由です）。問題は仮にabc250のa問題を解くとしましょう。&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd atcoder
 &amp;gt; acc new abc250
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;&amp;gt; acc new abc000&lt;/code&gt;でその回の解答用フォルダとテストケースのダウンロードが可能です。すると、以下のように問題のリストが表示され、Spaceキーで問題の選択、Enterキーでフォルダ作成ができます。aキー -&amp;gt; Enterで全問を一括で選択できます。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;&amp;gt; acc new abc000&lt;/code&gt;でその回の解答用フォルダとテストケースのダウンロードが可能です。すると以下のように問題のリストが表示され、Spaceキーで問題の選択、Enterキーでフォルダ作成ができます。aキー -&amp;gt; Enterで全問を一括で選択できます。&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;abc250/contest.acc.json created.
 create project of AtCoder Beginner Contest 250
 ? select tasks (Press &amp;lt;space&amp;gt; to select, &amp;lt;a&amp;gt; to toggle all, &amp;lt;i&amp;gt; to invert selection)
@@ -123,7 +123,7 @@ create project of AtCoder Beginner Contest 250
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;解答テストケース検証&#34;&gt;解答、テストケース検証&lt;/h3&gt;
-&lt;p&gt;　&lt;code&gt;main.py&lt;/code&gt;に解答を書き終えたら、テストします。コンソールから&lt;code&gt;a&lt;/code&gt;フォルダに移動して、以下を実行します。&lt;/p&gt;
+&lt;p&gt;　&lt;code&gt;main.py&lt;/code&gt;に解答を書き終えたら、テストします。コンソールから&lt;code&gt;a&lt;/code&gt;フォルダに移動して、コマンドを実行します。&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd abc250/a
 &amp;gt; oj t -c &amp;#34;python main.py&amp;#34;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;すると、テストケースの検証結果が返ってきます。&lt;/p&gt;
@@ -162,12 +162,12 @@ create project of AtCoder Beginner Contest 250
 &lt;h3 id=&#34;提出&#34;&gt;提出&lt;/h3&gt;
 &lt;p&gt;　テスト結果がいい感じだったので提出します。&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc submit main.py
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;提出に成功すると、自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;提出に成功すると自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。&lt;/p&gt;
 &lt;h3 id=&#34;問題追加&#34;&gt;問題追加&lt;/h3&gt;
-&lt;p&gt;　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、&lt;code&gt;abc250&lt;/code&gt;のフォルダに戻り、&lt;code&gt;acc add&lt;/code&gt;で追加ができます。&lt;/p&gt;
+&lt;p&gt;　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、&lt;code&gt;abc250&lt;/code&gt;のフォルダに戻って&lt;code&gt;acc add&lt;/code&gt;で追加ができます。&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd ..（一つ上の階層に戻る）
 &amp;gt; acc add
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;そうすると、同じような問題選択画面が表示され、任意の問題を追加できます。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;そうすると同じような問題選択画面が表示され、任意の問題を追加できます。&lt;/p&gt;
 </description>
         </item>
         <item>

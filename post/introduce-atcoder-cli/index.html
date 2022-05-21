@@ -224,7 +224,7 @@ C:\Users\&lt;username&gt;\AppData\Roaming\atcoder-cli-nodejs\Config
 <p>　ようやく使用法編です。今回は<code>C:\Users\&lt;username&gt;</code>の中に<code>atcoder</code>というフォルダを作り、その中で作業することとします（ここは自由です）。問題は仮にabc250のa問題を解くとしましょう。</p>
 <pre tabindex="0"><code>&gt; cd atcoder
 &gt; acc new abc250
-</code></pre><p><code>&gt; acc new abc000</code>でその回の解答用フォルダとテストケースのダウンロードが可能です。すると、以下のように問題のリストが表示され、Spaceキーで問題の選択、Enterキーでフォルダ作成ができます。aキー -&gt; Enterで全問を一括で選択できます。</p>
+</code></pre><p><code>&gt; acc new abc000</code>でその回の解答用フォルダとテストケースのダウンロードが可能です。すると以下のように問題のリストが表示され、Spaceキーで問題の選択、Enterキーでフォルダ作成ができます。aキー -&gt; Enterで全問を一括で選択できます。</p>
 <pre tabindex="0"><code>abc250/contest.acc.json created.
 create project of AtCoder Beginner Contest 250
 ? select tasks (Press &lt;space&gt; to select, &lt;a&gt; to toggle all, &lt;i&gt; to invert selection)
@@ -255,7 +255,7 @@ create project of AtCoder Beginner Contest 250
 	
 </figure></p>
 <h3 id="解答テストケース検証">解答、テストケース検証</h3>
-<p>　<code>main.py</code>に解答を書き終えたら、テストします。コンソールから<code>a</code>フォルダに移動して、以下を実行します。</p>
+<p>　<code>main.py</code>に解答を書き終えたら、テストします。コンソールから<code>a</code>フォルダに移動して、コマンドを実行します。</p>
 <pre tabindex="0"><code>&gt; cd abc250/a
 &gt; oj t -c &#34;python main.py&#34;
 </code></pre><p>すると、テストケースの検証結果が返ってきます。</p>
@@ -294,12 +294,12 @@ create project of AtCoder Beginner Contest 250
 <h3 id="提出">提出</h3>
 <p>　テスト結果がいい感じだったので提出します。</p>
 <pre tabindex="0"><code>&gt; acc submit main.py
-</code></pre><p>提出に成功すると、自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。</p>
+</code></pre><p>提出に成功すると自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。</p>
 <h3 id="問題追加">問題追加</h3>
-<p>　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、<code>abc250</code>のフォルダに戻り、<code>acc add</code>で追加ができます。</p>
+<p>　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、<code>abc250</code>のフォルダに戻って<code>acc add</code>で追加ができます。</p>
 <pre tabindex="0"><code>&gt; cd ..（一つ上の階層に戻る）
 &gt; acc add
-</code></pre><p>そうすると、同じような問題選択画面が表示され、任意の問題を追加できます。</p>
+</code></pre><p>そうすると同じような問題選択画面が表示され、任意の問題を追加できます。</p>
 
 </section>
 
