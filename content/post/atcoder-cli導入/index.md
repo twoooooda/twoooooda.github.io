@@ -111,7 +111,7 @@ C:\Users\<username>\AppData\Roaming\atcoder-cli-nodejs\Config
 > cd atcoder
 > acc new abc250
 ```
-`> acc new abc000`でその回の解答用フォルダとテストケースのダウンロードが可能です。すると、以下のように問題のリストが表示され、Spaceキーで問題の選択、Enterキーでフォルダ作成ができます。aキー -> Enterで全問を一括で選択できます。
+`> acc new abc000`でその回の解答用フォルダとテストケースのダウンロードが可能です。すると以下のように問題のリストが表示され、Spaceキーで問題の選択、Enterキーでフォルダ作成ができます。aキー -> Enterで全問を一括で選択できます。
 ```
 abc250/contest.acc.json created.
 create project of AtCoder Beginner Contest 250
@@ -129,7 +129,7 @@ create project of AtCoder Beginner Contest 250
 ![](2022-05-21.png) 
 
 ### 解答、テストケース検証
-　`main.py`に解答を書き終えたら、テストします。コンソールから`a`フォルダに移動して、以下を実行します。
+　`main.py`に解答を書き終えたら、テストします。コンソールから`a`フォルダに移動して、コマンドを実行します。
 ```
 > cd abc250/a
 > oj t -c "python main.py"
@@ -175,12 +175,12 @@ C:\Users\<username>\abc250\a> oj t -c "python main.py"
 ```
 > acc submit main.py
 ```
-提出に成功すると、自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。
+提出に成功すると自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。
 
 ### 問題追加
-　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、`abc250`のフォルダに戻り、``acc add``で追加ができます。
+　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、`abc250`のフォルダに戻って``acc add``で追加ができます。
 ```
 > cd ..（一つ上の階層に戻る）
 > acc add
 ```
-そうすると、同じような問題選択画面が表示され、任意の問題を追加できます。
+そうすると同じような問題選択画面が表示され、任意の問題を追加できます。
