@@ -6,7 +6,336 @@
         <description>Recent content on いっとりうむの足跡</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
-        <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 18 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>もらった左手デバイスのキースイッチを改造した話</title>
+        <link>https://twoooooda.net/post/remodeled-left-hand-device/</link>
+        <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/remodeled-left-hand-device/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/remodeled-left-hand-device/IMG_4369.JPEG" alt="Featured image of post もらった左手デバイスのキースイッチを改造した話" /&gt;&lt;p&gt;　先日友人からAキーが利かなくなったゲーム用の左手デバイスをもらったので、修繕して使うつもりでしたが、ついでに改造することにしました（私の嫌いな青軸キースイッチだったので）。&lt;/p&gt;
+&lt;h2 id=&#34;デバイスと初期状態&#34;&gt;デバイスと初期状態&lt;/h2&gt;
+&lt;p&gt;　もらった左手デバイスはアマゾンでよく見る&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/5EQnRBB&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こういうやつ&lt;/a&gt;でした。いかにも中華製でしたが別段欠陥があるとかではなく、もらった時点でもAキーが利かない以外特に問題なく使えました。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4354.JPEG&#34; data-size=&#34;2048x1536&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4354.JPEG&#34;
+			width=&#34;2048&#34;
+			height=&#34;1536&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4354_hu891ba7bc02638d0e1a3b36e007200971_1085248_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4354_hu891ba7bc02638d0e1a3b36e007200971_1085248_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;もらった時の状態（分解途中）&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;もらった時の状態（分解途中）&lt;/figcaption&gt;
+	
+&lt;/figure&gt;  &lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4355.JPEG&#34; data-size=&#34;2048x1536&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4355.JPEG&#34;
+			width=&#34;2048&#34;
+			height=&#34;1536&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4355_hu262c6ef2afc0c227652b4fcbf174eb22_1115170_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4355_hu262c6ef2afc0c227652b4fcbf174eb22_1115170_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;キーキャップを取ったところ&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;キーキャップを取ったところ&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;分解&#34;&gt;分解&lt;/h2&gt;
+&lt;p&gt;　分解も特に問題なくできました。ネジの形が特殊とか、引っかかってるツメが頑強だったとかもなく、一部のゴム足をはがすだけでネジも全て回せました。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4353.JPEG&#34; data-size=&#34;2048x1536&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4353.JPEG&#34;
+			width=&#34;2048&#34;
+			height=&#34;1536&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4353_hub3cd9d8059927a91057113ed4e39b30b_952508_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4353_hub3cd9d8059927a91057113ed4e39b30b_952508_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;分解中&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;分解中&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;キースイッチ摘出&#34;&gt;キースイッチ摘出&lt;/h2&gt;
+&lt;p&gt;　中を開けてみると、案の定キースイッチは全てはんだ付けされていました。めんどくさいなー&amp;hellip;と思いつつも、まさかホットスワップ式（はんだ付け無しでキースイッチを固定できる仕組み）であるとは微塵も思っていなかったので、大人しくはんだを吸い取りながら35個あったキースイッチを全て取り外しました。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4356.JPEG&#34; data-size=&#34;2048x1536&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4356.JPEG&#34;
+			width=&#34;2048&#34;
+			height=&#34;1536&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4356_hu8c49434d07683607be8e4a7fd4ec49ca_975190_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4356_hu8c49434d07683607be8e4a7fd4ec49ca_975190_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;スイッチ摘出中&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;スイッチ摘出中&lt;/figcaption&gt;
+	
+&lt;/figure&gt;  &lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4358.JPEG&#34; data-size=&#34;2048x1536&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4358.JPEG&#34;
+			width=&#34;2048&#34;
+			height=&#34;1536&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4358_hu7ed3a713735cb9207e93f15d0b562314_714025_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4358_hu7ed3a713735cb9207e93f15d0b562314_714025_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;はんだごての先が曲がるというアクシデントも&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;はんだごての先が曲がるというアクシデントも&lt;/figcaption&gt;
+	
+&lt;/figure&gt;  &lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4359.JPEG&#34; data-size=&#34;2048x1536&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4359.JPEG&#34;
+			width=&#34;2048&#34;
+			height=&#34;1536&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4359_hu4096965e21d3c16c535da2e30cd22c93_1134162_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4359_hu4096965e21d3c16c535da2e30cd22c93_1134162_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;全摘完了&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;全摘完了&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;新しいキースイッチ選定&#34;&gt;新しいキースイッチ選定&lt;/h2&gt;
+&lt;p&gt;　自分は普段&lt;a class=&#34;link&#34; href=&#34;https://twoooooda.net/post/keybord-built-by-myself/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;いつしかの記事&lt;/a&gt;で作ったキーボードを使っていて、これには &lt;strong&gt;FEKER like Holy Panda&lt;/strong&gt; というタクタイルのキースイッチを採用しています。タクタイルのキースイッチは文字を打つにはちょうどいいのですが、ゲームにはあまり向かないなぁと個人的に思っていたので（Holy Pandaの押下圧が気持ち重めだったのもある）、今回はゲーム用に使う予定だったのでリニアスイッチにすることにしました。
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;　最終的には &lt;strong&gt;Tecsee Jaditeキースイッチ&lt;/strong&gt; というリニアキースイッチを採用しました。&lt;a class=&#34;link&#34; href=&#34;https://talpkeyboard.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TALP KEYBOARD&lt;/a&gt;さんという国内のサイトで買ったのですが、現在（2022年10月時点）は取り扱いが無いようです。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 283; 
+			flex-basis: 681px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/FakwZqmakAAGSgH.jpg&#34; data-size=&#34;1113x392&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/FakwZqmakAAGSgH.jpg&#34;
+			width=&#34;1113&#34;
+			height=&#34;392&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/FakwZqmakAAGSgH_hu8f554f34716abb59c5b0afb7aad933e9_58212_480x0_resize_q75_box.jpg 480w, https://twoooooda.net/post/remodeled-left-hand-device/FakwZqmakAAGSgH_hu8f554f34716abb59c5b0afb7aad933e9_58212_1024x0_resize_q75_box.jpg 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;かつての商品ページ&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;かつての商品ページ&lt;/figcaption&gt;
+	
+&lt;/figure&gt; &lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4361.JPEG&#34; data-size=&#34;2048x1536&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4361.JPEG&#34;
+			width=&#34;2048&#34;
+			height=&#34;1536&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4361_hu35a68504a8236319be5a0882553e3a29_923740_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4361_hu35a68504a8236319be5a0882553e3a29_923740_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;梱包のようす&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;梱包のようす&lt;/figcaption&gt;
+	
+&lt;/figure&gt;  &lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4362.JPEG&#34; data-size=&#34;2048x1536&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4362.JPEG&#34;
+			width=&#34;2048&#34;
+			height=&#34;1536&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4362_hufbf765e0bc46417731b9e3d3fc09940f_617170_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4362_hufbf765e0bc46417731b9e3d3fc09940f_617170_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;エメラルドグリーンがミクさんみたいでキレイ&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;エメラルドグリーンがミクさんみたいでキレイ&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ここで問題が&#34;&gt;ここで問題が&lt;/h3&gt;
+&lt;p&gt;　届いたのでさぁ取り付けようと思ったのですが、なんとキースイッチが5ピンのタイプで、基板に刺さりませんでした&amp;hellip;クッソめんどくさかったのですが、泣く泣く5ピンのうち2ピンをニッパーで切り取るということを全てのキースイッチにしました。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 143; 
+			flex-basis: 344px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4363.JPEG&#34; data-size=&#34;497x346&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4363.JPEG&#34;
+			width=&#34;497&#34;
+			height=&#34;346&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4363_hu5e75b2a69dbdedf41095601cdaaade5f_53151_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4363_hu5e75b2a69dbdedf41095601cdaaade5f_53151_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;見ての通り5ピン&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;見ての通り5ピン&lt;/figcaption&gt;
+	
+&lt;/figure&gt; &lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 75; 
+			flex-basis: 180px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4364.JPEG&#34; data-size=&#34;1536x2048&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4364.JPEG&#34;
+			width=&#34;1536&#34;
+			height=&#34;2048&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4364_hubdba5cbf782efec9a13d7a7bf3fed508_922867_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4364_hubdba5cbf782efec9a13d7a7bf3fed508_922867_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;見てのとおり5ピンが刺さらない&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;見てのとおり5ピンが刺さらない&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;せっかくなのでlubeも&#34;&gt;せっかくなのでlubeも&lt;/h2&gt;
+&lt;p&gt;　前回キーボード自作した時のグリスが残っていたので、せっかくなのでlubeもしておきました。今回はたったの35キーだったので、比較的楽でした（前回は98キー）。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4367.JPEG&#34; data-size=&#34;2048x1536&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4367.JPEG&#34;
+			width=&#34;2048&#34;
+			height=&#34;1536&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4367_hud93008c93f068556d202696498c43450_1344802_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4367_hud93008c93f068556d202696498c43450_1344802_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;去年の年末の記憶が&amp;hellip;&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;去年の年末の記憶が…&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;スイッチ取り付け&#34;&gt;スイッチ取り付け&lt;/h2&gt;
+&lt;p&gt;　もう後ははんだ付けするだけです。コツをつかめばスイッチの摘出も取り付けもすぐに終わりました。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4368.JPEG&#34; data-size=&#34;2048x1536&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4368.JPEG&#34;
+			width=&#34;2048&#34;
+			height=&#34;1536&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4368_hu8964ee93f30ae450592d0c5e4c55da24_1004242_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4368_hu8964ee93f30ae450592d0c5e4c55da24_1004242_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;はんだづけ中&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;はんだづけ中&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;完成&#34;&gt;完成&lt;/h2&gt;
+&lt;p&gt;　組み立てて完成です。5ピンから3ピンに減らす過程でキースイッチを一個ダメにしてしまったので、Caps Lockキーだけ元の青軸スイッチのままになっています。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 140; 
+			flex-basis: 337px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4371.JPEG&#34; data-size=&#34;492x350&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4371.JPEG&#34;
+			width=&#34;492&#34;
+			height=&#34;350&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4371_hu155205f304300acc50e911ef88cf35ac_67137_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4371_hu155205f304300acc50e911ef88cf35ac_67137_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;ダメにしたスイッチ。端子の片方を切り取っちゃった&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;ダメにしたスイッチ。端子の片方を切り取っちゃった&lt;/figcaption&gt;
+	
+&lt;/figure&gt; &lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4369.JPEG&#34; data-size=&#34;2048x1536&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4369.JPEG&#34;
+			width=&#34;2048&#34;
+			height=&#34;1536&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4369_huaf94ac9080ace40d9d4667eb8de0c6a3_939664_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4369_huaf94ac9080ace40d9d4667eb8de0c6a3_939664_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;取り付け後&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;取り付け後&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用感&#34;&gt;使用感&lt;/h2&gt;
+&lt;p&gt;　やっぱりゲームにはリニア軸ですね（個人の意見）。lubeもしたので音も静かで良い感じです。ただ元が安価なデバイスなので、節々にチープな点が見えたり、軽いプラスチックの外装なので底打ちの音が微妙だったりしますが、総合的には改造してよかったなと思います。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 133; 
+			flex-basis: 320px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4372.JPEG&#34; data-size=&#34;2048x1536&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4372.JPEG&#34;
+			width=&#34;2048&#34;
+			height=&#34;1536&#34;
+			srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4372_hua6326a1f3940b7297dd54fb847e34e4b_855747_480x0_resize_q75_box.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4372_hua6326a1f3940b7297dd54fb847e34e4b_855747_1024x0_resize_q75_box.JPEG 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>atcoder-cliを導入してみた</title>
         <link>https://twoooooda.net/post/introduce-atcoder-cli/</link>
         <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
