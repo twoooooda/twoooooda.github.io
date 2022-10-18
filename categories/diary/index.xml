@@ -13,16 +13,19 @@
       <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
       
       <guid>https://twoooooda.net/post/introduce-atcoder-cli/</guid>
-      <description>いきさつ 　ここ最近、諸事情あって競技プログラミングで有名なAtCoderに参戦したのですが、AtCoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていたatcoder-cliというものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。
+      <description>いきさつ ここ最近、諸事情あって競技プログラミングで有名なAtCoderに参戦したのですが、AtCoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていたatcoder-cliというものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。
 参考文献
- AtCoder 環境構築 for Python コマンドラインツールatcoder-cliを公開しました（作成者様のサイト） atcoder-cli チュートリアル（作成者様謹製のチュートリアル）   atcoder-cliとは？ 　atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的にPythonでAtCoderに参戦することを前提に進めていきます。
-導入方法 　基本的にはさっきのチュートリアルに従ってatcoder-cliと、セットでほぼ使うであろう online-judge-toolsも一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。
+AtCoder 環境構築 for Python コマンドラインツールatcoder-cliを公開しました（作成者様のサイト） atcoder-cli チュートリアル（作成者様謹製のチュートリアル） atcoder-cliとは？ atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的にPythonでAtCoderに参戦することを前提に進めていきます。
+導入方法 基本的にはさっきのチュートリアルに従ってatcoder-cliと、セットでほぼ使うであろう online-judge-toolsも一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。
 Node.js・npmのインストール
-環境    Python（Anaconda） 3.8.8     pip 22.0.4   npm 6.14.6    インストール 　online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。
- &amp;gt; pip install online-judge-tools &amp;gt; npm install -g atcoder-cli そして、以下のコマンドが使用できればインストールされています。
-&amp;gt; acc -h ログイン 　atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtCoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。
+環境 Python（Anaconda） 3.8.8 pip 22.0.4 npm 6.14.6 インストール online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。
+&amp;gt; pip install online-judge-tools &amp;gt; npm install -g atcoder-cli そして、以下のコマンドが使用できればインストールされています。
+&amp;gt; acc -h ログイン atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtCoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。
 &amp;gt; oj login https://atcoder.jp/ 次にatcoder-cliの方にログイン。
-&amp;gt; acc login ここで、Linux等のCUIに普段から触れていると慣れているかもしれませんが、パスワードを入れる時に一見して入力できていないように見えるかもしれません。が、見えないようになっているだけで入力できています、大丈夫です。</description>
+&amp;gt; acc login ここで、Linux等のCUIに普段から触れていると慣れているかもしれませんが、パスワードを入れる時に一見して入力できていないように見えるかもしれません。が、見えないようになっているだけで入力できています、大丈夫です。
+Configファイルの編集 問題を解くときに、毎回main.pyの作成や問題用ディレクトリを作るのは面倒なので、自動化します。そのためにConfig.jsonを編集します。まずはConfigの場所の確認から。
+&amp;gt; acc config-dir C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\atcoder-cli-nodejs\Config 環境によってファイルの場所はまちまちになるかと思います。ファイルを開いて、以下みたいな感じに&amp;quot;default-test-dirname-format&amp;quot;と&amp;quot;default-template&amp;quot;:&amp;quot;python&amp;quot;を変更します。
+{ &amp;#34;oj-path&amp;#34;: &amp;#34;C:\\ProgramData\\Anaconda3\\Scripts\\oj.exe&amp;#34;, &amp;#34;default-contest-dirname-format&amp;#34;: &amp;#34;{ContestID}&amp;#34;, &amp;#34;default-task-dirname-format&amp;#34;: &amp;#34;{tasklabel}&amp;#34;, &amp;#34;default-test-dirname-format&amp;#34;: &amp;#34;test&amp;#34;, &amp;#34;default-task-choice&amp;#34;: &amp;#34;inquire&amp;#34;, &amp;#34;default-template&amp;#34;: &amp;#34;python&amp;#34; } 次に、上のConfig.</description>
     </item>
     
     <item>
@@ -31,13 +34,13 @@ Node.js・npmのインストール
       <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://twoooooda.net/post/introduce-autohotkey/</guid>
-      <description>導入を考えたきっかけ 　以前の記事でも述べた通り、自作キーボードに対応しているファームウェアがマジのゴミで、キー割り当てを変えられなかったので、いろいろ調べているうちにAutoHotKeyというものを見つけました。
-AutoHotKeyとは？ 　独自のプログラミング言語を用いて、キーボードのキー操作によるかなり柔軟なショートカットの作成や、普段あまり使わないキーを全く別のキーとして割り当てたり、メディアコントロールやPCのシステム操作を割り当てたりできます。参考
-導入方法 　基本的にこのサイトに従ってインストールして、拡張子を.ahkとしたテキストファイルを作り、そこに任意のショートカットやキーの割り当てを記述していきます。記法や文法、決まりごとは日本語のリファレンス(?)があるので、そちらを参照してください。
-　このAutoHotKeyを使う場合、拡張子が.ahkのファイル、あるいは.ahkのファイルから作成した.exeの実行ファイルを起動し、タスクトレイで常駐させておかなければなりません。なので、PC起動時に自動で該当のファイルが起動するようにしておくと便利です。私はこちらのサイトを参考に設定しました。
-実際に使う 　私がこのAutoHotKeyでやりたかったのは、&amp;quot;キーボード右上のPageUp、PageDownのキーをメディアの再生一時停止、次の曲ボタンへ割り当て&amp;quot; です。実際のコードはごく簡単なもので、以下のように書いたら思った通りに動いてくれました。
+      <description>導入を考えたきっかけ 以前の記事でも述べた通り、自作キーボードに対応しているファームウェアがマジのゴミで、キー割り当てを変えられなかったので、いろいろ調べているうちにAutoHotKeyというものを見つけました。
+AutoHotKeyとは？ 独自のプログラミング言語を用いて、キーボードのキー操作によるかなり柔軟なショートカットの作成や、普段あまり使わないキーを全く別のキーとして割り当てたり、メディアコントロールやPCのシステム操作を割り当てたりできます。参考
+導入方法 基本的にこのサイトに従ってインストールして、拡張子を.ahkとしたテキストファイルを作り、そこに任意のショートカットやキーの割り当てを記述していきます。記法や文法、決まりごとは日本語のリファレンス(?)があるので、そちらを参照してください。
+このAutoHotKeyを使う場合、拡張子が.ahkのファイル、あるいは.ahkのファイルから作成した.exeの実行ファイルを起動し、タスクトレイで常駐させておかなければなりません。なので、PC起動時に自動で該当のファイルが起動するようにしておくと便利です。私はこちらのサイトを参考に設定しました。
+実際に使う 私がこのAutoHotKeyでやりたかったのは、&amp;quot;キーボード右上のPageUp、PageDownのキーをメディアの再生一時停止、次の曲ボタンへ割り当て&amp;quot; です。実際のコードはごく簡単なもので、以下のように書いたら思った通りに動いてくれました。
 #InstallKeybdHook #UseHook PgUp::Media_Play_Pause PgDn::Media_Next return また、便利だと聞いたのでこちらのサイトを参考に、左右Altの空打ちで日本語入力と英字入力を切り変えられるようにしました。私は起動しないといけない実行ファイルが増えると嫌なので、実際に使うときはPageUp/Downキーをメディアコントロールに割り当てるコードと、alt-ime-ahk.ahkの内容を一つのファイルに統合しています(ファイル名をgeneral.ahkとしています)。
-導入してみて 　導入してしばらく使ってみましたが、とてもとても便利です。 タスクトレイに入るアイコンが一つ増えるのが最初は少し抵抗がありましたが。それを補って余りある恩恵を受けています。今後新しくショートカットが欲しくなったり、割り当てを変えたい時が来れば今使っているgeneral.ahkファイルに追記すればいいだけなので、使い方を多少覚えていればこれからもっと気軽に便利にしていくことができると思います。</description>
+導入してみて 導入してしばらく使ってみましたが、とてもとても便利です。 タスクトレイに入るアイコンが一つ増えるのが最初は少し抵抗がありましたが。それを補って余りある恩恵を受けています。今後新しくショートカットが欲しくなったり、割り当てを変えたい時が来れば今使っているgeneral.ahkファイルに追記すればいいだけなので、使い方を多少覚えていればこれからもっと気軽に便利にしていくことができると思います。</description>
     </item>
     
     <item>
@@ -46,7 +49,7 @@ AutoHotKeyとは？ 　独自のプログラミング言語を用いて、キー
       <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://twoooooda.net/post/hello-world/</guid>
-      <description>苦悩の末 　最近急にはてなブログやnoteとは違う個人ブログが欲しくなり、静的サイトジェネレーターであるHUGOと、勉強がてらGitHub Pages、Actionsを使ってブログを作ってみました。実はサイト作成にあたり数日間に渡り大変苦労したのですが、その話はHUGO等の使い方とともにまとめようと思います。
+      <description>苦悩の末 最近急にはてなブログやnoteとは違う個人ブログが欲しくなり、静的サイトジェネレーターであるHUGOと、勉強がてらGitHub Pages、Actionsを使ってブログを作ってみました。実はサイト作成にあたり数日間に渡り大変苦労したのですが、その話はHUGO等の使い方とともにまとめようと思います。
 ではまた。</description>
     </item>
     
