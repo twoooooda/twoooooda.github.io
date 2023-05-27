@@ -15,7 +15,7 @@ categories = [
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 image = "IMG_5159.jpeg"
-slug="m-piu-is-so-good"
+slug="millefoglie-is-so-good"
 +++
 
 
