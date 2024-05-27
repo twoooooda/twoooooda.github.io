@@ -4,71 +4,58 @@
     <title>Categories on いっとりうむの足跡</title>
     <link>https://twoooooda.net/categories/</link>
     <description>Recent content in Categories on いっとりうむの足跡</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Mon, 22 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://twoooooda.net/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>diary</title>
       <link>https://twoooooda.net/categories/diary/</link>
-      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://twoooooda.net/categories/diary/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ガジェット</title>
       <link>https://twoooooda.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</link>
-      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://twoooooda.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>散財</title>
       <link>https://twoooooda.net/categories/%E6%95%A3%E8%B2%A1/</link>
-      <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://twoooooda.net/categories/%E6%95%A3%E8%B2%A1/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>体験レポ</title>
       <link>https://twoooooda.net/categories/%E4%BD%93%E9%A8%93%E3%83%AC%E3%83%9D/</link>
-      <pubDate>Sun, 03 Oct 2021 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://twoooooda.net/categories/%E4%BD%93%E9%A8%93%E3%83%AC%E3%83%9D/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Rspberrypi</title>
       <link>https://twoooooda.net/categories/raspberrypi/</link>
-      <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://twoooooda.net/categories/raspberrypi/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Web</title>
       <link>https://twoooooda.net/categories/web/</link>
-      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://twoooooda.net/categories/web/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Unity</title>
       <link>https://twoooooda.net/categories/unity/</link>
-      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
-      
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://twoooooda.net/categories/unity/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

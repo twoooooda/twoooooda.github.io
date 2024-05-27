@@ -6,7 +6,248 @@
         <description>Recent content on いっとりうむの足跡</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
-        <lastBuildDate>Mon, 22 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>USB TVチューナーPX-S1UDを使ってテレビを視聴する最速手順</title>
+        <link>https://twoooooda.net/post/px-s1udandtvtest/</link>
+        <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/px-s1udandtvtest/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/px-s1udandtvtest/0f3010e5fa0dcb1600eb6a88167d6465.png" alt="Featured image of post USB TVチューナーPX-S1UDを使ってテレビを視聴する最速手順" /&gt;&lt;p&gt;基本的には &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.tsukumijima.net/article/tvtest-usage/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;先駆者様のサイト&lt;/a&gt;&lt;/strong&gt; をかいつまんだだけです。詳しい&amp;amp;正確な情報はそちらを参考にしてください。&lt;/p&gt;
+&lt;h2 id=&#34;用意するもの&#34;&gt;用意するもの&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;USB TVチューナー &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/7nwX0jt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PX-S1UD V2.0&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;今買えるものはだいたいV2.0な気がします。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B-CASカード&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;私はぶっ壊れたnasneから奪ってきました。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;USBカードリーダー&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/b5PTsTL&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;NTTのやつ（SCR3310V2.0）&lt;/a&gt;が多分一番有名で安定、この記事でもこのリーダーを使っている前提で進めます。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Windows PC&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;テレビ用同軸ケーブル
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ソフトウェアのダウンロードインストール&#34;&gt;ソフトウェアのダウンロード・インストール&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;PX-S1UDのドライバは&lt;a class=&#34;link&#34; href=&#34;https://www.plex-net.co.jp/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちら&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;カードリーダー（SCR3310V2.0）のドライバは&lt;a class=&#34;link&#34; href=&#34;https://www.ntt.com/business/services/application/authentication/jpki/download10.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちら&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.axfc.net/u/2503550&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;BonDriver-Siano&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PX-S1UDでテレビを見るために別途導入が必要なドライバです。BonDriverは他にも種類がありますが、私の環境ではこれしか動きませんでした。後述。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;TVTest&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windowsでテレビを見るためのソフトウェアです。これも私の環境では32bit版しか動きませんでした。ビルド済みのものは&lt;a class=&#34;link&#34; href=&#34;https://blog.tsukumijima.net/article/tvtest-usage/#toc3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちら&lt;/a&gt;にあります。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tvtestの準備&#34;&gt;TVTestの準備&lt;/h2&gt;
+&lt;h3 id=&#34;解凍フォルダの移動&#34;&gt;解凍・フォルダの移動&lt;/h3&gt;
+&lt;p&gt;　ビルド後のTVTestをダウンロードしてきたら、解凍して任意の場所に移動させます。この時、 &lt;strong&gt;C:\Users・C:\Program Files 以外のフォルダ&lt;/strong&gt; に移動させないといけないそうです。&lt;/p&gt;
+&lt;h3 id=&#34;directshow-フィルタのインストール&#34;&gt;DirectShow フィルタのインストール&lt;/h3&gt;
+&lt;p&gt;　Windows 10 では、日本のテレビ放送の映像コーデックである MPEG-2 をデコードして再生するのに必要な Microsoft DTV-DVD Video Decoder が標準ではインストールされていないそうなので、TVTest の作者さんが用意してくれているものでインストールします。&lt;a class=&#34;link&#34; href=&#34;https://blog.tsukumijima.net/article/tvtest-usage/#toc5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;詳しくは&lt;/a&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;TVTest フォルダ内にある [* filter-install.jse] を、管理者権限で実行してください。&lt;/p&gt;
+&lt;h3 id=&#34;bondriverのセットアップ&#34;&gt;BonDriverのセットアップ&lt;/h3&gt;
+&lt;p&gt;　環境や用途によってはBonDriverを複数種類使う可能性も考えられます。なのでTVTestの下に別途BonDriverというフォルダを作って、そこで一括管理する方法が推奨されています。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 294; 
+			flex-basis: 707px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/px-s1udandtvtest/e9550c6f4149126ddf8624b16b39048e.png&#34; data-size=&#34;870x295&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/e9550c6f4149126ddf8624b16b39048e.png&#34;
+			width=&#34;870&#34;
+			height=&#34;295&#34;
+			srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/e9550c6f4149126ddf8624b16b39048e_hu76d065b8708d7990cd60e5a9edf1873c_42473_480x0_resize_box_3.png 480w, https://twoooooda.net/post/px-s1udandtvtest/e9550c6f4149126ddf8624b16b39048e_hu76d065b8708d7990cd60e5a9edf1873c_42473_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 236; 
+			flex-basis: 567px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/px-s1udandtvtest/7ea95df318a7936955291669ac5e4f1f.png&#34; data-size=&#34;589x249&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/7ea95df318a7936955291669ac5e4f1f.png&#34;
+			width=&#34;589&#34;
+			height=&#34;249&#34;
+			srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/7ea95df318a7936955291669ac5e4f1f_hu10630d90a1c19ed53bb2cecc56e3b708_26908_480x0_resize_box_3.png 480w, https://twoooooda.net/post/px-s1udandtvtest/7ea95df318a7936955291669ac5e4f1f_hu10630d90a1c19ed53bb2cecc56e3b708_26908_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;こんなには要らない&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;こんなには要らない&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;tvtestのセットアップ&#34;&gt;TVTestのセットアップ&lt;/h3&gt;
+&lt;h4 id=&#34;初期設定&#34;&gt;初期設定&lt;/h4&gt;
+&lt;p&gt;　最初に起動すると、設定のポップアップウィンドウが出てきます。この設定はあとで変えられるので適当でも大丈夫です。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BonDriver … 今後 BonDriver 検索フォルダを変更するため今は空のままにしておく（後述）&lt;/li&gt;
+&lt;li&gt;H.264/AVCデコーダ … &lt;strong&gt;自動&lt;/strong&gt; のままで OK&lt;/li&gt;
+&lt;li&gt;H.265/HEVCデコーダ … &lt;strong&gt;自動&lt;/strong&gt; のままで OK&lt;/li&gt;
+&lt;li&gt;MPEG-2デコーダ … &lt;strong&gt;TVTest DTV Video Decoder&lt;/strong&gt; に変更する&lt;/li&gt;
+&lt;li&gt;映像レンダラ … &lt;strong&gt;EVR&lt;/strong&gt; に変更する&lt;/li&gt;
+&lt;li&gt;録画ファイルの保存フォルダ … TVTest で録画した番組の保存先フォルダをここで設定可能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;bondriverの参照&#34;&gt;BonDriverの参照&lt;/h4&gt;
+&lt;p&gt;　前述したBonDriverフォルダをTVTestから参照します。TVTestウィンドウ内の無を右クリックして設定を開きます。
+すると、&lt;strong&gt;一般&lt;/strong&gt;の中に&lt;strong&gt;BonDriver検索フォルダ&lt;/strong&gt;の項目があるので、先ほど作ったBonDriverフォルダを指定します。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 145; 
+			flex-basis: 348px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/px-s1udandtvtest/eebea229ec33c069c5b7b1c87df0fc8a.png&#34; data-size=&#34;1160x798&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/eebea229ec33c069c5b7b1c87df0fc8a.png&#34;
+			width=&#34;1160&#34;
+			height=&#34;798&#34;
+			srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/eebea229ec33c069c5b7b1c87df0fc8a_hu60e4ac5ec89861a7b9224f48469859eb_857556_480x0_resize_box_3.png 480w, https://twoooooda.net/post/px-s1udandtvtest/eebea229ec33c069c5b7b1c87df0fc8a_hu60e4ac5ec89861a7b9224f48469859eb_857556_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 285; 
+			flex-basis: 684px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/px-s1udandtvtest/5d311e1263af94d76df9b663d9203e74.png&#34; data-size=&#34;933x327&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/5d311e1263af94d76df9b663d9203e74.png&#34;
+			width=&#34;933&#34;
+			height=&#34;327&#34;
+			srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/5d311e1263af94d76df9b663d9203e74_hu0622703932ad984607b591b67c0f7502_54625_480x0_resize_box_3.png 480w, https://twoooooda.net/post/px-s1udandtvtest/5d311e1263af94d76df9b663d9203e74_hu0622703932ad984607b591b67c0f7502_54625_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			alt=&#34;相対パスでも良いらしい&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;相対パスでも良いらしい&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;strong&gt;ここで一度TVTestを再起動しておきましょう。&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h4 id=&#34;tsプロセッサー&#34;&gt;TSプロセッサー&lt;/h4&gt;
+&lt;p&gt;　TVTestでテレビを見る場合の一番大事な設定といっても過言ではないのが、一番下にある &lt;strong&gt;TSプロセッサ&lt;/strong&gt; の項目です。ここが設定されていないと上手くテレビが映りません。↓の画像のように設定します。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 143; 
+			flex-basis: 345px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/px-s1udandtvtest/43b7b2b665895a4a5b098258bfdecc1a.png&#34; data-size=&#34;778x541&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/43b7b2b665895a4a5b098258bfdecc1a.png&#34;
+			width=&#34;778&#34;
+			height=&#34;541&#34;
+			srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/43b7b2b665895a4a5b098258bfdecc1a_hu9d8450b30272dfe7a45fffb00e56da12_59983_480x0_resize_box_3.png 480w, https://twoooooda.net/post/px-s1udandtvtest/43b7b2b665895a4a5b098258bfdecc1a_hu9d8450b30272dfe7a45fffb00e56da12_59983_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h4 id=&#34;とりあえず見れるはず&#34;&gt;とりあえず見れるはず&lt;/h4&gt;
+&lt;p&gt;　ここまで設定すれば、TVTestのウィンドウの左下から適切なBonDriverを選ぶだけでとりあえずテレビが見れるはずです。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 68; 
+			flex-basis: 164px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/px-s1udandtvtest/6b52fc2a26d4b0f315a47dd19c779564.png&#34; data-size=&#34;226x330&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/6b52fc2a26d4b0f315a47dd19c779564.png&#34;
+			width=&#34;226&#34;
+			height=&#34;330&#34;
+			srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/6b52fc2a26d4b0f315a47dd19c779564_hu8e6d1601e2420108f322ccffe2102aff_22606_480x0_resize_box_3.png 480w, https://twoooooda.net/post/px-s1udandtvtest/6b52fc2a26d4b0f315a47dd19c779564_hu8e6d1601e2420108f322ccffe2102aff_22606_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tvtestを使う&#34;&gt;TVTestを使う&lt;/h2&gt;
+&lt;h3 id=&#34;チャンネルスキャン&#34;&gt;チャンネルスキャン&lt;/h3&gt;
+&lt;p&gt;　このままでは不便なので、設定からチャンネルスキャンをしましょう。これが正常に完了すると、TVTestウィンドウの左下の&amp;lt;チャンネル&amp;gt;のプルダウンからチャンネルを選択して、番組を視聴することができます。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 151; 
+			flex-basis: 363px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/px-s1udandtvtest/923ec1cc2a7143c847997ae3e89d31ab.png&#34; data-size=&#34;1295x856&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/923ec1cc2a7143c847997ae3e89d31ab.png&#34;
+			width=&#34;1295&#34;
+			height=&#34;856&#34;
+			srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/923ec1cc2a7143c847997ae3e89d31ab_hu68e8bc07b23dd5283000cdc21dacbce8_126997_480x0_resize_box_3.png 480w, https://twoooooda.net/post/px-s1udandtvtest/923ec1cc2a7143c847997ae3e89d31ab_hu68e8bc07b23dd5283000cdc21dacbce8_126997_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;h3 id=&#34;エラー表示&#34;&gt;エラー表示&lt;/h3&gt;
+&lt;p&gt;　テレビが映らない、何かがおかしいと思ったら、下のエラー表示を見てみるといいかもしれません。特に、B-CASカードによる復号ががうまく動いていない時は &lt;strong&gt;S&lt;/strong&gt; の値が爆増していくので、目安程度にはなります。
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 247; 
+			flex-basis: 593px&#34;
+	&gt;
+	&lt;a href=&#34;https://twoooooda.net/post/px-s1udandtvtest/c6ffb245329bae27efb690b44ae45dd6.png&#34; data-size=&#34;178x72&#34;&gt;
+		&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/c6ffb245329bae27efb690b44ae45dd6.png&#34;
+			width=&#34;178&#34;
+			height=&#34;72&#34;
+			srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/c6ffb245329bae27efb690b44ae45dd6_huf7a5bd0e7ac466e2c8f71bf05108e0d7_1904_480x0_resize_box_3.png 480w, https://twoooooda.net/post/px-s1udandtvtest/c6ffb245329bae27efb690b44ae45dd6_huf7a5bd0e7ac466e2c8f71bf05108e0d7_1904_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;とりあえず以上です。これはあくまでPX-S1UDとPCでテレビを見るための最短手順ですので、TVTestの設定などを練ればもっと便利に使えるはずです。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>エムピウ ミッレフォッリエを買ったら良すぎた話</title>
         <link>https://twoooooda.net/post/millefoglie-is-so-good/</link>
         <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
@@ -1707,10 +1948,10 @@ newuser@raspberrypi:~$ chmod 700 ~/.ssh
 &lt;p&gt;　やっていることはごく簡単で、数フレームに一回ランダムでRotationの値を変更し、Z方向に常に力を加え続けているだけです。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cs:Move_mosquite.cs&#34; data-lang=&#34;cs:Move_mosquite.cs&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;UnityEngine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Move_mosquite&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;MonoBehaviour&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Move_mosquite&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;MonoBehaviour&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;Rigidbody&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;float&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;freq&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;speed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;power&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;float&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;freq&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;speed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;power&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Start&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;

@@ -4,38 +4,30 @@
     <title>Pages on いっとりうむの足跡</title>
     <link>https://twoooooda.net/page/</link>
     <description>Recent content in Pages on いっとりうむの足跡</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Fri, 07 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://twoooooda.net/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About Me</title>
       <link>https://twoooooda.net/about-me/</link>
       <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://twoooooda.net/about-me/</guid>
-      <description>いっとりうむといいます。関西の大学の工学部に通っているオタクです。大学では主に電気関係の勉強をしており, サークルの運営もしています。VRやMRをはじめとした最新テクノロジー, 3Dプリンター等を用いたモノづくり, 映画やマンガが好きです。
-代表作 初自作VRゲーム、「VRブロック崩し・VRock(ブロック)!!」がだいたい完成しました！(フォント激ダサ問題を除いて)
-大学の学園祭で展示予定です！！ pic.twitter.com/J1Z8zefMb1
-&amp;mdash; いっとりうむ (@twoooooda) October 26, 2019 </description>
+      <description></description>
     </item>
-    
     <item>
       <title>Archives</title>
       <link>https://twoooooda.net/archives/</link>
       <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-      
       <guid>https://twoooooda.net/archives/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Search</title>
       <link>https://twoooooda.net/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://twoooooda.net/search/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
