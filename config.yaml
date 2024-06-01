@@ -2,7 +2,7 @@ baseurl: https://twoooooda.net/
 languageCode: ja-jp
 theme: hugo-theme-stack
 paginate: 5
-title: いっとりうむの足跡
+title: twoooooda.net
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -28,7 +28,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: img/icon.png
+    favicon: img/icon.ico
 
     footer:
         since: 2021
