@@ -186,15 +186,15 @@ menu:
           name: GitHub
           url: https://github.com/twoooooda/
           weight: -2
-          pre: github
+          pre: GITHUB1
           params:
               newTab: true          
           
         - identifier: Twitter
-          name: Twitter
+          name: TwitterX
           url: https://twitter.com/twoooooda
           weight: -3
-          pre: twitter
+          pre: X
           params:
               newTab: true   
 
