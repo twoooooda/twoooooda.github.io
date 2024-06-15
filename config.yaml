@@ -40,7 +40,7 @@ params:
 
     sidebar:
         emoji: false
-        subtitle: 私の日記や知見、ポートフォリオ等を書き散らすブログです。
+        subtitle: 私いっとりうむの日記や知見とかを適当に書き散らすブログです。
         avatar:
             enabled: true
             local: true
