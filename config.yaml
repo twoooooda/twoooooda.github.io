@@ -1,7 +1,7 @@
 baseurl: https://twoooooda.net/
 languageCode: ja-jp
 theme: hugo-theme-stack
-paginate: 5
+pagination.paperSize: 5
 title: twoooooda.net
 
 # Change it to your Disqus shortname before using
