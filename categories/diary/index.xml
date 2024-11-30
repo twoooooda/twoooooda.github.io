@@ -1,47 +1,722 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>diary on twoooooda.net</title>
-    <link>https://twoooooda.net/categories/diary/</link>
-    <description>Recent content in diary on twoooooda.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://twoooooda.net/categories/diary/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>USB TVチューナーPX-S1UDを使ってテレビを視聴する最速手順</title>
-      <link>https://twoooooda.net/post/px-s1udandtvtest/</link>
-      <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/px-s1udandtvtest/</guid>
-      <description>基本的には 先駆者様のサイト をかいつまんだだけです。詳しい&amp;amp;正確な情報はそちらを参考にしてください。&#xA;用意するもの USB TVチューナー PX-S1UD V2.0&#xA;今買えるものはだいたいV2.0な気がします。 B-CASカード&#xA;私はぶっ壊れたnasneから奪ってきました。 USBカードリーダー&#xA;NTTのやつ（SCR3310V2.0）が多分一番有名で安定、この記事でもこのリーダーを使っている前提で進めます。 Windows PC&#xA;テレビ用同軸ケーブル ソフトウェアのダウンロード・インストール PX-S1UDのドライバはこちら&#xA;カードリーダー（SCR3310V2.0）のドライバはこちら&#xA;BonDriver-Siano&#xA;PX-S1UDでテレビを見るために別途導入が必要なドライバです。BonDriverは他にも種類がありますが、私の環境ではこれしか動きませんでした。後述。 TVTest&#xA;Windowsでテレビを見るためのソフトウェアです。これも私の環境では32bit版しか動きませんでした。ビルド済みのものはこちらにあります。 TVTestの準備 解凍・フォルダの移動 ビルド後のTVTestをダウンロードしてきたら、解凍して任意の場所に移動させます。この時、 C:\Users・C:\Program Files 以外のフォルダ に移動させないといけないそうです。&#xA;DirectShow フィルタのインストール Windows 10 では、日本のテレビ放送の映像コーデックである MPEG-2 をデコードして再生するのに必要な Microsoft DTV-DVD Video Decoder が標準ではインストールされていないそうなので、TVTest の作者さんが用意してくれているものでインストールします。詳しくは&#xA;TVTest フォルダ内にある [* filter-install.jse] を、管理者権限で実行してください。&#xA;BonDriverのセットアップ 環境や用途によってはBonDriverを複数種類使う可能性も考えられます。なのでTVTestの下に別途BonDriverというフォルダを作って、そこで一括管理する方法が推奨されています。 こんなには要らない TVTestのセットアップ 初期設定 最初に起動すると、設定のポップアップウィンドウが出てきます。この設定はあとで変えられるので適当でも大丈夫です。&#xA;BonDriver … 今後 BonDriver 検索フォルダを変更するため今は空のままにしておく（後述） H.264/AVCデコーダ … 自動 のままで OK H.265/HEVCデコーダ … 自動 のままで OK MPEG-2デコーダ … TVTest DTV Video Decoder に変更する 映像レンダラ … EVR に変更する 録画ファイルの保存フォルダ … TVTest で録画した番組の保存先フォルダをここで設定可能 BonDriverの参照 前述したBonDriverフォルダをTVTestから参照します。TVTestウィンドウ内の無を右クリックして設定を開きます。 すると、一般の中にBonDriver検索フォルダの項目があるので、先ほど作ったBonDriverフォルダを指定します。 相対パスでも良いらしい ここで一度TVTestを再起動しておきましょう。</description>
-    </item>
-    <item>
-      <title>エムピウ ミッレフォッリエを買ったら良すぎた話</title>
-      <link>https://twoooooda.net/post/millefoglie-is-so-good/</link>
-      <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/millefoglie-is-so-good/</guid>
-      <description>最近財布を新調しました 今まではずっと長財布を使っていたのですが、昨今のキャッシュレスの波で現金を使わなくなり、だんだんと「なんでこんなデカい財布を持ち歩いてるんだ」と思うようになりました。 先代の財布を使い始めて既に4年くらい経過していたので、この機に小さい財布に変えようと思って探していると行きついたのが m+（エムピウ） というブランドの millefoglie（ミッレフォッリエ） という財布でした。 エムピウ公式サイト&#xA;エムピウ ミッレフォッリエとは ミッレフォッリエの「ミッレ」とは「千」、「フォリエ」とは「葉」を意味し、財布を横から見ると葉っぱが重なっているように見えることから名づけられたようです。 外側はぐるっと一枚の牛革で覆われており、ファスナーなどではなく二つの真鍮製のギボシでとめる形式です。 中身の構造はかなり独特で、カードポケットの下側にコインボックス、その下に札やレシートを挟みこんでカードフラップで抑えるような形です。&#xA;コインボックスは大きく開き、小銭の確認がとてもしやすい構造です。カードポケットは三つあり、それぞれに5枚ずつ、合計15枚程度まで入るようです。カードフラップに交通系ICとかを入れるとそのままかざして改札を通れます。 二つのギボシでとまっています 開いたときのようす。青いカードが入っているのがカードフラップ 実際に会計するときは自然とこういう持ち方になります 買ったモデル 私が買ったのは牛革の中でもプエブロレザーというレザーを使った millefoglie P25 PU.grigio です。 プエブロレザーとは牛革に敢えてやすりで傷をつける加工を施したレザーで、特に経年変化が早い上に変化の度合いが激しいことが特徴です。 この動画を見て頂くといかに変化が激しいかがわかると思います。&#xA;なお、このミッレフォッリエは全国的に品薄で、新品はほとんど市場に出回っていないというお話でした（2023年5月現在）。私が買ったものは僅かな不良で新品として市場に出なかったアウトレット品らしく、その在庫があったのも幸運だったようです。ちなみにアウトレットになった理由は聞きそびれたので、どこが不良なのかは今でもわかっていません。 販売サイト&#xA;ミッレフォッリエの良いところ 一番はやはり コンパクトである ということです。少し厚みはありますが、サイズ感はほとんどパスケースと大差なく、このサイズにかなりの量の現金とカード類を一緒に収納できる収納力も魅力です。&#xA;あとは、何といっても 質感 ！！丁寧に鞣された牛革を撫でるだけでもテンションが上がります。また、革の経年変化も楽しみのうちです。使っていくうちに革に光沢と傷が入り色も深みを増し、自分だけの財布に育てていく感じが、私は大好きです。&#xA;ミッレフォッリエのイマイチなところ コンパクト財布なので、外出先で不意に小銭が増えてしまうと、露骨に膨らんでしまうところは少し残念です。20枚以上とかになってしまうと閉まりきらないこともあるようです。また、一般的な長財布と違いカードポケットのカードを上から覗くことになるので、一覧性は落ちてしまいます。この点に関しては、三つのカードポケットに入れるカードを固定することで対応しています。 小銭10枚、カード10枚、札5枚程度入れた場合だいたい3cmくらい カードポケットは意外と深く、いざという時にたまにモタモタする（ボタンの金具でカードが傷つかないために、ダークソウルシリーズの「ダークリング」のシールを貼っている） まとめ ミッレフォッリエマジでいい いろいろ書いてきましたが、総合するとめちゃくちゃ良いです。質感が良いので特に意味もなく開けたり閉めたりしてしまうくらいです。財布として割と独特な見た目、形状をしているので、人とはちょっと変わった財布を持ちたい人、カードも現金も使う機会がある程度多い人などは特にオススメです。</description>
-    </item>
-    <item>
-      <title>atcoder-cliを導入してみた</title>
-      <link>https://twoooooda.net/post/introduce-atcoder-cli/</link>
-      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/introduce-atcoder-cli/</guid>
-      <description>いきさつ ここ最近、諸事情あって競技プログラミングで有名なAtCoderに参戦したのですが、AtCoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていたatcoder-cliというものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。&#xA;参考文献&#xA;AtCoder 環境構築 for Python コマンドラインツールatcoder-cliを公開しました（作成者様のサイト） atcoder-cli チュートリアル（作成者様謹製のチュートリアル） atcoder-cliとは？ atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的にPythonでAtCoderに参戦することを前提に進めていきます。&#xA;導入方法 基本的にはさっきのチュートリアルに従ってatcoder-cliと、セットでほぼ使うであろう online-judge-toolsも一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。&#xA;Node.js・npmのインストール&#xA;環境 Python（Anaconda） 3.8.8 pip 22.0.4 npm 6.14.6 インストール online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。&#xA;&amp;gt; pip install online-judge-tools &amp;gt; npm install -g atcoder-cli そして、以下のコマンドが使用できればインストールされています。&#xA;&amp;gt; acc -h ログイン atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtCoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。&#xA;&amp;gt; oj login https://atcoder.jp/ 次にatcoder-cliの方にログイン。&#xA;&amp;gt; acc login ここで、Linux等のCUIに普段から触れていると慣れているかもしれませんが、パスワードを入れる時に一見して入力できていないように見えるかもしれません。が、見えないようになっているだけで入力できています、大丈夫です。&#xA;Configファイルの編集 問題を解くときに、毎回main.pyの作成や問題用ディレクトリを作るのは面倒なので、自動化します。そのためにConfig.jsonを編集します。まずはConfigの場所の確認から。&#xA;&amp;gt; acc config-dir C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\atcoder-cli-nodejs\Config 環境によってファイルの場所はまちまちになるかと思います。ファイルを開いて、以下みたいな感じに&amp;quot;default-test-dirname-format&amp;quot;と&amp;quot;default-template&amp;quot;:&amp;quot;python&amp;quot;を変更します。&#xA;{ &amp;#34;oj-path&amp;#34;: &amp;#34;C:\\ProgramData\\Anaconda3\\Scripts\\oj.exe&amp;#34;, &amp;#34;default-contest-dirname-format&amp;#34;: &amp;#34;{ContestID}&amp;#34;, &amp;#34;default-task-dirname-format&amp;#34;: &amp;#34;{tasklabel}&amp;#34;, &amp;#34;default-test-dirname-format&amp;#34;: &amp;#34;test&amp;#34;, &amp;#34;default-task-choice&amp;#34;: &amp;#34;inquire&amp;#34;, &amp;#34;default-template&amp;#34;: &amp;#34;python&amp;#34; } 次に、上のConfig.</description>
-    </item>
-    <item>
-      <title>AutoHotKeyを導入してみた</title>
-      <link>https://twoooooda.net/post/introduce-autohotkey/</link>
-      <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/introduce-autohotkey/</guid>
-      <description>導入を考えたきっかけ 以前の記事でも述べた通り、自作キーボードに対応しているファームウェアがマジのゴミで、キー割り当てを変えられなかったので、いろいろ調べているうちにAutoHotKeyというものを見つけました。&#xA;AutoHotKeyとは？ 独自のプログラミング言語を用いて、キーボードのキー操作によるかなり柔軟なショートカットの作成や、普段あまり使わないキーを全く別のキーとして割り当てたり、メディアコントロールやPCのシステム操作を割り当てたりできます。参考&#xA;導入方法 基本的にこのサイトに従ってインストールして、拡張子を.ahkとしたテキストファイルを作り、そこに任意のショートカットやキーの割り当てを記述していきます。記法や文法、決まりごとは日本語のリファレンス(?)があるので、そちらを参照してください。&#xA;このAutoHotKeyを使う場合、拡張子が.ahkのファイル、あるいは.ahkのファイルから作成した.exeの実行ファイルを起動し、タスクトレイで常駐させておかなければなりません。なので、PC起動時に自動で該当のファイルが起動するようにしておくと便利です。私はこちらのサイトを参考に設定しました。&#xA;実際に使う 私がこのAutoHotKeyでやりたかったのは、&amp;quot;キーボード右上のPageUp、PageDownのキーをメディアの再生一時停止、次の曲ボタンへ割り当て&amp;quot; です。実際のコードはごく簡単なもので、以下のように書いたら思った通りに動いてくれました。&#xA;#InstallKeybdHook #UseHook PgUp::Media_Play_Pause PgDn::Media_Next return また、便利だと聞いたのでこちらのサイトを参考に、左右Altの空打ちで日本語入力と英字入力を切り変えられるようにしました。私は起動しないといけない実行ファイルが増えると嫌なので、実際に使うときはPageUp/Downキーをメディアコントロールに割り当てるコードと、alt-ime-ahk.ahkの内容を一つのファイルに統合しています(ファイル名をgeneral.ahkとしています)。&#xA;導入してみて 導入してしばらく使ってみましたが、とてもとても便利です。 タスクトレイに入るアイコンが一つ増えるのが最初は少し抵抗がありましたが。それを補って余りある恩恵を受けています。今後新しくショートカットが欲しくなったり、割り当てを変えたい時が来れば今使っているgeneral.ahkファイルに追記すればいいだけなので、使い方を多少覚えていればこれからもっと気軽に便利にしていくことができると思います。</description>
-    </item>
-    <item>
-      <title>Hello, world！</title>
-      <link>https://twoooooda.net/post/hello-world/</link>
-      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/hello-world/</guid>
-      <description>苦悩の末 最近急にはてなブログやnoteとは違う個人ブログが欲しくなり、静的サイトジェネレーターであるHUGOと、勉強がてらGitHub Pages、Actionsを使ってブログを作ってみました。実はサイト作成にあたり数日間に渡り大変苦労したのですが、その話はHUGO等の使い方とともにまとめようと思います。&#xA;ではまた。</description>
-    </item>
-  </channel>
+    <channel>
+        <title>diary on twoooooda.net</title>
+        <link>https://twoooooda.net/categories/diary/</link>
+        <description>Recent content in diary on twoooooda.net</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja-jp</language>
+        <lastBuildDate>Sat, 30 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/diary/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>いっとりうむのハヤシライスレシピ</title>
+        <link>https://twoooooda.net/post/howtomakehayashirice/</link>
+        <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/howtomakehayashirice/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7520.JPG" alt="Featured image of post いっとりうむのハヤシライスレシピ" /&gt;&lt;h2 id=&#34;この記事は&#34;&gt;この記事は？
+&lt;/h2&gt;&lt;p&gt;この記事は、&lt;a class=&#34;link&#34; href=&#34;https://adventar.org/calendars/10291&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;某企業アドベントカレンダー2024&lt;/a&gt;の1日目の記事です。
+記事執筆ハードルを下げるための記事ですので、あえてTech系とは関係ない記事にしています。ご了承ください。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;ハヤシライスを作ろうよ&#34;&gt;ハヤシライスを、作ろ〜〜〜うよ‼️
+&lt;/h2&gt;&lt;p&gt;この記事ではハヤシライスが大好きな私が作り続けた、いい感じのハヤシライスレシピをご紹介します。といっても、市販のルーと普通の食材を使った普通のレシピですし、箱の裏に書いてあるレシピほぼそのままの普通のハヤシライスです。ですが、とっても美味しいです。お試しください。&lt;/p&gt;
+&lt;h2 id=&#34;材料2食分&#34;&gt;材料（2食分）
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;完熟トマトのハヤシライスソース（おすすめ） 半箱&lt;/li&gt;
+&lt;li&gt;薄めの肉（牛肉だと美味しい、豚肉でも可）180g～250gくらい&lt;/li&gt;
+&lt;li&gt;玉ねぎ（デカければデカいほどよい）1個 サイズによっては2個&lt;/li&gt;
+&lt;li&gt;ぶなしめじ 1株&lt;/li&gt;
+&lt;li&gt;付け合わせの任意の草 適量&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7503.JPEG&#34;
+	width=&#34;2100&#34;
+	height=&#34;1576&#34;
+	srcset=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7503_hu15504969531571996795.JPEG 480w, https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7503_hu5183306286555913691.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;今回は奮発して牛肉を使う&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;作り方&#34;&gt;作り方
+&lt;/h2&gt;&lt;h3 id=&#34;材料を切る&#34;&gt;材料を切る
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;まず&lt;strong&gt;玉ねぎ&lt;/strong&gt;を切ります。&lt;strong&gt;薄切り&lt;/strong&gt;だと早く火が通りますし、ルーを楽しめます。しかし、煮込み時間によっては完全に溶けて消失してしまいます。&lt;strong&gt;櫛切り&lt;/strong&gt;にすると食べ応えを増すことができます。煮込んでも溶けにくいですが、ハヤシライス感は若干薄まります。
+&lt;img src=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7504.JPEG&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7504_hu17250159679152589299.JPEG 480w, https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7504_hu1678563447281536508.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;私はこれくらいが好み&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;次に&lt;strong&gt;肉&lt;/strong&gt;を切ります（切られていなければ）。でっけー肉を入れてやりましょう。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ぶなしめじ&lt;/strong&gt;の石づきを切ります。ただし、ぶなしめじは一度凍らせて入れても美味しい（らしい）です。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;材料を炒める&#34;&gt;材料を炒める
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;まず&lt;strong&gt;玉ねぎ&lt;/strong&gt;を炒めます。炒めすぎると後の煮込みの行程で溶けてなくなるのでほどほどにするのがコツです。塩コショウをすると早く熱が通ります。
+&lt;img src=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7507.JPG&#34;
+	width=&#34;5712&#34;
+	height=&#34;4284&#34;
+	srcset=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7507_hu17707957227145758546.JPG 480w, https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7507_hu3114559067049950795.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;よさげ&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;玉ねぎに火が通ったら、&lt;strong&gt;肉&lt;/strong&gt;を入れます。これも適当に塩コショウをするといいでしょう。いい感じにほぐしながら炒めていきます。
+&lt;img src=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7508.JPG&#34;
+	width=&#34;5712&#34;
+	height=&#34;4284&#34;
+	srcset=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7508_hu18229111714502515015.JPG 480w, https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7508_hu11280880403023079378.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;豪快に&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;肉にも火が通ったら、&lt;strong&gt;ぶなしめじ&lt;/strong&gt;をほぐしながら入れます。これはサッと炒めるだけでおｋです。
+&lt;img src=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7509.JPG&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7509_hu15017853931490563384.JPG 480w, https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7509_hu7745755540186447903.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;煮込む&#34;&gt;煮込む
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;いい感じに火が通ったら、&lt;strong&gt;水&lt;/strong&gt;を入れます。私は箱に書いてある分量よりちょっと多めに入れます。箱に書いてある時間だけ煮込みます。&lt;/li&gt;
+&lt;li&gt;いい感じに煮込めたら、一旦火を止めてルーを割り入れます。ルーをしっかり溶かせたら、また火をつけて箱に書いてある時間分だけ煮込みます。ときどきかき混ぜてください。
+&lt;img src=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7511.JPG&#34;
+	width=&#34;5712&#34;
+	height=&#34;4284&#34;
+	srcset=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7511_hu5042231995690418436.JPG 480w, https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7511_hu16826309399536961179.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;火を消してから入れろよ！&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;完成&#34;&gt;完成！
+&lt;/h3&gt;&lt;p&gt;いい感じに煮込めたら完成です。罪悪感消しの草と一緒に召し上がれ！
+&lt;img src=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7521.JPG&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7521_hu10870051546209983649.JPG 480w, https://twoooooda.net/post/howtomakehayashirice/ReferenceImg/IMG_7521_hu2255822609362377636.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ちゃんと草も食えよ&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;過去作&#34;&gt;過去作
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/howtomakehayashirice/ProductImg/3BE07FCA-609A-4093-95D8-12BFE367A20E.jpeg&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/howtomakehayashirice/ProductImg/3BE07FCA-609A-4093-95D8-12BFE367A20E_hu15960828182557164360.jpeg 480w, https://twoooooda.net/post/howtomakehayashirice/ProductImg/3BE07FCA-609A-4093-95D8-12BFE367A20E_hu16678974624151927138.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/howtomakehayashirice/ProductImg/4F196D1B-FA1F-4146-9483-A5976E622DEC.jpeg&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/howtomakehayashirice/ProductImg/4F196D1B-FA1F-4146-9483-A5976E622DEC_hu16309872950636449634.jpeg 480w, https://twoooooda.net/post/howtomakehayashirice/ProductImg/4F196D1B-FA1F-4146-9483-A5976E622DEC_hu326245081683447810.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/howtomakehayashirice/ProductImg/28284E5E-3E8E-4A85-8A94-B004FE158A13.jpeg&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/howtomakehayashirice/ProductImg/28284E5E-3E8E-4A85-8A94-B004FE158A13_hu16653192309434756985.jpeg 480w, https://twoooooda.net/post/howtomakehayashirice/ProductImg/28284E5E-3E8E-4A85-8A94-B004FE158A13_hu3974990303032757331.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/howtomakehayashirice/ProductImg/A369C773-F551-4EBC-A3F0-C43FDAC77BC8.jpeg&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/howtomakehayashirice/ProductImg/A369C773-F551-4EBC-A3F0-C43FDAC77BC8_hu1614522700759149868.jpeg 480w, https://twoooooda.net/post/howtomakehayashirice/ProductImg/A369C773-F551-4EBC-A3F0-C43FDAC77BC8_hu5450130284428867938.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>USB TVチューナーPX-S1UDを使ってテレビを視聴する最速手順</title>
+        <link>https://twoooooda.net/post/px-s1udandtvtest/</link>
+        <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/px-s1udandtvtest/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/px-s1udandtvtest/0f3010e5fa0dcb1600eb6a88167d6465.png" alt="Featured image of post USB TVチューナーPX-S1UDを使ってテレビを視聴する最速手順" /&gt;&lt;p&gt;基本的には &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.tsukumijima.net/article/tvtest-usage/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;先駆者様のサイト&lt;/a&gt;&lt;/strong&gt; をかいつまんだだけです。詳しい&amp;amp;正確な情報はそちらを参考にしてください。&lt;/p&gt;
+&lt;h2 id=&#34;用意するもの&#34;&gt;用意するもの
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;USB TVチューナー &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/7nwX0jt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PX-S1UD V2.0&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;今買えるものはだいたいV2.0な気がします。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B-CASカード&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;私はぶっ壊れたnasneから奪ってきました。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;USBカードリーダー&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/b5PTsTL&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;NTTのやつ（SCR3310V2.0）&lt;/a&gt;が多分一番有名で安定、この記事でもこのリーダーを使っている前提で進めます。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Windows PC&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;テレビ用同軸ケーブル
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ソフトウェアのダウンロードインストール&#34;&gt;ソフトウェアのダウンロード・インストール
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;PX-S1UDのドライバは&lt;a class=&#34;link&#34; href=&#34;https://www.plex-net.co.jp/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちら&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;カードリーダー（SCR3310V2.0）のドライバは&lt;a class=&#34;link&#34; href=&#34;https://www.ntt.com/business/services/application/authentication/jpki/download10.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちら&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.axfc.net/u/2503550&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;BonDriver-Siano&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PX-S1UDでテレビを見るために別途導入が必要なドライバです。BonDriverは他にも種類がありますが、私の環境ではこれしか動きませんでした。後述。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;TVTest&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windowsでテレビを見るためのソフトウェアです。これも私の環境では32bit版しか動きませんでした。ビルド済みのものは&lt;a class=&#34;link&#34; href=&#34;https://blog.tsukumijima.net/article/tvtest-usage/#toc3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちら&lt;/a&gt;にあります。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tvtestの準備&#34;&gt;TVTestの準備
+&lt;/h2&gt;&lt;h3 id=&#34;解凍フォルダの移動&#34;&gt;解凍・フォルダの移動
+&lt;/h3&gt;&lt;p&gt;　ビルド後のTVTestをダウンロードしてきたら、解凍して任意の場所に移動させます。この時、 &lt;strong&gt;C:\Users・C:\Program Files 以外のフォルダ&lt;/strong&gt; に移動させないといけないそうです。&lt;/p&gt;
+&lt;h3 id=&#34;directshow-フィルタのインストール&#34;&gt;DirectShow フィルタのインストール
+&lt;/h3&gt;&lt;p&gt;　Windows 10 では、日本のテレビ放送の映像コーデックである MPEG-2 をデコードして再生するのに必要な Microsoft DTV-DVD Video Decoder が標準ではインストールされていないそうなので、TVTest の作者さんが用意してくれているものでインストールします。&lt;a class=&#34;link&#34; href=&#34;https://blog.tsukumijima.net/article/tvtest-usage/#toc5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;詳しくは&lt;/a&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;TVTest フォルダ内にある [* filter-install.jse] を、管理者権限で実行してください。&lt;/p&gt;
+&lt;h3 id=&#34;bondriverのセットアップ&#34;&gt;BonDriverのセットアップ
+&lt;/h3&gt;&lt;p&gt;　環境や用途によってはBonDriverを複数種類使う可能性も考えられます。なのでTVTestの下に別途BonDriverというフォルダを作って、そこで一括管理する方法が推奨されています。
+&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/e9550c6f4149126ddf8624b16b39048e.png&#34;
+	width=&#34;870&#34;
+	height=&#34;295&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/e9550c6f4149126ddf8624b16b39048e_hu17935511195776063111.png 480w, https://twoooooda.net/post/px-s1udandtvtest/e9550c6f4149126ddf8624b16b39048e_hu17192775825425129518.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;294&#34;
+		data-flex-basis=&#34;707px&#34;
+	
+&gt;&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/7ea95df318a7936955291669ac5e4f1f.png&#34;
+	width=&#34;589&#34;
+	height=&#34;249&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/7ea95df318a7936955291669ac5e4f1f_hu10744437854333523522.png 480w, https://twoooooda.net/post/px-s1udandtvtest/7ea95df318a7936955291669ac5e4f1f_hu13607743567104867734.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;こんなには要らない&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;236&#34;
+		data-flex-basis=&#34;567px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;tvtestのセットアップ&#34;&gt;TVTestのセットアップ
+&lt;/h3&gt;&lt;h4 id=&#34;初期設定&#34;&gt;初期設定
+&lt;/h4&gt;&lt;p&gt;　最初に起動すると、設定のポップアップウィンドウが出てきます。この設定はあとで変えられるので適当でも大丈夫です。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BonDriver … 今後 BonDriver 検索フォルダを変更するため今は空のままにしておく（後述）&lt;/li&gt;
+&lt;li&gt;H.264/AVCデコーダ … &lt;strong&gt;自動&lt;/strong&gt; のままで OK&lt;/li&gt;
+&lt;li&gt;H.265/HEVCデコーダ … &lt;strong&gt;自動&lt;/strong&gt; のままで OK&lt;/li&gt;
+&lt;li&gt;MPEG-2デコーダ … &lt;strong&gt;TVTest DTV Video Decoder&lt;/strong&gt; に変更する&lt;/li&gt;
+&lt;li&gt;映像レンダラ … &lt;strong&gt;EVR&lt;/strong&gt; に変更する&lt;/li&gt;
+&lt;li&gt;録画ファイルの保存フォルダ … TVTest で録画した番組の保存先フォルダをここで設定可能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;bondriverの参照&#34;&gt;BonDriverの参照
+&lt;/h4&gt;&lt;p&gt;　前述したBonDriverフォルダをTVTestから参照します。TVTestウィンドウ内の無を右クリックして設定を開きます。
+すると、&lt;strong&gt;一般&lt;/strong&gt;の中に&lt;strong&gt;BonDriver検索フォルダ&lt;/strong&gt;の項目があるので、先ほど作ったBonDriverフォルダを指定します。
+&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/eebea229ec33c069c5b7b1c87df0fc8a.png&#34;
+	width=&#34;1160&#34;
+	height=&#34;798&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/eebea229ec33c069c5b7b1c87df0fc8a_hu11112342759484077195.png 480w, https://twoooooda.net/post/px-s1udandtvtest/eebea229ec33c069c5b7b1c87df0fc8a_hu10096337617716162903.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;145&#34;
+		data-flex-basis=&#34;348px&#34;
+	
+&gt;&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/5d311e1263af94d76df9b663d9203e74.png&#34;
+	width=&#34;933&#34;
+	height=&#34;327&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/5d311e1263af94d76df9b663d9203e74_hu15835533573822229167.png 480w, https://twoooooda.net/post/px-s1udandtvtest/5d311e1263af94d76df9b663d9203e74_hu3594538081316793183.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;相対パスでも良いらしい&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;285&#34;
+		data-flex-basis=&#34;684px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;strong&gt;ここで一度TVTestを再起動しておきましょう。&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h4 id=&#34;tsプロセッサー&#34;&gt;TSプロセッサー
+&lt;/h4&gt;&lt;p&gt;　TVTestでテレビを見る場合の一番大事な設定といっても過言ではないのが、一番下にある &lt;strong&gt;TSプロセッサ&lt;/strong&gt; の項目です。ここが設定されていないと上手くテレビが映りません。↓の画像のように設定します。
+&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/43b7b2b665895a4a5b098258bfdecc1a.png&#34;
+	width=&#34;778&#34;
+	height=&#34;541&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/43b7b2b665895a4a5b098258bfdecc1a_hu14589882578513877932.png 480w, https://twoooooda.net/post/px-s1udandtvtest/43b7b2b665895a4a5b098258bfdecc1a_hu16179620160789115046.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;143&#34;
+		data-flex-basis=&#34;345px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;とりあえず見れるはず&#34;&gt;とりあえず見れるはず
+&lt;/h4&gt;&lt;p&gt;　ここまで設定すれば、TVTestのウィンドウの左下から適切なBonDriverを選ぶだけでとりあえずテレビが見れるはずです。
+&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/6b52fc2a26d4b0f315a47dd19c779564.png&#34;
+	width=&#34;226&#34;
+	height=&#34;330&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/6b52fc2a26d4b0f315a47dd19c779564_hu805742135431400015.png 480w, https://twoooooda.net/post/px-s1udandtvtest/6b52fc2a26d4b0f315a47dd19c779564_hu16517868978112356756.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;68&#34;
+		data-flex-basis=&#34;164px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tvtestを使う&#34;&gt;TVTestを使う
+&lt;/h2&gt;&lt;h3 id=&#34;チャンネルスキャン&#34;&gt;チャンネルスキャン
+&lt;/h3&gt;&lt;p&gt;　このままでは不便なので、設定からチャンネルスキャンをしましょう。これが正常に完了すると、TVTestウィンドウの左下の&amp;lt;チャンネル&amp;gt;のプルダウンからチャンネルを選択して、番組を視聴することができます。
+&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/923ec1cc2a7143c847997ae3e89d31ab.png&#34;
+	width=&#34;1295&#34;
+	height=&#34;856&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/923ec1cc2a7143c847997ae3e89d31ab_hu3462801882777950841.png 480w, https://twoooooda.net/post/px-s1udandtvtest/923ec1cc2a7143c847997ae3e89d31ab_hu12592607550023559722.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;363px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;エラー表示&#34;&gt;エラー表示
+&lt;/h3&gt;&lt;p&gt;　テレビが映らない、何かがおかしいと思ったら、下のエラー表示を見てみるといいかもしれません。特に、B-CASカードによる復号ががうまく動いていない時は &lt;strong&gt;S&lt;/strong&gt; の値が爆増していくので、目安程度にはなります。
+&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/c6ffb245329bae27efb690b44ae45dd6.png&#34;
+	width=&#34;178&#34;
+	height=&#34;72&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/c6ffb245329bae27efb690b44ae45dd6_hu12849848388694388433.png 480w, https://twoooooda.net/post/px-s1udandtvtest/c6ffb245329bae27efb690b44ae45dd6_hu6223721869698166739.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;247&#34;
+		data-flex-basis=&#34;593px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;とりあえず以上です。これはあくまでPX-S1UDとPCでテレビを見るための最短手順ですので、TVTestの設定などを練ればもっと便利に使えるはずです。&lt;/p&gt;
+&lt;h2 id=&#34;202407-追記&#34;&gt;2024/07 追記
+&lt;/h2&gt;&lt;p&gt;ある日TVTestでテレビを見ようとしたら、「BonDriverの初期化ができません」云々といったエラーが出てテレビが見られなくなってしまいました。
+いろいろ調べて、試した方法を書き残しておきます。&lt;/p&gt;
+&lt;h3 id=&#34;biosの項目を設定&#34;&gt;BIOSの項目を設定
+&lt;/h3&gt;&lt;p&gt;どうもBIOSのある設定が悪さをしているようで、Advancedメニューの中にある「&lt;strong&gt;Above 4GB Decoding&lt;/strong&gt;」という設定をDisableにすると改善することがあるそうです。&lt;/p&gt;
+&lt;h3 id=&#34;デバイスセキュリティの項目を設定&#34;&gt;デバイスセキュリティの項目を設定
+&lt;/h3&gt;&lt;p&gt;デバイスマネージャーを見ると、そもそもPX-S1UDを認識していなかったり、ドライバが動いていなかったりで不安定な状態でした。こういう場合はWindowsセキュリティの設定 → デバイスセキュリティ → コア分離 → &lt;strong&gt;メモリ整合性&lt;/strong&gt; という項目をオフにすると認識するようになるそうです。&lt;/p&gt;
+&lt;p&gt;以上の二点を試したところ、正常に見られようになりました。どちらがクリティカルな解決策だったのかはよくわかりませんが、私の環境ではこれで動くようになりました。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>エムピウ ミッレフォッリエを買ったら良すぎた話</title>
+        <link>https://twoooooda.net/post/millefoglie-is-so-good/</link>
+        <pubDate>Mon, 22 May 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/millefoglie-is-so-good/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/millefoglie-is-so-good/IMG_5159.jpeg" alt="Featured image of post エムピウ ミッレフォッリエを買ったら良すぎた話" /&gt;&lt;h2 id=&#34;最近財布を新調しました&#34;&gt;最近財布を新調しました
+&lt;/h2&gt;&lt;p&gt;　今まではずっと長財布を使っていたのですが、昨今のキャッシュレスの波で現金を使わなくなり、だんだんと「なんでこんなデカい財布を持ち歩いてるんだ」と思うようになりました。
+先代の財布を使い始めて既に4年くらい経過していたので、この機に小さい財布に変えようと思って探していると行きついたのが &lt;strong&gt;m+（エムピウ）&lt;/strong&gt; というブランドの &lt;strong&gt;millefoglie（ミッレフォッリエ）&lt;/strong&gt; という財布でした。&lt;!-- raw HTML omitted --&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://m-piu.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;エムピウ公式サイト&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;エムピウ-ミッレフォッリエとは&#34;&gt;エムピウ ミッレフォッリエとは
+&lt;/h2&gt;&lt;p&gt;　ミッレフォッリエの「ミッレ」とは「千」、「フォリエ」とは「葉」を意味し、財布を横から見ると葉っぱが重なっているように見えることから名づけられたようです。
+外側はぐるっと一枚の牛革で覆われており、ファスナーなどではなく二つの真鍮製のギボシでとめる形式です。
+中身の構造はかなり独特で、カードポケットの下側にコインボックス、その下に札やレシートを挟みこんでカードフラップで抑えるような形です。&lt;/p&gt;
+&lt;p&gt;　コインボックスは大きく開き、小銭の確認がとてもしやすい構造です。カードポケットは三つあり、それぞれに5枚ずつ、合計15枚程度まで入るようです。カードフラップに交通系ICとかを入れるとそのままかざして改札を通れます。
+&lt;img src=&#34;https://twoooooda.net/post/millefoglie-is-so-good/IMG_5165.jpeg&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/millefoglie-is-so-good/IMG_5165_hu1932072527871191655.jpeg 480w, https://twoooooda.net/post/millefoglie-is-so-good/IMG_5165_hu3145073993754885107.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;二つのギボシでとまっています&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;img src=&#34;https://twoooooda.net/post/millefoglie-is-so-good/IMG_5160.jpeg&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/millefoglie-is-so-good/IMG_5160_hu11695743593637958896.jpeg 480w, https://twoooooda.net/post/millefoglie-is-so-good/IMG_5160_hu1070227448308795108.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;開いたときのようす。青いカードが入っているのがカードフラップ&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;img src=&#34;https://twoooooda.net/post/millefoglie-is-so-good/IMG_5166.jpeg&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/millefoglie-is-so-good/IMG_5166_hu12660560551899867077.jpeg 480w, https://twoooooda.net/post/millefoglie-is-so-good/IMG_5166_hu7550179685487323390.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;実際に会計するときは自然とこういう持ち方になります&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;買ったモデル&#34;&gt;買ったモデル
+&lt;/h2&gt;&lt;p&gt;　私が買ったのは牛革の中でもプエブロレザーというレザーを使った &lt;strong&gt;millefoglie P25 PU.grigio&lt;/strong&gt; です。
+プエブロレザーとは牛革に敢えてやすりで傷をつける加工を施したレザーで、特に経年変化が早い上に変化の度合いが激しいことが特徴です。
+&lt;a class=&#34;link&#34; href=&#34;https://youtu.be/0zmorHUODE4&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;この動画&lt;/a&gt;を見て頂くといかに変化が激しいかがわかると思います。&lt;/p&gt;
+&lt;p&gt;　なお、このミッレフォッリエは全国的に品薄で、新品はほとんど市場に出回っていないというお話でした（2023年5月現在）。私が買ったものは僅かな不良で新品として市場に出なかったアウトレット品らしく、その在庫があったのも幸運だったようです。ちなみにアウトレットになった理由は聞きそびれたので、どこが不良なのかは今でもわかっていません。
+&lt;a class=&#34;link&#34; href=&#34;https://www.free-spirits.co.jp/fs/mens/wallet00178&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;販売サイト&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ミッレフォッリエの良いところ&#34;&gt;ミッレフォッリエの良いところ
+&lt;/h2&gt;&lt;p&gt;　一番はやはり &lt;strong&gt;コンパクトである&lt;/strong&gt; ということです。少し厚みはありますが、サイズ感はほとんどパスケースと大差なく、このサイズにかなりの量の現金とカード類を一緒に収納できる収納力も魅力です。&lt;/p&gt;
+&lt;p&gt;　あとは、何といっても &lt;strong&gt;質感&lt;/strong&gt; ！！丁寧に鞣された牛革を撫でるだけでもテンションが上がります。また、革の経年変化も楽しみのうちです。使っていくうちに革に光沢と傷が入り色も深みを増し、自分だけの財布に育てていく感じが、私は大好きです。&lt;/p&gt;
+&lt;h2 id=&#34;ミッレフォッリエのイマイチなところ&#34;&gt;ミッレフォッリエのイマイチなところ
+&lt;/h2&gt;&lt;p&gt;　コンパクト財布なので、外出先で不意に小銭が増えてしまうと、露骨に膨らんでしまうところは少し残念です。20枚以上とかになってしまうと閉まりきらないこともあるようです。また、一般的な長財布と違いカードポケットのカードを上から覗くことになるので、一覧性は落ちてしまいます。この点に関しては、三つのカードポケットに入れるカードを固定することで対応しています。
+&lt;img src=&#34;https://twoooooda.net/post/millefoglie-is-so-good/IMG_5167.jpeg&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/millefoglie-is-so-good/IMG_5167_hu2924046635318788769.jpeg 480w, https://twoooooda.net/post/millefoglie-is-so-good/IMG_5167_hu6699803787429131919.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;小銭10枚、カード10枚、札5枚程度入れた場合だいたい3cmくらい&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;img src=&#34;https://twoooooda.net/post/millefoglie-is-so-good/IMG_5168.jpeg&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/millefoglie-is-so-good/IMG_5168_hu10426199626982992809.jpeg 480w, https://twoooooda.net/post/millefoglie-is-so-good/IMG_5168_hu3181528724030353146.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;カードポケットは意外と深く、いざという時にたまにモタモタする（ボタンの金具でカードが傷つかないために、ダークソウルシリーズの「ダークリング」のシールを貼っている）&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;まとめ-ミッレフォッリエマジでいい&#34;&gt;まとめ ミッレフォッリエマジでいい
+&lt;/h2&gt;&lt;p&gt;　いろいろ書いてきましたが、総合するとめちゃくちゃ良いです。質感が良いので特に意味もなく開けたり閉めたりしてしまうくらいです。財布として割と独特な見た目、形状をしているので、人とはちょっと変わった財布を持ちたい人、カードも現金も使う機会がある程度多い人などは特にオススメです。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>atcoder-cliを導入してみた</title>
+        <link>https://twoooooda.net/post/introduce-atcoder-cli/</link>
+        <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/introduce-atcoder-cli/</guid>
+        <description>&lt;h2 id=&#34;いきさつ&#34;&gt;いきさつ
+&lt;/h2&gt;&lt;p&gt;　ここ最近、諸事情あって競技プログラミングで有名なAtCoderに参戦したのですが、AtCoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていた&lt;strong&gt;atcoder-cli&lt;/strong&gt;というものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。&lt;br&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;br&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;strong&gt;参考文献&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://scrapbox.io/hitech/%F0%9F%8F%83_AtCoder_%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89_for_Python&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AtCoder 環境構築 for Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;コマンドラインツールatcoder-cliを公開しました（作成者様のサイト）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;atcoder-cli チュートリアル（作成者様謹製のチュートリアル）&lt;/a&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;atcoder-cliとは&#34;&gt;atcoder-cliとは？
+&lt;/h2&gt;&lt;p&gt;　atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的に&lt;strong&gt;Python&lt;/strong&gt;でAtCoderに参戦することを前提に進めていきます。&lt;/p&gt;
+&lt;h2 id=&#34;導入方法&#34;&gt;導入方法
+&lt;/h2&gt;&lt;p&gt;　基本的には&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;さっきのチュートリアル&lt;/a&gt;に従ってatcoder-cliと、セットでほぼ使うであろう &lt;strong&gt;online-judge-tools&lt;/strong&gt;も一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://dev.macha795.com/windows10-node-js-npm-install/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Node.js・npmのインストール&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;環境&#34;&gt;環境
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Python（Anaconda）&lt;/th&gt;
+          &lt;th&gt;3.8.8&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;pip&lt;/td&gt;
+          &lt;td&gt;22.0.4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;npm&lt;/td&gt;
+          &lt;td&gt;6.14.6&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;インストール&#34;&gt;インストール
+&lt;/h3&gt;&lt;p&gt;　online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; &amp;gt; pip install online-judge-tools
+ &amp;gt; npm install -g atcoder-cli
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;そして、以下のコマンドが使用できればインストールされています。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc -h
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;ログイン&#34;&gt;ログイン
+&lt;/h3&gt;&lt;p&gt;　atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtCoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; oj login https://atcoder.jp/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;次にatcoder-cliの方にログイン。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc login
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ここで、Linux等のCUIに普段から触れていると慣れているかもしれませんが、パスワードを入れる時に一見して入力できていないように見えるかもしれません。が、見えないようになっているだけで入力できています、大丈夫です。&lt;/p&gt;
+&lt;h3 id=&#34;configファイルの編集&#34;&gt;Configファイルの編集
+&lt;/h3&gt;&lt;p&gt;　問題を解くときに、毎回main.pyの作成や問題用ディレクトリを作るのは面倒なので、自動化します。そのためにConfig.jsonを編集します。まずはConfigの場所の確認から。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc config-dir
+C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\atcoder-cli-nodejs\Config
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;環境によってファイルの場所はまちまちになるかと思います。ファイルを開いて、以下みたいな感じに&lt;code&gt;&amp;quot;default-test-dirname-format&amp;quot;&lt;/code&gt;と&lt;code&gt;&amp;quot;default-template&amp;quot;:&amp;quot;python&amp;quot;&lt;/code&gt;を変更します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;oj-path&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\\ProgramData\\Anaconda3\\Scripts\\oj.exe&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-contest-dirname-format&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;{ContestID}&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-task-dirname-format&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;{tasklabel}&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-test-dirname-format&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-task-choice&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;inquire&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-template&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;python&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;次に、上のConfig.jsonがあった&lt;code&gt;Config&lt;/code&gt;フォルダに&lt;code&gt;python&lt;/code&gt;フォルダを作り、その中に&lt;code&gt;main.py&lt;/code&gt;と&lt;code&gt;template.json&lt;/code&gt;を作ります。&lt;code&gt;main.py&lt;/code&gt;の中身は空でも大丈夫で、&lt;code&gt;template.json&lt;/code&gt;は以下。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;nt&#34;&gt;&amp;#34;task&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;nt&#34;&gt;&amp;#34;program&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;             &lt;span class=&#34;s2&#34;&gt;&amp;#34;main.py&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;nt&#34;&gt;&amp;#34;submit&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;main.py&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;使ってみる&#34;&gt;使ってみる
+&lt;/h2&gt;&lt;h3 id=&#34;解答用フォルダ作成&#34;&gt;解答用フォルダ作成
+&lt;/h3&gt;&lt;p&gt;　ようやく使用法編です。今回は&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;&lt;/code&gt;の中に&lt;code&gt;atcoder&lt;/code&gt;というフォルダを作り、その中で作業することとします（ここは自由です）。問題は仮にabc250のa問題を解くとしましょう。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd atcoder
+&amp;gt; acc new abc250
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;&amp;gt; acc new abc000&lt;/code&gt;でその回の解答用フォルダとテストケースのダウンロードが可能です。すると以下のように問題のリストが表示され、Spaceキーで問題の選択、Enterキーでフォルダ作成ができます。aキー -&amp;gt; Enterで全問を一括で選択できます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;abc250/contest.acc.json created.
+create project of AtCoder Beginner Contest 250
+? select tasks (Press &amp;lt;space&amp;gt; to select, &amp;lt;a&amp;gt; to toggle all, &amp;lt;i&amp;gt; to invert selection)
+&amp;gt;(*) A Adjacent Squares
+ ( ) B Enlarged Checker Board
+ ( ) C Adjacent Swaps
+ ( ) D 250-like Number
+ ( ) E Prefix Equality
+ ( ) F One Fourth
+ ( ) G Stonks
+(Move up and down to reveal more choices)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;仮に全選択すると解答用フォルダはこんな感じになっているかと思います。a問題を解くときは、&lt;code&gt;a&lt;/code&gt;フォルダにある&lt;code&gt;main.py&lt;/code&gt;にコードを書いていきます。
+&lt;img src=&#34;https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21.png&#34;
+	width=&#34;316&#34;
+	height=&#34;667&#34;
+	srcset=&#34;https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21_hu4805595019298944967.png 480w, https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21_hu6327058566040865519.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;47&#34;
+		data-flex-basis=&#34;113px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解答テストケース検証&#34;&gt;解答、テストケース検証
+&lt;/h3&gt;&lt;p&gt;　&lt;code&gt;main.py&lt;/code&gt;に解答を書き終えたら、テストします。コンソールから&lt;code&gt;a&lt;/code&gt;フォルダに移動して、コマンドを実行します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd abc250/a
+&amp;gt; oj t -c &amp;#34;python main.py&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;すると、テストケースの検証結果が返ってきます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;\abc250\a&amp;gt; oj t -c &amp;#34;python main.py&amp;#34;
+[INFO] online-judge-tools 11.5.1 (+ online-judge-api-client 10.10.0)
+[INFO] 6 cases found
+[WARNING] GNU time is not available: time
+
+[INFO] sample-1
+[INFO] time: 0.065499 sec
+[SUCCESS] AC
+
+[INFO] sample-2
+[INFO] time: 0.050322 sec
+[SUCCESS] AC
+
+[INFO] sample-3
+[INFO] time: 0.049653 sec
+[SUCCESS] AC
+
+[INFO] sample-4
+[INFO] time: 0.051948 sec
+[SUCCESS] AC
+
+[INFO] sample-5
+[INFO] time: 0.046560 sec
+[SUCCESS] AC
+
+[INFO] sample-6
+[INFO] time: 0.046376 sec
+[SUCCESS] AC
+
+[INFO] slowest: 0.065499 sec  (for sample-1)
+[SUCCESS] test success: 6 cases
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;いい感じにACが出てていい感じですね。&lt;/p&gt;
+&lt;h3 id=&#34;提出&#34;&gt;提出
+&lt;/h3&gt;&lt;p&gt;　テスト結果がいい感じだったので提出します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc submit main.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;提出に成功すると自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。&lt;/p&gt;
+&lt;h3 id=&#34;問題追加&#34;&gt;問題追加
+&lt;/h3&gt;&lt;p&gt;　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、&lt;code&gt;abc250&lt;/code&gt;のフォルダに戻って&lt;code&gt;acc add&lt;/code&gt;で追加ができます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd ..（一つ上の階層に戻る）
+&amp;gt; acc add
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;そうすると同じような問題選択画面が表示され、任意の問題を追加できます。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>AutoHotKeyを導入してみた</title>
+        <link>https://twoooooda.net/post/introduce-autohotkey/</link>
+        <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/introduce-autohotkey/</guid>
+        <description>&lt;h2 id=&#34;導入を考えたきっかけ&#34;&gt;導入を考えたきっかけ
+&lt;/h2&gt;&lt;p&gt;　&lt;a class=&#34;link&#34; href=&#34;https://twoooooda.github.io/p/%E7%A7%81%E3%81%AE%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E5%A5%AE%E9%97%98%E8%A8%98/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;以前の記事&lt;/a&gt;でも述べた通り、自作キーボードに対応しているファームウェアがマジのゴミで、キー割り当てを変えられなかったので、いろいろ調べているうちにAutoHotKeyというものを見つけました。&lt;/p&gt;
+&lt;h2 id=&#34;autohotkeyとは&#34;&gt;AutoHotKeyとは？
+&lt;/h2&gt;&lt;p&gt;　独自のプログラミング言語を用いて、キーボードのキー操作によるかなり柔軟なショートカットの作成や、普段あまり使わないキーを全く別のキーとして割り当てたり、メディアコントロールやPCのシステム操作を割り当てたりできます。&lt;a class=&#34;link&#34; href=&#34;https://fuchiaz.com/usage-autohotkey/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;導入方法&#34;&gt;導入方法
+&lt;/h2&gt;&lt;p&gt;　基本的に&lt;a class=&#34;link&#34; href=&#34;https://fuchiaz.com/auto-hot-key/#AutoHotkey&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;このサイト&lt;/a&gt;に従ってインストールして、拡張子を&lt;code&gt;.ahk&lt;/code&gt;としたテキストファイルを作り、そこに任意のショートカットやキーの割り当てを記述していきます。記法や文法、決まりごとは&lt;a class=&#34;link&#34; href=&#34;https://so-zou.jp/software/tool/system/auto-hot-key/introduction/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;日本語のリファレンス(?)&lt;/a&gt;があるので、そちらを参照してください。&lt;/p&gt;
+&lt;p&gt;　このAutoHotKeyを使う場合、拡張子が&lt;code&gt;.ahk&lt;/code&gt;のファイル、あるいは&lt;code&gt;.ahk&lt;/code&gt;のファイルから作成した&lt;code&gt;.exe&lt;/code&gt;の実行ファイルを起動し、タスクトレイで常駐させておかなければなりません。なので、PC起動時に自動で該当のファイルが起動するようにしておくと便利です。私は&lt;a class=&#34;link&#34; href=&#34;https://kiryusblog.com/autohotkey-autorun/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちらのサイト&lt;/a&gt;を参考に設定しました。&lt;/p&gt;
+&lt;h2 id=&#34;実際に使う&#34;&gt;実際に使う
+&lt;/h2&gt;&lt;p&gt;　私がこのAutoHotKeyでやりたかったのは、&amp;quot;&lt;strong&gt;キーボード右上のPageUp、PageDownのキーをメディアの再生一時停止、次の曲ボタンへ割り当て&lt;/strong&gt;&amp;quot; です。実際のコードはごく簡単なもので、以下のように書いたら思った通りに動いてくれました。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#InstallKeybdHook
+#UseHook
+
+PgUp::Media_Play_Pause
+PgDn::Media_Next
+return
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;また、便利だと聞いたので&lt;a class=&#34;link&#34; href=&#34;https://www.karakaram.com/alt-ime-on-off/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちらのサイト&lt;/a&gt;を参考に、左右Altの空打ちで日本語入力と英字入力を切り変えられるようにしました。私は起動しないといけない実行ファイルが増えると嫌なので、実際に使うときはPageUp/Downキーをメディアコントロールに割り当てるコードと、&lt;code&gt;alt-ime-ahk.ahk&lt;/code&gt;の内容を一つのファイルに統合しています(ファイル名を&lt;code&gt;general.ahk&lt;/code&gt;としています)。&lt;/p&gt;
+&lt;h2 id=&#34;導入してみて&#34;&gt;導入してみて
+&lt;/h2&gt;&lt;p&gt;　導入してしばらく使ってみましたが、&lt;strong&gt;とてもとても便利です。&lt;/strong&gt; タスクトレイに入るアイコンが一つ増えるのが最初は少し抵抗がありましたが。それを補って余りある恩恵を受けています。今後新しくショートカットが欲しくなったり、割り当てを変えたい時が来れば今使っている&lt;code&gt;general.ahk&lt;/code&gt;ファイルに追記すればいいだけなので、使い方を多少覚えていればこれからもっと気軽に便利にしていくことができると思います。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Hello, world！</title>
+        <link>https://twoooooda.net/post/hello-world/</link>
+        <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/hello-world/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/hello-world/publicdomainq-0012425opp.jpg" alt="Featured image of post Hello, world！" /&gt;&lt;h2 id=&#34;苦悩の末&#34;&gt;苦悩の末
+&lt;/h2&gt;&lt;p&gt;　最近急にはてなブログやnoteとは違う個人ブログが欲しくなり、静的サイトジェネレーターであるHUGOと、勉強がてらGitHub Pages、Actionsを使ってブログを作ってみました。実はサイト作成にあたり数日間に渡り大変苦労したのですが、その話はHUGO等の使い方とともにまとめようと思います。&lt;/p&gt;
+&lt;p&gt;ではまた。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

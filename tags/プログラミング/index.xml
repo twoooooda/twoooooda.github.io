@@ -1,26 +1,202 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>プログラミング on twoooooda.net</title>
-    <link>https://twoooooda.net/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</link>
-    <description>Recent content in プログラミング on twoooooda.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://twoooooda.net/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>atcoder-cliを導入してみた</title>
-      <link>https://twoooooda.net/post/introduce-atcoder-cli/</link>
-      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/introduce-atcoder-cli/</guid>
-      <description>いきさつ ここ最近、諸事情あって競技プログラミングで有名なAtCoderに参戦したのですが、AtCoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていたatcoder-cliというものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。&#xA;参考文献&#xA;AtCoder 環境構築 for Python コマンドラインツールatcoder-cliを公開しました（作成者様のサイト） atcoder-cli チュートリアル（作成者様謹製のチュートリアル） atcoder-cliとは？ atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的にPythonでAtCoderに参戦することを前提に進めていきます。&#xA;導入方法 基本的にはさっきのチュートリアルに従ってatcoder-cliと、セットでほぼ使うであろう online-judge-toolsも一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。&#xA;Node.js・npmのインストール&#xA;環境 Python（Anaconda） 3.8.8 pip 22.0.4 npm 6.14.6 インストール online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。&#xA;&amp;gt; pip install online-judge-tools &amp;gt; npm install -g atcoder-cli そして、以下のコマンドが使用できればインストールされています。&#xA;&amp;gt; acc -h ログイン atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtCoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。&#xA;&amp;gt; oj login https://atcoder.jp/ 次にatcoder-cliの方にログイン。&#xA;&amp;gt; acc login ここで、Linux等のCUIに普段から触れていると慣れているかもしれませんが、パスワードを入れる時に一見して入力できていないように見えるかもしれません。が、見えないようになっているだけで入力できています、大丈夫です。&#xA;Configファイルの編集 問題を解くときに、毎回main.pyの作成や問題用ディレクトリを作るのは面倒なので、自動化します。そのためにConfig.jsonを編集します。まずはConfigの場所の確認から。&#xA;&amp;gt; acc config-dir C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\atcoder-cli-nodejs\Config 環境によってファイルの場所はまちまちになるかと思います。ファイルを開いて、以下みたいな感じに&amp;quot;default-test-dirname-format&amp;quot;と&amp;quot;default-template&amp;quot;:&amp;quot;python&amp;quot;を変更します。&#xA;{ &amp;#34;oj-path&amp;#34;: &amp;#34;C:\\ProgramData\\Anaconda3\\Scripts\\oj.exe&amp;#34;, &amp;#34;default-contest-dirname-format&amp;#34;: &amp;#34;{ContestID}&amp;#34;, &amp;#34;default-task-dirname-format&amp;#34;: &amp;#34;{tasklabel}&amp;#34;, &amp;#34;default-test-dirname-format&amp;#34;: &amp;#34;test&amp;#34;, &amp;#34;default-task-choice&amp;#34;: &amp;#34;inquire&amp;#34;, &amp;#34;default-template&amp;#34;: &amp;#34;python&amp;#34; } 次に、上のConfig.</description>
-    </item>
-    <item>
-      <title>AutoHotKeyを導入してみた</title>
-      <link>https://twoooooda.net/post/introduce-autohotkey/</link>
-      <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/introduce-autohotkey/</guid>
-      <description>導入を考えたきっかけ 以前の記事でも述べた通り、自作キーボードに対応しているファームウェアがマジのゴミで、キー割り当てを変えられなかったので、いろいろ調べているうちにAutoHotKeyというものを見つけました。&#xA;AutoHotKeyとは？ 独自のプログラミング言語を用いて、キーボードのキー操作によるかなり柔軟なショートカットの作成や、普段あまり使わないキーを全く別のキーとして割り当てたり、メディアコントロールやPCのシステム操作を割り当てたりできます。参考&#xA;導入方法 基本的にこのサイトに従ってインストールして、拡張子を.ahkとしたテキストファイルを作り、そこに任意のショートカットやキーの割り当てを記述していきます。記法や文法、決まりごとは日本語のリファレンス(?)があるので、そちらを参照してください。&#xA;このAutoHotKeyを使う場合、拡張子が.ahkのファイル、あるいは.ahkのファイルから作成した.exeの実行ファイルを起動し、タスクトレイで常駐させておかなければなりません。なので、PC起動時に自動で該当のファイルが起動するようにしておくと便利です。私はこちらのサイトを参考に設定しました。&#xA;実際に使う 私がこのAutoHotKeyでやりたかったのは、&amp;quot;キーボード右上のPageUp、PageDownのキーをメディアの再生一時停止、次の曲ボタンへ割り当て&amp;quot; です。実際のコードはごく簡単なもので、以下のように書いたら思った通りに動いてくれました。&#xA;#InstallKeybdHook #UseHook PgUp::Media_Play_Pause PgDn::Media_Next return また、便利だと聞いたのでこちらのサイトを参考に、左右Altの空打ちで日本語入力と英字入力を切り変えられるようにしました。私は起動しないといけない実行ファイルが増えると嫌なので、実際に使うときはPageUp/Downキーをメディアコントロールに割り当てるコードと、alt-ime-ahk.ahkの内容を一つのファイルに統合しています(ファイル名をgeneral.ahkとしています)。&#xA;導入してみて 導入してしばらく使ってみましたが、とてもとても便利です。 タスクトレイに入るアイコンが一つ増えるのが最初は少し抵抗がありましたが。それを補って余りある恩恵を受けています。今後新しくショートカットが欲しくなったり、割り当てを変えたい時が来れば今使っているgeneral.ahkファイルに追記すればいいだけなので、使い方を多少覚えていればこれからもっと気軽に便利にしていくことができると思います。</description>
-    </item>
-  </channel>
+    <channel>
+        <title>プログラミング on twoooooda.net</title>
+        <link>https://twoooooda.net/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</link>
+        <description>Recent content in プログラミング on twoooooda.net</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja-jp</language>
+        <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/tags/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>atcoder-cliを導入してみた</title>
+        <link>https://twoooooda.net/post/introduce-atcoder-cli/</link>
+        <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/introduce-atcoder-cli/</guid>
+        <description>&lt;h2 id=&#34;いきさつ&#34;&gt;いきさつ
+&lt;/h2&gt;&lt;p&gt;　ここ最近、諸事情あって競技プログラミングで有名なAtCoderに参戦したのですが、AtCoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていた&lt;strong&gt;atcoder-cli&lt;/strong&gt;というものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。&lt;br&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;br&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;strong&gt;参考文献&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://scrapbox.io/hitech/%F0%9F%8F%83_AtCoder_%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89_for_Python&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AtCoder 環境構築 for Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;コマンドラインツールatcoder-cliを公開しました（作成者様のサイト）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;atcoder-cli チュートリアル（作成者様謹製のチュートリアル）&lt;/a&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;atcoder-cliとは&#34;&gt;atcoder-cliとは？
+&lt;/h2&gt;&lt;p&gt;　atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的に&lt;strong&gt;Python&lt;/strong&gt;でAtCoderに参戦することを前提に進めていきます。&lt;/p&gt;
+&lt;h2 id=&#34;導入方法&#34;&gt;導入方法
+&lt;/h2&gt;&lt;p&gt;　基本的には&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;さっきのチュートリアル&lt;/a&gt;に従ってatcoder-cliと、セットでほぼ使うであろう &lt;strong&gt;online-judge-tools&lt;/strong&gt;も一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://dev.macha795.com/windows10-node-js-npm-install/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Node.js・npmのインストール&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;環境&#34;&gt;環境
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Python（Anaconda）&lt;/th&gt;
+          &lt;th&gt;3.8.8&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;pip&lt;/td&gt;
+          &lt;td&gt;22.0.4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;npm&lt;/td&gt;
+          &lt;td&gt;6.14.6&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;インストール&#34;&gt;インストール
+&lt;/h3&gt;&lt;p&gt;　online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; &amp;gt; pip install online-judge-tools
+ &amp;gt; npm install -g atcoder-cli
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;そして、以下のコマンドが使用できればインストールされています。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc -h
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;ログイン&#34;&gt;ログイン
+&lt;/h3&gt;&lt;p&gt;　atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtCoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; oj login https://atcoder.jp/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;次にatcoder-cliの方にログイン。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc login
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ここで、Linux等のCUIに普段から触れていると慣れているかもしれませんが、パスワードを入れる時に一見して入力できていないように見えるかもしれません。が、見えないようになっているだけで入力できています、大丈夫です。&lt;/p&gt;
+&lt;h3 id=&#34;configファイルの編集&#34;&gt;Configファイルの編集
+&lt;/h3&gt;&lt;p&gt;　問題を解くときに、毎回main.pyの作成や問題用ディレクトリを作るのは面倒なので、自動化します。そのためにConfig.jsonを編集します。まずはConfigの場所の確認から。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc config-dir
+C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\atcoder-cli-nodejs\Config
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;環境によってファイルの場所はまちまちになるかと思います。ファイルを開いて、以下みたいな感じに&lt;code&gt;&amp;quot;default-test-dirname-format&amp;quot;&lt;/code&gt;と&lt;code&gt;&amp;quot;default-template&amp;quot;:&amp;quot;python&amp;quot;&lt;/code&gt;を変更します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;oj-path&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\\ProgramData\\Anaconda3\\Scripts\\oj.exe&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-contest-dirname-format&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;{ContestID}&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-task-dirname-format&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;{tasklabel}&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-test-dirname-format&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-task-choice&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;inquire&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-template&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;python&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;次に、上のConfig.jsonがあった&lt;code&gt;Config&lt;/code&gt;フォルダに&lt;code&gt;python&lt;/code&gt;フォルダを作り、その中に&lt;code&gt;main.py&lt;/code&gt;と&lt;code&gt;template.json&lt;/code&gt;を作ります。&lt;code&gt;main.py&lt;/code&gt;の中身は空でも大丈夫で、&lt;code&gt;template.json&lt;/code&gt;は以下。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;nt&#34;&gt;&amp;#34;task&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;nt&#34;&gt;&amp;#34;program&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;             &lt;span class=&#34;s2&#34;&gt;&amp;#34;main.py&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;nt&#34;&gt;&amp;#34;submit&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;main.py&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;使ってみる&#34;&gt;使ってみる
+&lt;/h2&gt;&lt;h3 id=&#34;解答用フォルダ作成&#34;&gt;解答用フォルダ作成
+&lt;/h3&gt;&lt;p&gt;　ようやく使用法編です。今回は&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;&lt;/code&gt;の中に&lt;code&gt;atcoder&lt;/code&gt;というフォルダを作り、その中で作業することとします（ここは自由です）。問題は仮にabc250のa問題を解くとしましょう。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd atcoder
+&amp;gt; acc new abc250
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;&amp;gt; acc new abc000&lt;/code&gt;でその回の解答用フォルダとテストケースのダウンロードが可能です。すると以下のように問題のリストが表示され、Spaceキーで問題の選択、Enterキーでフォルダ作成ができます。aキー -&amp;gt; Enterで全問を一括で選択できます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;abc250/contest.acc.json created.
+create project of AtCoder Beginner Contest 250
+? select tasks (Press &amp;lt;space&amp;gt; to select, &amp;lt;a&amp;gt; to toggle all, &amp;lt;i&amp;gt; to invert selection)
+&amp;gt;(*) A Adjacent Squares
+ ( ) B Enlarged Checker Board
+ ( ) C Adjacent Swaps
+ ( ) D 250-like Number
+ ( ) E Prefix Equality
+ ( ) F One Fourth
+ ( ) G Stonks
+(Move up and down to reveal more choices)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;仮に全選択すると解答用フォルダはこんな感じになっているかと思います。a問題を解くときは、&lt;code&gt;a&lt;/code&gt;フォルダにある&lt;code&gt;main.py&lt;/code&gt;にコードを書いていきます。
+&lt;img src=&#34;https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21.png&#34;
+	width=&#34;316&#34;
+	height=&#34;667&#34;
+	srcset=&#34;https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21_hu4805595019298944967.png 480w, https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21_hu6327058566040865519.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;47&#34;
+		data-flex-basis=&#34;113px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解答テストケース検証&#34;&gt;解答、テストケース検証
+&lt;/h3&gt;&lt;p&gt;　&lt;code&gt;main.py&lt;/code&gt;に解答を書き終えたら、テストします。コンソールから&lt;code&gt;a&lt;/code&gt;フォルダに移動して、コマンドを実行します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd abc250/a
+&amp;gt; oj t -c &amp;#34;python main.py&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;すると、テストケースの検証結果が返ってきます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;\abc250\a&amp;gt; oj t -c &amp;#34;python main.py&amp;#34;
+[INFO] online-judge-tools 11.5.1 (+ online-judge-api-client 10.10.0)
+[INFO] 6 cases found
+[WARNING] GNU time is not available: time
+
+[INFO] sample-1
+[INFO] time: 0.065499 sec
+[SUCCESS] AC
+
+[INFO] sample-2
+[INFO] time: 0.050322 sec
+[SUCCESS] AC
+
+[INFO] sample-3
+[INFO] time: 0.049653 sec
+[SUCCESS] AC
+
+[INFO] sample-4
+[INFO] time: 0.051948 sec
+[SUCCESS] AC
+
+[INFO] sample-5
+[INFO] time: 0.046560 sec
+[SUCCESS] AC
+
+[INFO] sample-6
+[INFO] time: 0.046376 sec
+[SUCCESS] AC
+
+[INFO] slowest: 0.065499 sec  (for sample-1)
+[SUCCESS] test success: 6 cases
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;いい感じにACが出てていい感じですね。&lt;/p&gt;
+&lt;h3 id=&#34;提出&#34;&gt;提出
+&lt;/h3&gt;&lt;p&gt;　テスト結果がいい感じだったので提出します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc submit main.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;提出に成功すると自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。&lt;/p&gt;
+&lt;h3 id=&#34;問題追加&#34;&gt;問題追加
+&lt;/h3&gt;&lt;p&gt;　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、&lt;code&gt;abc250&lt;/code&gt;のフォルダに戻って&lt;code&gt;acc add&lt;/code&gt;で追加ができます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd ..（一つ上の階層に戻る）
+&amp;gt; acc add
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;そうすると同じような問題選択画面が表示され、任意の問題を追加できます。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>AutoHotKeyを導入してみた</title>
+        <link>https://twoooooda.net/post/introduce-autohotkey/</link>
+        <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/introduce-autohotkey/</guid>
+        <description>&lt;h2 id=&#34;導入を考えたきっかけ&#34;&gt;導入を考えたきっかけ
+&lt;/h2&gt;&lt;p&gt;　&lt;a class=&#34;link&#34; href=&#34;https://twoooooda.github.io/p/%E7%A7%81%E3%81%AE%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E5%A5%AE%E9%97%98%E8%A8%98/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;以前の記事&lt;/a&gt;でも述べた通り、自作キーボードに対応しているファームウェアがマジのゴミで、キー割り当てを変えられなかったので、いろいろ調べているうちにAutoHotKeyというものを見つけました。&lt;/p&gt;
+&lt;h2 id=&#34;autohotkeyとは&#34;&gt;AutoHotKeyとは？
+&lt;/h2&gt;&lt;p&gt;　独自のプログラミング言語を用いて、キーボードのキー操作によるかなり柔軟なショートカットの作成や、普段あまり使わないキーを全く別のキーとして割り当てたり、メディアコントロールやPCのシステム操作を割り当てたりできます。&lt;a class=&#34;link&#34; href=&#34;https://fuchiaz.com/usage-autohotkey/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;導入方法&#34;&gt;導入方法
+&lt;/h2&gt;&lt;p&gt;　基本的に&lt;a class=&#34;link&#34; href=&#34;https://fuchiaz.com/auto-hot-key/#AutoHotkey&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;このサイト&lt;/a&gt;に従ってインストールして、拡張子を&lt;code&gt;.ahk&lt;/code&gt;としたテキストファイルを作り、そこに任意のショートカットやキーの割り当てを記述していきます。記法や文法、決まりごとは&lt;a class=&#34;link&#34; href=&#34;https://so-zou.jp/software/tool/system/auto-hot-key/introduction/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;日本語のリファレンス(?)&lt;/a&gt;があるので、そちらを参照してください。&lt;/p&gt;
+&lt;p&gt;　このAutoHotKeyを使う場合、拡張子が&lt;code&gt;.ahk&lt;/code&gt;のファイル、あるいは&lt;code&gt;.ahk&lt;/code&gt;のファイルから作成した&lt;code&gt;.exe&lt;/code&gt;の実行ファイルを起動し、タスクトレイで常駐させておかなければなりません。なので、PC起動時に自動で該当のファイルが起動するようにしておくと便利です。私は&lt;a class=&#34;link&#34; href=&#34;https://kiryusblog.com/autohotkey-autorun/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちらのサイト&lt;/a&gt;を参考に設定しました。&lt;/p&gt;
+&lt;h2 id=&#34;実際に使う&#34;&gt;実際に使う
+&lt;/h2&gt;&lt;p&gt;　私がこのAutoHotKeyでやりたかったのは、&amp;quot;&lt;strong&gt;キーボード右上のPageUp、PageDownのキーをメディアの再生一時停止、次の曲ボタンへ割り当て&lt;/strong&gt;&amp;quot; です。実際のコードはごく簡単なもので、以下のように書いたら思った通りに動いてくれました。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#InstallKeybdHook
+#UseHook
+
+PgUp::Media_Play_Pause
+PgDn::Media_Next
+return
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;また、便利だと聞いたので&lt;a class=&#34;link&#34; href=&#34;https://www.karakaram.com/alt-ime-on-off/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちらのサイト&lt;/a&gt;を参考に、左右Altの空打ちで日本語入力と英字入力を切り変えられるようにしました。私は起動しないといけない実行ファイルが増えると嫌なので、実際に使うときはPageUp/Downキーをメディアコントロールに割り当てるコードと、&lt;code&gt;alt-ime-ahk.ahk&lt;/code&gt;の内容を一つのファイルに統合しています(ファイル名を&lt;code&gt;general.ahk&lt;/code&gt;としています)。&lt;/p&gt;
+&lt;h2 id=&#34;導入してみて&#34;&gt;導入してみて
+&lt;/h2&gt;&lt;p&gt;　導入してしばらく使ってみましたが、&lt;strong&gt;とてもとても便利です。&lt;/strong&gt; タスクトレイに入るアイコンが一つ増えるのが最初は少し抵抗がありましたが。それを補って余りある恩恵を受けています。今後新しくショートカットが欲しくなったり、割り当てを変えたい時が来れば今使っている&lt;code&gt;general.ahk&lt;/code&gt;ファイルに追記すればいいだけなので、使い方を多少覚えていればこれからもっと気軽に便利にしていくことができると思います。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Diary on twoooooda.net</title>
-    <link>https://twoooooda.net/tags/diary/</link>
-    <description>Recent content in Diary on twoooooda.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://twoooooda.net/tags/diary/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hello, world！</title>
-      <link>https://twoooooda.net/post/hello-world/</link>
-      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/hello-world/</guid>
-      <description>苦悩の末 最近急にはてなブログやnoteとは違う個人ブログが欲しくなり、静的サイトジェネレーターであるHUGOと、勉強がてらGitHub Pages、Actionsを使ってブログを作ってみました。実はサイト作成にあたり数日間に渡り大変苦労したのですが、その話はHUGO等の使い方とともにまとめようと思います。&#xA;ではまた。</description>
-    </item>
-  </channel>
+    <channel>
+        <title>Diary on twoooooda.net</title>
+        <link>https://twoooooda.net/tags/diary/</link>
+        <description>Recent content in Diary on twoooooda.net</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja-jp</language>
+        <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/tags/diary/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hello, world！</title>
+        <link>https://twoooooda.net/post/hello-world/</link>
+        <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/hello-world/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/hello-world/publicdomainq-0012425opp.jpg" alt="Featured image of post Hello, world！" /&gt;&lt;h2 id=&#34;苦悩の末&#34;&gt;苦悩の末
+&lt;/h2&gt;&lt;p&gt;　最近急にはてなブログやnoteとは違う個人ブログが欲しくなり、静的サイトジェネレーターであるHUGOと、勉強がてらGitHub Pages、Actionsを使ってブログを作ってみました。実はサイト作成にあたり数日間に渡り大変苦労したのですが、その話はHUGO等の使い方とともにまとめようと思います。&lt;/p&gt;
+&lt;p&gt;ではまた。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

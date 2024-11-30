@@ -1,54 +1,623 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>備忘録 on twoooooda.net</title>
-    <link>https://twoooooda.net/tags/%E5%82%99%E5%BF%98%E9%8C%B2/</link>
-    <description>Recent content in 備忘録 on twoooooda.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://twoooooda.net/tags/%E5%82%99%E5%BF%98%E9%8C%B2/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>USB TVチューナーPX-S1UDを使ってテレビを視聴する最速手順</title>
-      <link>https://twoooooda.net/post/px-s1udandtvtest/</link>
-      <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/px-s1udandtvtest/</guid>
-      <description>基本的には 先駆者様のサイト をかいつまんだだけです。詳しい&amp;amp;正確な情報はそちらを参考にしてください。&#xA;用意するもの USB TVチューナー PX-S1UD V2.0&#xA;今買えるものはだいたいV2.0な気がします。 B-CASカード&#xA;私はぶっ壊れたnasneから奪ってきました。 USBカードリーダー&#xA;NTTのやつ（SCR3310V2.0）が多分一番有名で安定、この記事でもこのリーダーを使っている前提で進めます。 Windows PC&#xA;テレビ用同軸ケーブル ソフトウェアのダウンロード・インストール PX-S1UDのドライバはこちら&#xA;カードリーダー（SCR3310V2.0）のドライバはこちら&#xA;BonDriver-Siano&#xA;PX-S1UDでテレビを見るために別途導入が必要なドライバです。BonDriverは他にも種類がありますが、私の環境ではこれしか動きませんでした。後述。 TVTest&#xA;Windowsでテレビを見るためのソフトウェアです。これも私の環境では32bit版しか動きませんでした。ビルド済みのものはこちらにあります。 TVTestの準備 解凍・フォルダの移動 ビルド後のTVTestをダウンロードしてきたら、解凍して任意の場所に移動させます。この時、 C:\Users・C:\Program Files 以外のフォルダ に移動させないといけないそうです。&#xA;DirectShow フィルタのインストール Windows 10 では、日本のテレビ放送の映像コーデックである MPEG-2 をデコードして再生するのに必要な Microsoft DTV-DVD Video Decoder が標準ではインストールされていないそうなので、TVTest の作者さんが用意してくれているものでインストールします。詳しくは&#xA;TVTest フォルダ内にある [* filter-install.jse] を、管理者権限で実行してください。&#xA;BonDriverのセットアップ 環境や用途によってはBonDriverを複数種類使う可能性も考えられます。なのでTVTestの下に別途BonDriverというフォルダを作って、そこで一括管理する方法が推奨されています。 こんなには要らない TVTestのセットアップ 初期設定 最初に起動すると、設定のポップアップウィンドウが出てきます。この設定はあとで変えられるので適当でも大丈夫です。&#xA;BonDriver … 今後 BonDriver 検索フォルダを変更するため今は空のままにしておく（後述） H.264/AVCデコーダ … 自動 のままで OK H.265/HEVCデコーダ … 自動 のままで OK MPEG-2デコーダ … TVTest DTV Video Decoder に変更する 映像レンダラ … EVR に変更する 録画ファイルの保存フォルダ … TVTest で録画した番組の保存先フォルダをここで設定可能 BonDriverの参照 前述したBonDriverフォルダをTVTestから参照します。TVTestウィンドウ内の無を右クリックして設定を開きます。 すると、一般の中にBonDriver検索フォルダの項目があるので、先ほど作ったBonDriverフォルダを指定します。 相対パスでも良いらしい ここで一度TVTestを再起動しておきましょう。</description>
-    </item>
-    <item>
-      <title>atcoder-cliを導入してみた</title>
-      <link>https://twoooooda.net/post/introduce-atcoder-cli/</link>
-      <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/introduce-atcoder-cli/</guid>
-      <description>いきさつ ここ最近、諸事情あって競技プログラミングで有名なAtCoderに参戦したのですが、AtCoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていたatcoder-cliというものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。&#xA;参考文献&#xA;AtCoder 環境構築 for Python コマンドラインツールatcoder-cliを公開しました（作成者様のサイト） atcoder-cli チュートリアル（作成者様謹製のチュートリアル） atcoder-cliとは？ atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的にPythonでAtCoderに参戦することを前提に進めていきます。&#xA;導入方法 基本的にはさっきのチュートリアルに従ってatcoder-cliと、セットでほぼ使うであろう online-judge-toolsも一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。&#xA;Node.js・npmのインストール&#xA;環境 Python（Anaconda） 3.8.8 pip 22.0.4 npm 6.14.6 インストール online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。&#xA;&amp;gt; pip install online-judge-tools &amp;gt; npm install -g atcoder-cli そして、以下のコマンドが使用できればインストールされています。&#xA;&amp;gt; acc -h ログイン atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtCoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。&#xA;&amp;gt; oj login https://atcoder.jp/ 次にatcoder-cliの方にログイン。&#xA;&amp;gt; acc login ここで、Linux等のCUIに普段から触れていると慣れているかもしれませんが、パスワードを入れる時に一見して入力できていないように見えるかもしれません。が、見えないようになっているだけで入力できています、大丈夫です。&#xA;Configファイルの編集 問題を解くときに、毎回main.pyの作成や問題用ディレクトリを作るのは面倒なので、自動化します。そのためにConfig.jsonを編集します。まずはConfigの場所の確認から。&#xA;&amp;gt; acc config-dir C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\atcoder-cli-nodejs\Config 環境によってファイルの場所はまちまちになるかと思います。ファイルを開いて、以下みたいな感じに&amp;quot;default-test-dirname-format&amp;quot;と&amp;quot;default-template&amp;quot;:&amp;quot;python&amp;quot;を変更します。&#xA;{ &amp;#34;oj-path&amp;#34;: &amp;#34;C:\\ProgramData\\Anaconda3\\Scripts\\oj.exe&amp;#34;, &amp;#34;default-contest-dirname-format&amp;#34;: &amp;#34;{ContestID}&amp;#34;, &amp;#34;default-task-dirname-format&amp;#34;: &amp;#34;{tasklabel}&amp;#34;, &amp;#34;default-test-dirname-format&amp;#34;: &amp;#34;test&amp;#34;, &amp;#34;default-task-choice&amp;#34;: &amp;#34;inquire&amp;#34;, &amp;#34;default-template&amp;#34;: &amp;#34;python&amp;#34; } 次に、上のConfig.</description>
-    </item>
-    <item>
-      <title>AutoHotKeyを導入してみた</title>
-      <link>https://twoooooda.net/post/introduce-autohotkey/</link>
-      <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/introduce-autohotkey/</guid>
-      <description>導入を考えたきっかけ 以前の記事でも述べた通り、自作キーボードに対応しているファームウェアがマジのゴミで、キー割り当てを変えられなかったので、いろいろ調べているうちにAutoHotKeyというものを見つけました。&#xA;AutoHotKeyとは？ 独自のプログラミング言語を用いて、キーボードのキー操作によるかなり柔軟なショートカットの作成や、普段あまり使わないキーを全く別のキーとして割り当てたり、メディアコントロールやPCのシステム操作を割り当てたりできます。参考&#xA;導入方法 基本的にこのサイトに従ってインストールして、拡張子を.ahkとしたテキストファイルを作り、そこに任意のショートカットやキーの割り当てを記述していきます。記法や文法、決まりごとは日本語のリファレンス(?)があるので、そちらを参照してください。&#xA;このAutoHotKeyを使う場合、拡張子が.ahkのファイル、あるいは.ahkのファイルから作成した.exeの実行ファイルを起動し、タスクトレイで常駐させておかなければなりません。なので、PC起動時に自動で該当のファイルが起動するようにしておくと便利です。私はこちらのサイトを参考に設定しました。&#xA;実際に使う 私がこのAutoHotKeyでやりたかったのは、&amp;quot;キーボード右上のPageUp、PageDownのキーをメディアの再生一時停止、次の曲ボタンへ割り当て&amp;quot; です。実際のコードはごく簡単なもので、以下のように書いたら思った通りに動いてくれました。&#xA;#InstallKeybdHook #UseHook PgUp::Media_Play_Pause PgDn::Media_Next return また、便利だと聞いたのでこちらのサイトを参考に、左右Altの空打ちで日本語入力と英字入力を切り変えられるようにしました。私は起動しないといけない実行ファイルが増えると嫌なので、実際に使うときはPageUp/Downキーをメディアコントロールに割り当てるコードと、alt-ime-ahk.ahkの内容を一つのファイルに統合しています(ファイル名をgeneral.ahkとしています)。&#xA;導入してみて 導入してしばらく使ってみましたが、とてもとても便利です。 タスクトレイに入るアイコンが一つ増えるのが最初は少し抵抗がありましたが。それを補って余りある恩恵を受けています。今後新しくショートカットが欲しくなったり、割り当てを変えたい時が来れば今使っているgeneral.ahkファイルに追記すればいいだけなので、使い方を多少覚えていればこれからもっと気軽に便利にしていくことができると思います。</description>
-    </item>
-    <item>
-      <title>ラズパイに公開鍵認証でssh接続するまで</title>
-      <link>https://twoooooda.net/post/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/</link>
-      <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/</guid>
-      <description>はじめに 家に余ってたラズパイをテレビの録画サーバーにしようと思い、部屋の奥から引っ張り出してきたのはいいですが、初期設定もsshの接続設定も何もしてなかったので勉強がてらやってみました、例の如くやらないといけないことが複数サイトに渡って散らばっていたので、備忘録として一通りまとめます。なお、ラズパイのOSはインストール済み, 有線LAN接続なのを前提とし、ラズパイからモニターにはなるべく出力せずに設定することを目指します。&#xA;ホストのPCからラズパイにssh接続する OSをインストールしたmicroSDカードをラズパイに挿す前に, microSDカードの直下にsshという空のファイル(拡張子も無し)を作っておきます。こうすることでラズパイのGUIを触らずにsshをオンにできます。 ※7/28追記 OSが入ったSDカードを覗くと、bootとrootfsというパーティションにわかれている場合がありますが、sshを有効化するにはboot直下に置くのが正解らしいです。&#xA;ラズパイに接続して操作するホストのPCのターミナルから、以下のコマンドを叩くだけでssh接続できます(デフォルトユーザーにログインする場合)。 $ ssh pi@raspberrypi.local IPアドレスの固定 インターネットに繋げるたびにIPアドレスが変わると困るので、まずはラズパイのIPアドレスを固定します。ラズパイのIPアドレス固定の前に、ホストのPCのターミナルで以下を実行します。&#xA;$ ipconfig /all するとIPの構成が一覧で出てくるので、 デフォルトゲートウェイとDNSサーバーのIPアドレス(192.168.x.OOOみたいなやつ)をメモします。 以降はssh接続を介してラズパイのコマンドを叩いていきます。まずはラズパイの設定ファイルを開いて編集します。&#xA;pi@raspberrypi:~$ sudo nano /etc/dhcpcd.conf nanoはviでもいいです(好み)。開いたら、末尾に以下を追加します。&#xA;interface eth0(無線LANの場合はここをwlan0にする) static ip_address=192.168.x.***/24 static routers=192.168.x.OOO static domain_name_servers=192.168.x.OOO staric ip_adress=にラズパイに割り当てたいIPアドレスを書きます。***の部分は1桁、2桁台は他の危機に割り当てられていることが多いので適当に100～200くらいにするといいらしいです。/24はサブネットマスク長です。 static routers=にデフォルトゲートウェイのIPアドレス、static domain_name_servers=にDNSサーバーのIPアドレスを書きます。編集できたら、保存してラズパイを再起動すれば変更が適用されているはずです。 参考記事 ユーザーの追加, 権限の付与 新しいユーザーの追加 デフォルトユーザーである「pi」とは別のユーザーを作成し、権限をそちらに移行します。sshを介してラズパイのターミナルにて、&#xA;pi@raspberrypi:~$ sudo adduser |newuser| |newuser| に任意のユーザー名を指定して実行します。「New password:」と「Retype new password:」へ新規ユーザーのパスワードを指定します。その後くらいにいろいろ設定項目が出てきますが、特に必要がないなら全てEnterで進んでもいいです。 権限の付与 「pi」ユーザーの権限を新しいユーザーに追加します。まずは「pi」ユーザーの権限を確認するために以下を実行します。&#xA;pi@raspberrypi:~$ groups pi すると「pi」ユーザーに付与されている権限が一覧で表示されるので、usermodコマンドで新しいユーザーに権限を移します。&#xA;pi@raspberrypi:~$ sudo usermod -G pi,adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev,spi,i2c,gpio newuser 「pi」ユーザーのホームフォルダのコピー 「pi」ユーザーのホームフォルダの内容をnewuserのホームフォルダにコピーします。&#xA;pi@raspberrypi:~$ sudo cp -r /home/pi/* /home/newuser デフォルトユーザー(pi)の無効化 ラズパイを起動する度に「pi」ユーザーに勝手にログインされると困るので、「pi」ユーザーへの自動ログインをオフにして、ついでに「pi」ユーザーを無効化します。</description>
-    </item>
-    <item>
-      <title>HUGOで作ったサイトにアマゾンのアフィリンクを貼る</title>
-      <link>https://twoooooda.net/post/hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E8%B2%BC%E3%82%8B/</link>
-      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E8%B2%BC%E3%82%8B/</guid>
-      <description>HUGOの仕様 静的サイトジェネレータ &amp;ldquo;HUGO&amp;rdquo; は、テーマの制作者がGitHubに上げているリポジトリをサブモジュールとして使うことで自分のサイトにテーマを導入します。ゆえに、テーマのレイアウトに関わるコードを直接書き換えることはできません(ローカルファイルは書き換えられますが)。 しかしHUGOの仕様として、/staticや/layouts以下のフォルダやファイルが優先して読み込まれるというものがあります。 ではどうするか 当サイトのテーマを例にすると、/themes/hugo-theme-stack/layouts/partials/sidebar/right.htmlを書き換えたい場合、該当のファイルを/layouts/partials/にコピー＆ペーストすると、そちらの方が先に読み込まれるので結果的に編集して上書きが可能なわけです。 あとはAmazonのアフィリエイトリンクのHTMLコードを生成して、上記のright.htmlに書き込むとちゃんと表示されました。 </description>
-    </item>
-    <item>
-      <title>Unityで蚊っぽい動きをするやつを作る</title>
-      <link>https://twoooooda.net/post/mosquite-in-unity/</link>
-      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/mosquite-in-unity/</guid>
-      <description>はじめに 少し前にOculus Quest2を購入し、しばらくハンドトラッキングで遊んでいたんですが、急に『手で蚊を潰すVRゲーム』を作りたくなったのでとりあえず蚊っぽい挙動をするナニカを作りました。 スクリプト やっていることはごく簡単で、数フレームに一回ランダムでRotationの値を変更し、Z方向に常に力を加え続けているだけです。&#xA;using UnityEngine; public class Move_mosquite : MonoBehaviour { Rigidbody rb; public float freq, speed, power; void Start() { rb = this.GetComponent&amp;lt;Rigidbody&amp;gt;(); } void Update() { rb.velocity = rb.velocity.normalized * speed; //変数speedで速度の設定 rb.AddForce(this.transform.forward * power * Time.deltaTime, ForceMode.Force); //Z方向(forward)に力を加え続ける if (Random.value &amp;lt; freq) //Rotationを変更する頻度を設定。毎フレームだと頻繁過ぎるので。 { transform.eulerAngles = new Vector3(Random.Range(0, 360), Random.Range(0, 360), Random.Range(0, 360)); } } } このままでは無限にどっかいってしまうので、適当にコライダーをつけるとか、壁に近づくと力を受けるとかにするといいかもしれません。 なお、当方めちゃくちゃ初心者なのでもっと効率的なやり方や、もっとリアルになるやり方があるかもしれませんのであしからず&amp;hellip;.&#xA;完成例 </description>
-    </item>
-  </channel>
+    <channel>
+        <title>備忘録 on twoooooda.net</title>
+        <link>https://twoooooda.net/tags/%E5%82%99%E5%BF%98%E9%8C%B2/</link>
+        <description>Recent content in 備忘録 on twoooooda.net</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja-jp</language>
+        <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/tags/%E5%82%99%E5%BF%98%E9%8C%B2/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>USB TVチューナーPX-S1UDを使ってテレビを視聴する最速手順</title>
+        <link>https://twoooooda.net/post/px-s1udandtvtest/</link>
+        <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/px-s1udandtvtest/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/px-s1udandtvtest/0f3010e5fa0dcb1600eb6a88167d6465.png" alt="Featured image of post USB TVチューナーPX-S1UDを使ってテレビを視聴する最速手順" /&gt;&lt;p&gt;基本的には &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.tsukumijima.net/article/tvtest-usage/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;先駆者様のサイト&lt;/a&gt;&lt;/strong&gt; をかいつまんだだけです。詳しい&amp;amp;正確な情報はそちらを参考にしてください。&lt;/p&gt;
+&lt;h2 id=&#34;用意するもの&#34;&gt;用意するもの
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;USB TVチューナー &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/7nwX0jt&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PX-S1UD V2.0&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;今買えるものはだいたいV2.0な気がします。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;B-CASカード&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;私はぶっ壊れたnasneから奪ってきました。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;USBカードリーダー&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/b5PTsTL&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;NTTのやつ（SCR3310V2.0）&lt;/a&gt;が多分一番有名で安定、この記事でもこのリーダーを使っている前提で進めます。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Windows PC&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;テレビ用同軸ケーブル
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ソフトウェアのダウンロードインストール&#34;&gt;ソフトウェアのダウンロード・インストール
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;PX-S1UDのドライバは&lt;a class=&#34;link&#34; href=&#34;https://www.plex-net.co.jp/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちら&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;カードリーダー（SCR3310V2.0）のドライバは&lt;a class=&#34;link&#34; href=&#34;https://www.ntt.com/business/services/application/authentication/jpki/download10.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちら&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.axfc.net/u/2503550&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;BonDriver-Siano&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;PX-S1UDでテレビを見るために別途導入が必要なドライバです。BonDriverは他にも種類がありますが、私の環境ではこれしか動きませんでした。後述。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;TVTest&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Windowsでテレビを見るためのソフトウェアです。これも私の環境では32bit版しか動きませんでした。ビルド済みのものは&lt;a class=&#34;link&#34; href=&#34;https://blog.tsukumijima.net/article/tvtest-usage/#toc3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちら&lt;/a&gt;にあります。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;tvtestの準備&#34;&gt;TVTestの準備
+&lt;/h2&gt;&lt;h3 id=&#34;解凍フォルダの移動&#34;&gt;解凍・フォルダの移動
+&lt;/h3&gt;&lt;p&gt;　ビルド後のTVTestをダウンロードしてきたら、解凍して任意の場所に移動させます。この時、 &lt;strong&gt;C:\Users・C:\Program Files 以外のフォルダ&lt;/strong&gt; に移動させないといけないそうです。&lt;/p&gt;
+&lt;h3 id=&#34;directshow-フィルタのインストール&#34;&gt;DirectShow フィルタのインストール
+&lt;/h3&gt;&lt;p&gt;　Windows 10 では、日本のテレビ放送の映像コーデックである MPEG-2 をデコードして再生するのに必要な Microsoft DTV-DVD Video Decoder が標準ではインストールされていないそうなので、TVTest の作者さんが用意してくれているものでインストールします。&lt;a class=&#34;link&#34; href=&#34;https://blog.tsukumijima.net/article/tvtest-usage/#toc5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;詳しくは&lt;/a&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;TVTest フォルダ内にある [* filter-install.jse] を、管理者権限で実行してください。&lt;/p&gt;
+&lt;h3 id=&#34;bondriverのセットアップ&#34;&gt;BonDriverのセットアップ
+&lt;/h3&gt;&lt;p&gt;　環境や用途によってはBonDriverを複数種類使う可能性も考えられます。なのでTVTestの下に別途BonDriverというフォルダを作って、そこで一括管理する方法が推奨されています。
+&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/e9550c6f4149126ddf8624b16b39048e.png&#34;
+	width=&#34;870&#34;
+	height=&#34;295&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/e9550c6f4149126ddf8624b16b39048e_hu17935511195776063111.png 480w, https://twoooooda.net/post/px-s1udandtvtest/e9550c6f4149126ddf8624b16b39048e_hu17192775825425129518.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;294&#34;
+		data-flex-basis=&#34;707px&#34;
+	
+&gt;&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/7ea95df318a7936955291669ac5e4f1f.png&#34;
+	width=&#34;589&#34;
+	height=&#34;249&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/7ea95df318a7936955291669ac5e4f1f_hu10744437854333523522.png 480w, https://twoooooda.net/post/px-s1udandtvtest/7ea95df318a7936955291669ac5e4f1f_hu13607743567104867734.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;こんなには要らない&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;236&#34;
+		data-flex-basis=&#34;567px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;tvtestのセットアップ&#34;&gt;TVTestのセットアップ
+&lt;/h3&gt;&lt;h4 id=&#34;初期設定&#34;&gt;初期設定
+&lt;/h4&gt;&lt;p&gt;　最初に起動すると、設定のポップアップウィンドウが出てきます。この設定はあとで変えられるので適当でも大丈夫です。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;BonDriver … 今後 BonDriver 検索フォルダを変更するため今は空のままにしておく（後述）&lt;/li&gt;
+&lt;li&gt;H.264/AVCデコーダ … &lt;strong&gt;自動&lt;/strong&gt; のままで OK&lt;/li&gt;
+&lt;li&gt;H.265/HEVCデコーダ … &lt;strong&gt;自動&lt;/strong&gt; のままで OK&lt;/li&gt;
+&lt;li&gt;MPEG-2デコーダ … &lt;strong&gt;TVTest DTV Video Decoder&lt;/strong&gt; に変更する&lt;/li&gt;
+&lt;li&gt;映像レンダラ … &lt;strong&gt;EVR&lt;/strong&gt; に変更する&lt;/li&gt;
+&lt;li&gt;録画ファイルの保存フォルダ … TVTest で録画した番組の保存先フォルダをここで設定可能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;bondriverの参照&#34;&gt;BonDriverの参照
+&lt;/h4&gt;&lt;p&gt;　前述したBonDriverフォルダをTVTestから参照します。TVTestウィンドウ内の無を右クリックして設定を開きます。
+すると、&lt;strong&gt;一般&lt;/strong&gt;の中に&lt;strong&gt;BonDriver検索フォルダ&lt;/strong&gt;の項目があるので、先ほど作ったBonDriverフォルダを指定します。
+&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/eebea229ec33c069c5b7b1c87df0fc8a.png&#34;
+	width=&#34;1160&#34;
+	height=&#34;798&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/eebea229ec33c069c5b7b1c87df0fc8a_hu11112342759484077195.png 480w, https://twoooooda.net/post/px-s1udandtvtest/eebea229ec33c069c5b7b1c87df0fc8a_hu10096337617716162903.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;145&#34;
+		data-flex-basis=&#34;348px&#34;
+	
+&gt;&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/5d311e1263af94d76df9b663d9203e74.png&#34;
+	width=&#34;933&#34;
+	height=&#34;327&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/5d311e1263af94d76df9b663d9203e74_hu15835533573822229167.png 480w, https://twoooooda.net/post/px-s1udandtvtest/5d311e1263af94d76df9b663d9203e74_hu3594538081316793183.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;相対パスでも良いらしい&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;285&#34;
+		data-flex-basis=&#34;684px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;strong&gt;ここで一度TVTestを再起動しておきましょう。&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h4 id=&#34;tsプロセッサー&#34;&gt;TSプロセッサー
+&lt;/h4&gt;&lt;p&gt;　TVTestでテレビを見る場合の一番大事な設定といっても過言ではないのが、一番下にある &lt;strong&gt;TSプロセッサ&lt;/strong&gt; の項目です。ここが設定されていないと上手くテレビが映りません。↓の画像のように設定します。
+&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/43b7b2b665895a4a5b098258bfdecc1a.png&#34;
+	width=&#34;778&#34;
+	height=&#34;541&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/43b7b2b665895a4a5b098258bfdecc1a_hu14589882578513877932.png 480w, https://twoooooda.net/post/px-s1udandtvtest/43b7b2b665895a4a5b098258bfdecc1a_hu16179620160789115046.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;143&#34;
+		data-flex-basis=&#34;345px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;とりあえず見れるはず&#34;&gt;とりあえず見れるはず
+&lt;/h4&gt;&lt;p&gt;　ここまで設定すれば、TVTestのウィンドウの左下から適切なBonDriverを選ぶだけでとりあえずテレビが見れるはずです。
+&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/6b52fc2a26d4b0f315a47dd19c779564.png&#34;
+	width=&#34;226&#34;
+	height=&#34;330&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/6b52fc2a26d4b0f315a47dd19c779564_hu805742135431400015.png 480w, https://twoooooda.net/post/px-s1udandtvtest/6b52fc2a26d4b0f315a47dd19c779564_hu16517868978112356756.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;68&#34;
+		data-flex-basis=&#34;164px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;tvtestを使う&#34;&gt;TVTestを使う
+&lt;/h2&gt;&lt;h3 id=&#34;チャンネルスキャン&#34;&gt;チャンネルスキャン
+&lt;/h3&gt;&lt;p&gt;　このままでは不便なので、設定からチャンネルスキャンをしましょう。これが正常に完了すると、TVTestウィンドウの左下の&amp;lt;チャンネル&amp;gt;のプルダウンからチャンネルを選択して、番組を視聴することができます。
+&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/923ec1cc2a7143c847997ae3e89d31ab.png&#34;
+	width=&#34;1295&#34;
+	height=&#34;856&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/923ec1cc2a7143c847997ae3e89d31ab_hu3462801882777950841.png 480w, https://twoooooda.net/post/px-s1udandtvtest/923ec1cc2a7143c847997ae3e89d31ab_hu12592607550023559722.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;363px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;エラー表示&#34;&gt;エラー表示
+&lt;/h3&gt;&lt;p&gt;　テレビが映らない、何かがおかしいと思ったら、下のエラー表示を見てみるといいかもしれません。特に、B-CASカードによる復号ががうまく動いていない時は &lt;strong&gt;S&lt;/strong&gt; の値が爆増していくので、目安程度にはなります。
+&lt;img src=&#34;https://twoooooda.net/post/px-s1udandtvtest/c6ffb245329bae27efb690b44ae45dd6.png&#34;
+	width=&#34;178&#34;
+	height=&#34;72&#34;
+	srcset=&#34;https://twoooooda.net/post/px-s1udandtvtest/c6ffb245329bae27efb690b44ae45dd6_hu12849848388694388433.png 480w, https://twoooooda.net/post/px-s1udandtvtest/c6ffb245329bae27efb690b44ae45dd6_hu6223721869698166739.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;247&#34;
+		data-flex-basis=&#34;593px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;とりあえず以上です。これはあくまでPX-S1UDとPCでテレビを見るための最短手順ですので、TVTestの設定などを練ればもっと便利に使えるはずです。&lt;/p&gt;
+&lt;h2 id=&#34;202407-追記&#34;&gt;2024/07 追記
+&lt;/h2&gt;&lt;p&gt;ある日TVTestでテレビを見ようとしたら、「BonDriverの初期化ができません」云々といったエラーが出てテレビが見られなくなってしまいました。
+いろいろ調べて、試した方法を書き残しておきます。&lt;/p&gt;
+&lt;h3 id=&#34;biosの項目を設定&#34;&gt;BIOSの項目を設定
+&lt;/h3&gt;&lt;p&gt;どうもBIOSのある設定が悪さをしているようで、Advancedメニューの中にある「&lt;strong&gt;Above 4GB Decoding&lt;/strong&gt;」という設定をDisableにすると改善することがあるそうです。&lt;/p&gt;
+&lt;h3 id=&#34;デバイスセキュリティの項目を設定&#34;&gt;デバイスセキュリティの項目を設定
+&lt;/h3&gt;&lt;p&gt;デバイスマネージャーを見ると、そもそもPX-S1UDを認識していなかったり、ドライバが動いていなかったりで不安定な状態でした。こういう場合はWindowsセキュリティの設定 → デバイスセキュリティ → コア分離 → &lt;strong&gt;メモリ整合性&lt;/strong&gt; という項目をオフにすると認識するようになるそうです。&lt;/p&gt;
+&lt;p&gt;以上の二点を試したところ、正常に見られようになりました。どちらがクリティカルな解決策だったのかはよくわかりませんが、私の環境ではこれで動くようになりました。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>atcoder-cliを導入してみた</title>
+        <link>https://twoooooda.net/post/introduce-atcoder-cli/</link>
+        <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/introduce-atcoder-cli/</guid>
+        <description>&lt;h2 id=&#34;いきさつ&#34;&gt;いきさつ
+&lt;/h2&gt;&lt;p&gt;　ここ最近、諸事情あって競技プログラミングで有名なAtCoderに参戦したのですが、AtCoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていた&lt;strong&gt;atcoder-cli&lt;/strong&gt;というものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。&lt;br&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;br&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;strong&gt;参考文献&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://scrapbox.io/hitech/%F0%9F%8F%83_AtCoder_%E7%92%B0%E5%A2%83%E6%A7%8B%E7%AF%89_for_Python&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;AtCoder 環境構築 for Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;コマンドラインツールatcoder-cliを公開しました（作成者様のサイト）&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;atcoder-cli チュートリアル（作成者様謹製のチュートリアル）&lt;/a&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;atcoder-cliとは&#34;&gt;atcoder-cliとは？
+&lt;/h2&gt;&lt;p&gt;　atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的に&lt;strong&gt;Python&lt;/strong&gt;でAtCoderに参戦することを前提に進めていきます。&lt;/p&gt;
+&lt;h2 id=&#34;導入方法&#34;&gt;導入方法
+&lt;/h2&gt;&lt;p&gt;　基本的には&lt;a class=&#34;link&#34; href=&#34;http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;さっきのチュートリアル&lt;/a&gt;に従ってatcoder-cliと、セットでほぼ使うであろう &lt;strong&gt;online-judge-tools&lt;/strong&gt;も一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://dev.macha795.com/windows10-node-js-npm-install/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Node.js・npmのインストール&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;環境&#34;&gt;環境
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Python（Anaconda）&lt;/th&gt;
+          &lt;th&gt;3.8.8&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;pip&lt;/td&gt;
+          &lt;td&gt;22.0.4&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;npm&lt;/td&gt;
+          &lt;td&gt;6.14.6&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;インストール&#34;&gt;インストール
+&lt;/h3&gt;&lt;p&gt;　online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt; &amp;gt; pip install online-judge-tools
+ &amp;gt; npm install -g atcoder-cli
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;そして、以下のコマンドが使用できればインストールされています。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc -h
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;ログイン&#34;&gt;ログイン
+&lt;/h3&gt;&lt;p&gt;　atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtCoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; oj login https://atcoder.jp/
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;次にatcoder-cliの方にログイン。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc login
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;ここで、Linux等のCUIに普段から触れていると慣れているかもしれませんが、パスワードを入れる時に一見して入力できていないように見えるかもしれません。が、見えないようになっているだけで入力できています、大丈夫です。&lt;/p&gt;
+&lt;h3 id=&#34;configファイルの編集&#34;&gt;Configファイルの編集
+&lt;/h3&gt;&lt;p&gt;　問題を解くときに、毎回main.pyの作成や問題用ディレクトリを作るのは面倒なので、自動化します。そのためにConfig.jsonを編集します。まずはConfigの場所の確認から。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc config-dir
+C:\Users\&amp;lt;username&amp;gt;\AppData\Roaming\atcoder-cli-nodejs\Config
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;環境によってファイルの場所はまちまちになるかと思います。ファイルを開いて、以下みたいな感じに&lt;code&gt;&amp;quot;default-test-dirname-format&amp;quot;&lt;/code&gt;と&lt;code&gt;&amp;quot;default-template&amp;quot;:&amp;quot;python&amp;quot;&lt;/code&gt;を変更します。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;oj-path&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\\ProgramData\\Anaconda3\\Scripts\\oj.exe&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-contest-dirname-format&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;{ContestID}&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-task-dirname-format&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;{tasklabel}&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-test-dirname-format&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;test&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-task-choice&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;inquire&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nt&#34;&gt;&amp;#34;default-template&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;python&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;次に、上のConfig.jsonがあった&lt;code&gt;Config&lt;/code&gt;フォルダに&lt;code&gt;python&lt;/code&gt;フォルダを作り、その中に&lt;code&gt;main.py&lt;/code&gt;と&lt;code&gt;template.json&lt;/code&gt;を作ります。&lt;code&gt;main.py&lt;/code&gt;の中身は空でも大丈夫で、&lt;code&gt;template.json&lt;/code&gt;は以下。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;nt&#34;&gt;&amp;#34;task&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;nt&#34;&gt;&amp;#34;program&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;             &lt;span class=&#34;s2&#34;&gt;&amp;#34;main.py&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;p&#34;&gt;],&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;         &lt;span class=&#34;nt&#34;&gt;&amp;#34;submit&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;main.py&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;     &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;使ってみる&#34;&gt;使ってみる
+&lt;/h2&gt;&lt;h3 id=&#34;解答用フォルダ作成&#34;&gt;解答用フォルダ作成
+&lt;/h3&gt;&lt;p&gt;　ようやく使用法編です。今回は&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;&lt;/code&gt;の中に&lt;code&gt;atcoder&lt;/code&gt;というフォルダを作り、その中で作業することとします（ここは自由です）。問題は仮にabc250のa問題を解くとしましょう。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd atcoder
+&amp;gt; acc new abc250
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;&amp;gt; acc new abc000&lt;/code&gt;でその回の解答用フォルダとテストケースのダウンロードが可能です。すると以下のように問題のリストが表示され、Spaceキーで問題の選択、Enterキーでフォルダ作成ができます。aキー -&amp;gt; Enterで全問を一括で選択できます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;abc250/contest.acc.json created.
+create project of AtCoder Beginner Contest 250
+? select tasks (Press &amp;lt;space&amp;gt; to select, &amp;lt;a&amp;gt; to toggle all, &amp;lt;i&amp;gt; to invert selection)
+&amp;gt;(*) A Adjacent Squares
+ ( ) B Enlarged Checker Board
+ ( ) C Adjacent Swaps
+ ( ) D 250-like Number
+ ( ) E Prefix Equality
+ ( ) F One Fourth
+ ( ) G Stonks
+(Move up and down to reveal more choices)
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;仮に全選択すると解答用フォルダはこんな感じになっているかと思います。a問題を解くときは、&lt;code&gt;a&lt;/code&gt;フォルダにある&lt;code&gt;main.py&lt;/code&gt;にコードを書いていきます。
+&lt;img src=&#34;https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21.png&#34;
+	width=&#34;316&#34;
+	height=&#34;667&#34;
+	srcset=&#34;https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21_hu4805595019298944967.png 480w, https://twoooooda.net/post/introduce-atcoder-cli/2022-05-21_hu6327058566040865519.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;47&#34;
+		data-flex-basis=&#34;113px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;解答テストケース検証&#34;&gt;解答、テストケース検証
+&lt;/h3&gt;&lt;p&gt;　&lt;code&gt;main.py&lt;/code&gt;に解答を書き終えたら、テストします。コンソールから&lt;code&gt;a&lt;/code&gt;フォルダに移動して、コマンドを実行します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd abc250/a
+&amp;gt; oj t -c &amp;#34;python main.py&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;すると、テストケースの検証結果が返ってきます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;C:\Users\&amp;lt;username&amp;gt;\abc250\a&amp;gt; oj t -c &amp;#34;python main.py&amp;#34;
+[INFO] online-judge-tools 11.5.1 (+ online-judge-api-client 10.10.0)
+[INFO] 6 cases found
+[WARNING] GNU time is not available: time
+
+[INFO] sample-1
+[INFO] time: 0.065499 sec
+[SUCCESS] AC
+
+[INFO] sample-2
+[INFO] time: 0.050322 sec
+[SUCCESS] AC
+
+[INFO] sample-3
+[INFO] time: 0.049653 sec
+[SUCCESS] AC
+
+[INFO] sample-4
+[INFO] time: 0.051948 sec
+[SUCCESS] AC
+
+[INFO] sample-5
+[INFO] time: 0.046560 sec
+[SUCCESS] AC
+
+[INFO] sample-6
+[INFO] time: 0.046376 sec
+[SUCCESS] AC
+
+[INFO] slowest: 0.065499 sec  (for sample-1)
+[SUCCESS] test success: 6 cases
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;いい感じにACが出てていい感じですね。&lt;/p&gt;
+&lt;h3 id=&#34;提出&#34;&gt;提出
+&lt;/h3&gt;&lt;p&gt;　テスト結果がいい感じだったので提出します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; acc submit main.py
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;提出に成功すると自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。&lt;/p&gt;
+&lt;h3 id=&#34;問題追加&#34;&gt;問題追加
+&lt;/h3&gt;&lt;p&gt;　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、&lt;code&gt;abc250&lt;/code&gt;のフォルダに戻って&lt;code&gt;acc add&lt;/code&gt;で追加ができます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;&amp;gt; cd ..（一つ上の階層に戻る）
+&amp;gt; acc add
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;そうすると同じような問題選択画面が表示され、任意の問題を追加できます。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>AutoHotKeyを導入してみた</title>
+        <link>https://twoooooda.net/post/introduce-autohotkey/</link>
+        <pubDate>Tue, 04 Jan 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/introduce-autohotkey/</guid>
+        <description>&lt;h2 id=&#34;導入を考えたきっかけ&#34;&gt;導入を考えたきっかけ
+&lt;/h2&gt;&lt;p&gt;　&lt;a class=&#34;link&#34; href=&#34;https://twoooooda.github.io/p/%E7%A7%81%E3%81%AE%E8%87%AA%E4%BD%9C%E3%82%AD%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%89%E5%A5%AE%E9%97%98%E8%A8%98/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;以前の記事&lt;/a&gt;でも述べた通り、自作キーボードに対応しているファームウェアがマジのゴミで、キー割り当てを変えられなかったので、いろいろ調べているうちにAutoHotKeyというものを見つけました。&lt;/p&gt;
+&lt;h2 id=&#34;autohotkeyとは&#34;&gt;AutoHotKeyとは？
+&lt;/h2&gt;&lt;p&gt;　独自のプログラミング言語を用いて、キーボードのキー操作によるかなり柔軟なショートカットの作成や、普段あまり使わないキーを全く別のキーとして割り当てたり、メディアコントロールやPCのシステム操作を割り当てたりできます。&lt;a class=&#34;link&#34; href=&#34;https://fuchiaz.com/usage-autohotkey/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;参考&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;導入方法&#34;&gt;導入方法
+&lt;/h2&gt;&lt;p&gt;　基本的に&lt;a class=&#34;link&#34; href=&#34;https://fuchiaz.com/auto-hot-key/#AutoHotkey&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;このサイト&lt;/a&gt;に従ってインストールして、拡張子を&lt;code&gt;.ahk&lt;/code&gt;としたテキストファイルを作り、そこに任意のショートカットやキーの割り当てを記述していきます。記法や文法、決まりごとは&lt;a class=&#34;link&#34; href=&#34;https://so-zou.jp/software/tool/system/auto-hot-key/introduction/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;日本語のリファレンス(?)&lt;/a&gt;があるので、そちらを参照してください。&lt;/p&gt;
+&lt;p&gt;　このAutoHotKeyを使う場合、拡張子が&lt;code&gt;.ahk&lt;/code&gt;のファイル、あるいは&lt;code&gt;.ahk&lt;/code&gt;のファイルから作成した&lt;code&gt;.exe&lt;/code&gt;の実行ファイルを起動し、タスクトレイで常駐させておかなければなりません。なので、PC起動時に自動で該当のファイルが起動するようにしておくと便利です。私は&lt;a class=&#34;link&#34; href=&#34;https://kiryusblog.com/autohotkey-autorun/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちらのサイト&lt;/a&gt;を参考に設定しました。&lt;/p&gt;
+&lt;h2 id=&#34;実際に使う&#34;&gt;実際に使う
+&lt;/h2&gt;&lt;p&gt;　私がこのAutoHotKeyでやりたかったのは、&amp;quot;&lt;strong&gt;キーボード右上のPageUp、PageDownのキーをメディアの再生一時停止、次の曲ボタンへ割り当て&lt;/strong&gt;&amp;quot; です。実際のコードはごく簡単なもので、以下のように書いたら思った通りに動いてくれました。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#InstallKeybdHook
+#UseHook
+
+PgUp::Media_Play_Pause
+PgDn::Media_Next
+return
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;また、便利だと聞いたので&lt;a class=&#34;link&#34; href=&#34;https://www.karakaram.com/alt-ime-on-off/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こちらのサイト&lt;/a&gt;を参考に、左右Altの空打ちで日本語入力と英字入力を切り変えられるようにしました。私は起動しないといけない実行ファイルが増えると嫌なので、実際に使うときはPageUp/Downキーをメディアコントロールに割り当てるコードと、&lt;code&gt;alt-ime-ahk.ahk&lt;/code&gt;の内容を一つのファイルに統合しています(ファイル名を&lt;code&gt;general.ahk&lt;/code&gt;としています)。&lt;/p&gt;
+&lt;h2 id=&#34;導入してみて&#34;&gt;導入してみて
+&lt;/h2&gt;&lt;p&gt;　導入してしばらく使ってみましたが、&lt;strong&gt;とてもとても便利です。&lt;/strong&gt; タスクトレイに入るアイコンが一つ増えるのが最初は少し抵抗がありましたが。それを補って余りある恩恵を受けています。今後新しくショートカットが欲しくなったり、割り当てを変えたい時が来れば今使っている&lt;code&gt;general.ahk&lt;/code&gt;ファイルに追記すればいいだけなので、使い方を多少覚えていればこれからもっと気軽に便利にしていくことができると思います。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>ラズパイに公開鍵認証でssh接続するまで</title>
+        <link>https://twoooooda.net/post/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/</link>
+        <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/raspi.jpeg" alt="Featured image of post ラズパイに公開鍵認証でssh接続するまで" /&gt;&lt;h2 id=&#34;はじめに&#34;&gt;はじめに
+&lt;/h2&gt;&lt;p&gt;　家に余ってたラズパイをテレビの録画サーバーにしようと思い、部屋の奥から引っ張り出してきたのはいいですが、初期設定もsshの接続設定も何もしてなかったので勉強がてらやってみました、例の如くやらないといけないことが複数サイトに渡って散らばっていたので、備忘録として一通りまとめます。なお、ラズパイのOSはインストール済み, 有線LAN接続なのを前提とし、ラズパイからモニターにはなるべく出力せずに設定することを目指します。&lt;br&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ホストのpcからラズパイにssh接続する&#34;&gt;ホストのPCからラズパイにssh接続する
+&lt;/h2&gt;&lt;p&gt;　OSをインストールしたmicroSDカードをラズパイに挿す前に, microSDカードの直下にsshという空のファイル(拡張子も無し)を作っておきます。こうすることでラズパイのGUIを触らずにsshをオンにできます。
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;※7/28追記&lt;!-- raw HTML omitted --&gt;
+OSが入ったSDカードを覗くと、&lt;code&gt;boot&lt;/code&gt;と&lt;code&gt;rootfs&lt;/code&gt;というパーティションにわかれている場合がありますが、sshを有効化するには&lt;code&gt;boot&lt;/code&gt;直下に置くのが正解らしいです。&lt;/p&gt;
+&lt;p&gt;　ラズパイに接続して操作するホストのPCのターミナルから、以下のコマンドを叩くだけでssh接続できます(デフォルトユーザーにログインする場合)。
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ssh pi@raspberrypi.local
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;ipアドレスの固定&#34;&gt;IPアドレスの固定
+&lt;/h2&gt;&lt;p&gt;　インターネットに繋げるたびにIPアドレスが変わると困るので、まずはラズパイのIPアドレスを固定します。ラズパイのIPアドレス固定の前に、ホストのPCのターミナルで以下を実行します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ipconfig /all
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;するとIPの構成が一覧で出てくるので、 &lt;strong&gt;デフォルトゲートウェイとDNSサーバーのIPアドレス&lt;/strong&gt;(192.168.x.OOOみたいなやつ)をメモします。
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;　以降はssh接続を介してラズパイのコマンドを叩いていきます。まずはラズパイの設定ファイルを開いて編集します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pi@raspberrypi:~$ sudo nano /etc/dhcpcd.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;nanoはviでもいいです(好み)。開いたら、末尾に以下を追加します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;interface eth0(無線LANの場合はここをwlan0にする)
+static ip_address=192.168.x.***/24
+static routers=192.168.x.OOO
+static domain_name_servers=192.168.x.OOO
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;code&gt;staric ip_adress=&lt;/code&gt;にラズパイに割り当てたいIPアドレスを書きます。***の部分は1桁、2桁台は他の危機に割り当てられていることが多いので適当に100～200くらいにするといいらしいです。/24はサブネットマスク長です。
+&lt;code&gt;static routers=&lt;/code&gt;にデフォルトゲートウェイのIPアドレス、&lt;code&gt;static domain_name_servers=&lt;/code&gt;にDNSサーバーのIPアドレスを書きます。編集できたら、保存してラズパイを再起動すれば変更が適用されているはずです。
+&lt;!-- raw HTML omitted --&gt;
+&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://mugeek.hatenablog.com/entry/2019/05/27/230256&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;参考記事&lt;/a&gt;&lt;/strong&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;ユーザーの追加-権限の付与&#34;&gt;ユーザーの追加, 権限の付与
+&lt;/h2&gt;&lt;h3 id=&#34;新しいユーザーの追加&#34;&gt;新しいユーザーの追加
+&lt;/h3&gt;&lt;p&gt;　デフォルトユーザーである「pi」とは別のユーザーを作成し、権限をそちらに移行します。sshを介してラズパイのターミナルにて、&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pi@raspberrypi:~$ sudo adduser |newuser|
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;|newuser| に任意のユーザー名を指定して実行します。「New password:」と「Retype new password:」へ新規ユーザーのパスワードを指定します。その後くらいにいろいろ設定項目が出てきますが、特に必要がないなら全てEnterで進んでもいいです。
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;権限の付与&#34;&gt;権限の付与
+&lt;/h3&gt;&lt;p&gt;　「pi」ユーザーの権限を新しいユーザーに追加します。まずは「pi」ユーザーの権限を確認するために以下を実行します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pi@raspberrypi:~$ groups pi
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;すると「pi」ユーザーに付与されている権限が一覧で表示されるので、usermodコマンドで新しいユーザーに権限を移します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pi@raspberrypi:~$ sudo usermod -G pi,adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev,spi,i2c,gpio newuser
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;piユーザーのホームフォルダのコピー&#34;&gt;「pi」ユーザーのホームフォルダのコピー
+&lt;/h3&gt;&lt;p&gt;　「pi」ユーザーのホームフォルダの内容をnewuserのホームフォルダにコピーします。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pi@raspberrypi:~$ sudo cp -r /home/pi/* /home/newuser
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;デフォルトユーザーpiの無効化&#34;&gt;デフォルトユーザー(pi)の無効化
+&lt;/h2&gt;&lt;p&gt;　ラズパイを起動する度に「pi」ユーザーに勝手にログインされると困るので、「pi」ユーザーへの自動ログインをオフにして、ついでに「pi」ユーザーを無効化します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pi@raspberrypi:~$ sudo nano /etc/lightdm/lightdm.conf
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;/lightdm/lightdm.confの126行目の先頭に#を入れてコメントアウトします(&lt;code&gt;#autologin-user=pi&lt;/code&gt;)。
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;　次に、newuserでオートログインするようにします。autologin@.serviceを開いて、28行目の「&amp;ndash;autologin pi」を「&amp;ndash;autologin newuser」へ変更します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pi@raspberrypi:~$ sudo vi /etc/systemd/system/autologin@.service
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;　最後に「pi」ユーザーを無効にします。ユーザーのアカウントの有効期限を過去の日付にすることで無効化できます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;pi@raspberrypi:~$ sudo usermod --expiredate 1 pi
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;以降は新しく作成したnewuserで作業します。&lt;!-- raw HTML omitted --&gt;
+&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://monoist.atmarkit.co.jp/mn/articles/1912/11/news022_2.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;参考記事&lt;/a&gt;&lt;/strong&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;鍵ペアの生成と送信設定&#34;&gt;鍵ペアの生成と送信、設定
+&lt;/h2&gt;&lt;h3 id=&#34;鍵の生成と送信&#34;&gt;鍵の生成と送信
+&lt;/h3&gt;&lt;p&gt;　公開鍵認証とは、パスワードの代わりに公開鍵(ホスト側のPC)と秘密鍵(ラズパイ)のペアで認証する方法です。まずはホストのPCに鍵ペアを生成するディレクトリ及び鍵ペアを作ります。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ mkdir ~/.ssh/raspberrypi
+$ ssh-keygen -t rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Enter file in which to save the key (/Users/username/raspberrypi/.ssh/id_rsa):
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;必要に応じてこの後に聞かれるパスフレーズも入力します。自分は省略しました。これで秘密鍵の&lt;code&gt;id_rsa&lt;/code&gt;と公開鍵の&lt;code&gt;id_rsa.pub&lt;/code&gt;が生成されます。これらのうち&lt;code&gt;id_rsa.pub&lt;/code&gt;をラズパイ側に送ります。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ scp ~/.ssh/raspberrypi/id_rsa.pub newuser@raspberrypi:~
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;公開鍵の設定&#34;&gt;公開鍵の設定
+&lt;/h3&gt;&lt;p&gt;　ラズパイにパスワード認証でログインし、鍵を管理する&lt;code&gt;.ssh&lt;/code&gt;を作ります。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;newuser@raspberrypi:~$ sudo mkdir ~/.ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;先ほど送信した&lt;code&gt;id_rsa.pub&lt;/code&gt;を&lt;code&gt;authorized_keys&lt;/code&gt;と名前を変更しつつ&lt;code&gt;.ssh&lt;/code&gt;に移動します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;newuser@raspberrypi:~$ sudo mv ~/id_rsa.pub ~/.ssh/authorized_keys
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;次に&lt;code&gt;.ssh&lt;/code&gt;、&lt;code&gt;authorized_keys&lt;/code&gt;のパーミッションを変更します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;newuser@raspberrypi:~$ chmod 600 ~/.ssh/authorized_keys
+newuser@raspberrypi:~$ chmod 700 ~/.ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;最後に&lt;code&gt;ssh_config&lt;/code&gt;を修正します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;newuser@raspberrypi:~$ sudo nano /etc/ssh/sshd_config
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;以下のような記載の行のコメントアウトを外して編集します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;AuthorizedKeysFile .ssh/authorized_keys .ssh/authorized_keys2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;この時にポート番号の変更や、パスワード認証のオフができます。しかし、&lt;strong&gt;公開鍵認証が上手くいってない状態でパスワード認証をオフにしてしまうと、次回からログインできなくなってしまう&lt;/strong&gt;ので慎重に行ってください。最悪OSのインストールし直しになります(私は既に何度かやらかしました)。
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;最後にラズパイを再起動すると、次回から以下のコマンドで公開鍵認証でログインできるはずです。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ ssh -i [秘密鍵ファイル] -p [ポート番号] pi@[Raspberry PiのIPアドレス]
+(例)ssh -i .ssh/id_rsa -p 22 pi@192.168.0.100
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://tool-lab.com/raspi-key-authentication-over-ssh/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;参考記事&lt;/a&gt;&lt;/strong&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ssh-configの追加&#34;&gt;ssh configの追加
+&lt;/h1&gt;&lt;p&gt;　この方法で接続してもいいんですが、コマンドが長いので短縮します。
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;~/.ssh/config&lt;/code&gt;を作り、以下を追記します。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Host [任意のコマンド名]
+	HostName [ラズパイのIPアドレス]
+	User [ラズパイのユーザーネーム]
+	Port [ラズパイのポート番号]
+	IdentityFile [秘密鍵ファイル]
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;今回の例では以下のようになります。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Host raspi
+	HostName 192.168.1.100
+	User newuser
+	Port 22
+	IdentityFile ~/.ssh/id_rsa
+&lt;/code&gt;&lt;/pre&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;こうすることでssh接続時のコマンドを以下のように大幅に短縮できます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh raspi
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://zenn.dev/ryo_kawamata/articles/raspberrypi-auth-setting&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;参考記事&lt;/a&gt;&lt;/strong&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;以上です。ファイル名や環境は各々によって違うのでそこは適宜変更をおねがいします。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>HUGOで作ったサイトにアマゾンのアフィリンクを貼る</title>
+        <link>https://twoooooda.net/post/hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E8%B2%BC%E3%82%8B/</link>
+        <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E8%B2%BC%E3%82%8B/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E8%B2%BC%E3%82%8B/hugo.png" alt="Featured image of post HUGOで作ったサイトにアマゾンのアフィリンクを貼る" /&gt;&lt;h1 id=&#34;hugoの仕様&#34;&gt;HUGOの仕様
+&lt;/h1&gt;&lt;p&gt;　静的サイトジェネレータ &amp;ldquo;HUGO&amp;rdquo; は、テーマの制作者がGitHubに上げているリポジトリをサブモジュールとして使うことで自分のサイトにテーマを導入します。ゆえに、テーマのレイアウトに関わるコードを直接書き換えることはできません(ローカルファイルは書き換えられますが)。
+&lt;!-- raw HTML omitted --&gt;
+　しかしHUGOの仕様として、&lt;code&gt;/static&lt;/code&gt;や&lt;code&gt;/layouts&lt;/code&gt;以下のフォルダやファイルが優先して読み込まれるというものがあります。
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h1 id=&#34;ではどうするか&#34;&gt;ではどうするか
+&lt;/h1&gt;&lt;p&gt;　&lt;a class=&#34;link&#34; href=&#34;https://themes.gohugo.io/themes/hugo-theme-stack/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;当サイトのテーマ&lt;/a&gt;を例にすると、&lt;code&gt;/themes/hugo-theme-stack/layouts/partials/sidebar/right.html&lt;/code&gt;を書き換えたい場合、該当のファイルを&lt;code&gt;/layouts/partials/&lt;/code&gt;にコピー＆ペーストすると、そちらの方が先に読み込まれるので結果的に編集して上書きが可能なわけです。
+&lt;!-- raw HTML omitted --&gt;
+　あとはAmazonのアフィリエイトリンクのHTMLコードを生成して、上記のright.htmlに書き込むとちゃんと表示されました。
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Unityで蚊っぽい動きをするやつを作る</title>
+        <link>https://twoooooda.net/post/mosquite-in-unity/</link>
+        <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/mosquite-in-unity/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/mosquite-in-unity/ka.png" alt="Featured image of post Unityで蚊っぽい動きをするやつを作る" /&gt;&lt;h2 id=&#34;はじめに&#34;&gt;はじめに
+&lt;/h2&gt;&lt;p&gt;　 少し前にOculus Quest2を購入し、しばらくハンドトラッキングで遊んでいたんですが、急に『手で蚊を潰すVRゲーム』を作りたくなったのでとりあえず蚊っぽい挙動をするナニカを作りました。
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;スクリプト&#34;&gt;スクリプト
+&lt;/h2&gt;&lt;p&gt;　やっていることはごく簡単で、数フレームに一回ランダムでRotationの値を変更し、Z方向に常に力を加え続けているだけです。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cs:Move_mosquite.cs&#34; data-lang=&#34;cs:Move_mosquite.cs&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;UnityEngine&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Move_mosquite&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;MonoBehaviour&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;n&#34;&gt;Rigidbody&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;float&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;freq&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;speed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;power&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Start&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;rb&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;GetComponent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Rigidbody&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;();&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;k&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Update&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;rb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;velocity&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;rb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;velocity&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;normalized&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;speed&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//変数speedで速度の設定&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;n&#34;&gt;rb&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;AddForce&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;this&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;transform&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;forward&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;power&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Time&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;deltaTime&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ForceMode&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Force&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//Z方向(forward)に力を加え続ける&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Random&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;value&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;freq&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//Rotationを変更する頻度を設定。毎フレームだと頻繁過ぎるので。&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;n&#34;&gt;transform&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;eulerAngles&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Vector3&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Random&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;360&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Random&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;360&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Random&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;Range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;360&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;このままでは無限にどっかいってしまうので、適当にコライダーをつけるとか、壁に近づくと力を受けるとかにするといいかもしれません。&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+なお、当方めちゃくちゃ初心者なのでもっと効率的なやり方や、もっとリアルになるやり方があるかもしれませんのであしからず&amp;hellip;.&lt;/p&gt;
+&lt;h2 id=&#34;完成例&#34;&gt;完成例
+&lt;/h2&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/SFOzY6yHWQc&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;!-- raw HTML omitted --&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

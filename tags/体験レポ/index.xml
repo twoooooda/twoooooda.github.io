@@ -1,19 +1,101 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>体験レポ on twoooooda.net</title>
-    <link>https://twoooooda.net/tags/%E4%BD%93%E9%A8%93%E3%83%AC%E3%83%9D/</link>
-    <description>Recent content in 体験レポ on twoooooda.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sun, 03 Oct 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://twoooooda.net/tags/%E4%BD%93%E9%A8%93%E3%83%AC%E3%83%9D/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Apple公式下取りサービス「Apple Trade In」利用レビュー</title>
-      <link>https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</link>
-      <pubDate>Sun, 03 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</guid>
-      <description>前回記事のとおり、先日発売されたiPhone13 mini を買うことにしました。幸いにして私は物持ちがすこぶる良く、2年前のiPhone11の状態もほぼ無傷だったので、Apple公式の下取りサービスである「Apple Trade In」を使ってiPhone11を下取りに出すことにしました。&#xA;Apple Trade Inとは 前述の通り、Apple社が公式で行っているApple製品下取りサービスです。AppleがiPhone6 Plus(下取り価格約3,000円)から、iPhone12 ProMax(最大84,000円)までのシリーズを引き取り、相応の値段を購入額から割り引くというよくある感じのサービスです。iPhone6以前の機種は無料で回収されるのみとのこと。&#xA;利用手順 まずはiPhoneの新規購入画面で、サービスに関係する基本的なフォームを入力します。今回はiPhone11 64GBモデルなので最大33000円で下取ってくれるようです。 ↑をきちんと入力して新規購入の決済を完了すると、しばらくして追加の情報を入力するためのリンクがメールで届きます。私の場合は9/28に決済を済ませた後すぐにメールが来ました。&#xA;このフォームでは、自分の職業(会社員or自営業or学生orその他 くらいざっくりしたもの)と、本人確認書類のアップロードを求められます。本人確認書類は、運転免許証や健康保険証、パスポート、住民票の写し、在留カード、公共料金の領収書などから2点の提出を求められます。 2点のうち1点は裏面もアップロードする必要があるので、運転免許証or健康保険証はほぼ必須でしょう。 次に、iPhoneを回収してもらうための集荷依頼のフォームがあります。日時と時間帯を指定してこのフォームは完了です。14日以内にデバイスを送らないと下取りがキャンセルになるようです。&#xA;9/30 新iPhone受け取り後 iPhone受け取ったら下取りキットの発送が保留になってました。メールも来ないしちょっと心配になりました。&#xA;10/3 集荷に来てくれました 指定の集荷時間を14時～16時にしたのですが、無事15時前にヤマトさんに来ていただきました。渡すものは下取りに出すiPhone11のみで、梱包もヤマトのお兄さんがやってくれました。本当に玄関先で生の本体を渡すだけでした。&#xA;前日に集荷予定のリマインダーメールも寄越してくれました。&#xA;10/5 査定、下取りプロセス完了 Appleから査定及び下取りプロセスがすべて完了したという旨のメールが来ました。&#xA;また、後日クレカの利用履歴を確認すると、同日10/5にクレカ経由で返金手続きがなされていました。&#xA;新iPhone購入から、約1週間で全ての手続きが完了したことになります。</description>
-    </item>
-  </channel>
+    <channel>
+        <title>体験レポ on twoooooda.net</title>
+        <link>https://twoooooda.net/tags/%E4%BD%93%E9%A8%93%E3%83%AC%E3%83%9D/</link>
+        <description>Recent content in 体験レポ on twoooooda.net</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja-jp</language>
+        <lastBuildDate>Sun, 03 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/tags/%E4%BD%93%E9%A8%93%E3%83%AC%E3%83%9D/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Apple公式下取りサービス「Apple Trade In」利用レビュー</title>
+        <link>https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</link>
+        <pubDate>Sun, 03 Oct 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</guid>
+        <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://twoooooda.github.io/p/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;前回記事&lt;/a&gt;のとおり、先日発売されたiPhone13 mini を買うことにしました。幸いにして私は物持ちがすこぶる良く、2年前のiPhone11の状態もほぼ無傷だったので、Apple公式の下取りサービスである「Apple Trade In」を使ってiPhone11を下取りに出すことにしました。&lt;/p&gt;
+&lt;h2 id=&#34;apple-trade-inとは&#34;&gt;Apple Trade Inとは
+&lt;/h2&gt;&lt;p&gt;前述の通り、Apple社が公式で行っているApple製品下取りサービスです。AppleがiPhone6 Plus(下取り価格約3,000円)から、iPhone12 ProMax(最大84,000円)までのシリーズを引き取り、相応の値段を購入額から割り引くというよくある感じのサービスです。iPhone6以前の機種は無料で回収されるのみとのこと。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h3 id=&#34;利用手順&#34;&gt;利用手順
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;まずはiPhoneの新規購入画面で、サービスに関係する基本的なフォームを入力します。今回はiPhone11 64GBモデルなので最大33000円で下取ってくれるようです。
+&lt;img src=&#34;https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/aab9cf0b114ce358f95a619c9ba0b4dd.png&#34;
+	width=&#34;413&#34;
+	height=&#34;936&#34;
+	srcset=&#34;https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/aab9cf0b114ce358f95a619c9ba0b4dd_hu8005157304246812791.png 480w, https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/aab9cf0b114ce358f95a619c9ba0b4dd_hu16936951174034982627.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;44&#34;
+		data-flex-basis=&#34;105px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;↑をきちんと入力して新規購入の決済を完了すると、しばらくして追加の情報を入力するためのリンクがメールで届きます。私の場合は9/28に決済を済ませた後すぐにメールが来ました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;このフォームでは、&lt;strong&gt;自分の職業&lt;/strong&gt;(会社員or自営業or学生orその他 くらいざっくりしたもの)と、&lt;strong&gt;本人確認書類&lt;/strong&gt;のアップロードを求められます。本人確認書類は、運転免許証や健康保険証、パスポート、住民票の写し、在留カード、公共料金の領収書などから2点の提出を求められます。&lt;/li&gt;
+&lt;li&gt;2点のうち1点は裏面もアップロードする必要があるので、運転免許証or健康保険証はほぼ必須でしょう。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;次に、iPhoneを回収してもらうための集荷依頼のフォームがあります。日時と時間帯を指定してこのフォームは完了です。&lt;strong&gt;14日以内&lt;/strong&gt;にデバイスを送らないと下取りがキャンセルになるようです。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;930-新iphone受け取り後&#34;&gt;9/30 新iPhone受け取り後
+&lt;/h2&gt;&lt;p&gt;iPhone受け取ったら下取りキットの発送が保留になってました。メールも来ないしちょっと心配になりました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/d7e82602fbf3e432c2c15873917397a2.png&#34;
+	width=&#34;954&#34;
+	height=&#34;314&#34;
+	srcset=&#34;https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/d7e82602fbf3e432c2c15873917397a2_hu11574862655954557885.png 480w, https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/d7e82602fbf3e432c2c15873917397a2_hu6181295183917385277.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;303&#34;
+		data-flex-basis=&#34;729px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;103-集荷に来てくれました&#34;&gt;10/3 集荷に来てくれました
+&lt;/h2&gt;&lt;p&gt;指定の集荷時間を14時～16時にしたのですが、無事15時前にヤマトさんに来ていただきました。渡すものは下取りに出すiPhone11のみで、梱包もヤマトのお兄さんがやってくれました。本当に玄関先で生の本体を渡すだけでした。&lt;/p&gt;
+&lt;p&gt;前日に集荷予定のリマインダーメールも寄越してくれました。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;105-査定下取りプロセス完了&#34;&gt;10/5 査定、下取りプロセス完了
+&lt;/h2&gt;&lt;p&gt;Appleから査定及び下取りプロセスがすべて完了したという旨のメールが来ました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/143552.png&#34;
+	width=&#34;747&#34;
+	height=&#34;311&#34;
+	srcset=&#34;https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/143552_hu3948980613427916512.png 480w, https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/143552_hu9815775052139714848.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;240&#34;
+		data-flex-basis=&#34;576px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;また、後日クレカの利用履歴を確認すると、同日10/5にクレカ経由で返金手続きがなされていました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3937.JPEG&#34;
+	width=&#34;1125&#34;
+	height=&#34;418&#34;
+	srcset=&#34;https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3937_hu6554393279554586975.JPEG 480w, https://twoooooda.net/post/apple%E5%85%AC%E5%BC%8F%E4%B8%8B%E5%8F%96%E3%82%8A%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9apple-trade-in%E5%88%A9%E7%94%A8%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3937_hu17692504979416097819.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;269&#34;
+		data-flex-basis=&#34;645px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;新iPhone購入から、約1週間で全ての手続きが完了したことになります。&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

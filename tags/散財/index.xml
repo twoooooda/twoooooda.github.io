@@ -1,33 +1,603 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>散財 on twoooooda.net</title>
-    <link>https://twoooooda.net/tags/%E6%95%A3%E8%B2%A1/</link>
-    <description>Recent content in 散財 on twoooooda.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Mon, 03 Jan 2022 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://twoooooda.net/tags/%E6%95%A3%E8%B2%A1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>私の自作キーボード奮闘記</title>
-      <link>https://twoooooda.net/post/keybord-built-by-myself/</link>
-      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/keybord-built-by-myself/</guid>
-      <description>しばらく前から自作キーボードの沼というものに興味があり、年が明けたら入るお年玉をアテに思い切って作ってみることにしました。&#xA;用いたパーツ PCB、ケース ケース、基板、プレート等がセットになっているTom980というコンパクトなフルサイズキーボード自作キット(98キー)を買いました。フルカラーLEDつき、ホットスワップ方式ではんだ付けがいらないというのも高得点です。安価ながらなかなかいいキットだと思います。アリエクスプレスで買いました。&#xA;本体 付属品(見切れてる方は普通のUSB端子です) しかしこのキーボードキット、汎用のファームウェアであるQMKファームウェアに対応していない代わりに独自のファームウェアがあり、そちらにのみ対応しているようです。redditのレビューに落ちていました。が、レビュー曰く、このファームウェアは &amp;ldquo;almost complete garbage(ほぼ完全にゴミ)&amp;rdquo; らしく、実際に使ってみても確かにゴミでした。具体的には、LEDの発光パターンや色は変えられるけど、特定のキーに別の役割を当てたり、マクロを割り当てたりなどがほぼ完全に機能していません。さらに(これは私だけの環境かもしれませんが)なぜかESCキーが右Winキーになってしまっていたりでなかなかよくわからん挙動をしています(これはPC内の別のソフトウェアでなんとかした)。それ以外は概ね満足です。&#xA;キースイッチ キースイッチはいろいろ考えた結果、界隈では有名らしいHoly Pandaという高級タクタイルキースイッチの廉価版であるFEKER like Holy Pandaを採用しました。リンクから飛べるTALP KEYBORDという国内の自作キーボード専門店から購入しました。&#xA;100個買った 形状はCherry MX準拠 押下圧は公称で67gとなっており、少々重めです。分類はタクタイルとなっており、心地よいタイピング音とサクサク感のある押し心地でかなり好印象です。多少の個体差はあるものの買った100個すべてのスイッチがきちんと動作しており、品質も問題なしでした。TALP KEYBORDさんありがとうございました。&#xA;キーキャップ キーキャップは、アリエクスプレスで見つけたこの可愛いキーキャップをほぼ即決で採用しました。全体的にデザインがめちゃくちゃ好みで、キャップの種類も豊富で実物のクオリティもそれなりに高く満足しているのですが、届いたパッケージにはラベルも何もなく、ストアページも何か後ろめたいことがありそうな感じなので、まぁおそらく正規品ではないのでしょう。クリプトンフューチャーメディア等の初音ミク公式から発売されたらそちらに買い換えようと思います。 可愛い～ 見てのとおり、パッケージには何もなし その他に揃えたもの 今回はlubeという、キースイッチの内部の擦れる部分にグリスを塗って音や打ち心地を改善する作業にも挑戦したかったので、それ用のツールもいくつか揃えました。&#xA;スイッチを分解するためのキースイッチオープナー(TALP KEYBORDさんでスイッチと一緒に買った) キースイッチ内部に塗るグリス &amp;ldquo;Tribosys 3203&amp;rdquo; (詳しく) lubeするパーツを置いておけるlubeステーション(3Dプリンターで出力した。使ったモデル) 100均で買った細い筆 スイッチオープナー グリス lubeステーション 使ったのは1.5mm径の筆。もっと細くていいかも lubeが大変だった 大変でした&amp;hellip; 自作キーボードと言えば、Happy Hacking Keybordに代表される60%キーボードのような配列が一般的だと思いますが、今回作ったのはコンパクトながらフルサイズキーボードなので、98キーあります(ちなみに英字配列フルサイズキーボードは全部で102キー)。当然すべてのスイッチについてlubeしました。慣れるとスイッチ一つあたり5分くらいで済ませられるようになりましたが、かなり細かい作業なので一日にできる個数は限られており結局終わるまで数日かかりました(lubeしながら年越した)。&#xA;グリスの選択や、塗る場所はこのサイトを参考にしました。 lubeの様子 lubeの効果ですが、たしかにあるように感じます。lubeする前と後とでタイピングの比較はしてないので何とも言えないですが、カチャカチャというプラスチックが擦れるような音が軽減されたり、打ち心地がサクサクとした感触になったりで効果はあると思います。たぶん。ただ、60%キーボードならいざ知らず今回は98キーあるので、それら全てにlubeする労力と効果が見合うかは微妙です。私は普段からキーボードにかなり触るのでやってよかったと感じますが、とりあえず自作キーボードをやってみたいという方には障壁になるかもしれません。&#xA;総額でいくらくらい？ 詳細な値段はそれぞれのリンクから飛んでもらえれば値段はわかると思います。自作キットやキーキャップはアリエクスプレスで買ったので比較的安く抑えることができました。キースイッチやグリスはそれぞれ国内販売店であるTALP KEYBORDや遊舎工房で購入したので、送料もかかり少し高くついてしまいました。&#xA;筆やその他100均で買ったツール、lubeステーションの印刷代を除き、グリス代や送料を含めた総額は、¥21,136となりました。これを安いと見るか高いと見るかはあなた次第です&amp;hellip;&#xA;総評 これまでつらつら書いてきましたが、金と時間をかけながらも自分でキーボードを作って良かったと思っています。キースイッチやグリスの選択、塗り方で押し心地や音を、外装やキーキャップの選択によってデザインを、ケースや基板によってキーボードの配列や機能を完全にカスタマイズできるところが自作キーボードのいいところだと今回の挑戦でわかりました。少しでも気なった方は是非この沼に飛び込んでみては。 1/7追記 YouTubeにタイピング音の軽いデモを投稿しました。サウンドデモの動画なのにノイズがあったりで音周りが拙いですが、多少の参考になれば幸いです</description>
-    </item>
-    <item>
-      <title>「Looking Glass Portrait」着弾&amp;開封レビュー</title>
-      <link>https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</link>
-      <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</guid>
-      <description>こんばんは、いっとりうむです。今年の2月くらいに、クラウドファンディングサイトkickstarterでバック(お金を出して支援すること)した返礼品である「Looking Glass Portrait」がやっと届きました。他のバッカーの方は5月くらいには届いていたようですが、住所登録のフォームの入力が遅れてしまったせいで到着が今になってしまいました。&#xA;Looking Glassとは？ 端的に言うとズバリ「裸眼で立体視可能なディスプレイ」です。一般的な立体視ディスプレイは青色と赤色のフィルムをレンズとしたメガネや、偏光フィルタを使ったメガネをかける必要があったりしますが、Looking Glassはそういった類のものは全く必要とせず立体視が可能です。詳しい原理は公式のドキュメントに書いてあるのでそちらを読んでもらうのが一番確実ですが、レンチキュラーレンズという特殊な構造を持ったディスプレイに横方向45視点くらいからの画像を同時に表示して、両目による視差、あるいは横に動いた時の視差を実現しています。&#xA;最初に世に出たLooking Glassは,、全面に巨大で重厚なアクリルの塊がついた8.9インチのディスプレイでした(購入済み)。購入当時はだいたい8万円でした。 初代の8インチのものがあまりに重く、場所も取るため、小型化＆薄型化&amp;amp;低価格化(クラファン特価で$199)した「Looking Glass Portrait」が2020年末に発表されました。&#xA;開封 製造元のLooking Glass Factory社はスタートアップながら、かなりちゃんとした化粧箱で届きました。 キャリーケース付きのプランをバックしたので、まずはそちらが顔を覗かせます。 本体。画面部分を見ると、先代と比べてアクリル塊が無くなっているどころか凹んでいます。 キャリーケースもしかっりしたオリジナルのものが付いてきました。 付属品はHDMIケーブル、USB Type-Cケーブル、USB Type-C端子のACアダプタ(5V, 3A)、クリーニングクロス、キャリーケースに着ける紐がついてきました。紙類は簡単な説明書、サンキューカード的な奴、ステッカー。 Looking Glass Portrait スペックとしては、画面サイズが7.9インチ、重量660g。Rasberry pi 4を搭載しており、PCにつないでディスプレイとして使う他にも、電源に繋ぐだけで単体でデモを表示できます。&#xA;向かって左側面にはHDMIとUSB Type-Cポート、3.5mmオーディオOUT。右側面には電源スイッチ(上)、LED調光スイッチ(下)、デモ操作用のタッチスイッチが3つ並んでいます。 ラズパイ4を内部に搭載しているので、USB Type-Cポートから電源に繋ぐだけでプリセットのデモを表示できます。デモにはiPhone12 ProのLiDARセンサーを使って撮影したポートレート写真や3DCGムービーが入ってました。中にはVirtual YouTuberのキズナアイ親分のショート動画もあってビックリしました。 推奨解像度は普段あまり馴染みのない1536×2048。数字上はフルHDよりも高精細ですが、構造が特殊なこともありフルHDモニターよりもドット感が目立ちます。見てのとおり、エクスプローラーの文字も読めません。 こればかりは画像で全く伝わらないのが惜しいですが、初代Looking Glassより小型軽量化しているのにも関わらず、遜色なくちゃんと裸眼立体視出来ています。立体視の体験的には劇的に進化したという感じは少ないですが、着実に良い製品となっています。軽くなったことにより取り回しやすくなり、何倍も使いやすくなったのではないでしょうか。手の届く範囲まで値段も下がっているので、興味がある方は購入してみても後悔しないと思います。</description>
-    </item>
-    <item>
-      <title>iPhone 13 mini買ったよー</title>
-      <link>https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/</link>
-      <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/</guid>
-      <description>私は今まで2019年モデルのiPhone11 64GBを使っていたのですが、購入当初からデカいし重いなぁと思い続けていました。そこで、先日のAppleの製品発表会で発表されたiPhone 13 miniを買うことにしました。 13のminiにした理由 普段家にいるときは大抵の場合、デスクトップPCに向かって作業したり暇を潰しており、さらに巷を賑わしている流行り病のせいでその習慣には拍車がかかっていました。動画を見たりするのももちろんPCで見るので、iPhone11のような大きめのディスプレイを持つスマホは全く必要ありませんでした。しかも、昨年11月に発売されたiPad Air 4も所持しているので、スマホの存在理由といったら移動時間などの空き時間にSNSを確認したり、mobile Suicaやpaypayでの支払いくらいなので、これを機に思い切ってスマホを小型化させることにした次第です。 本題 個人的にApple製品は配送よりも、Apple Storeに直接受け取りに行く方が体験として好きです。なので今回もApple Store心斎橋に受け取りに行きました。受け取りは9/30に行きました。&#xA;心斎橋前の様子 受け取りの手順としては、事前決済の時に発行される注文番号あるいは専用QRコードをスタッフに見せるだけで、製品を受け取れました。事前のAppleからのメールには「公共機関が発行した写真付きの身分証明書」が必要と書いてありましたが、特に提出は求められませんでした(学生証とか保険証とか住民票とか用意したのに～)。 受け取れた～ ちっちゃ軽い、iPhone 13 mini 先代のiPhone11と比べると、ACアダプターが入ってない分箱がすっごい薄い。容量は128GBで、(product)REDの赤いモデルを買いました。 美しい～。箱を開けたときのこの感動はApple製品の醍醐味でもあります。 個人的な推しポイントが色み。iPhone11よりも深いレッドになってます。 箱の内容物はめちゃくちゃ簡素。意味のあるものといえば本体、ケーブル、SIMピンくらいしか入ってません。しかもLightning to USB type-Cという世界一使いにくいケーブルなのでこれすら意味があるのか疑わしい。 私が持っているiPhone7, 11, 13 miniの比較です(左から順に11, 7, 13 mini)。筐体サイズは13 miniが最小ですが、ホームボタンが無い分画面サイズは7よりも大きくなっています(画像2枚目のディスプレイの色調が違うのは、環境光によって色みを調節するTrue Toneという機能が13 miniでONになっているからだと思われる。11は写真撮る前にファクトリーリセットしちゃった)。 丸1日くらい使ってみて やはり軽くて小さいのは正義です。先代よりも驚くほど手にしっくりきます。よくあんな重いiPhone11なんか使ってたなと思うほどです。調べてみると11→13 miniでは50gも軽くなっているらしい。&#xA;もともとスマホでしていたことと言えばTwitterかYouTubeくらいなので、画面の小ささもそんなに不便を感じません。12 miniではかねてより言われていたバッテリー問題ですが、たしかに使っていると減っていっているという実感はあります。ですが今のところ極端にもたないという感じもないです。しかし、私はスマホで全くと言っていいほどゲームはやらないので、ゲームをある程度する人にとっては参考にならないかもしれません&amp;hellip;</description>
-    </item>
-  </channel>
+    <channel>
+        <title>散財 on twoooooda.net</title>
+        <link>https://twoooooda.net/tags/%E6%95%A3%E8%B2%A1/</link>
+        <description>Recent content in 散財 on twoooooda.net</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja-jp</language>
+        <lastBuildDate>Mon, 03 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/tags/%E6%95%A3%E8%B2%A1/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>私の自作キーボード奮闘記</title>
+        <link>https://twoooooda.net/post/keybord-built-by-myself/</link>
+        <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/keybord-built-by-myself/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/keybord-built-by-myself/IMG_4085.JPEG" alt="Featured image of post 私の自作キーボード奮闘記" /&gt;&lt;p&gt;しばらく前から&lt;strong&gt;自作キーボード&lt;/strong&gt;の沼というものに興味があり、年が明けたら入るお年玉をアテに思い切って作ってみることにしました。&lt;/p&gt;
+&lt;h2 id=&#34;用いたパーツ&#34;&gt;用いたパーツ
+&lt;/h2&gt;&lt;h3 id=&#34;pcbケース&#34;&gt;PCB、ケース
+&lt;/h3&gt;&lt;p&gt;　ケース、基板、プレート等がセットになっている&lt;a class=&#34;link&#34; href=&#34;https://ja.aliexpress.com/item/1005002964011779.html?spm=a2g0o.9042311.0.0.56ca4c4dMvOJNG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tom980&lt;/a&gt;というコンパクトなフルサイズキーボード自作キット(98キー)を買いました。フルカラーLEDつき、ホットスワップ方式ではんだ付けがいらないというのも高得点です。安価ながらなかなかいいキットだと思います。アリエクスプレスで買いました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4072.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4072_hu6734024128996654418.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4072_hu3446076695289971344.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;本体&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4076.JPEG&#34;
+	width=&#34;1536&#34;
+	height=&#34;2048&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4076_hu11540593391933636144.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4076_hu1432631637664328081.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;付属品(見切れてる方は普通のUSB端子です)&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;しかしこのキーボードキット、汎用のファームウェアであるQMKファームウェアに対応していない代わりに独自のファームウェアがあり、そちらにのみ対応しているようです。&lt;a class=&#34;link&#34; href=&#34;https://www.reddit.com/r/MechanicalKeyboards/comments/ox075j/holy_tom980_wianxp_980_review/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;redditのレビュー&lt;/a&gt;に落ちていました。が、レビュー曰く、このファームウェアは &amp;ldquo;&lt;strong&gt;almost complete garbage(ほぼ完全にゴミ)&lt;/strong&gt;&amp;rdquo; らしく、実際に使ってみても確かにゴミでした。具体的には、LEDの発光パターンや色は変えられるけど、特定のキーに別の役割を当てたり、マクロを割り当てたりなどがほぼ完全に機能していません。さらに(これは私だけの環境かもしれませんが)なぜか&lt;strong&gt;ESCキーが右Winキーになって&lt;/strong&gt;しまっていたりでなかなかよくわからん挙動をしています(これはPC内の別のソフトウェアでなんとかした)。それ以外は概ね満足です。&lt;/p&gt;
+&lt;h3 id=&#34;キースイッチ&#34;&gt;キースイッチ
+&lt;/h3&gt;&lt;p&gt;　キースイッチはいろいろ考えた結果、界隈では有名らしいHoly Pandaという高級タクタイルキースイッチの&lt;strong&gt;廉価版&lt;/strong&gt;である&lt;a class=&#34;link&#34; href=&#34;https://talpkeyboard.net/items/5fd61629b00aa37e7271319d&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;FEKER like Holy Panda&lt;/a&gt;を採用しました。リンクから飛べるTALP KEYBORDという国内の自作キーボード専門店から購入しました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4021.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4021_hu11089450463664370739.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4021_hu946818603445860844.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;100個買った&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4022.JPG&#34;
+	width=&#34;3520&#34;
+	height=&#34;1980&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4022_hu3527572336858205517.JPG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4022_hu9353838730605749287.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;形状はCherry MX準拠&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;押下圧は公称で67gとなっており、少々重めです。分類はタクタイルとなっており、心地よいタイピング音とサクサク感のある押し心地でかなり好印象です。多少の個体差はあるものの買った100個すべてのスイッチがきちんと動作しており、品質も問題なしでした。TALP KEYBORDさんありがとうございました。&lt;/p&gt;
+&lt;h3 id=&#34;キーキャップ&#34;&gt;キーキャップ
+&lt;/h3&gt;&lt;p&gt;　キーキャップは、アリエクスプレスで見つけたこの&lt;a class=&#34;link&#34; href=&#34;https://ja.aliexpress.com/item/1005001622318975.html?spm=a2g0o.9042311.0.0.56ca4c4dMvOJNG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;可愛いキーキャップ&lt;/a&gt;をほぼ即決で採用しました。全体的にデザインがめちゃくちゃ好みで、キャップの種類も豊富で実物のクオリティもそれなりに高く満足しているのですが、届いたパッケージにはラベルも何もなく、ストアページも何か後ろめたいことがありそうな感じなので、まぁおそらく正規品ではないのでしょう。クリプトンフューチャーメディア等の初音ミク公式から発売されたらそちらに買い換えようと思います。
+&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4086.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4086_hu8938142860455091927.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4086_hu8338221947149424353.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;可愛い～&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4090.jpeg&#34;
+	width=&#34;1536&#34;
+	height=&#34;2048&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4090_hu6021007297013172579.jpeg 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4090_hu7225848343927149802.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;見てのとおり、パッケージには何もなし&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;その他に揃えたもの&#34;&gt;その他に揃えたもの
+&lt;/h3&gt;&lt;p&gt;　今回はlubeという、キースイッチの内部の擦れる部分にグリスを塗って音や打ち心地を改善する作業にも挑戦したかったので、それ用のツールもいくつか揃えました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;スイッチを分解するための&lt;strong&gt;キースイッチオープナー&lt;/strong&gt;(&lt;a class=&#34;link&#34; href=&#34;https://talpkeyboard.net/items/5ffc48fd8a45725bc56a391a&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TALP KEYBORD&lt;/a&gt;さんでスイッチと一緒に買った)&lt;/li&gt;
+&lt;li&gt;キースイッチ内部に塗るグリス &amp;ldquo;&lt;strong&gt;Tribosys 3203&lt;/strong&gt;&amp;rdquo; (&lt;a class=&#34;link&#34; href=&#34;https://shop.yushakobo.jp/collections/accessory/products/lubricants&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;詳しく&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;lubeするパーツを置いておける&lt;strong&gt;lubeステーション&lt;/strong&gt;(3Dプリンターで出力した。&lt;a class=&#34;link&#34; href=&#34;https://www.thingiverse.com/thing:4920600&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;使ったモデル&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;100均で買った細い筆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4066.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4066_hu5187993927015294901.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4066_hu16343121429801460740.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;スイッチオープナー&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4068.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4068_hu18425859051785569326.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4068_hu6807455957690208910.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;グリス&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4067.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4067_hu11148137345058047359.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4067_hu9583446361528467864.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;lubeステーション&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4069.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4069_hu18349690124370108748.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4069_hu560981331690903640.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;使ったのは1.5mm径の筆。もっと細くていいかも&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;lubeが大変だった&#34;&gt;lubeが大変だった
+&lt;/h2&gt;&lt;p&gt;　&lt;strong&gt;大変でした&amp;hellip;&lt;/strong&gt; 自作キーボードと言えば、Happy Hacking Keybordに代表される60%キーボードのような配列が一般的だと思いますが、今回作ったのはコンパクトながらフルサイズキーボードなので、98キーあります(ちなみに英字配列フルサイズキーボードは全部で102キー)。当然すべてのスイッチについてlubeしました。慣れるとスイッチ一つあたり5分くらいで済ませられるようになりましたが、かなり細かい作業なので一日にできる個数は限られており結局終わるまで数日かかりました(lubeしながら年越した)。&lt;/p&gt;
+&lt;p&gt;グリスの選択や、塗る場所は&lt;a class=&#34;link&#34; href=&#34;https://keys.recompile.net/docs/keyswitch-best-practice/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;このサイト&lt;/a&gt;を参考にしました。
+&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4071.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4071_hu10741460509854412781.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4071_hu17085659106786977501.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;lubeの様子&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;　lubeの効果ですが、たしかにあるように&lt;strong&gt;感じます&lt;/strong&gt;。lubeする前と後とでタイピングの比較はしてないので何とも言えないですが、カチャカチャというプラスチックが擦れるような音が軽減されたり、打ち心地がサクサクとした感触になったりで効果はあると思います。たぶん。ただ、60%キーボードならいざ知らず今回は98キーあるので、それら全てにlubeする労力と効果が見合うかは微妙です。私は普段からキーボードにかなり触るのでやってよかったと感じますが、とりあえず自作キーボードをやってみたいという方には障壁になるかもしれません。&lt;/p&gt;
+&lt;h2 id=&#34;総額でいくらくらい&#34;&gt;総額でいくらくらい？
+&lt;/h2&gt;&lt;p&gt;　詳細な値段はそれぞれのリンクから飛んでもらえれば値段はわかると思います。自作キットやキーキャップはアリエクスプレスで買ったので比較的安く抑えることができました。キースイッチやグリスはそれぞれ国内販売店である&lt;a class=&#34;link&#34; href=&#34;https://talpkeyboard.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TALP KEYBORD&lt;/a&gt;や&lt;a class=&#34;link&#34; href=&#34;https://shop.yushakobo.jp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;遊舎工房&lt;/a&gt;で購入したので、送料もかかり少し高くついてしまいました。&lt;/p&gt;
+&lt;p&gt;筆やその他100均で買ったツール、lubeステーションの印刷代を除き、グリス代や送料を含めた総額は、&lt;strong&gt;¥21,136&lt;/strong&gt;となりました。これを安いと見るか高いと見るかはあなた次第です&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;総評&#34;&gt;総評
+&lt;/h2&gt;&lt;p&gt;これまでつらつら書いてきましたが、金と時間をかけながらも&lt;strong&gt;自分でキーボードを作って良かった&lt;/strong&gt;と思っています。キースイッチやグリスの選択、塗り方で押し心地や音を、外装やキーキャップの選択によってデザインを、ケースや基板によってキーボードの配列や機能を完全にカスタマイズできるところが自作キーボードのいいところだと今回の挑戦でわかりました。少しでも気なった方は是非この沼に飛び込んでみては。
+&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4093.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4093_hu12512391401913600125.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4093_hu3529590602410021615.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34; &#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4096.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4096_hu5278588969966987274.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4096_hu12516343500081754829.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34; &#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;17追記&#34;&gt;1/7追記
+&lt;/h2&gt;&lt;p&gt;YouTubeにタイピング音の軽いデモを投稿しました。サウンドデモの動画なのにノイズがあったりで音周りが拙いですが、多少の参考になれば幸いです&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/JewSuvXzGVY&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        </item>
+        <item>
+        <title>「Looking Glass Portrait」着弾&amp;開封レビュー</title>
+        <link>https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</link>
+        <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3916.JPEG" alt="Featured image of post 「Looking Glass Portrait」着弾&amp;開封レビュー" /&gt;&lt;p&gt;こんばんは、いっとりうむです。今年の2月くらいに、クラウドファンディングサイトkickstarterでバック(お金を出して支援すること)した返礼品である「Looking Glass Portrait」がやっと届きました。他のバッカーの方は5月くらいには届いていたようですが、住所登録のフォームの入力が遅れてしまったせいで到着が今になってしまいました。&lt;/p&gt;
+&lt;h2 id=&#34;looking-glassとは&#34;&gt;Looking Glassとは？
+&lt;/h2&gt;&lt;p&gt;端的に言うとズバリ「&lt;strong&gt;裸眼で立体視可能なディスプレイ&lt;/strong&gt;」です。一般的な立体視ディスプレイは青色と赤色のフィルムをレンズとしたメガネや、偏光フィルタを使ったメガネをかける必要があったりしますが、Looking Glassはそういった類のものは全く必要とせず立体視が可能です。詳しい原理は&lt;a class=&#34;link&#34; href=&#34;http://docs-ja.lookingglassfactory.com/Appendix/how-it-works/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;公式のドキュメント&lt;/a&gt;に書いてあるのでそちらを読んでもらうのが一番確実ですが、レンチキュラーレンズという特殊な構造を持ったディスプレイに横方向45視点くらいからの画像を同時に表示して、両目による視差、あるいは横に動いた時の視差を実現しています。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;最初に世に出たLooking Glassは,、全面に巨大で重厚なアクリルの塊がついた8.9インチのディスプレイでした(購入済み)。購入当時はだいたい8万円でした。  &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3939.jpeg&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3939_hu6211887930886253862.jpeg 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3939_hu12486074459915700908.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;初代の8インチのものがあまりに重く、場所も取るため、小型化＆薄型化&amp;amp;低価格化(クラファン特価で$199)した「Looking Glass Portrait」が2020年末に発表されました。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;開封&#34;&gt;開封
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;製造元のLooking Glass Factory社はスタートアップながら、かなりちゃんとした化粧箱で届きました。  &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3910.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3910_hu10334258361692996778.JPEG 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3910_hu16405365984407302588.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;キャリーケース付きのプランをバックしたので、まずはそちらが顔を覗かせます。  &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3912.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3912_hu10504827969023300793.JPEG 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3912_hu1874189907400503567.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;本体。画面部分を見ると、先代と比べてアクリル塊が無くなっているどころか凹んでいます。  &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3913.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3913_hu13674819601391550571.JPEG 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3913_hu3290073151417141313.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;   &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3916.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3916_hu1805217690911218903.JPEG 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3916_hu622369081958740098.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;キャリーケースもしかっりしたオリジナルのものが付いてきました。  &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3936.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3936_hu7274741883380896384.JPEG 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3936_hu3145313851988856225.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;付属品はHDMIケーブル、USB Type-Cケーブル、USB Type-C端子のACアダプタ(5V, 3A)、クリーニングクロス、キャリーケースに着ける紐がついてきました。紙類は簡単な説明書、サンキューカード的な奴、ステッカー。  &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3931.JPEG&#34;
+	width=&#34;2435&#34;
+	height=&#34;1291&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3931_hu2129048083124045240.JPEG 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3931_hu15579649158768099945.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;188&#34;
+		data-flex-basis=&#34;452px&#34;
+	
+&gt;   &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3935.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3935_hu16680110229221113299.JPEG 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3935_hu12005699556328628071.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;looking-glass-portrait&#34;&gt;Looking Glass Portrait
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;スペックとしては、画面サイズが7.9インチ、重量660g。Rasberry pi 4を搭載しており、PCにつないでディスプレイとして使う他にも、電源に繋ぐだけで単体でデモを表示できます。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;向かって左側面にはHDMIとUSB Type-Cポート、3.5mmオーディオOUT。右側面には電源スイッチ(上)、LED調光スイッチ(下)、デモ操作用のタッチスイッチが3つ並んでいます。  &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3932.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3932_hu8710917563285893239.JPEG 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3932_hu13172360132966432318.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;   &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3933.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3933_hu7181061199256142042.JPEG 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3933_hu18302969855017528544.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ラズパイ4を内部に搭載しているので、USB Type-Cポートから電源に繋ぐだけでプリセットのデモを表示できます。デモにはiPhone12 ProのLiDARセンサーを使って撮影したポートレート写真や3DCGムービーが入ってました。中にはVirtual YouTuberのキズナアイ親分のショート動画もあってビックリしました。  &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3917.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3917_hu2515401976440768162.JPEG 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3917_hu2769622317827964306.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;   &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3918.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3918_hu10163567928198203353.JPEG 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3918_hu7520503821971033259.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;推奨解像度は普段あまり馴染みのない1536×2048。数字上はフルHDよりも高精細ですが、構造が特殊なこともありフルHDモニターよりもドット感が目立ちます。見てのとおり、エクスプローラーの文字も読めません。  &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/27fdf35d66736661addb0b5a359d93e8.png&#34;
+	width=&#34;384&#34;
+	height=&#34;321&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/27fdf35d66736661addb0b5a359d93e8_hu4916365212353299200.png 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/27fdf35d66736661addb0b5a359d93e8_hu11841264526592772117.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;119&#34;
+		data-flex-basis=&#34;287px&#34;
+	
+&gt;   &lt;img src=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3940.jpeg&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3940_hu3378928418645304390.jpeg 480w, https://twoooooda.net/post/looking-glass-portrait%E7%9D%80%E5%BC%BE%E9%96%8B%E5%B0%81%E3%83%AC%E3%83%93%E3%83%A5%E3%83%BC/IMG_3940_hu6828495640947241717.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;こればかりは画像で全く伝わらないのが惜しいですが、初代Looking Glassより小型軽量化しているのにも関わらず、遜色なくちゃんと裸眼立体視出来ています。立体視の体験的には劇的に進化したという感じは少ないですが、着実に良い製品となっています。軽くなったことにより取り回しやすくなり、何倍も使いやすくなったのではないでしょうか。手の届く範囲まで値段も下がっているので、興味がある方は購入してみても後悔しないと思います。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>iPhone 13 mini買ったよー</title>
+        <link>https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/</link>
+        <pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3890.JPEG" alt="Featured image of post iPhone 13 mini買ったよー" /&gt;&lt;p&gt;私は今まで2019年モデルのiPhone11 64GBを使っていたのですが、購入当初からデカいし重いなぁと思い続けていました。そこで、先日のAppleの製品発表会で発表された&lt;strong&gt;iPhone 13 mini&lt;/strong&gt;を買うことにしました。
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;13のminiにした理由&#34;&gt;13のminiにした理由
+&lt;/h2&gt;&lt;p&gt;普段家にいるときは大抵の場合、デスクトップPCに向かって作業したり暇を潰しており、さらに巷を賑わしている流行り病のせいでその習慣には拍車がかかっていました。動画を見たりするのももちろんPCで見るので、&lt;strong&gt;iPhone11&lt;/strong&gt;のような大きめのディスプレイを持つスマホは全く必要ありませんでした。しかも、昨年11月に発売された&lt;strong&gt;iPad Air 4&lt;/strong&gt;も所持しているので、スマホの存在理由といったら移動時間などの空き時間にSNSを確認したり、mobile Suicaやpaypayでの支払いくらいなので、これを機に思い切ってスマホを小型化させることにした次第です。
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;本題&#34;&gt;本題
+&lt;/h2&gt;&lt;p&gt;個人的にApple製品は配送よりも、Apple Storeに直接受け取りに行く方が体験として好きです。なので今回もApple Store心斎橋に受け取りに行きました。受け取りは9/30に行きました。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/imag.jpg&#34;
+	width=&#34;1000&#34;
+	height=&#34;750&#34;
+	srcset=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/imag_hu9511569058675043934.jpg 480w, https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/imag_hu13737348023303900561.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;心斎橋前の様子&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;受け取りの手順としては、事前決済の時に発行される&lt;strong&gt;注文番号&lt;/strong&gt;あるいは&lt;strong&gt;専用QRコード&lt;/strong&gt;をスタッフに見せるだけで、製品を受け取れました。事前のAppleからのメールには「&lt;strong&gt;公共機関が発行した写真付きの身分証明書&lt;/strong&gt;」が必要と書いてありましたが、特に提出は求められませんでした(学生証とか保険証とか住民票とか用意したのに～)。
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h3 id=&#34;受け取れた&#34;&gt;受け取れた～
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3885.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3885_hu8712879382591040740.JPEG 480w, https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3885_hu4989115287299412313.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;　&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h2 id=&#34;ちっちゃ軽いiphone-13-mini&#34;&gt;ちっちゃ軽い、iPhone 13 mini
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;先代のiPhone11と比べると、ACアダプターが入ってない分箱がすっごい薄い。容量は128GBで、(product)REDの赤いモデルを買いました。
+&lt;img src=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3892-1.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3892-1_hu15250165254046946329.JPEG 480w, https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3892-1_hu666070384710517987.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;美しい～。箱を開けたときのこの感動はApple製品の醍醐味でもあります。
+&lt;img src=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3890.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3890_hu10818367622215046919.JPEG 480w, https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3890_hu977141877537503138.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;個人的な推しポイントが色み。iPhone11よりも深いレッドになってます。
+&lt;img src=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_0238.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_0238_hu7135278476682956919.JPEG 480w, https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_0238_hu12646525649379392323.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;箱の内容物はめちゃくちゃ簡素。意味のあるものといえば本体、ケーブル、SIMピンくらいしか入ってません。しかもLightning to USB type-Cという世界一使いにくいケーブルなのでこれすら意味があるのか疑わしい。
+&lt;img src=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3892.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3892_hu133043518623820042.JPEG 480w, https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_3892_hu12913852019393078711.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;私が持っているiPhone7, 11, 13 miniの比較です(左から順に11, 7, 13 mini)。筐体サイズは13 miniが最小ですが、ホームボタンが無い分画面サイズは7よりも大きくなっています(画像2枚目のディスプレイの色調が違うのは、環境光によって色みを調節するTrue Toneという機能が13 miniでONになっているからだと思われる。11は写真撮る前にファクトリーリセットしちゃった)。
+&lt;img src=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_0236.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_0236_hu11660289308230419469.JPEG 480w, https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_0236_hu11783648370667811476.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_0237.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_0237_hu13649373000738072436.JPEG 480w, https://twoooooda.net/post/iphone-13-mini%E8%B2%B7%E3%81%A3%E3%81%9F%E3%82%88%E3%83%BC/IMG_0237_hu1930401802724165635.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;丸1日くらい使ってみて&#34;&gt;丸1日くらい使ってみて
+&lt;/h2&gt;&lt;p&gt;やはり軽くて小さいのは正義です。先代よりも驚くほど手にしっくりきます。よくあんな重いiPhone11なんか使ってたなと思うほどです。調べてみると11→13 miniでは&lt;strong&gt;50gも軽く&lt;/strong&gt;なっているらしい。&lt;/p&gt;
+&lt;p&gt;もともとスマホでしていたことと言えばTwitterかYouTubeくらいなので、画面の小ささもそんなに不便を感じません。12 miniではかねてより言われていた&lt;strong&gt;バッテリー問題&lt;/strong&gt;ですが、たしかに使っていると減っていっているという実感はあります。ですが今のところ極端にもたないという感じもないです。しかし、私はスマホで全くと言っていいほどゲームはやらないので、ゲームをある程度する人にとっては参考にならないかもしれません&amp;hellip;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
 </rss>

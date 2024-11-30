@@ -1,61 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Categories on twoooooda.net</title>
-    <link>https://twoooooda.net/categories/</link>
-    <description>Recent content in Categories on twoooooda.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 15 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://twoooooda.net/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>ガジェット</title>
-      <link>https://twoooooda.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</link>
-      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>diary</title>
-      <link>https://twoooooda.net/categories/diary/</link>
-      <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/categories/diary/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>散財</title>
-      <link>https://twoooooda.net/categories/%E6%95%A3%E8%B2%A1/</link>
-      <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/categories/%E6%95%A3%E8%B2%A1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>体験レポ</title>
-      <link>https://twoooooda.net/categories/%E4%BD%93%E9%A8%93%E3%83%AC%E3%83%9D/</link>
-      <pubDate>Sun, 03 Oct 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/categories/%E4%BD%93%E9%A8%93%E3%83%AC%E3%83%9D/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rspberrypi</title>
-      <link>https://twoooooda.net/categories/raspberrypi/</link>
-      <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/categories/raspberrypi/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Web</title>
-      <link>https://twoooooda.net/categories/web/</link>
-      <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/categories/web/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Unity</title>
-      <link>https://twoooooda.net/categories/unity/</link>
-      <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/categories/unity/</guid>
-      <description></description>
-    </item>
-  </channel>
+    <channel>
+        <title>Categories on twoooooda.net</title>
+        <link>https://twoooooda.net/categories/</link>
+        <description>Recent content in Categories on twoooooda.net</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja-jp</language>
+        <lastBuildDate>Sat, 30 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>diary</title>
+        <link>https://twoooooda.net/categories/diary/</link>
+        <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/categories/diary/</guid>
+        <description>&lt;img src="https://twoooooda.net/categories/diary/diary.png" alt="Featured image of post diary" /&gt;</description>
+        </item>
+        <item>
+        <title>ガジェット</title>
+        <link>https://twoooooda.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</link>
+        <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</guid>
+        <description>&lt;img src="https://twoooooda.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/IMG_4085.JPEG" alt="Featured image of post ガジェット" /&gt;</description>
+        </item>
+        <item>
+        <title>散財</title>
+        <link>https://twoooooda.net/categories/%E6%95%A3%E8%B2%A1/</link>
+        <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/categories/%E6%95%A3%E8%B2%A1/</guid>
+        <description>&lt;img src="https://twoooooda.net/categories/%E6%95%A3%E8%B2%A1/money_fly_yen.png" alt="Featured image of post 散財" /&gt;</description>
+        </item>
+        <item>
+        <title>体験レポ</title>
+        <link>https://twoooooda.net/categories/%E4%BD%93%E9%A8%93%E3%83%AC%E3%83%9D/</link>
+        <pubDate>Sun, 03 Oct 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/categories/%E4%BD%93%E9%A8%93%E3%83%AC%E3%83%9D/</guid>
+        <description>&lt;img src="https://twoooooda.net/categories/%E4%BD%93%E9%A8%93%E3%83%AC%E3%83%9D/text_muryoutaikenkai.png" alt="Featured image of post 体験レポ" /&gt;</description>
+        </item>
+        <item>
+        <title>Rspberrypi</title>
+        <link>https://twoooooda.net/categories/raspberrypi/</link>
+        <pubDate>Thu, 03 Jun 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/categories/raspberrypi/</guid>
+        <description>&lt;img src="https://twoooooda.net/categories/raspberrypi/raspi.jpeg" alt="Featured image of post Rspberrypi" /&gt;</description>
+        </item>
+        <item>
+        <title>Web</title>
+        <link>https://twoooooda.net/categories/web/</link>
+        <pubDate>Tue, 13 Apr 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/categories/web/</guid>
+        <description>&lt;img src="https://twoooooda.net/categories/web/website_kensaku_top.png" alt="Featured image of post Web" /&gt;</description>
+        </item>
+        <item>
+        <title>Unity</title>
+        <link>https://twoooooda.net/categories/unity/</link>
+        <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/categories/unity/</guid>
+        <description>&lt;img src="https://twoooooda.net/categories/unity/unity.png" alt="Featured image of post Unity" /&gt;</description>
+        </item>
+        
+    </channel>
 </rss>

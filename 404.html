@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="ja-jp">
+<html lang="ja-jp" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='私いっとりうむの日記や知見とかを適当に書き散らすブログです。'><title>404 Page not found</title>
 
 <link rel='canonical' href='https://twoooooda.net/404.html'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='404 Page not found'>
-<meta property='og:description' content='私いっとりうむの日記や知見とかを適当に書き散らすブログです。'>
+<link rel="stylesheet" href="/scss/style.min.0815b68901f8d665e4c665e0bb2bdf60772eec845c3a29a4ff90247094ebd0e1.css"><meta property='og:title' content="404 Page not found">
+<meta property='og:description' content="私いっとりうむの日記や知見とかを適当に書き散らすブログです。">
 <meta property='og:url' content='https://twoooooda.net/404.html'>
 <meta property='og:site_name' content='twoooooda.net'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-06-15T00:00:00&#43;00:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-11-30T00:00:00&#43;00:00 '/>
 <meta name="twitter:site" content="@twoooooda">
     <meta name="twitter:creator" content="@twoooooda"><meta name="twitter:title" content="404 Page not found">
 <meta name="twitter:description" content="私いっとりうむの日記や知見とかを適当に書き散らすブログです。">
 <link rel="shortcut icon" href="img/icon.ico" />
-
-  
-
 <style>
 	
 	:root {
@@ -232,12 +229,46 @@
         
     </ol>
 
-</aside><main class="main full-width">
+</aside>
+            <main class="main full-width">
     <div class="not-found-card">
         <h1 class="article-title">404 Not Found</h1>
         <h2 class="article-subtitle">指定されたページは存在しません。</h2>
-    </div>
-    <footer class="site-footer">
+    </div><form action="/search/" class="search-form widget" data-json="https://twoooooda.net/search/index.json">
+            <p>
+                <label>検索</label>
+                <input id="searchInput" name="keyword" required placeholder="入力..." />
+            
+                <button title="検索">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                </button>
+            </p>
+        </form>
+
+        <div class="search-result">
+            <h3 class="search-result--title section-title"></h3>
+            <div class="search-result--list article-list--compact"></div>
+        </div>
+        
+        <script>
+            window.searchResultTitleTemplate = "#PAGES_COUNT 件 （#TIME_SECONDS 秒）"
+        </script><script type="text/javascript" src="/ts/search.js" defer></script>
+
+        <script>
+            const wrongUrl = new URL(window.location.href);
+
+            
+            const searchKeyword = wrongUrl.pathname.split(/[/|-]/).join(' ').trim();
+
+            document.getElementById('searchInput').setAttribute('value', searchKeyword);
+        </script><footer class="site-footer">
     <section class="copyright">
         &copy; 
         
@@ -247,8 +278,8 @@
     </section>
     
     <section class="powerby">
-         <br />
-        
+        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> で構築されています。 <br />
+        テーマ <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> は <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> によって設計されています。
     </section>
 </footer>
 
@@ -256,10 +287,10 @@
             </main>
         </div>
         <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
-                defer="false"
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

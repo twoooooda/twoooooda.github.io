@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ja-jp">
+<html lang="ja-jp" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='最近AtCoderデビューしたので、便利そうなツールであるatcoder-cliというものを導入してみました。'><title>atcoder-cliを導入してみた</title>
 
 <link rel='canonical' href='https://twoooooda.net/post/introduce-atcoder-cli/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='atcoder-cliを導入してみた'>
-<meta property='og:description' content='最近AtCoderデビューしたので、便利そうなツールであるatcoder-cliというものを導入してみました。'>
+<link rel="stylesheet" href="/scss/style.min.0815b68901f8d665e4c665e0bb2bdf60772eec845c3a29a4ff90247094ebd0e1.css"><meta property='og:title' content="atcoder-cliを導入してみた">
+<meta property='og:description' content="最近AtCoderデビューしたので、便利そうなツールであるatcoder-cliというものを導入してみました。">
 <meta property='og:url' content='https://twoooooda.net/post/introduce-atcoder-cli/'>
 <meta property='og:site_name' content='twoooooda.net'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='日記' /><meta property='article:tag' content='知見' /><meta property='article:tag' content='備忘録' /><meta property='article:tag' content='プログラミング' /><meta property='article:published_time' content='2022-05-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-05-20T00:00:00&#43;00:00'/>
@@ -14,9 +14,6 @@
     <meta name="twitter:creator" content="@twoooooda"><meta name="twitter:title" content="atcoder-cliを導入してみた">
 <meta name="twitter:description" content="最近AtCoderデビューしたので、便利そうなツールであるatcoder-cliというものを導入してみました。">
 <link rel="shortcut icon" href="img/icon.ico" />
-
-  
-
 <style>
 	
 	:root {
@@ -50,8 +47,8 @@
 	crossorigin="anonymous"></script>
     </head>
     <body class="
-    article-page has-toc
-">
+    article-page
+    ">
     <script>
         (function() {
             const colorSchemeKey = 'StackColorScheme';
@@ -74,26 +71,170 @@
         }
     })();
 </script>
-<div class="container main-container flex 
-    
-        extended
-    
-">
-    
-        <div id="article-toolbar">
-            <a href="https://twoooooda.net/" class="back-home">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="メニューを開く・閉じる">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+        
+        <figure class="site-avatar">
+            
+            
+
+            
+            
+            <img src="/img/icon_hu5561255959349880610.png" width="300"
+                height="300" class="site-logo" loading="lazy" alt="Avatar">
+            
+            
+
+            
+        </figure>
+        
+        
+        <h1 class="site-name"><a href="https://twoooooda.net/">twoooooda.net</a></h1>
+        <h2 class="site-description">私いっとりうむの日記や知見とかを適当に書き散らすブログです。</h2>
+
+    </header>
+
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="15 6 9 12 15 18" />
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
 </svg>
 
 
 
-                <span>前のページ</span>
+                
+                <span>Home</span>
             </a>
-        </div>
+        </li>
+
+        
+        
+
+        <li >
+            <a href='/about-me/' >
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About Me</span>
+            </a>
+        </li>
+
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+
+        
+        
+
+        <li >
+            <a href='https://twitter.com/twoooooda' target="_blank" >
+                
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px" clip-rule="evenodd" baseProfile="basic"><polygon fill="#616161" points="41,6 9.929,42 6.215,42 37.287,6"/><polygon fill="#fff" fill-rule="evenodd" points="31.143,41 7.82,7 16.777,7 40.1,41" clip-rule="evenodd"/><path fill="#616161" d="M15.724,9l20.578,30h-4.106L11.618,9H15.724 M17.304,6H5.922l24.694,36h11.382L17.304,6L17.304,6z"/></svg>
+                
+                <span>TwitterX</span>
+            </a>
+        </li>
+
+        
+        
+
+        <li >
+            <a href='https://github.com/twoooooda/' target="_blank" >
+                
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><linearGradient id="rL2wppHyxHVbobwndsT6Ca" x1="4" x2="44" y1="23.508" y2="23.508" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4c4c4c"/><stop offset="1" stop-color="#343434"/></linearGradient><path fill="url(#rL2wppHyxHVbobwndsT6Ca)" d="M24,4C12.954,4,4,12.954,4,24c0,8.887,5.801,16.411,13.82,19.016h12.36	C38.199,40.411,44,32.887,44,24C44,12.954,35.046,4,24,4z"/><path d="M30.01,41.996L30,36.198c0-0.939-0.22-1.856-0.642-2.687c5.641-1.133,8.386-4.468,8.386-10.177	c0-2.255-0.665-4.246-1.976-5.92c0.1-0.317,0.174-0.645,0.22-0.981c0.188-1.369-0.023-2.264-0.193-2.984l-0.027-0.116	c-0.186-0.796-0.409-1.364-0.418-1.388l-0.111-0.282l-0.111-0.282l-0.302-0.032l-0.303-0.032c0,0-0.199-0.021-0.501-0.021	c-0.419,0-1.04,0.042-1.627,0.241l-0.196,0.066c-0.74,0.249-1.439,0.485-2.417,1.069c-0.286,0.171-0.599,0.366-0.934,0.584	C27.334,12.881,25.705,12.69,24,12.69c-1.722,0-3.365,0.192-4.889,0.571c-0.339-0.22-0.654-0.417-0.942-0.589	c-0.978-0.584-1.677-0.819-2.417-1.069l-0.196-0.066c-0.585-0.199-1.207-0.241-1.626-0.241c-0.302,0-0.501,0.021-0.501,0.021	l-0.302,0.032l-0.3,0.031l-0.112,0.281l-0.113,0.283c-0.01,0.026-0.233,0.594-0.419,1.391l-0.027,0.115	c-0.17,0.719-0.381,1.615-0.193,2.983c0.048,0.346,0.125,0.685,0.23,1.011c-1.285,1.666-1.936,3.646-1.936,5.89	c0,5.695,2.748,9.028,8.397,10.17c-0.194,0.388-0.345,0.798-0.452,1.224c-0.197,0.067-0.378,0.112-0.538,0.137	c-0.238,0.036-0.487,0.054-0.739,0.054c-0.686,0-1.225-0.134-1.435-0.259c-0.313-0.186-0.872-0.727-1.414-1.518	c-0.463-0.675-1.185-1.558-1.992-1.927c-0.698-0.319-1.437-0.502-2.029-0.502c-0.138,0-0.265,0.01-0.376,0.028	c-0.517,0.082-0.949,0.366-1.184,0.78c-0.203,0.357-0.235,0.773-0.088,1.141c0.219,0.548,0.851,0.985,1.343,1.255	c0.242,0.133,0.765,0.619,1.07,1.109c0.229,0.368,0.335,0.63,0.482,0.992c0.087,0.215,0.183,0.449,0.313,0.732	c0.47,1.022,1.937,1.924,2.103,2.023c0.806,0.483,2.161,0.638,3.157,0.683l0.123,0.003c0,0,0.001,0,0.001,0	c0.24,0,0.57-0.023,1.004-0.071v2.613c0.002,0.529-0.537,0.649-1.25,0.638l0.547,0.184C19.395,43.572,21.645,44,24,44	c2.355,0,4.605-0.428,6.703-1.176l0.703-0.262C30.695,42.538,30.016,42.422,30.01,41.996z" opacity=".05"/><path d="M30.781,42.797c-0.406,0.047-1.281-0.109-1.281-0.795v-5.804c0-1.094-0.328-2.151-0.936-3.052	c5.915-0.957,8.679-4.093,8.679-9.812c0-2.237-0.686-4.194-2.039-5.822c0.137-0.365,0.233-0.75,0.288-1.147	c0.175-1.276-0.016-2.086-0.184-2.801l-0.027-0.116c-0.178-0.761-0.388-1.297-0.397-1.319l-0.111-0.282l-0.303-0.032	c0,0-0.178-0.019-0.449-0.019c-0.381,0-0.944,0.037-1.466,0.215l-0.196,0.066c-0.714,0.241-1.389,0.468-2.321,1.024	c-0.332,0.198-0.702,0.431-1.101,0.694C27.404,13.394,25.745,13.19,24,13.19c-1.762,0-3.435,0.205-4.979,0.61	c-0.403-0.265-0.775-0.499-1.109-0.699c-0.932-0.556-1.607-0.784-2.321-1.024l-0.196-0.066c-0.521-0.177-1.085-0.215-1.466-0.215	c-0.271,0-0.449,0.019-0.449,0.019l-0.302,0.032l-0.113,0.283c-0.009,0.022-0.219,0.558-0.397,1.319l-0.027,0.116	c-0.169,0.715-0.36,1.524-0.184,2.8c0.056,0.407,0.156,0.801,0.298,1.174c-1.327,1.62-1.999,3.567-1.999,5.795	c0,5.703,2.766,8.838,8.686,9.806c-0.395,0.59-0.671,1.255-0.813,1.964c-0.33,0.13-0.629,0.216-0.891,0.256	c-0.263,0.04-0.537,0.06-0.814,0.06c-0.69,0-1.353-0.129-1.69-0.329c-0.44-0.261-1.057-0.914-1.572-1.665	c-0.35-0.51-1.047-1.417-1.788-1.755c-0.635-0.29-1.298-0.457-1.821-0.457c-0.11,0-0.21,0.008-0.298,0.022	c-0.366,0.058-0.668,0.252-0.828,0.534c-0.128,0.224-0.149,0.483-0.059,0.708c0.179,0.448,0.842,0.85,1.119,1.002	c0.335,0.184,0.919,0.744,1.254,1.284c0.251,0.404,0.37,0.697,0.521,1.067c0.085,0.209,0.178,0.437,0.304,0.712	c0.331,0.719,1.353,1.472,1.905,1.803c0.754,0.452,2.154,0.578,2.922,0.612l0.111,0.002c0.299,0,0.8-0.045,1.495-0.135v3.177	c0,0.779-0.991,0.81-1.234,0.81c-0.031,0,0.503,0.184,0.503,0.184C19.731,43.64,21.822,44,24,44c2.178,0,4.269-0.36,6.231-1.003	C30.231,42.997,30.812,42.793,30.781,42.797z" opacity=".07"/><path fill="#fff" d="M36.744,23.334c0-2.31-0.782-4.226-2.117-5.728c0.145-0.325,0.296-0.761,0.371-1.309	c0.172-1.25-0.031-2-0.203-2.734s-0.375-1.25-0.375-1.25s-0.922-0.094-1.703,0.172s-1.453,0.469-2.422,1.047	c-0.453,0.27-0.909,0.566-1.27,0.806C27.482,13.91,25.785,13.69,24,13.69c-1.801,0-3.513,0.221-5.067,0.652	c-0.362-0.241-0.821-0.539-1.277-0.811c-0.969-0.578-1.641-0.781-2.422-1.047s-1.703-0.172-1.703-0.172s-0.203,0.516-0.375,1.25	s-0.375,1.484-0.203,2.734c0.077,0.562,0.233,1.006,0.382,1.333c-1.31,1.493-2.078,3.397-2.078,5.704	c0,5.983,3.232,8.714,9.121,9.435c-0.687,0.726-1.148,1.656-1.303,2.691c-0.387,0.17-0.833,0.33-1.262,0.394	c-1.104,0.167-2.271,0-2.833-0.333s-1.229-1.083-1.729-1.813c-0.422-0.616-1.031-1.331-1.583-1.583	c-0.729-0.333-1.438-0.458-1.833-0.396c-0.396,0.063-0.583,0.354-0.5,0.563c0.083,0.208,0.479,0.521,0.896,0.75	c0.417,0.229,1.063,0.854,1.438,1.458c0.418,0.674,0.5,1.063,0.854,1.833c0.249,0.542,1.101,1.219,1.708,1.583	c0.521,0.313,1.562,0.491,2.688,0.542c0.389,0.018,1.308-0.096,2.083-0.206v3.75c0,0.639-0.585,1.125-1.191,1.013	C19.756,43.668,21.833,44,24,44c2.166,0,4.243-0.332,6.19-0.984C29.585,43.127,29,42.641,29,42.002v-5.804	c0-1.329-0.527-2.53-1.373-3.425C33.473,32.071,36.744,29.405,36.744,23.334z M11.239,32.727c-0.154-0.079-0.237-0.225-0.185-0.328	c0.052-0.103,0.22-0.122,0.374-0.043c0.154,0.079,0.237,0.225,0.185,0.328S11.393,32.806,11.239,32.727z M12.451,33.482	c-0.081,0.088-0.255,0.06-0.389-0.062s-0.177-0.293-0.096-0.381c0.081-0.088,0.255-0.06,0.389,0.062S12.532,33.394,12.451,33.482z M13.205,34.732c-0.102,0.072-0.275,0.005-0.386-0.15s-0.118-0.34-0.016-0.412s0.275-0.005,0.386,0.15	C13.299,34.475,13.307,34.66,13.205,34.732z M14.288,35.673c-0.069,0.112-0.265,0.117-0.437,0.012s-0.256-0.281-0.187-0.393	c0.069-0.112,0.265-0.117,0.437-0.012S14.357,35.561,14.288,35.673z M15.312,36.594c-0.213-0.026-0.371-0.159-0.353-0.297	c0.017-0.138,0.204-0.228,0.416-0.202c0.213,0.026,0.371,0.159,0.353,0.297C15.711,36.529,15.525,36.62,15.312,36.594z M16.963,36.833c-0.227-0.013-0.404-0.143-0.395-0.289c0.009-0.146,0.2-0.255,0.427-0.242c0.227,0.013,0.404,0.143,0.395,0.289	C17.381,36.738,17.19,36.846,16.963,36.833z M18.521,36.677c-0.242,0-0.438-0.126-0.438-0.281s0.196-0.281,0.438-0.281	c0.242,0,0.438,0.126,0.438,0.281S18.762,36.677,18.521,36.677z"/></svg>
+                
+                <span>GitHub</span>
+            </a>
+        </li>
+
+        
+
+        
+        <li id="dark-mode-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+            <span>Dark mode</span>
+        </li>
+        
+    </ol>
+
+</aside>
     
-<main class="main full-width">
+
+            <main class="main full-width">
     <article class="main-article">
     <header class="article-header">
 
@@ -147,8 +288,10 @@
 </header>
 
     <section class="article-content">
-    <h2 id="いきさつ">いきさつ</h2>
-<p>　ここ最近、諸事情あって競技プログラミングで有名なAtCoderに参戦したのですが、AtCoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていた<strong>atcoder-cli</strong>というものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。<br>
+    
+    
+    <h2 id="いきさつ">いきさつ
+</h2><p>　ここ最近、諸事情あって競技プログラミングで有名なAtCoderに参戦したのですが、AtCoderのwebページでポチポチコーディングするのも、別のエディタで書いてコピペするのもなんだかなぁという感じだったので、友人が使っていた<strong>atcoder-cli</strong>というものを導入して使ってみることにしました。なお、この記事は以下の参考文献から大いに引用しています。<br>
 <!-- raw HTML omitted --><br>
 <!-- raw HTML omitted -->
 <strong>参考文献</strong></p>
@@ -161,47 +304,47 @@
     >atcoder-cli チュートリアル（作成者様謹製のチュートリアル）</a>
 <!-- raw HTML omitted --></li>
 </ul>
-<h2 id="atcoder-cliとは">atcoder-cliとは？</h2>
-<p>　atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的に<strong>Python</strong>でAtCoderに参戦することを前提に進めていきます。</p>
-<h2 id="導入方法">導入方法</h2>
-<p>　基本的には<a class="link" href="http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/"  target="_blank" rel="noopener"
+<h2 id="atcoder-cliとは">atcoder-cliとは？
+</h2><p>　atcoder-cliとは、コンソールから短いコマンドを打つだけで問題の提出のみならず、使用する各言語に合わせたテンプレートの自動展開、作業フォルダ、ファイルの整理、テストケースの自動ダウンロード、検証などを簡単に行えるツールです。この記事では、基本的に<strong>Python</strong>でAtCoderに参戦することを前提に進めていきます。</p>
+<h2 id="導入方法">導入方法
+</h2><p>　基本的には<a class="link" href="http://tatamo.81.la/blog/2018/12/07/atcoder-cli-tutorial/"  target="_blank" rel="noopener"
     >さっきのチュートリアル</a>に従ってatcoder-cliと、セットでほぼ使うであろう <strong>online-judge-tools</strong>も一緒にインストールします。ちなみに、atcoder-cliはJavaScriptのパッケージマネージャであるnpmでインストールするので、npmが入っていない方はそちらを先にやってしまいましょう。<br>
 <a class="link" href="https://dev.macha795.com/windows10-node-js-npm-install/"  target="_blank" rel="noopener"
     >Node.js・npmのインストール</a></p>
-<h3 id="環境">環境</h3>
-<table>
-<thead>
-<tr>
-<th>Python（Anaconda）</th>
-<th>3.8.8</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>pip</td>
-<td>22.0.4</td>
-</tr>
-<tr>
-<td>npm</td>
-<td>6.14.6</td>
-</tr>
-</tbody>
-</table>
-<h3 id="インストール">インストール</h3>
-<p>　online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。</p>
+<h3 id="環境">環境
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>Python（Anaconda）</th>
+          <th>3.8.8</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>pip</td>
+          <td>22.0.4</td>
+      </tr>
+      <tr>
+          <td>npm</td>
+          <td>6.14.6</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="インストール">インストール
+</h3><p>　online-judge-toolsとatcoder-cliのインストールには、以下のコマンドを実行します。</p>
 <pre tabindex="0"><code> &gt; pip install online-judge-tools
  &gt; npm install -g atcoder-cli
 </code></pre><p>そして、以下のコマンドが使用できればインストールされています。</p>
 <pre tabindex="0"><code>&gt; acc -h
 </code></pre><!-- raw HTML omitted -->
-<h3 id="ログイン">ログイン</h3>
-<p>　atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtCoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。</p>
+<h3 id="ログイン">ログイン
+</h3><p>　atcoder-cliとonline-judge-toolsの両方ログインする必要があります。以下のコマンドを叩いた後にAtCoderのユーザー名とパスワードを入力します。まずはonline-judge-toolsの方から。</p>
 <pre tabindex="0"><code>&gt; oj login https://atcoder.jp/
 </code></pre><p>次にatcoder-cliの方にログイン。</p>
 <pre tabindex="0"><code>&gt; acc login
 </code></pre><p>ここで、Linux等のCUIに普段から触れていると慣れているかもしれませんが、パスワードを入れる時に一見して入力できていないように見えるかもしれません。が、見えないようになっているだけで入力できています、大丈夫です。</p>
-<h3 id="configファイルの編集">Configファイルの編集</h3>
-<p>　問題を解くときに、毎回main.pyの作成や問題用ディレクトリを作るのは面倒なので、自動化します。そのためにConfig.jsonを編集します。まずはConfigの場所の確認から。</p>
+<h3 id="configファイルの編集">Configファイルの編集
+</h3><p>　問題を解くときに、毎回main.pyの作成や問題用ディレクトリを作るのは面倒なので、自動化します。そのためにConfig.jsonを編集します。まずはConfigの場所の確認から。</p>
 <pre tabindex="0"><code>&gt; acc config-dir
 C:\Users\&lt;username&gt;\AppData\Roaming\atcoder-cli-nodejs\Config
 </code></pre><p>環境によってファイルの場所はまちまちになるかと思います。ファイルを開いて、以下みたいな感じに<code>&quot;default-test-dirname-format&quot;</code>と<code>&quot;default-template&quot;:&quot;python&quot;</code>を変更します。</p>
@@ -222,9 +365,9 @@ C:\Users\&lt;username&gt;\AppData\Roaming\atcoder-cli-nodejs\Config
 </span></span><span class="line"><span class="cl">         <span class="nt">&#34;submit&#34;</span><span class="p">:</span> <span class="s2">&#34;main.py&#34;</span>
 </span></span><span class="line"><span class="cl">     <span class="p">}</span>
 </span></span><span class="line"><span class="cl"> <span class="p">}</span></span></span></code></pre></div>
-<h2 id="使ってみる">使ってみる</h2>
-<h3 id="解答用フォルダ作成">解答用フォルダ作成</h3>
-<p>　ようやく使用法編です。今回は<code>C:\Users\&lt;username&gt;</code>の中に<code>atcoder</code>というフォルダを作り、その中で作業することとします（ここは自由です）。問題は仮にabc250のa問題を解くとしましょう。</p>
+<h2 id="使ってみる">使ってみる
+</h2><h3 id="解答用フォルダ作成">解答用フォルダ作成
+</h3><p>　ようやく使用法編です。今回は<code>C:\Users\&lt;username&gt;</code>の中に<code>atcoder</code>というフォルダを作り、その中で作業することとします（ここは自由です）。問題は仮にabc250のa問題を解くとしましょう。</p>
 <pre tabindex="0"><code>&gt; cd atcoder
 &gt; acc new abc250
 </code></pre><p><code>&gt; acc new abc000</code>でその回の解答用フォルダとテストケースのダウンロードが可能です。すると以下のように問題のリストが表示され、Spaceキーで問題の選択、Enterキーでフォルダ作成ができます。aキー -&gt; Enterで全問を一括で選択できます。</p>
@@ -240,25 +383,20 @@ create project of AtCoder Beginner Contest 250
  ( ) G Stonks
 (Move up and down to reveal more choices)
 </code></pre><p>仮に全選択すると解答用フォルダはこんな感じになっているかと思います。a問題を解くときは、<code>a</code>フォルダにある<code>main.py</code>にコードを書いていきます。
-<figure 
+<img src="/post/introduce-atcoder-cli/2022-05-21.png"
+	width="316"
+	height="667"
+	srcset="/post/introduce-atcoder-cli/2022-05-21_hu4805595019298944967.png 480w, /post/introduce-atcoder-cli/2022-05-21_hu6327058566040865519.png 1024w"
+	loading="lazy"
+	
 	
 		class="gallery-image" 
-		style="
-			flex-grow: 47; 
-			flex-basis: 113px"
-	>
-	<a href="/post/introduce-atcoder-cli/2022-05-21.png" data-size="316x667">
-		<img src="/post/introduce-atcoder-cli/2022-05-21.png"
-			width="316"
-			height="667"
-			srcset="/post/introduce-atcoder-cli/2022-05-21_hu4805595019298944967.png 480w, /post/introduce-atcoder-cli/2022-05-21_hu6327058566040865519.png 1024w"
-			loading="lazy"
-			>
-	</a>
+		data-flex-grow="47"
+		data-flex-basis="113px"
 	
-</figure></p>
-<h3 id="解答テストケース検証">解答、テストケース検証</h3>
-<p>　<code>main.py</code>に解答を書き終えたら、テストします。コンソールから<code>a</code>フォルダに移動して、コマンドを実行します。</p>
+></p>
+<h3 id="解答テストケース検証">解答、テストケース検証
+</h3><p>　<code>main.py</code>に解答を書き終えたら、テストします。コンソールから<code>a</code>フォルダに移動して、コマンドを実行します。</p>
 <pre tabindex="0"><code>&gt; cd abc250/a
 &gt; oj t -c &#34;python main.py&#34;
 </code></pre><p>すると、テストケースの検証結果が返ってきます。</p>
@@ -294,12 +432,12 @@ create project of AtCoder Beginner Contest 250
 [INFO] slowest: 0.065499 sec  (for sample-1)
 [SUCCESS] test success: 6 cases
 </code></pre><p>いい感じにACが出てていい感じですね。</p>
-<h3 id="提出">提出</h3>
-<p>　テスト結果がいい感じだったので提出します。</p>
+<h3 id="提出">提出
+</h3><p>　テスト結果がいい感じだったので提出します。</p>
 <pre tabindex="0"><code>&gt; acc submit main.py
 </code></pre><p>提出に成功すると自動的にAtCoderのwebページがブラウザで開き、判定されます。そこでACをもらうと晴れて解答完了です。お疲れ様でした。</p>
-<h3 id="問題追加">問題追加</h3>
-<p>　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、<code>abc250</code>のフォルダに戻って<code>acc add</code>で追加ができます。</p>
+<h3 id="問題追加">問題追加
+</h3><p>　例えば、4.1章でa問題のフォルダのみを作成したけど後にb問題以降も解きたくなったとき、<code>abc250</code>のフォルダに戻って<code>acc add</code>で追加ができます。</p>
 <pre tabindex="0"><code>&gt; cd ..（一つ上の階層に戻る）
 &gt; acc add
 </code></pre><p>そうすると同じような問題選択画面が表示され、任意の問題を追加できます。</p>
@@ -340,14 +478,16 @@ create project of AtCoder Beginner Contest 250
     
 </article>
 
-    <aside class="related-contents--wrapper">
     
+
     
-        <h2 class="section-title">関連するコンテンツ</h2>
-        <div class="related-contents">
-            <div class="flex article-list--tile">
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">関連するコンテンツ</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
                 
-                    
 <article class="">
     <a href="/post/introduce-autohotkey/">
         
@@ -358,8 +498,9 @@ create project of AtCoder Beginner Contest 250
         </div>
     </a>
 </article>
+
+            
                 
-                    
 <article class="has-image">
     <a href="/post/px-s1udandtvtest/">
         
@@ -368,7 +509,8 @@ create project of AtCoder Beginner Contest 250
                 <img src="/post/px-s1udandtvtest/0f3010e5fa0dcb1600eb6a88167d6465.0f3010e5fa0dcb1600eb6a88167d6465_hu15345247046595263726.png" 
                         width="250" 
                         height="150" 
-                        loading="lazy" 
+                        loading="lazy"
+                        alt="Featured image of post USB TVチューナーPX-S1UDを使ってテレビを視聴する最速手順"
                         data-key="PX-S1UDandTVTest" 
                         data-hash="md5-DzAQ5foNyxYA62qIFn1kZQ==">
                 
@@ -380,8 +522,33 @@ create project of AtCoder Beginner Contest 250
         </div>
     </a>
 </article>
+
+            
                 
-                    
+<article class="has-image">
+    <a href="/post/howtomakehayashirice/">
+        
+        
+            <div class="article-image">
+                <img src="/post/howtomakehayashirice/ReferenceImg/IMG_7520.ceac7f8254f56339bc287f5bc6fbef1f_hu3441869203746432657.JPG" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post いっとりうむのハヤシライスレシピ"
+                        data-key="HowToMakeHayashiRice" 
+                        data-hash="md5-zqx/glT1Yzm8KH9bxvvvHw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">いっとりうむのハヤシライスレシピ</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
 <article class="has-image">
     <a href="/post/millefoglie-is-so-good/">
         
@@ -390,7 +557,8 @@ create project of AtCoder Beginner Contest 250
                 <img src="/post/millefoglie-is-so-good/IMG_5159.492fc98f6c1a9a42ab8b08059f802531_hu17204775889154773490.jpeg" 
                         width="250" 
                         height="150" 
-                        loading="lazy" 
+                        loading="lazy"
+                        alt="Featured image of post エムピウ ミッレフォッリエを買ったら良すぎた話"
                         data-key="millefoglie-is-so-good" 
                         data-hash="md5-SS/Jj2wamkKriwgFn4AlMQ==">
                 
@@ -402,8 +570,9 @@ create project of AtCoder Beginner Contest 250
         </div>
     </a>
 </article>
+
+            
                 
-                    
 <article class="has-image">
     <a href="/post/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/">
         
@@ -412,8 +581,9 @@ create project of AtCoder Beginner Contest 250
                 <img src="/post/%E3%83%A9%E3%82%BA%E3%83%91%E3%82%A4%E3%81%AB%E5%85%AC%E9%96%8B%E9%8D%B5%E8%AA%8D%E8%A8%BC%E3%81%A7ssh%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B%E3%81%BE%E3%81%A7/raspi.d0370c04b83072f72eb44b3916eb649b_hu336305591109863217.jpeg" 
                         width="250" 
                         height="150" 
-                        loading="lazy" 
-                        data-key="" 
+                        loading="lazy"
+                        alt="Featured image of post ラズパイに公開鍵認証でssh接続するまで"
+                        
                         data-hash="md5-0DcMBLgwcvcutEs5Futkmw==">
                 
             </div>
@@ -424,32 +594,10 @@ create project of AtCoder Beginner Contest 250
         </div>
     </a>
 </article>
-                
-                    
-<article class="has-image">
-    <a href="/post/hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E8%B2%BC%E3%82%8B/">
-        
-        
-            <div class="article-image">
-                <img src="/post/hugo%E3%81%A7%E4%BD%9C%E3%81%A3%E3%81%9F%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AB%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%A2%E3%83%95%E3%82%A3%E3%83%AA%E3%83%B3%E3%82%AF%E3%82%92%E8%B2%BC%E3%82%8B/hugo.3c9951dc5a0adef164656504a0fcbf99_hu12080389894608911335.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy" 
-                        data-key="" 
-                        data-hash="md5-PJlR3FoK3vFkZWUEoPy/mQ==">
-                
-            </div>
-        
 
-        <div class="article-details">
-            <h2 class="article-title">HUGOで作ったサイトにアマゾンのアフィリンクを貼る</h2>
+            
         </div>
-    </a>
-</article>
-                
-            </div>
-        </div>
-    
+    </div>
 </aside>
 
      
@@ -467,8 +615,8 @@ create project of AtCoder Beginner Contest 250
     </section>
     
     <section class="powerby">
-         <br />
-        
+        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> で構築されています。 <br />
+        テーマ <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> は <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> によって設計されています。
     </section>
 </footer>
 
@@ -537,72 +685,27 @@ create project of AtCoder Beginner Contest 250
 
 </div><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><link 
                 rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
             ><link 
                 rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
             >
 
             </main>
-    
-        <aside class="sidebar right-sidebar sticky">
-            <section class="widget archives">
-                <div class="widget-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-                </div>
-                <h2 class="widget-title section-title">目次</h2>
-                
-                <div class="widget--toc">
-                    <nav id="TableOfContents">
-  <ol>
-    <li><a href="#いきさつ">いきさつ</a></li>
-    <li><a href="#atcoder-cliとは">atcoder-cliとは？</a></li>
-    <li><a href="#導入方法">導入方法</a>
-      <ol>
-        <li><a href="#環境">環境</a></li>
-        <li><a href="#インストール">インストール</a></li>
-        <li><a href="#ログイン">ログイン</a></li>
-        <li><a href="#configファイルの編集">Configファイルの編集</a></li>
-      </ol>
-    </li>
-    <li><a href="#使ってみる">使ってみる</a>
-      <ol>
-        <li><a href="#解答用フォルダ作成">解答用フォルダ作成</a></li>
-        <li><a href="#解答テストケース検証">解答、テストケース検証</a></li>
-        <li><a href="#提出">提出</a></li>
-        <li><a href="#問題追加">問題追加</a></li>
-      </ol>
-    </li>
-  </ol>
-</nav>
-                </div>
-            </section>
-        </aside>
-    
-
         </div>
         <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
-                defer="false"
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
                 >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
 <script>
     (function () {
         const customFont = document.createElement('link');

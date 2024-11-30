@@ -1,33 +1,611 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ガジェット on twoooooda.net</title>
-    <link>https://twoooooda.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</link>
-    <description>Recent content in ガジェット on twoooooda.net</description>
-    <generator>Hugo</generator>
-    <language>ja-jp</language>
-    <lastBuildDate>Sat, 15 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://twoooooda.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Bambu Lab A1 mini買ってみました。</title>
-      <link>https://twoooooda.net/post/3dprinter-kattemita/</link>
-      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/3dprinter-kattemita/</guid>
-      <description>話題の3Dプリンターがセールしてた ちょっと前から低価格で高精度、高速プリントができると話題になってたBambu Lab A1 miniがBambu Lab ストアで13,000円オフの39,800円になってたので買ってしまいました。&#xA;安い！ 開封 開封すると、ダンボール、フォームで丁寧に梱包されたA1 miniが入っており、ヘッド部分も専用の部品で固定されていました。付属品としては各ネジを締めるための6角レンチ、フィラメント詰まり解消ツール、オイル、グリス、試験印刷用フィラメントなどが入っていました。中にはなんと置時計自作用の時計モジュールまで入っていました。&#xA;丁寧な梱包 付属品 時計モジュールまでついてきた 使う前の注意点 中華製品あるあるですが、電源プラグが3ピンです。日本の一般家庭用の2ピンにするアダプタを付属してきませんので、別途用意する必要があります。あと印刷中はかなり揺れます。動作音自体は比較的静かですが、特に横揺れが大きいので、置く場所や振動対策に気を付ける必要があるかもしれません。私は学習机についてきた木製の頑丈なコンテナの上に置いていて、今のところ不都合はありません。&#xA;3ピンです 所感 総合的にかなり満足度高い買い物をしたと思います。タッチパネルのインタフェースの完成度も高く使いやすいですし、インターネットに繋がるので無線経由で印刷データを送信することができます。ネットワーク経由あるいはBluetoothで、PCのスライスソフトやスマホアプリと接続でき、ライトの点灯やカメラ映像の受信などもできます。 最初の印刷をする時にだいたい行うステージの水平出しなどの面倒な作業もスイッチ一つで行ってくれて、印刷中も振動やノイズを感知し、リアルタイムで調整しているそうです。次回以降の印刷でもステージ、ヘッドの加熱、各種調整を自動でやってくれるので、本当に気軽に印刷することができます。&#xA;良い買い物をした インタフェースも使いやすい Bambu Lab A1 mini、おすすめです。</description>
-    </item>
-    <item>
-      <title>もらった左手デバイスのキースイッチを改造した話</title>
-      <link>https://twoooooda.net/post/remodeled-left-hand-device/</link>
-      <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/remodeled-left-hand-device/</guid>
-      <description>　先日友人からAキーが利かなくなったゲーム用の左手デバイスをもらったので、修繕して使うつもりでしたが、ついでに改造することにしました（私の嫌いな青軸キースイッチだったので）。&#xA;デバイスと初期状態 もらった左手デバイスはアマゾンでよく見るこういうやつでした。いかにも中華製でしたが別段欠陥があるとかではなく、もらった時点でもAキーが利かない以外特に問題なく使えました。 もらった時の状態（分解途中） キーキャップを取ったところ 分解 分解も特に問題なくできました。ネジの形が特殊とか、引っかかってるツメが頑強だったとかもなく、一部のゴム足をはがすだけでネジも全て回せました。 分解中 キースイッチ摘出 中を開けてみると、案の定キースイッチは全てはんだ付けされていました。めんどくさいなー&amp;hellip;と思いつつも、ホットスワップ式（はんだ付け無しでキースイッチを固定できる仕組み）の可能性は最初から考えていなかったので、大人しくはんだを吸い取りながら35個あったキースイッチを全て取り外しました。 スイッチ摘出中 はんだごての先が曲がるというアクシデントも 全摘完了 新しいキースイッチ選定 自分は普段いつしかの記事で作ったキーボードを使っていて、これには FEKER like Holy Panda というタクタイルのキースイッチを採用しています。タクタイルのキースイッチは文字を打つにはちょうどいいのですが、ゲームにはあまり向かないなぁと個人的に思っていたので（Holy Pandaの押下圧が気持ち重めだったのもある）、今回はゲーム用に使う予定だったのでリニアスイッチにすることにしました。 最終的には Tecsee Jaditeキースイッチ というリニアキースイッチを採用しました。TALP KEYBOARDさんという国内のサイトで買ったのですが、現在（2022年10月時点）は取り扱いが無いようです。 かつての商品ページ 梱包のようす エメラルドグリーンがミクさんみたいでキレイ ここで問題が 届いたのでさぁ取り付けようと思ったのですが、なんとキースイッチが5ピンのタイプで、基板に刺さりませんでした&amp;hellip;クッソめんどくさかったのですが、泣く泣く5ピンのうち2ピンをニッパーで切り取るということを全てのキースイッチにしました。 見ての通り5ピン 見てのとおり5ピンが刺さらない せっかくなのでlubeも 前回キーボード自作した時のグリスが残っていたので、せっかくなのでlubeもしておきました。今回はたったの35キーだったので、比較的楽でした（前回は98キー）。 去年の年末の記憶が… スイッチ取り付け もう後ははんだ付けするだけです。コツをつかめばスイッチの摘出も取り付けもすぐに終わりました。 はんだづけ中 完成 組み立てて完成です。5ピンから3ピンに減らす過程でキースイッチを一個ダメにしてしまったので、Caps Lockキーだけ元の青軸スイッチのままになっています。 ダメにしたスイッチ。端子の片方を切り取っちゃった 取り付け後 使用感 やっぱりゲームにはリニア軸ですね（個人の意見）。lubeもしたので音も静かで良い感じです。ただ元が安価なデバイスなので、節々にチープな点が見えたり、軽いプラスチックの外装なので底打ちの音が微妙だったりしますが、総合的には改造してよかったなと思います。 </description>
-    </item>
-    <item>
-      <title>私の自作キーボード奮闘記</title>
-      <link>https://twoooooda.net/post/keybord-built-by-myself/</link>
-      <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://twoooooda.net/post/keybord-built-by-myself/</guid>
-      <description>しばらく前から自作キーボードの沼というものに興味があり、年が明けたら入るお年玉をアテに思い切って作ってみることにしました。&#xA;用いたパーツ PCB、ケース ケース、基板、プレート等がセットになっているTom980というコンパクトなフルサイズキーボード自作キット(98キー)を買いました。フルカラーLEDつき、ホットスワップ方式ではんだ付けがいらないというのも高得点です。安価ながらなかなかいいキットだと思います。アリエクスプレスで買いました。&#xA;本体 付属品(見切れてる方は普通のUSB端子です) しかしこのキーボードキット、汎用のファームウェアであるQMKファームウェアに対応していない代わりに独自のファームウェアがあり、そちらにのみ対応しているようです。redditのレビューに落ちていました。が、レビュー曰く、このファームウェアは &amp;ldquo;almost complete garbage(ほぼ完全にゴミ)&amp;rdquo; らしく、実際に使ってみても確かにゴミでした。具体的には、LEDの発光パターンや色は変えられるけど、特定のキーに別の役割を当てたり、マクロを割り当てたりなどがほぼ完全に機能していません。さらに(これは私だけの環境かもしれませんが)なぜかESCキーが右Winキーになってしまっていたりでなかなかよくわからん挙動をしています(これはPC内の別のソフトウェアでなんとかした)。それ以外は概ね満足です。&#xA;キースイッチ キースイッチはいろいろ考えた結果、界隈では有名らしいHoly Pandaという高級タクタイルキースイッチの廉価版であるFEKER like Holy Pandaを採用しました。リンクから飛べるTALP KEYBORDという国内の自作キーボード専門店から購入しました。&#xA;100個買った 形状はCherry MX準拠 押下圧は公称で67gとなっており、少々重めです。分類はタクタイルとなっており、心地よいタイピング音とサクサク感のある押し心地でかなり好印象です。多少の個体差はあるものの買った100個すべてのスイッチがきちんと動作しており、品質も問題なしでした。TALP KEYBORDさんありがとうございました。&#xA;キーキャップ キーキャップは、アリエクスプレスで見つけたこの可愛いキーキャップをほぼ即決で採用しました。全体的にデザインがめちゃくちゃ好みで、キャップの種類も豊富で実物のクオリティもそれなりに高く満足しているのですが、届いたパッケージにはラベルも何もなく、ストアページも何か後ろめたいことがありそうな感じなので、まぁおそらく正規品ではないのでしょう。クリプトンフューチャーメディア等の初音ミク公式から発売されたらそちらに買い換えようと思います。 可愛い～ 見てのとおり、パッケージには何もなし その他に揃えたもの 今回はlubeという、キースイッチの内部の擦れる部分にグリスを塗って音や打ち心地を改善する作業にも挑戦したかったので、それ用のツールもいくつか揃えました。&#xA;スイッチを分解するためのキースイッチオープナー(TALP KEYBORDさんでスイッチと一緒に買った) キースイッチ内部に塗るグリス &amp;ldquo;Tribosys 3203&amp;rdquo; (詳しく) lubeするパーツを置いておけるlubeステーション(3Dプリンターで出力した。使ったモデル) 100均で買った細い筆 スイッチオープナー グリス lubeステーション 使ったのは1.5mm径の筆。もっと細くていいかも lubeが大変だった 大変でした&amp;hellip; 自作キーボードと言えば、Happy Hacking Keybordに代表される60%キーボードのような配列が一般的だと思いますが、今回作ったのはコンパクトながらフルサイズキーボードなので、98キーあります(ちなみに英字配列フルサイズキーボードは全部で102キー)。当然すべてのスイッチについてlubeしました。慣れるとスイッチ一つあたり5分くらいで済ませられるようになりましたが、かなり細かい作業なので一日にできる個数は限られており結局終わるまで数日かかりました(lubeしながら年越した)。&#xA;グリスの選択や、塗る場所はこのサイトを参考にしました。 lubeの様子 lubeの効果ですが、たしかにあるように感じます。lubeする前と後とでタイピングの比較はしてないので何とも言えないですが、カチャカチャというプラスチックが擦れるような音が軽減されたり、打ち心地がサクサクとした感触になったりで効果はあると思います。たぶん。ただ、60%キーボードならいざ知らず今回は98キーあるので、それら全てにlubeする労力と効果が見合うかは微妙です。私は普段からキーボードにかなり触るのでやってよかったと感じますが、とりあえず自作キーボードをやってみたいという方には障壁になるかもしれません。&#xA;総額でいくらくらい？ 詳細な値段はそれぞれのリンクから飛んでもらえれば値段はわかると思います。自作キットやキーキャップはアリエクスプレスで買ったので比較的安く抑えることができました。キースイッチやグリスはそれぞれ国内販売店であるTALP KEYBORDや遊舎工房で購入したので、送料もかかり少し高くついてしまいました。&#xA;筆やその他100均で買ったツール、lubeステーションの印刷代を除き、グリス代や送料を含めた総額は、¥21,136となりました。これを安いと見るか高いと見るかはあなた次第です&amp;hellip;&#xA;総評 これまでつらつら書いてきましたが、金と時間をかけながらも自分でキーボードを作って良かったと思っています。キースイッチやグリスの選択、塗り方で押し心地や音を、外装やキーキャップの選択によってデザインを、ケースや基板によってキーボードの配列や機能を完全にカスタマイズできるところが自作キーボードのいいところだと今回の挑戦でわかりました。少しでも気なった方は是非この沼に飛び込んでみては。 1/7追記 YouTubeにタイピング音の軽いデモを投稿しました。サウンドデモの動画なのにノイズがあったりで音周りが拙いですが、多少の参考になれば幸いです</description>
-    </item>
-  </channel>
+    <channel>
+        <title>ガジェット on twoooooda.net</title>
+        <link>https://twoooooda.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/</link>
+        <description>Recent content in ガジェット on twoooooda.net</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>ja-jp</language>
+        <lastBuildDate>Sat, 15 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/%E3%82%AC%E3%82%B8%E3%82%A7%E3%83%83%E3%83%88/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Bambu Lab A1 mini買ってみました。</title>
+        <link>https://twoooooda.net/post/3dprinter-kattemita/</link>
+        <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/3dprinter-kattemita/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/3dprinter-kattemita/IMG_6765.JPEG" alt="Featured image of post Bambu Lab A1 mini買ってみました。" /&gt;&lt;h2 id=&#34;話題の3dプリンターがセールしてた&#34;&gt;話題の3Dプリンターがセールしてた
+&lt;/h2&gt;&lt;p&gt;　ちょっと前から低価格で高精度、高速プリントができると話題になってた&lt;strong&gt;Bambu Lab A1 mini&lt;/strong&gt;が&lt;a class=&#34;link&#34; href=&#34;https://jp.store.bambulab.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Bambu Lab ストア&lt;/a&gt;で13,000円オフの39,800円になってたので買ってしまいました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/3dprinter-kattemita/2024-06-15.jpg&#34;
+	width=&#34;1517&#34;
+	height=&#34;738&#34;
+	srcset=&#34;https://twoooooda.net/post/3dprinter-kattemita/2024-06-15_hu2304329384502415888.jpg 480w, https://twoooooda.net/post/3dprinter-kattemita/2024-06-15_hu6945517229046973920.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;安い！&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;493px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;開封&#34;&gt;開封
+&lt;/h2&gt;&lt;p&gt;　開封すると、ダンボール、フォームで丁寧に梱包されたA1 miniが入っており、ヘッド部分も専用の部品で固定されていました。付属品としては各ネジを締めるための6角レンチ、フィラメント詰まり解消ツール、オイル、グリス、試験印刷用フィラメントなどが入っていました。中にはなんと置時計自作用の時計モジュールまで入っていました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/3dprinter-kattemita/IMG_6744.JPG&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/3dprinter-kattemita/IMG_6744_hu17478672462444908074.JPG 480w, https://twoooooda.net/post/3dprinter-kattemita/IMG_6744_hu6596773425872573482.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;丁寧な梱包&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/3dprinter-kattemita/IMG_6746.JPEG&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/3dprinter-kattemita/IMG_6746_hu210832387316468784.JPEG 480w, https://twoooooda.net/post/3dprinter-kattemita/IMG_6746_hu14422511404065792261.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;付属品&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;img src=&#34;https://twoooooda.net/post/3dprinter-kattemita/IMG_6745.JPEG&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/3dprinter-kattemita/IMG_6745_hu13574492029638818485.JPEG 480w, https://twoooooda.net/post/3dprinter-kattemita/IMG_6745_hu6567097501737413883.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;時計モジュールまでついてきた&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使う前の注意点&#34;&gt;使う前の注意点
+&lt;/h2&gt;&lt;p&gt;　中華製品あるあるですが、電源プラグが3ピンです。日本の一般家庭用の2ピンにするアダプタを付属してきませんので、別途用意する必要があります。あと印刷中はかなり揺れます。動作音自体は比較的静かですが、特に横揺れが大きいので、置く場所や振動対策に気を付ける必要があるかもしれません。私は学習机についてきた木製の頑丈なコンテナの上に置いていて、今のところ不都合はありません。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/3dprinter-kattemita/IMG_6747.JPG&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/3dprinter-kattemita/IMG_6747_hu213459992443503111.JPG 480w, https://twoooooda.net/post/3dprinter-kattemita/IMG_6747_hu12220928323823719437.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;3ピンです&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;所感&#34;&gt;所感
+&lt;/h2&gt;&lt;p&gt;　総合的にかなり満足度高い買い物をしたと思います。タッチパネルのインタフェースの完成度も高く使いやすいですし、インターネットに繋がるので無線経由で印刷データを送信することができます。ネットワーク経由あるいはBluetoothで、&lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/us/app/bambu-handy/id1625671285&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PCのスライスソフト&lt;/a&gt;や&lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/us/app/bambu-handy/id1625671285&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;スマホアプリ&lt;/a&gt;と接続でき、ライトの点灯やカメラ映像の受信などもできます。
+　最初の印刷をする時にだいたい行うステージの水平出しなどの面倒な作業もスイッチ一つで行ってくれて、印刷中も振動やノイズを感知し、リアルタイムで調整しているそうです。次回以降の印刷でもステージ、ヘッドの加熱、各種調整を自動でやってくれるので、本当に気軽に印刷することができます。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/3dprinter-kattemita/IMG_6748.JPG&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/3dprinter-kattemita/IMG_6748_hu8227157303628879253.JPG 480w, https://twoooooda.net/post/3dprinter-kattemita/IMG_6748_hu11353314370047161896.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;良い買い物をした&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/3dprinter-kattemita/IMG_6766.JPEG&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/3dprinter-kattemita/IMG_6766_hu14944694641314657852.JPEG 480w, https://twoooooda.net/post/3dprinter-kattemita/IMG_6766_hu9407937989215236813.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;インタフェースも使いやすい&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;　Bambu Lab A1 mini、おすすめです。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>もらった左手デバイスのキースイッチを改造した話</title>
+        <link>https://twoooooda.net/post/remodeled-left-hand-device/</link>
+        <pubDate>Tue, 18 Oct 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/remodeled-left-hand-device/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/remodeled-left-hand-device/IMG_4369.JPEG" alt="Featured image of post もらった左手デバイスのキースイッチを改造した話" /&gt;&lt;p&gt;　先日友人からAキーが利かなくなったゲーム用の左手デバイスをもらったので、修繕して使うつもりでしたが、ついでに改造することにしました（私の嫌いな青軸キースイッチだったので）。&lt;/p&gt;
+&lt;h2 id=&#34;デバイスと初期状態&#34;&gt;デバイスと初期状態
+&lt;/h2&gt;&lt;p&gt;　もらった左手デバイスはアマゾンでよく見る&lt;a class=&#34;link&#34; href=&#34;https://amzn.asia/d/5EQnRBB&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こういうやつ&lt;/a&gt;でした。いかにも中華製でしたが別段欠陥があるとかではなく、もらった時点でもAキーが利かない以外特に問題なく使えました。
+&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4354.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4354_hu4982763455350043413.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4354_hu11962338364537176025.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;もらった時の状態（分解途中）&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;  &lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4355.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4355_hu11209593764991492625.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4355_hu16012140687106727749.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;キーキャップを取ったところ&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;分解&#34;&gt;分解
+&lt;/h2&gt;&lt;p&gt;　分解も特に問題なくできました。ネジの形が特殊とか、引っかかってるツメが頑強だったとかもなく、一部のゴム足をはがすだけでネジも全て回せました。
+&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4353.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4353_hu2625459714399973164.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4353_hu3824087091339768804.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;分解中&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;キースイッチ摘出&#34;&gt;キースイッチ摘出
+&lt;/h2&gt;&lt;p&gt;　中を開けてみると、案の定キースイッチは全てはんだ付けされていました。めんどくさいなー&amp;hellip;と思いつつも、ホットスワップ式（はんだ付け無しでキースイッチを固定できる仕組み）の可能性は最初から考えていなかったので、大人しくはんだを吸い取りながら35個あったキースイッチを全て取り外しました。
+&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4356.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4356_hu7408196546390633619.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4356_hu8747940185719260103.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;スイッチ摘出中&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;  &lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4358.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4358_hu10580932547522536025.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4358_hu13717457880813948307.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;はんだごての先が曲がるというアクシデントも&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;  &lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4359.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4359_hu8692522970062655586.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4359_hu9858446782124248072.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;全摘完了&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;新しいキースイッチ選定&#34;&gt;新しいキースイッチ選定
+&lt;/h2&gt;&lt;p&gt;　自分は普段&lt;a class=&#34;link&#34; href=&#34;https://twoooooda.net/post/keybord-built-by-myself/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;いつしかの記事&lt;/a&gt;で作ったキーボードを使っていて、これには &lt;strong&gt;FEKER like Holy Panda&lt;/strong&gt; というタクタイルのキースイッチを採用しています。タクタイルのキースイッチは文字を打つにはちょうどいいのですが、ゲームにはあまり向かないなぁと個人的に思っていたので（Holy Pandaの押下圧が気持ち重めだったのもある）、今回はゲーム用に使う予定だったのでリニアスイッチにすることにしました。
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;p&gt;　最終的には &lt;strong&gt;Tecsee Jaditeキースイッチ&lt;/strong&gt; というリニアキースイッチを採用しました。&lt;a class=&#34;link&#34; href=&#34;https://talpkeyboard.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TALP KEYBOARD&lt;/a&gt;さんという国内のサイトで買ったのですが、現在（2022年10月時点）は取り扱いが無いようです。
+&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/FakwZqmakAAGSgH.jpg&#34;
+	width=&#34;1113&#34;
+	height=&#34;392&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/FakwZqmakAAGSgH_hu15620241380101416614.jpg 480w, https://twoooooda.net/post/remodeled-left-hand-device/FakwZqmakAAGSgH_hu14666176322794601842.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;かつての商品ページ&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;283&#34;
+		data-flex-basis=&#34;681px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4361.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4361_hu4676190253088487754.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4361_hu5641989024986227925.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;梱包のようす&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;  &lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4362.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4362_hu1719691650578098291.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4362_hu18193289375383925315.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;エメラルドグリーンがミクさんみたいでキレイ&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ここで問題が&#34;&gt;ここで問題が
+&lt;/h3&gt;&lt;p&gt;　届いたのでさぁ取り付けようと思ったのですが、なんとキースイッチが5ピンのタイプで、基板に刺さりませんでした&amp;hellip;クッソめんどくさかったのですが、泣く泣く5ピンのうち2ピンをニッパーで切り取るということを全てのキースイッチにしました。
+&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4363.JPEG&#34;
+	width=&#34;497&#34;
+	height=&#34;346&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4363_hu1936981199775307480.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4363_hu1834433309681056809.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;見ての通り5ピン&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;143&#34;
+		data-flex-basis=&#34;344px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4364.JPEG&#34;
+	width=&#34;1536&#34;
+	height=&#34;2048&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4364_hu1710015308972730237.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4364_hu1568578536593907312.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;見てのとおり5ピンが刺さらない&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;せっかくなのでlubeも&#34;&gt;せっかくなのでlubeも
+&lt;/h2&gt;&lt;p&gt;　前回キーボード自作した時のグリスが残っていたので、せっかくなのでlubeもしておきました。今回はたったの35キーだったので、比較的楽でした（前回は98キー）。
+&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4367.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4367_hu6652936187906378855.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4367_hu12296295055643296677.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;去年の年末の記憶が&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;スイッチ取り付け&#34;&gt;スイッチ取り付け
+&lt;/h2&gt;&lt;p&gt;　もう後ははんだ付けするだけです。コツをつかめばスイッチの摘出も取り付けもすぐに終わりました。
+&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4368.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4368_hu17785855746562003270.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4368_hu14487467832423600098.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;はんだづけ中&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;完成&#34;&gt;完成
+&lt;/h2&gt;&lt;p&gt;　組み立てて完成です。5ピンから3ピンに減らす過程でキースイッチを一個ダメにしてしまったので、Caps Lockキーだけ元の青軸スイッチのままになっています。
+&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4371.JPEG&#34;
+	width=&#34;492&#34;
+	height=&#34;350&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4371_hu1874054994558407709.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4371_hu16865980546296524707.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ダメにしたスイッチ。端子の片方を切り取っちゃった&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;337px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4369.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4369_hu2768802411097345068.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4369_hu17184126946030052471.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;取り付け後&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用感&#34;&gt;使用感
+&lt;/h2&gt;&lt;p&gt;　やっぱりゲームにはリニア軸ですね（個人の意見）。lubeもしたので音も静かで良い感じです。ただ元が安価なデバイスなので、節々にチープな点が見えたり、軽いプラスチックの外装なので底打ちの音が微妙だったりしますが、総合的には改造してよかったなと思います。
+&lt;img src=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4372.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/remodeled-left-hand-device/IMG_4372_hu13304806143293818847.JPEG 480w, https://twoooooda.net/post/remodeled-left-hand-device/IMG_4372_hu4270317429819275920.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>私の自作キーボード奮闘記</title>
+        <link>https://twoooooda.net/post/keybord-built-by-myself/</link>
+        <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/keybord-built-by-myself/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/keybord-built-by-myself/IMG_4085.JPEG" alt="Featured image of post 私の自作キーボード奮闘記" /&gt;&lt;p&gt;しばらく前から&lt;strong&gt;自作キーボード&lt;/strong&gt;の沼というものに興味があり、年が明けたら入るお年玉をアテに思い切って作ってみることにしました。&lt;/p&gt;
+&lt;h2 id=&#34;用いたパーツ&#34;&gt;用いたパーツ
+&lt;/h2&gt;&lt;h3 id=&#34;pcbケース&#34;&gt;PCB、ケース
+&lt;/h3&gt;&lt;p&gt;　ケース、基板、プレート等がセットになっている&lt;a class=&#34;link&#34; href=&#34;https://ja.aliexpress.com/item/1005002964011779.html?spm=a2g0o.9042311.0.0.56ca4c4dMvOJNG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tom980&lt;/a&gt;というコンパクトなフルサイズキーボード自作キット(98キー)を買いました。フルカラーLEDつき、ホットスワップ方式ではんだ付けがいらないというのも高得点です。安価ながらなかなかいいキットだと思います。アリエクスプレスで買いました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4072.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4072_hu6734024128996654418.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4072_hu3446076695289971344.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;本体&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4076.JPEG&#34;
+	width=&#34;1536&#34;
+	height=&#34;2048&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4076_hu11540593391933636144.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4076_hu1432631637664328081.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;付属品(見切れてる方は普通のUSB端子です)&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;しかしこのキーボードキット、汎用のファームウェアであるQMKファームウェアに対応していない代わりに独自のファームウェアがあり、そちらにのみ対応しているようです。&lt;a class=&#34;link&#34; href=&#34;https://www.reddit.com/r/MechanicalKeyboards/comments/ox075j/holy_tom980_wianxp_980_review/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;redditのレビュー&lt;/a&gt;に落ちていました。が、レビュー曰く、このファームウェアは &amp;ldquo;&lt;strong&gt;almost complete garbage(ほぼ完全にゴミ)&lt;/strong&gt;&amp;rdquo; らしく、実際に使ってみても確かにゴミでした。具体的には、LEDの発光パターンや色は変えられるけど、特定のキーに別の役割を当てたり、マクロを割り当てたりなどがほぼ完全に機能していません。さらに(これは私だけの環境かもしれませんが)なぜか&lt;strong&gt;ESCキーが右Winキーになって&lt;/strong&gt;しまっていたりでなかなかよくわからん挙動をしています(これはPC内の別のソフトウェアでなんとかした)。それ以外は概ね満足です。&lt;/p&gt;
+&lt;h3 id=&#34;キースイッチ&#34;&gt;キースイッチ
+&lt;/h3&gt;&lt;p&gt;　キースイッチはいろいろ考えた結果、界隈では有名らしいHoly Pandaという高級タクタイルキースイッチの&lt;strong&gt;廉価版&lt;/strong&gt;である&lt;a class=&#34;link&#34; href=&#34;https://talpkeyboard.net/items/5fd61629b00aa37e7271319d&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;FEKER like Holy Panda&lt;/a&gt;を採用しました。リンクから飛べるTALP KEYBORDという国内の自作キーボード専門店から購入しました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4021.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4021_hu11089450463664370739.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4021_hu946818603445860844.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;100個買った&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4022.JPG&#34;
+	width=&#34;3520&#34;
+	height=&#34;1980&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4022_hu3527572336858205517.JPG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4022_hu9353838730605749287.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;形状はCherry MX準拠&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;押下圧は公称で67gとなっており、少々重めです。分類はタクタイルとなっており、心地よいタイピング音とサクサク感のある押し心地でかなり好印象です。多少の個体差はあるものの買った100個すべてのスイッチがきちんと動作しており、品質も問題なしでした。TALP KEYBORDさんありがとうございました。&lt;/p&gt;
+&lt;h3 id=&#34;キーキャップ&#34;&gt;キーキャップ
+&lt;/h3&gt;&lt;p&gt;　キーキャップは、アリエクスプレスで見つけたこの&lt;a class=&#34;link&#34; href=&#34;https://ja.aliexpress.com/item/1005001622318975.html?spm=a2g0o.9042311.0.0.56ca4c4dMvOJNG&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;可愛いキーキャップ&lt;/a&gt;をほぼ即決で採用しました。全体的にデザインがめちゃくちゃ好みで、キャップの種類も豊富で実物のクオリティもそれなりに高く満足しているのですが、届いたパッケージにはラベルも何もなく、ストアページも何か後ろめたいことがありそうな感じなので、まぁおそらく正規品ではないのでしょう。クリプトンフューチャーメディア等の初音ミク公式から発売されたらそちらに買い換えようと思います。
+&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4086.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4086_hu8938142860455091927.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4086_hu8338221947149424353.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;可愛い～&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4090.jpeg&#34;
+	width=&#34;1536&#34;
+	height=&#34;2048&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4090_hu6021007297013172579.jpeg 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4090_hu7225848343927149802.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;見てのとおり、パッケージには何もなし&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;その他に揃えたもの&#34;&gt;その他に揃えたもの
+&lt;/h3&gt;&lt;p&gt;　今回はlubeという、キースイッチの内部の擦れる部分にグリスを塗って音や打ち心地を改善する作業にも挑戦したかったので、それ用のツールもいくつか揃えました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;スイッチを分解するための&lt;strong&gt;キースイッチオープナー&lt;/strong&gt;(&lt;a class=&#34;link&#34; href=&#34;https://talpkeyboard.net/items/5ffc48fd8a45725bc56a391a&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TALP KEYBORD&lt;/a&gt;さんでスイッチと一緒に買った)&lt;/li&gt;
+&lt;li&gt;キースイッチ内部に塗るグリス &amp;ldquo;&lt;strong&gt;Tribosys 3203&lt;/strong&gt;&amp;rdquo; (&lt;a class=&#34;link&#34; href=&#34;https://shop.yushakobo.jp/collections/accessory/products/lubricants&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;詳しく&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;lubeするパーツを置いておける&lt;strong&gt;lubeステーション&lt;/strong&gt;(3Dプリンターで出力した。&lt;a class=&#34;link&#34; href=&#34;https://www.thingiverse.com/thing:4920600&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;使ったモデル&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;100均で買った細い筆&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4066.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4066_hu5187993927015294901.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4066_hu16343121429801460740.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;スイッチオープナー&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4068.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4068_hu18425859051785569326.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4068_hu6807455957690208910.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;グリス&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4067.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4067_hu11148137345058047359.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4067_hu9583446361528467864.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;lubeステーション&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4069.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4069_hu18349690124370108748.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4069_hu560981331690903640.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;使ったのは1.5mm径の筆。もっと細くていいかも&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;lubeが大変だった&#34;&gt;lubeが大変だった
+&lt;/h2&gt;&lt;p&gt;　&lt;strong&gt;大変でした&amp;hellip;&lt;/strong&gt; 自作キーボードと言えば、Happy Hacking Keybordに代表される60%キーボードのような配列が一般的だと思いますが、今回作ったのはコンパクトながらフルサイズキーボードなので、98キーあります(ちなみに英字配列フルサイズキーボードは全部で102キー)。当然すべてのスイッチについてlubeしました。慣れるとスイッチ一つあたり5分くらいで済ませられるようになりましたが、かなり細かい作業なので一日にできる個数は限られており結局終わるまで数日かかりました(lubeしながら年越した)。&lt;/p&gt;
+&lt;p&gt;グリスの選択や、塗る場所は&lt;a class=&#34;link&#34; href=&#34;https://keys.recompile.net/docs/keyswitch-best-practice/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;このサイト&lt;/a&gt;を参考にしました。
+&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4071.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4071_hu10741460509854412781.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4071_hu17085659106786977501.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;lubeの様子&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;　lubeの効果ですが、たしかにあるように&lt;strong&gt;感じます&lt;/strong&gt;。lubeする前と後とでタイピングの比較はしてないので何とも言えないですが、カチャカチャというプラスチックが擦れるような音が軽減されたり、打ち心地がサクサクとした感触になったりで効果はあると思います。たぶん。ただ、60%キーボードならいざ知らず今回は98キーあるので、それら全てにlubeする労力と効果が見合うかは微妙です。私は普段からキーボードにかなり触るのでやってよかったと感じますが、とりあえず自作キーボードをやってみたいという方には障壁になるかもしれません。&lt;/p&gt;
+&lt;h2 id=&#34;総額でいくらくらい&#34;&gt;総額でいくらくらい？
+&lt;/h2&gt;&lt;p&gt;　詳細な値段はそれぞれのリンクから飛んでもらえれば値段はわかると思います。自作キットやキーキャップはアリエクスプレスで買ったので比較的安く抑えることができました。キースイッチやグリスはそれぞれ国内販売店である&lt;a class=&#34;link&#34; href=&#34;https://talpkeyboard.net/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;TALP KEYBORD&lt;/a&gt;や&lt;a class=&#34;link&#34; href=&#34;https://shop.yushakobo.jp/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;遊舎工房&lt;/a&gt;で購入したので、送料もかかり少し高くついてしまいました。&lt;/p&gt;
+&lt;p&gt;筆やその他100均で買ったツール、lubeステーションの印刷代を除き、グリス代や送料を含めた総額は、&lt;strong&gt;¥21,136&lt;/strong&gt;となりました。これを安いと見るか高いと見るかはあなた次第です&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;総評&#34;&gt;総評
+&lt;/h2&gt;&lt;p&gt;これまでつらつら書いてきましたが、金と時間をかけながらも&lt;strong&gt;自分でキーボードを作って良かった&lt;/strong&gt;と思っています。キースイッチやグリスの選択、塗り方で押し心地や音を、外装やキーキャップの選択によってデザインを、ケースや基板によってキーボードの配列や機能を完全にカスタマイズできるところが自作キーボードのいいところだと今回の挑戦でわかりました。少しでも気なった方は是非この沼に飛び込んでみては。
+&lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4093.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4093_hu12512391401913600125.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4093_hu3529590602410021615.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34; &#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt; &lt;img src=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4096.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/keybord-built-by-myself/IMG_4096_hu5278588969966987274.JPEG 480w, https://twoooooda.net/post/keybord-built-by-myself/IMG_4096_hu12516343500081754829.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34; &#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;17追記&#34;&gt;1/7追記
+&lt;/h2&gt;&lt;p&gt;YouTubeにタイピング音の軽いデモを投稿しました。サウンドデモの動画なのにノイズがあったりで音周りが拙いですが、多少の参考になれば幸いです&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/JewSuvXzGVY&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        </item>
+        
+    </channel>
 </rss>
