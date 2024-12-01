@@ -1,8 +1,8 @@
 +++
 author = "twoooooda"
-title = "HUGOで作ったサイトにアマゾンのアフィリンクを貼る"
-date = "2024-12-31"
-description = "HUGOで作ったサイトにアマゾンのリンクを貼る方法の備忘録です。"
+title = "Hugoで非推奨のプロパティとかを使ってエラーが出たとき"
+date = "2024-12-02"
+description = ""
 
 tags = [
     "知見",
@@ -21,3 +21,21 @@ slug="hugo-komattara"
 image = "hugo.png"
 +++
 
+## 経緯
+最近久々に記事を書こうとしてHugoを使ったら、以下のようなエラーメッセージが出てうまくビルドができませんでした。
+```
+$ hugo
+WARN  deprecated: resources.ToCSS was deprecated in Hugo v0.128.0 and will be removed in a future release. Use css.Sass instead.
+ERROR deprecated: .Site.LastChange was deprecated in Hugo v0.123.0 and will be removed in Hugo 0.140.0. Use .Site.Lastmod instead.
+```
+要するに、現行のHugoのバージョンでは非推奨、あるいは利用不可なプロパティを使っているせいで怒られています。
+
+## 原因
+私の場合は、[ブログのテンプレート](https://github.com/CaiJimmy/hugo-theme-stack)をgitのsubmoduleの形で使っていて、ある程度はテンプレートのリポジトリに依存してしまいます。submoduleの仕様として、submoduleの関係を設定したタイミングのリポジトリの状態を保持してしまうみたいです。このブログを作ったのがもう3年前なので、テンプレートの中身が3年前のバージョンで止まっていたのが原因でした。
+
+## 解決
+解決策としては、以下のコマンドでsubmoduleに設定しているリポジトリを最新の状態にすれば解決できました。
+```
+$ git submodule update --remote
+```
+内容としてはこれだけなのですが、備忘録として残します。
