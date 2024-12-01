@@ -1,8 +1,8 @@
 +++
 author = "twoooooda"
 title = "Hugoで非推奨のプロパティとかを使ってエラーが出たとき"
-date = "2024-12-02"
-description = ""
+date = "2024-12-01"
+description = "Hugoを使っててつまずいたところの備忘録です。"
 
 tags = [
     "知見",
