@@ -10,6 +10,8 @@ tags = [
 categories = [
     "体験レポ"
 ]
+series = ["Themes Guide"]
+aliases = ["migrate-from-jekyl"]
 slug="apple-trade-in"
 +++
 
