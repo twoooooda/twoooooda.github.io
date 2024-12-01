@@ -6,7 +6,28 @@
         <description>Recent content in 知見 on twoooooda.net</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
-        <lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/tags/%E7%9F%A5%E8%A6%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 01 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/tags/%E7%9F%A5%E8%A6%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Hugoで非推奨のプロパティとかを使ってエラーが出たとき</title>
+        <link>https://twoooooda.net/post/hugo-komattara/</link>
+        <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/hugo-komattara/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/hugo-komattara/hugo.png" alt="Featured image of post Hugoで非推奨のプロパティとかを使ってエラーが出たとき" /&gt;&lt;h2 id=&#34;経緯&#34;&gt;経緯
+&lt;/h2&gt;&lt;p&gt;最近久々に記事を書こうとしてHugoを使ったら、以下のようなエラーメッセージが出てうまくビルドができませんでした。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ hugo
+WARN  deprecated: resources.ToCSS was deprecated in Hugo v0.128.0 and will be removed in a future release. Use css.Sass instead.
+ERROR deprecated: .Site.LastChange was deprecated in Hugo v0.123.0 and will be removed in Hugo 0.140.0. Use .Site.Lastmod instead.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;要するに、現行のHugoのバージョンでは非推奨、あるいは利用不可なプロパティを使っているせいで怒られています。&lt;/p&gt;
+&lt;h2 id=&#34;原因&#34;&gt;原因
+&lt;/h2&gt;&lt;p&gt;私の場合は、&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ブログのテンプレート&lt;/a&gt;をgitのsubmoduleの形で使っていて、ある程度はテンプレートのリポジトリに依存してしまいます。submoduleの仕様として、submoduleの関係を設定したタイミングのリポジトリの状態を保持してしまうみたいです。このブログを作ったのがもう3年前なので、テンプレートの中身が3年前のバージョンで止まっていたのが原因でした。&lt;/p&gt;
+&lt;h2 id=&#34;解決&#34;&gt;解決
+&lt;/h2&gt;&lt;p&gt;解決策としては、以下のコマンドでsubmoduleに設定しているリポジトリを最新の状態にすれば解決できました。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git submodule update --remote
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;内容としてはこれだけなのですが、備忘録として残します。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>atcoder-cliを導入してみた</title>
         <link>https://twoooooda.net/post/introduce-atcoder-cli/</link>
         <pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate>
