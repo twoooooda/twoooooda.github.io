@@ -21,9 +21,7 @@ _testmain.go
 
 *.exe
 *.test
-*.lock
 
 /public
 /themes
-/resources
 .DS_Store
