@@ -22,7 +22,6 @@ _testmain.go
 *.exe
 *.test
 
-/resources
 /public
 /themes
 .DS_Store
