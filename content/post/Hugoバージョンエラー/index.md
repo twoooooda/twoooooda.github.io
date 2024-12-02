@@ -20,7 +20,7 @@ aliases = ["migrate-from-jekyl"]
 slug="hugo-komattara"
 image = "hugo.png"
 +++
-
+この記事は、[某企業アドベントカレンダー2024](https://adventar.org/calendars/10291)の二日目の記事です。
 ## 経緯
 最近久々に記事を書こうとしてHugoを使ったら、以下のようなエラーメッセージが出てうまくビルドができませんでした。
 ```
