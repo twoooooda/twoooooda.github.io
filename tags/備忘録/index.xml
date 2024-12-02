@@ -12,7 +12,9 @@
         <pubDate>Sun, 01 Dec 2024 00:00:00 +0000</pubDate>
         
         <guid>https://twoooooda.net/post/hugo-komattara/</guid>
-        <description>&lt;img src="https://twoooooda.net/post/hugo-komattara/hugo.png" alt="Featured image of post Hugoで非推奨のプロパティとかを使ってエラーが出たとき" /&gt;&lt;h2 id=&#34;経緯&#34;&gt;経緯
+        <description>&lt;img src="https://twoooooda.net/post/hugo-komattara/hugo.png" alt="Featured image of post Hugoで非推奨のプロパティとかを使ってエラーが出たとき" /&gt;&lt;p&gt;この記事は、&lt;a class=&#34;link&#34; href=&#34;https://adventar.org/calendars/10291&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;某企業アドベントカレンダー2024&lt;/a&gt;の二日目の記事です。&lt;/p&gt;
+&lt;h2 id=&#34;経緯&#34;&gt;経緯
 &lt;/h2&gt;&lt;p&gt;最近久々に記事を書こうとしてHugoを使ったら、以下のようなエラーメッセージが出てうまくビルドができませんでした。&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ hugo
 WARN  deprecated: resources.ToCSS was deprecated in Hugo v0.128.0 and will be removed in a future release. Use css.Sass instead.
