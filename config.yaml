@@ -39,6 +39,7 @@ params:
         lastUpdated: Jan 02, 2006 15:04 MST
 
     sidebar:
+        compact: false
         emoji: false
         subtitle: 私いっとりうむの日記や知見とかを適当に書き散らすブログです。
         avatar:
@@ -128,16 +129,13 @@ params:
             id: 
 
     widgets:
-        enabled:
-            - search
-            - archives
-            - tag-cloud
+        homepage: 
+            - type: search
+            - type: archives
+            - type: tag-Cloud
 
-        archives:
-            limit: 5
-
-        tagCloud:
-            limit: 20
+        page: 
+            - type: toc
 
     opengraph:
         twitter:
