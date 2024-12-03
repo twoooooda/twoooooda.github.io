@@ -132,7 +132,7 @@ params:
         homepage: 
             - type: search
             - type: archives
-            - type: tag-Cloud
+            - type: tag-cloud
 
         page: 
             - type: toc
