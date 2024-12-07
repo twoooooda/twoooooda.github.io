@@ -31,7 +31,7 @@ slug="3d-meshi-scan"
 　この記事では、iPhone Proシリーズと、とあるアプリを使って3Dスキャンをする方法を紹介します。
 
 ## 3Dスキャンをしてみよう
-　この記事では、iPhoneアプリである[**Scaniverse**](https://apps.apple.com/jp/app/scaniverse-3d-scanner/id1541433223)を使った3Dスキャンを紹介します。このアプリは、iPhone Proシリーズに搭載されている赤外線センサ "**LiDAR**" センサを使うことで本領を発揮しますが、なくてもできます。
+　この記事では、iPhoneアプリである[**Scaniverse**](https://apps.apple.com/jp/app/scaniverse-3d-scanner/id1541433223)を使った3Dスキャンを紹介します。このアプリは、iPhone Proシリーズに搭載されている赤外線センサである "**LiDAR**" センサを使うことで本領を発揮しますが、なくてもできます。
 
 　スキャン方法としてはごく簡単で、スキャンしたいものの周りをiPhoneで動画を数十秒撮るようにするだけです。
 
