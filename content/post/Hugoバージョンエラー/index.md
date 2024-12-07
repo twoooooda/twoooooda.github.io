@@ -39,3 +39,9 @@ ERROR deprecated: .Site.LastChange was deprecated in Hugo v0.123.0 and will be r
 $ git submodule update --remote
 ```
 内容としてはこれだけなのですが、備忘録として残します。
+
+## 補足
+PCを新調したなどで、新しく`git clone`したい場合、以下のコマンドでsubmoduleの情報、submoduleとの関係などを引き継いでcloneできます。
+```
+git clone --recursive https://github.com/twoooooda/[リポジトリ.git]
+```
