@@ -258,6 +258,7 @@
     <li><a href="#経緯">経緯</a></li>
     <li><a href="#原因">原因</a></li>
     <li><a href="#解決">解決</a></li>
+    <li><a href="#補足">補足</a></li>
   </ol>
 </nav>
         </div>
@@ -351,7 +352,10 @@ ERROR deprecated: .Site.LastChange was deprecated in Hugo v0.123.0 and will be r
 </h2><p>解決策としては、以下のコマンドでsubmoduleに設定しているリポジトリを最新の状態にすれば解決できました。</p>
 <pre tabindex="0"><code>$ git submodule update --remote
 </code></pre><p>内容としてはこれだけなのですが、備忘録として残します。</p>
-
+<h2 id="補足">補足
+</h2><p>PCを新調したなどで、新しく<code>git clone</code>したい場合、以下のコマンドでsubmoduleの情報、submoduleとの関係などを引き継いでcloneできます。</p>
+<pre tabindex="0"><code>git clone --recursive https://github.com/twoooooda/[リポジトリ.git]
+</code></pre>
 </section>
 
 

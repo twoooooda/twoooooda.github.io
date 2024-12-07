@@ -6,7 +6,136 @@
         <description>Recent content in diary on twoooooda.net</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
-        <lastBuildDate>Sat, 30 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/diary/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/diary/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>3D飯スキャンをしてみよう</title>
+        <link>https://twoooooda.net/post/3d-meshi-scan/</link>
+        <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/3d-meshi-scan/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/3d-meshi-scan/222419.jpg" alt="Featured image of post 3D飯スキャンをしてみよう" /&gt;&lt;h2 id=&#34;この記事は&#34;&gt;この記事は？
+&lt;/h2&gt;&lt;p&gt;　この記事は、&lt;a class=&#34;link&#34; href=&#34;https://adventar.org/calendars/10291&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;某企業アドベントカレンダー2024&lt;/a&gt;七日目の記事です。
+飯テロにご注意ください。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;3dスキャン&#34;&gt;3Dスキャン
+&lt;/h2&gt;&lt;p&gt;　&lt;strong&gt;3Dスキャン&lt;/strong&gt;とは、文字通り空間や物体などを3次元的に記録するものです。空間や景色を平面敵に切り取る写真と違って、記録を残す時の&lt;strong&gt;周りの空間&lt;/strong&gt;ごと残せるというのは大きな利点だと思います。飯スキャンに限らず、例えば自室を3Dスキャンして模様替えに利用したり、文化財などを3Dスキャンしてより情報量の多いアーカイブとして後世に残すといったことへの利用が注目されています。&lt;/p&gt;
+&lt;p&gt;　3Dスキャンする手法はいろいろありますが、一般的には多視点からの物体の写真を大量に撮って、それらから立体を推測する&lt;strong&gt;フォトグラメトリ&lt;/strong&gt;や、似た手法のNeRF、Gaussian Splatting、赤外線センサによる距離情報も使って面を推測する方法などがあります。
+　立体を表現する方法にも複数あり、特に一般的なものに3つの頂点からなる平面を立体に連ねて表現するメッシュデータがあります。次点では立体を大量の特徴点で表現する点群データがあります。&lt;a class=&#34;link&#34; href=&#34;https://note.com/andpad_zero/n/n0bea3d180bc0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;[参考]&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;　この記事では、iPhone Proシリーズと、とあるアプリを使って3Dスキャンをする方法を紹介します。&lt;/p&gt;
+&lt;h2 id=&#34;3dスキャンをしてみよう&#34;&gt;3Dスキャンをしてみよう
+&lt;/h2&gt;&lt;p&gt;　この記事では、iPhoneアプリである&lt;a class=&#34;link&#34; href=&#34;https://apps.apple.com/jp/app/scaniverse-3d-scanner/id1541433223&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;strong&gt;Scaniverse&lt;/strong&gt;&lt;/a&gt;を使った3Dスキャンを紹介します。このアプリは、iPhone Proシリーズに搭載されている赤外線センサ &amp;ldquo;&lt;strong&gt;LiDAR&lt;/strong&gt;&amp;rdquo; センサを使うことで本領を発揮しますが、なくてもできます。&lt;/p&gt;
+&lt;p&gt;　スキャン方法としてはごく簡単で、スキャンしたいものの周りをiPhoneで動画を数十秒撮るようにするだけです。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/3d-meshi-scan/IMG_7531.JPEG&#34;
+	width=&#34;2556&#34;
+	height=&#34;1179&#34;
+	srcset=&#34;https://twoooooda.net/post/3d-meshi-scan/IMG_7531_hu4259561904927218853.JPEG 480w, https://twoooooda.net/post/3d-meshi-scan/IMG_7531_hu11998499818921329904.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;スキャンしているようす。対象はディズニーのお土産の缶です&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;216&#34;
+		data-flex-basis=&#34;520px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;実際にスキャンされたものは&lt;strong&gt;Sketchfab&lt;/strong&gt;などのサイトで&lt;a class=&#34;link&#34; href=&#34;https://skfb.ly/psFrX&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;こんな感じ&lt;/a&gt;に共有することもできます。成果物をみると、ほんの30秒くらいのスキャン時間だったのにも関わらず、かなり精細にスキャンできているかと思います。&lt;/p&gt;
+&lt;p&gt;　いざ、飯を3Dスキャンした結果が以下です。出先でスキャンすることが多いので自宅ほど鮮明なスキャンは難しいことがありますが、どんな料理だったかを窺い知るには十分なクオリティだと思います。実際の距離情報を使っているので、各種サービスや後述するUnityなどで使う場合、実際の寸法のまま利用することもできます。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/3d-meshi-scan/Hayashi.png&#34;
+	width=&#34;1312&#34;
+	height=&#34;702&#34;
+	srcset=&#34;https://twoooooda.net/post/3d-meshi-scan/Hayashi_hu15843764115234044537.png 480w, https://twoooooda.net/post/3d-meshi-scan/Hayashi_hu11183046993395773244.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;大好物ハヤシライス。アドカレ一日目で作ったハヤシライスです。&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;186&#34;
+		data-flex-basis=&#34;448px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/3d-meshi-scan/Ramen.png&#34;
+	width=&#34;1176&#34;
+	height=&#34;690&#34;
+	srcset=&#34;https://twoooooda.net/post/3d-meshi-scan/Ramen_hu5764581520829856626.png 480w, https://twoooooda.net/post/3d-meshi-scan/Ramen_hu7053138917358107537.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;築地にあるTAKETONBOという店のラーメン&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;409px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/3d-meshi-scan/GarlicRice.png&#34;
+	width=&#34;1196&#34;
+	height=&#34;698&#34;
+	srcset=&#34;https://twoooooda.net/post/3d-meshi-scan/GarlicRice_hu13441419654151063271.png 480w, https://twoooooda.net/post/3d-meshi-scan/GarlicRice_hu14364998009172742043.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Denny’sのガーリックライス&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;171&#34;
+		data-flex-basis=&#34;411px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sketchfabリンク&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://skfb.ly/pszDV&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ハヤシライス&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://skfb.ly/psF8w&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ラーメン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://skfb.ly/psF8x&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ガーリックライス&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;　挙げた3Dスキャンは飯部分以外Scaniverseの機能でトリミングしていますが、実際は飯の周りもスキャンされています。ハヤシライスのスキャンでは皿部分のメッシュが溶けてしまっていますが、これは真っ白な皿だったために特徴点を掴めず、うまくメッシュを貼れなかったのだと考えられます。&lt;/p&gt;
+&lt;h2 id=&#34;スキャンデータで遊ぼう&#34;&gt;スキャンデータで遊ぼう
+&lt;/h2&gt;&lt;p&gt;　3Dスキャンをすると、飯の3Dデータが手に入ります。ただの記録に使うのもいいですが、Unityなどのゲームエンジンを使うと3Dオブジェクトとして遊ぶことができます。&lt;/p&gt;
+&lt;h3 id=&#34;arで&#34;&gt;ARで
+&lt;/h3&gt;&lt;p&gt;　Scaiverseには、AR機能が標準で搭載されています。この機能を使うと、例えばあの日食べた飯をAR的に、ほぼ原寸大で鑑賞することができます。&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/_bDDOP5Wvjg&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;vrで&#34;&gt;VRで
+&lt;/h3&gt;&lt;p&gt;　次はVRです。UnityとMeta Quest2を使って、仮想空間で遊んでみました。VRなら好きな飯で部屋を満たすことだってできます。&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/-wFw42e9yu8&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&#34;mrで&#34;&gt;MRで
+&lt;/h3&gt;&lt;p&gt;　最後にMRです。同じくUnityと、HoloLens2で遊んでみました。MRはARとVRのいいとこどりだけあって、独特の楽しみ方もできそうです。&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/8s9vZR64gNo&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;さいごに&#34;&gt;さいごに
+&lt;/h2&gt;&lt;p&gt;　いかがでしたでしょうか。写真で残すのももちろんいいですが、3Dデータとして残すのも実用段階に入っていると思います。皆さんもやってみてください。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>いっとりうむのハヤシライスレシピ</title>
         <link>https://twoooooda.net/post/howtomakehayashirice/</link>
         <pubDate>Sat, 30 Nov 2024 00:00:00 +0000</pubDate>

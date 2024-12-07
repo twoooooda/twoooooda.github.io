@@ -27,7 +27,10 @@ ERROR deprecated: .Site.LastChange was deprecated in Hugo v0.123.0 and will be r
 &lt;/h2&gt;&lt;p&gt;解決策としては、以下のコマンドでsubmoduleに設定しているリポジトリを最新の状態にすれば解決できました。&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ git submodule update --remote
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;内容としてはこれだけなのですが、備忘録として残します。&lt;/p&gt;
-</description>
+&lt;h2 id=&#34;補足&#34;&gt;補足
+&lt;/h2&gt;&lt;p&gt;PCを新調したなどで、新しく&lt;code&gt;git clone&lt;/code&gt;したい場合、以下のコマンドでsubmoduleの情報、submoduleとの関係などを引き継いでcloneできます。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone --recursive https://github.com/twoooooda/[リポジトリ.git]
+&lt;/code&gt;&lt;/pre&gt;</description>
         </item>
         <item>
         <title>USB TVチューナーPX-S1UDを使ってテレビを視聴する最速手順</title>
