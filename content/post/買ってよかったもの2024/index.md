@@ -12,7 +12,7 @@ categories = [
 
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
-image = "222419.jpg"
+image = "IMG_7538.JPG"
 slug="katteyokatta"
 +++
 
