@@ -6,7 +6,15 @@
         <description>Recent content in Categories on twoooooda.net</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
-        <lastBuildDate>Sun, 08 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Unity</title>
+        <link>https://twoooooda.net/categories/unity/</link>
+        <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/categories/unity/</guid>
+        <description>&lt;img src="https://twoooooda.net/categories/unity/unity.png" alt="Featured image of post Unity" /&gt;</description>
+        </item>
+        <item>
         <title>diary</title>
         <link>https://twoooooda.net/categories/diary/</link>
         <pubDate>Sun, 08 Dec 2024 00:00:00 +0000</pubDate>
@@ -53,14 +61,6 @@
         
         <guid>https://twoooooda.net/categories/raspberrypi/</guid>
         <description>&lt;img src="https://twoooooda.net/categories/raspberrypi/raspi.jpeg" alt="Featured image of post Rspberrypi" /&gt;</description>
-        </item>
-        <item>
-        <title>Unity</title>
-        <link>https://twoooooda.net/categories/unity/</link>
-        <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://twoooooda.net/categories/unity/</guid>
-        <description>&lt;img src="https://twoooooda.net/categories/unity/unity.png" alt="Featured image of post Unity" /&gt;</description>
         </item>
         
     </channel>

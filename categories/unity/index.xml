@@ -6,7 +6,308 @@
         <description>Recent content in Unity on twoooooda.net</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
-        <lastBuildDate>Fri, 02 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/unity/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 20 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/categories/unity/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>自作VRゲーム「VRブロック崩し」で工夫したことすべて</title>
+        <link>https://twoooooda.net/post/vr-block-break/</link>
+        <pubDate>Fri, 20 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/vr-block-break/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/vr-block-break/110459.jpg" alt="Featured image of post 自作VRゲーム「VRブロック崩し」で工夫したことすべて" /&gt;&lt;h2 id=&#34;この記事は&#34;&gt;この記事は？
+&lt;/h2&gt;&lt;p&gt;　この記事は、&lt;a class=&#34;link&#34; href=&#34;https://adventar.org/calendars/10291&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;某企業アドベントカレンダー2024&lt;/a&gt;最終日の記事です。
+今回は拙作のVRゲーム「VRブロック崩し」を制作するにあたって考えていたこと、狙い、工夫点などを語っていこうと思います。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;vrブロック崩しとは&#34;&gt;VRブロック崩しとは
+&lt;/h2&gt;&lt;p&gt;　そもそもVRブロック崩しとは、私が所属する大学にて、2023年冬に開催された大学祭用に制作したVRゲームです。
+プレイヤーはVR空間内の狭いスペースの中で、テニスの壁打ちをするようにボールとラケットでブロック崩しをするというものです（後述）。
+ステージとしてはスタート前のロビー的なエリア、1stステージ、2ndステージ、結果発表エリアから構成されています。
+大学祭当日はホワイトボードにその日のベストスコアを記録して競ってもらったり、一定以上のスコアを取った人には特典で
+うまい棒をあげるなどして、かなり盛り上がっていただけました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/vr-block-break/IMG_5488.JPG&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://twoooooda.net/post/vr-block-break/IMG_5488_hu1432614994983403543.JPG 480w, https://twoooooda.net/post/vr-block-break/IMG_5488_hu13758573162921857279.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;当日のようす。かなり盛り上がった&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/vr-block-break/IMG_5482.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/vr-block-break/IMG_5482_hu12694170522580697984.JPEG 480w, https://twoooooda.net/post/vr-block-break/IMG_5482_hu11788945567805692775.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;視界ミラーリング用のモニターを置いていました&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/vr-block-break/IMG_5486.JPEG&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://twoooooda.net/post/vr-block-break/IMG_5486_hu17680990373210508181.JPEG 480w, https://twoooooda.net/post/vr-block-break/IMG_5486_hu5866093078862035072.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ハイスコアホワイトボード&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;実際に制作したゲームが↓になります。&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/dHjRGvSQmwY&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;開発経緯とコンセプト&#34;&gt;開発経緯とコンセプト
+&lt;/h2&gt;&lt;p&gt;　そもそもなぜこのゲームがこの形に落ち着いたのかを話すには、2018年の同じく大学祭に遡ります。2018年の
+大学祭にて初めてVR機器をレンタルしてBeat Saberを体験展示したところ大変好評で、展示する側も楽しかったので、
+次回はゲームを自分で作って展示したいという欲がわいてきました。&lt;/p&gt;
+&lt;p&gt;　VRゲームを作るにあたってまず最初に気を付けて、最後まで大事にした点が以下のようなものです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;体験者が絶対に&lt;strong&gt;酔わない&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;少しでも酔うと満足度が大きく損なわれるから&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;必要最低限の操作説明&lt;/strong&gt;でプレイできる&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;端から見ている人&lt;/strong&gt;も楽しめる
+&lt;ul&gt;
+&lt;li&gt;傍観者が楽しめないというVRの弱点をなんとかしたかった&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;体を動かしてプレイする
+&lt;ul&gt;
+&lt;li&gt;体を動かさないならVRである意味がないと思ったので&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;現実ではできないような体験&lt;/strong&gt;ができる
+&lt;ul&gt;
+&lt;li&gt;せっかくの&lt;em&gt;Virtual Reality&lt;/em&gt;なので&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上の大事にしたいポイントを踏まえたうえで、VRゲームのコンセプトを決めていきました。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;酔わないようできるだけ&lt;strong&gt;体験者を動かなさい&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;例えば車に乗るコンテンツや空を飛ぶようなコンテンツにはしない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;視界をミラーリングしているモニターに楽し気でカラフル、かつ&lt;strong&gt;変化が激しい画&lt;/strong&gt;を映したい&lt;/li&gt;
+&lt;li&gt;体を動かす→スポーツ→コントローラーを使えるような個人競技モチーフが相性がいい&lt;/li&gt;
+&lt;li&gt;普段の視界からはかけ離れたゲームらしいVR空間デザイン&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;　特に「&lt;strong&gt;現実世界ではそんなに行うことができない&lt;/strong&gt;」、「&lt;strong&gt;端から見ていても楽しい&lt;/strong&gt;」という点を重視したかったので、
+今回は &lt;strong&gt;&lt;strong&gt;「破壊」&lt;/strong&gt;&lt;/strong&gt; をテーマに据えることにしました。物を自由に壊すことは根源的な楽しさがありますし、ミラーリングの画面にも派手でダイナミックな画を出せそうです。&lt;/p&gt;
+&lt;p&gt;　そして破壊をテーマにしたゲームといえば &lt;strong&gt;「ブロック崩し」&lt;/strong&gt; です。加えて &lt;strong&gt;「体を動かす」&lt;/strong&gt; 要素などを考慮して、
+&lt;strong&gt;「テニスのようにボールを打ち返して3次元ブロック崩しをする」&lt;/strong&gt; というような形を目指すこととしました。&lt;/p&gt;
+&lt;h2 id=&#34;1作目&#34;&gt;1作目
+&lt;/h2&gt;&lt;p&gt;そんなことを考えながら手探りで作った私のVRゲーム処女作が↓の作品になります。&lt;/p&gt;
+&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/o4TTklY42lo&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;　2019年の大学祭でこのVRゲーム処女作を展示したところ、これもまた大変好評で、私の中でかなり大きい成功体験になっています。&lt;/p&gt;
+&lt;p&gt;　まずこのゲームはBeat Saberのように、プレイヤーは&lt;strong&gt;空間を移動しません&lt;/strong&gt;。また、背景が動くと人は動いていると勘違いしてしまうので
+背景も一切動かしません。背景に相当するような巨大なオブジェクトも登場しませんし移動しません。&lt;/p&gt;
+&lt;p&gt;　視界ミラーリングをしているモニターには、目の前に浮かんでいるカラフルなブロックが次々に音を立てて崩れて（はじけて？）いく爽快感があります。実際に大学祭ではかなりの人がミラーリングのモニターに釘付けになっていましたし、客寄せにも一役買ってくれました。&lt;/p&gt;
+&lt;p&gt;　他の細かい工夫点などは追々説明します。&lt;/p&gt;
+&lt;h2 id=&#34;2作目&#34;&gt;2作目
+&lt;/h2&gt;&lt;p&gt;　時は経って2023年、コロナ禍も鳴りを潜め大学祭のリアル開催が再開されたので、4年前に作ったVRブロック崩しをリメイクして再度体験展示しようと考えました。そうして完成したのがリメイク版の2作目になります。コンセプトや基本設計はそのままに、ビジュアルの部分やシステム面で進化させています。&lt;/p&gt;
+&lt;p&gt;　次項からは1作目や2作目で工夫したポイントを、2作目を例にしながら細かく説明していきます。&lt;/p&gt;
+&lt;h2 id=&#34;工夫ポイント&#34;&gt;工夫ポイント
+&lt;/h2&gt;&lt;h3 id=&#34;全体のデザイン&#34;&gt;全体のデザイン
+&lt;/h3&gt;&lt;p&gt;　1作目の時はとにかく幻想的な感じにしたくて、雲の上や宇宙空間に浮かんだステージというイメージで作りました。ステージには宝石用だったシェーダーをあてて、ガラス板、水晶のようなな感じにしています。ですが、壁が透明故に反射のタイミングがわかりづらかったり、どうしてもチープなビジュアルになってしまいました。ブロックが崩れた時のエフェクトは「立方体が崩れてさらに立方体の破片が飛び散る」というイメージのエフェクトにしています。&lt;/p&gt;
+&lt;p&gt;　2作目はうってかわって室内モチーフに変え、ネオンサインのような映える光源を置いてライティングに気を配りました。結果として、大仰な背景を使わずともリッチな画面を作れていると思います。ブロックにも気を遣い、1作目ではランダムな色でのベタ塗りだったのに対し、2作目では色を固定しリッチなシェーダーをあてています。崩れた時の破片も、&lt;strong&gt;実際に立方体が砕けたときの破片&lt;/strong&gt;を出すようにしてビジュアル面での強化を図りました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/vr-block-break/232741.png&#34;
+	width=&#34;1768&#34;
+	height=&#34;1041&#34;
+	srcset=&#34;https://twoooooda.net/post/vr-block-break/232741_hu12009940979776965459.png 480w, https://twoooooda.net/post/vr-block-break/232741_hu18097798606297939029.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;青空とガラス&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;169&#34;
+		data-flex-basis=&#34;407px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/vr-block-break/232902.png&#34;
+	width=&#34;1491&#34;
+	height=&#34;832&#34;
+	srcset=&#34;https://twoooooda.net/post/vr-block-break/232902_hu18121726776367825098.png 480w, https://twoooooda.net/post/vr-block-break/232902_hu843171196985385992.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;クラブハウスっぽい空間をイメージしました&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;179&#34;
+		data-flex-basis=&#34;430px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ロビーエリア&#34;&gt;ロビーエリア
+&lt;/h3&gt;&lt;p&gt;　ゲーム開始前のロビーエリアでは、主に以下の狙いがあります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;プレイヤー、傍観者ともにゲームの雰囲気がわかる&lt;/li&gt;
+&lt;li&gt;このゲームはラケットとボールで何かをするというのがわかる&lt;/li&gt;
+&lt;li&gt;ラケットはボールを打てて、ボールでブロック崩しをするんだなというのがわかる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;　このゲームはラケットがコントローラーに直接紐づいていて、ボタン操作が一切ありません。なので、このロビーエリアが実質的な操作説明兼、チュートリアルステージになっています。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/vr-block-break/225036.png&#34;
+	width=&#34;1910&#34;
+	height=&#34;1071&#34;
+	srcset=&#34;https://twoooooda.net/post/vr-block-break/225036_hu213058747956898897.png 480w, https://twoooooda.net/post/vr-block-break/225036_hu7834887282730068766.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;目の前のボールをとりあえず打ってゲーム開始！&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;178&#34;
+		data-flex-basis=&#34;428px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1stステージ&#34;&gt;1stステージ
+&lt;/h3&gt;&lt;p&gt;　1stステージはシンプルな3次元ブロック崩しです。ステージの形状を俯瞰すると、三角形に近い、適度に面取りされたモデルになっています。VR視点だとわかりづらいかも知れないですが、実は手前から奥にかけてかなり広がっています。これは、奥で反射したボールが自然にブロックの方めがけて反射するように工夫した結果です。また手前がすぼまっていることで、体から遠すぎてボールを返せないということを防いでいます。&lt;/p&gt;
+&lt;p&gt;　ゲーム性のために、&lt;strong&gt;ボールの挙動&lt;/strong&gt;に関してもかなり工夫しています。細かいスクリプトは紹介しませんが、以下のような調整が加わっています。必要以上に返すのが難しいボールを減らしたり、「なかなか手前に返ってこなくて暇」という状況を減らすための調整が多いです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一定ラインより奥で反射した場合、ブロックの塊の中心に向かいやすい&lt;/li&gt;
+&lt;li&gt;一定ラインより奥である回数以上反射すると、プレイヤー側に向かわせる力がはたらく&lt;/li&gt;
+&lt;li&gt;一定ラインより手前で反射した場合、プレイヤーの体に向かいやすい&lt;/li&gt;
+&lt;li&gt;一定ラインより奥から反射せずプレイヤーに向かってきた場合、曲がりながらプレイヤーに向かってくる&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;　動画を見ていると気づくかもしれませんが、ボールは&lt;strong&gt;反射を繰り返すと少しずつ速度が上がって&lt;/strong&gt;いきます。プレイヤーはゲームの中でだんだんとゲームに慣れて（飽きて）いくので、変化のためにこういう調整もしています。ボールが埋まっているブロックが崩れるとボールが増えていくのも、プレイと見た目に変化をつけるためです。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/vr-block-break/224740.png&#34;
+	width=&#34;1192&#34;
+	height=&#34;851&#34;
+	srcset=&#34;https://twoooooda.net/post/vr-block-break/224740_hu5456325805811056437.png 480w, https://twoooooda.net/post/vr-block-break/224740_hu1124962585797181721.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ステージのモデル&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;336px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/vr-block-break/233204.png&#34;
+	width=&#34;1268&#34;
+	height=&#34;708&#34;
+	srcset=&#34;https://twoooooda.net/post/vr-block-break/233204_hu8890128562292478954.png 480w, https://twoooooda.net/post/vr-block-break/233204_hu12912555874486377393.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ブロックの中心に向かうような挙動をしています&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;179&#34;
+		data-flex-basis=&#34;429px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ステージ遷移&#34;&gt;ステージ遷移
+&lt;/h3&gt;&lt;p&gt;　1作目の時はステージの遷移時にUnityのscene（ひとつの独立した空間みたいなもの）を切り替えていました。しかし、この方法だと、遷移する瞬間にノイズとともに画面がほんの一瞬止まってしまうという問題がありました。これを受けて、2作目では同じsceneの中にロビーエリアからスコア発表のステージまで詰め込んでいます。&lt;/p&gt;
+&lt;p&gt;　2作目のステージ遷移の仕方は少しこだわりました。「&lt;strong&gt;破壊&lt;/strong&gt;」がテーマのVRゲームなので、もういっそ&lt;strong&gt;ステージごと壊れれば面白いのでは&lt;/strong&gt; と思いました。さっきまで自分がいたステージが吹き飛んで2ndステージが現れればこれ以上ないダイナミックな変化になりますし、&lt;strong&gt;「これから何が起こるんだ！？」というワクワク感&lt;/strong&gt;を与えながら次のステージに進ませることができます。自分がいたVR空間が壊れて次のVR空間へ行くという、入れ子構造みたいなメタ的表現もしたくて作ったみたいなところもあります。一瞬の出来事でかつ地味ですが、個人的にはこのゲームのかなり好きな部分です。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/vr-block-break/230016.png&#34;
+	width=&#34;1672&#34;
+	height=&#34;982&#34;
+	srcset=&#34;https://twoooooda.net/post/vr-block-break/230016_hu16737302194111141771.png 480w, https://twoooooda.net/post/vr-block-break/230016_hu15001505929382490840.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;1stステージが2ndの中にすっぽり&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;408px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/vr-block-break/230945.png&#34;
+	width=&#34;1267&#34;
+	height=&#34;711&#34;
+	srcset=&#34;https://twoooooda.net/post/vr-block-break/230945_hu14401329202061680032.png 480w, https://twoooooda.net/post/vr-block-break/230945_hu9459396432913758394.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ステージの破片もそれっぽいものではなくステージを砕いた実際の破片です&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;178&#34;
+		data-flex-basis=&#34;427px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2ndステージ&#34;&gt;2ndステージ
+&lt;/h3&gt;&lt;p&gt;　1作目に関して、2ndステージは1stステージとほぼ同一です。2作目の2ndステージは1stステージから大きく変えています。
+　新しい2ndステージは、ブロックの塊が「敵」として登場しボールをこちらに放ってきます。そして1stステージの同じボールを打ち返し続けるシステムとは違い、&lt;strong&gt;大量のボールをさばききるゲーム&lt;/strong&gt;に変貌します。これは1stステージのゲーム性を引き継ぐとだんだん単調になり、飽きてしまうという問題があったからです。&lt;/p&gt;
+&lt;p&gt;　ボールはラケットに当たると弧を描いて飛んでいき、どれかのブロックには必ず当たります。なのでプレイヤーは「どう打ち返すか」を気にする必要はなく、「ただただ打ち返す」ことに集中できるという設計にしています。&lt;/p&gt;
+&lt;p&gt;　敵が放ってくるボールは、あらかじめ設定したタイミング、発射口から発射されます。が、どんな軌道を描くかはある程度ランダムです。タイミングや発射口の設定は最初は難易度低めで始まりますが、徐々に発射間隔が縮まり、同時発射数も多くなっていきます。このタイミングと発射口を決められるようになったおかげで、細かく難易度の調整ができるようになりました。&lt;/p&gt;
+&lt;p&gt;　2ndステージで外せない要素として、「&lt;strong&gt;特殊ボール&lt;/strong&gt;」があります。動画の後半に登場する、青色と赤色のブロックから出現するボールです。これらのボールは挙動こそ違えど、一度に多くのブロックを壊すことができるアイテム的な立ち位置です。これもゲームに変化をつけるための施策で、かつ「&lt;strong&gt;いっぱい壊れてなんだか気持ちいい&lt;/strong&gt;」というゲームの根源的な面白さを狙ったシステムです。私は、ゲームとは「&lt;strong&gt;気持ちよさ&lt;/strong&gt;」とそれによる「&lt;strong&gt;脳汁&lt;/strong&gt;」が本質であると思うので、このシステムはかなりその点を意識して実装しました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/vr-block-break/000756.png&#34;
+	width=&#34;1266&#34;
+	height=&#34;705&#34;
+	srcset=&#34;https://twoooooda.net/post/vr-block-break/000756_hu13496499023342236462.png 480w, https://twoooooda.net/post/vr-block-break/000756_hu9244692632146978903.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ボールをさばききれ！&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;179&#34;
+		data-flex-basis=&#34;430px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/vr-block-break/002640.png&#34;
+	width=&#34;1270&#34;
+	height=&#34;713&#34;
+	srcset=&#34;https://twoooooda.net/post/vr-block-break/002640_hu15507748408496965208.png 480w, https://twoooooda.net/post/vr-block-break/002640_hu15704181440249899751.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;爆発赤ボールと貫通青ボール&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;178&#34;
+		data-flex-basis=&#34;427px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;bgm&#34;&gt;BGM
+&lt;/h3&gt;&lt;p&gt;　BGMはさすがに自作していません。インターネットの海でたまたま見つけた激オシャレ曲を拝借して使っています。曲の長さもちょうどよく、制限時間を使い切ったとほぼ同時に曲も終わるようにタイミングを調整してゲームを作っています。みなさんも是非原曲様を聞いてみてください。&lt;/p&gt;
+&lt;p&gt;いつかBGMまで自作したいですね。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://soundcloud.com/the-musical-ghost/ghost-stranger-love-future-bass?si=a15ae87f195644d99269126eca5a9806&amp;amp;utm_source=clipboard&amp;amp;utm_medium=text&amp;amp;utm_campaign=social_sharing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1stステージ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://soundcloud.com/the-musical-ghost/deltarune-hip-shop-drum-bass?si=26f8feda04884b5b8fe7ca203b757751&amp;amp;utm_source=clipboard&amp;amp;utm_medium=text&amp;amp;utm_campaign=social_sharing&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;2ndステージ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;さいごに&#34;&gt;さいごに
+&lt;/h2&gt;&lt;p&gt;　いかがでしたでしょうか（疲弊）改めて工夫点を洗い出して言語化してみるとかなりの量になってしまいました。しかしまだまだ語れるくらい、このゲームは&lt;strong&gt;私の自信作であり、胸を張って面白いゲームであると言えます。&lt;/strong&gt; このゲームの制作は間違いなく私の中で大きな成功体験として残り続けることでしょう。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Unityで蚊っぽい動きをするやつを作る</title>
         <link>https://twoooooda.net/post/mosquite-in-unity/</link>
         <pubDate>Fri, 02 Apr 2021 00:00:00 +0000</pubDate>

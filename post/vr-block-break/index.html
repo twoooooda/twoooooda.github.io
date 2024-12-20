@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ja-jp" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='今夜は語ります。'><title>自作VRゲーム「VRブロック崩し」で工夫したことすべて</title>
+
+<link rel='canonical' href='https://twoooooda.net/post/vr-block-break/'>
+
+<link rel="stylesheet" href="/scss/style.min.0815b68901f8d665e4c665e0bb2bdf60772eec845c3a29a4ff90247094ebd0e1.css"><meta property='og:title' content="自作VRゲーム「VRブロック崩し」で工夫したことすべて">
+<meta property='og:description' content="今夜は語ります。">
+<meta property='og:url' content='https://twoooooda.net/post/vr-block-break/'>
+<meta property='og:site_name' content='twoooooda.net'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Unity' /><meta property='article:tag' content='C#' /><meta property='article:tag' content='知見' /><meta property='article:published_time' content='2024-12-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2024-12-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://twoooooda.net/post/vr-block-break/110459.jpg' />
+<meta name="twitter:site" content="@twoooooda">
+    <meta name="twitter:creator" content="@twoooooda"><meta name="twitter:title" content="自作VRゲーム「VRブロック崩し」で工夫したことすべて">
+<meta name="twitter:description" content="今夜は語ります。"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://twoooooda.net/post/vr-block-break/110459.jpg' />
+<link rel="shortcut icon" href="img/icon.ico" />
+<style>
+	
+	:root {
+		--base-font-family: "Noto Sans JP";
+		--article-font-family: "Dela Gothic One", var(--base-font-family);
+	}
+</style>
+
+<script>
+	(function () {
+		const customFont = document.createElement('link');
+		customFont.href = "https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap";
+
+		customFont.type = "text/css";
+		customFont.rel = "stylesheet";
+
+		document.head.appendChild(customFont);
+	}());
+</script>
+
+
+<link rel="stylesheet" href="https://twoooooda.net/static/css/add-on.css">
+
+
+<script data-ad-client="ca-pub-1974593433241323" async
+	src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<meta name="google-site-verification" content="VbZ8bhx-KUz-76730RJ0zesV2K_ik2d1ESTrQDVUPl4" />
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1974593433241323"
+	crossorigin="anonymous"></script>
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="メニューを開く・閉じる">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+        
+        <figure class="site-avatar">
+            
+            
+
+            
+            
+            <img src="/img/icon_hu5561255959349880610.png" width="300"
+                height="300" class="site-logo" loading="lazy" alt="Avatar">
+            
+            
+
+            
+        </figure>
+        
+        
+        <h1 class="site-name"><a href="https://twoooooda.net/">twoooooda.net</a></h1>
+        <h2 class="site-description">私いっとりうむの日記や知見とかを適当に書き散らすブログです。</h2>
+
+    </header>
+
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+
+        
+        
+
+        <li >
+            <a href='/about-me/' >
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About Me</span>
+            </a>
+        </li>
+
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+
+        
+        
+
+        <li >
+            <a href='https://twitter.com/twoooooda' target="_blank" >
+                
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px" clip-rule="evenodd" baseProfile="basic"><polygon fill="#616161" points="41,6 9.929,42 6.215,42 37.287,6"/><polygon fill="#fff" fill-rule="evenodd" points="31.143,41 7.82,7 16.777,7 40.1,41" clip-rule="evenodd"/><path fill="#616161" d="M15.724,9l20.578,30h-4.106L11.618,9H15.724 M17.304,6H5.922l24.694,36h11.382L17.304,6L17.304,6z"/></svg>
+                
+                <span>TwitterX</span>
+            </a>
+        </li>
+
+        
+        
+
+        <li >
+            <a href='https://github.com/twoooooda/' target="_blank" >
+                
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><linearGradient id="rL2wppHyxHVbobwndsT6Ca" x1="4" x2="44" y1="23.508" y2="23.508" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4c4c4c"/><stop offset="1" stop-color="#343434"/></linearGradient><path fill="url(#rL2wppHyxHVbobwndsT6Ca)" d="M24,4C12.954,4,4,12.954,4,24c0,8.887,5.801,16.411,13.82,19.016h12.36	C38.199,40.411,44,32.887,44,24C44,12.954,35.046,4,24,4z"/><path d="M30.01,41.996L30,36.198c0-0.939-0.22-1.856-0.642-2.687c5.641-1.133,8.386-4.468,8.386-10.177	c0-2.255-0.665-4.246-1.976-5.92c0.1-0.317,0.174-0.645,0.22-0.981c0.188-1.369-0.023-2.264-0.193-2.984l-0.027-0.116	c-0.186-0.796-0.409-1.364-0.418-1.388l-0.111-0.282l-0.111-0.282l-0.302-0.032l-0.303-0.032c0,0-0.199-0.021-0.501-0.021	c-0.419,0-1.04,0.042-1.627,0.241l-0.196,0.066c-0.74,0.249-1.439,0.485-2.417,1.069c-0.286,0.171-0.599,0.366-0.934,0.584	C27.334,12.881,25.705,12.69,24,12.69c-1.722,0-3.365,0.192-4.889,0.571c-0.339-0.22-0.654-0.417-0.942-0.589	c-0.978-0.584-1.677-0.819-2.417-1.069l-0.196-0.066c-0.585-0.199-1.207-0.241-1.626-0.241c-0.302,0-0.501,0.021-0.501,0.021	l-0.302,0.032l-0.3,0.031l-0.112,0.281l-0.113,0.283c-0.01,0.026-0.233,0.594-0.419,1.391l-0.027,0.115	c-0.17,0.719-0.381,1.615-0.193,2.983c0.048,0.346,0.125,0.685,0.23,1.011c-1.285,1.666-1.936,3.646-1.936,5.89	c0,5.695,2.748,9.028,8.397,10.17c-0.194,0.388-0.345,0.798-0.452,1.224c-0.197,0.067-0.378,0.112-0.538,0.137	c-0.238,0.036-0.487,0.054-0.739,0.054c-0.686,0-1.225-0.134-1.435-0.259c-0.313-0.186-0.872-0.727-1.414-1.518	c-0.463-0.675-1.185-1.558-1.992-1.927c-0.698-0.319-1.437-0.502-2.029-0.502c-0.138,0-0.265,0.01-0.376,0.028	c-0.517,0.082-0.949,0.366-1.184,0.78c-0.203,0.357-0.235,0.773-0.088,1.141c0.219,0.548,0.851,0.985,1.343,1.255	c0.242,0.133,0.765,0.619,1.07,1.109c0.229,0.368,0.335,0.63,0.482,0.992c0.087,0.215,0.183,0.449,0.313,0.732	c0.47,1.022,1.937,1.924,2.103,2.023c0.806,0.483,2.161,0.638,3.157,0.683l0.123,0.003c0,0,0.001,0,0.001,0	c0.24,0,0.57-0.023,1.004-0.071v2.613c0.002,0.529-0.537,0.649-1.25,0.638l0.547,0.184C19.395,43.572,21.645,44,24,44	c2.355,0,4.605-0.428,6.703-1.176l0.703-0.262C30.695,42.538,30.016,42.422,30.01,41.996z" opacity=".05"/><path d="M30.781,42.797c-0.406,0.047-1.281-0.109-1.281-0.795v-5.804c0-1.094-0.328-2.151-0.936-3.052	c5.915-0.957,8.679-4.093,8.679-9.812c0-2.237-0.686-4.194-2.039-5.822c0.137-0.365,0.233-0.75,0.288-1.147	c0.175-1.276-0.016-2.086-0.184-2.801l-0.027-0.116c-0.178-0.761-0.388-1.297-0.397-1.319l-0.111-0.282l-0.303-0.032	c0,0-0.178-0.019-0.449-0.019c-0.381,0-0.944,0.037-1.466,0.215l-0.196,0.066c-0.714,0.241-1.389,0.468-2.321,1.024	c-0.332,0.198-0.702,0.431-1.101,0.694C27.404,13.394,25.745,13.19,24,13.19c-1.762,0-3.435,0.205-4.979,0.61	c-0.403-0.265-0.775-0.499-1.109-0.699c-0.932-0.556-1.607-0.784-2.321-1.024l-0.196-0.066c-0.521-0.177-1.085-0.215-1.466-0.215	c-0.271,0-0.449,0.019-0.449,0.019l-0.302,0.032l-0.113,0.283c-0.009,0.022-0.219,0.558-0.397,1.319l-0.027,0.116	c-0.169,0.715-0.36,1.524-0.184,2.8c0.056,0.407,0.156,0.801,0.298,1.174c-1.327,1.62-1.999,3.567-1.999,5.795	c0,5.703,2.766,8.838,8.686,9.806c-0.395,0.59-0.671,1.255-0.813,1.964c-0.33,0.13-0.629,0.216-0.891,0.256	c-0.263,0.04-0.537,0.06-0.814,0.06c-0.69,0-1.353-0.129-1.69-0.329c-0.44-0.261-1.057-0.914-1.572-1.665	c-0.35-0.51-1.047-1.417-1.788-1.755c-0.635-0.29-1.298-0.457-1.821-0.457c-0.11,0-0.21,0.008-0.298,0.022	c-0.366,0.058-0.668,0.252-0.828,0.534c-0.128,0.224-0.149,0.483-0.059,0.708c0.179,0.448,0.842,0.85,1.119,1.002	c0.335,0.184,0.919,0.744,1.254,1.284c0.251,0.404,0.37,0.697,0.521,1.067c0.085,0.209,0.178,0.437,0.304,0.712	c0.331,0.719,1.353,1.472,1.905,1.803c0.754,0.452,2.154,0.578,2.922,0.612l0.111,0.002c0.299,0,0.8-0.045,1.495-0.135v3.177	c0,0.779-0.991,0.81-1.234,0.81c-0.031,0,0.503,0.184,0.503,0.184C19.731,43.64,21.822,44,24,44c2.178,0,4.269-0.36,6.231-1.003	C30.231,42.997,30.812,42.793,30.781,42.797z" opacity=".07"/><path fill="#fff" d="M36.744,23.334c0-2.31-0.782-4.226-2.117-5.728c0.145-0.325,0.296-0.761,0.371-1.309	c0.172-1.25-0.031-2-0.203-2.734s-0.375-1.25-0.375-1.25s-0.922-0.094-1.703,0.172s-1.453,0.469-2.422,1.047	c-0.453,0.27-0.909,0.566-1.27,0.806C27.482,13.91,25.785,13.69,24,13.69c-1.801,0-3.513,0.221-5.067,0.652	c-0.362-0.241-0.821-0.539-1.277-0.811c-0.969-0.578-1.641-0.781-2.422-1.047s-1.703-0.172-1.703-0.172s-0.203,0.516-0.375,1.25	s-0.375,1.484-0.203,2.734c0.077,0.562,0.233,1.006,0.382,1.333c-1.31,1.493-2.078,3.397-2.078,5.704	c0,5.983,3.232,8.714,9.121,9.435c-0.687,0.726-1.148,1.656-1.303,2.691c-0.387,0.17-0.833,0.33-1.262,0.394	c-1.104,0.167-2.271,0-2.833-0.333s-1.229-1.083-1.729-1.813c-0.422-0.616-1.031-1.331-1.583-1.583	c-0.729-0.333-1.438-0.458-1.833-0.396c-0.396,0.063-0.583,0.354-0.5,0.563c0.083,0.208,0.479,0.521,0.896,0.75	c0.417,0.229,1.063,0.854,1.438,1.458c0.418,0.674,0.5,1.063,0.854,1.833c0.249,0.542,1.101,1.219,1.708,1.583	c0.521,0.313,1.562,0.491,2.688,0.542c0.389,0.018,1.308-0.096,2.083-0.206v3.75c0,0.639-0.585,1.125-1.191,1.013	C19.756,43.668,21.833,44,24,44c2.166,0,4.243-0.332,6.19-0.984C29.585,43.127,29,42.641,29,42.002v-5.804	c0-1.329-0.527-2.53-1.373-3.425C33.473,32.071,36.744,29.405,36.744,23.334z M11.239,32.727c-0.154-0.079-0.237-0.225-0.185-0.328	c0.052-0.103,0.22-0.122,0.374-0.043c0.154,0.079,0.237,0.225,0.185,0.328S11.393,32.806,11.239,32.727z M12.451,33.482	c-0.081,0.088-0.255,0.06-0.389-0.062s-0.177-0.293-0.096-0.381c0.081-0.088,0.255-0.06,0.389,0.062S12.532,33.394,12.451,33.482z M13.205,34.732c-0.102,0.072-0.275,0.005-0.386-0.15s-0.118-0.34-0.016-0.412s0.275-0.005,0.386,0.15	C13.299,34.475,13.307,34.66,13.205,34.732z M14.288,35.673c-0.069,0.112-0.265,0.117-0.437,0.012s-0.256-0.281-0.187-0.393	c0.069-0.112,0.265-0.117,0.437-0.012S14.357,35.561,14.288,35.673z M15.312,36.594c-0.213-0.026-0.371-0.159-0.353-0.297	c0.017-0.138,0.204-0.228,0.416-0.202c0.213,0.026,0.371,0.159,0.353,0.297C15.711,36.529,15.525,36.62,15.312,36.594z M16.963,36.833c-0.227-0.013-0.404-0.143-0.395-0.289c0.009-0.146,0.2-0.255,0.427-0.242c0.227,0.013,0.404,0.143,0.395,0.289	C17.381,36.738,17.19,36.846,16.963,36.833z M18.521,36.677c-0.242,0-0.438-0.126-0.438-0.281s0.196-0.281,0.438-0.281	c0.242,0,0.438,0.126,0.438,0.281S18.762,36.677,18.521,36.677z"/></svg>
+                
+                <span>GitHub</span>
+            </a>
+        </li>
+
+        
+
+        
+        <li id="dark-mode-toggle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+            <span>Dark mode</span>
+        </li>
+        
+    </ol>
+
+</aside>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目次</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#この記事は">この記事は？</a></li>
+    <li><a href="#vrブロック崩しとは">VRブロック崩しとは</a></li>
+    <li><a href="#開発経緯とコンセプト">開発経緯とコンセプト</a></li>
+    <li><a href="#1作目">1作目</a></li>
+    <li><a href="#2作目">2作目</a></li>
+    <li><a href="#工夫ポイント">工夫ポイント</a>
+      <ol>
+        <li><a href="#全体のデザイン">全体のデザイン</a></li>
+        <li><a href="#ロビーエリア">ロビーエリア</a></li>
+        <li><a href="#1stステージ">1stステージ</a></li>
+        <li><a href="#ステージ遷移">ステージ遷移</a></li>
+        <li><a href="#2ndステージ">2ndステージ</a></li>
+        <li><a href="#bgm">BGM</a></li>
+      </ol>
+    </li>
+    <li><a href="#さいごに">さいごに</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/post/vr-block-break/">
+                <img src="/post/vr-block-break/110459_hu10701540010226907043.jpg"
+                        srcset="/post/vr-block-break/110459_hu10701540010226907043.jpg 800w, /post/vr-block-break/110459_hu11574749624600490719.jpg 1600w"
+                        width="800" 
+                        height="501" 
+                        loading="lazy"
+                        alt="Featured image of post 自作VRゲーム「VRブロック崩し」で工夫したことすべて" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+        <a href="/categories/unity/" style="background-color: #0177b8; color: #fff;" >
+            Unity
+        </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/post/vr-block-break/">自作VRゲーム「VRブロック崩し」で工夫したことすべて</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        今夜は語ります。
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+            <time class="article-time--published">Dec 20, 2024</time>
+        </div>
+        
+
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+            data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    </footer>
+
+    
+
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="この記事は">この記事は？
+</h2><p>　この記事は、<a class="link" href="https://adventar.org/calendars/10291"  target="_blank" rel="noopener"
+    >某企業アドベントカレンダー2024</a>最終日の記事です。
+今回は拙作のVRゲーム「VRブロック崩し」を制作するにあたって考えていたこと、狙い、工夫点などを語っていこうと思います。</p>
+<hr>
+<h2 id="vrブロック崩しとは">VRブロック崩しとは
+</h2><p>　そもそもVRブロック崩しとは、私が所属する大学にて、2023年冬に開催された大学祭用に制作したVRゲームです。
+プレイヤーはVR空間内の狭いスペースの中で、テニスの壁打ちをするようにボールとラケットでブロック崩しをするというものです（後述）。
+ステージとしてはスタート前のロビー的なエリア、1stステージ、2ndステージ、結果発表エリアから構成されています。
+大学祭当日はホワイトボードにその日のベストスコアを記録して競ってもらったり、一定以上のスコアを取った人には特典で
+うまい棒をあげるなどして、かなり盛り上がっていただけました。</p>
+<p><img src="/post/vr-block-break/IMG_5488.JPG"
+	width="1024"
+	height="768"
+	srcset="/post/vr-block-break/IMG_5488_hu1432614994983403543.JPG 480w, /post/vr-block-break/IMG_5488_hu13758573162921857279.JPG 1024w"
+	loading="lazy"
+	
+		alt="当日のようす。かなり盛り上がった"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+>
+<img src="/post/vr-block-break/IMG_5482.JPEG"
+	width="2048"
+	height="1536"
+	srcset="/post/vr-block-break/IMG_5482_hu12694170522580697984.JPEG 480w, /post/vr-block-break/IMG_5482_hu11788945567805692775.JPEG 1024w"
+	loading="lazy"
+	
+		alt="視界ミラーリング用のモニターを置いていました"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+>
+<img src="/post/vr-block-break/IMG_5486.JPEG"
+	width="2048"
+	height="1536"
+	srcset="/post/vr-block-break/IMG_5486_hu17680990373210508181.JPEG 480w, /post/vr-block-break/IMG_5486_hu5866093078862035072.JPEG 1024w"
+	loading="lazy"
+	
+		alt="ハイスコアホワイトボード"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+></p>
+<p>実際に制作したゲームが↓になります。</p>
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/dHjRGvSQmwY" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+
+<h2 id="開発経緯とコンセプト">開発経緯とコンセプト
+</h2><p>　そもそもなぜこのゲームがこの形に落ち着いたのかを話すには、2018年の同じく大学祭に遡ります。2018年の
+大学祭にて初めてVR機器をレンタルしてBeat Saberを体験展示したところ大変好評で、展示する側も楽しかったので、
+次回はゲームを自分で作って展示したいという欲がわいてきました。</p>
+<p>　VRゲームを作るにあたってまず最初に気を付けて、最後まで大事にした点が以下のようなものです。</p>
+<ul>
+<li>体験者が絶対に<strong>酔わない</strong>
+<ul>
+<li>少しでも酔うと満足度が大きく損なわれるから</li>
+</ul>
+</li>
+<li><strong>必要最低限の操作説明</strong>でプレイできる</li>
+<li><strong>端から見ている人</strong>も楽しめる
+<ul>
+<li>傍観者が楽しめないというVRの弱点をなんとかしたかった</li>
+</ul>
+</li>
+<li>体を動かしてプレイする
+<ul>
+<li>体を動かさないならVRである意味がないと思ったので</li>
+</ul>
+</li>
+<li><strong>現実ではできないような体験</strong>ができる
+<ul>
+<li>せっかくの<em>Virtual Reality</em>なので</li>
+</ul>
+</li>
+</ul>
+<p>以上の大事にしたいポイントを踏まえたうえで、VRゲームのコンセプトを決めていきました。</p>
+<ul>
+<li>酔わないようできるだけ<strong>体験者を動かなさい</strong>
+<ul>
+<li>例えば車に乗るコンテンツや空を飛ぶようなコンテンツにはしない</li>
+</ul>
+</li>
+<li>視界をミラーリングしているモニターに楽し気でカラフル、かつ<strong>変化が激しい画</strong>を映したい</li>
+<li>体を動かす→スポーツ→コントローラーを使えるような個人競技モチーフが相性がいい</li>
+<li>普段の視界からはかけ離れたゲームらしいVR空間デザイン</li>
+</ul>
+<p>　特に「<strong>現実世界ではそんなに行うことができない</strong>」、「<strong>端から見ていても楽しい</strong>」という点を重視したかったので、
+今回は <strong><strong>「破壊」</strong></strong> をテーマに据えることにしました。物を自由に壊すことは根源的な楽しさがありますし、ミラーリングの画面にも派手でダイナミックな画を出せそうです。</p>
+<p>　そして破壊をテーマにしたゲームといえば <strong>「ブロック崩し」</strong> です。加えて <strong>「体を動かす」</strong> 要素などを考慮して、
+<strong>「テニスのようにボールを打ち返して3次元ブロック崩しをする」</strong> というような形を目指すこととしました。</p>
+<h2 id="1作目">1作目
+</h2><p>そんなことを考えながら手探りで作った私のVRゲーム処女作が↓の作品になります。</p>
+<div class="video-wrapper">
+    <iframe loading="lazy" 
+            src="https://www.youtube.com/embed/o4TTklY42lo" 
+            allowfullscreen 
+            title="YouTube Video"
+    >
+    </iframe>
+</div>
+
+<p>　2019年の大学祭でこのVRゲーム処女作を展示したところ、これもまた大変好評で、私の中でかなり大きい成功体験になっています。</p>
+<p>　まずこのゲームはBeat Saberのように、プレイヤーは<strong>空間を移動しません</strong>。また、背景が動くと人は動いていると勘違いしてしまうので
+背景も一切動かしません。背景に相当するような巨大なオブジェクトも登場しませんし移動しません。</p>
+<p>　視界ミラーリングをしているモニターには、目の前に浮かんでいるカラフルなブロックが次々に音を立てて崩れて（はじけて？）いく爽快感があります。実際に大学祭ではかなりの人がミラーリングのモニターに釘付けになっていましたし、客寄せにも一役買ってくれました。</p>
+<p>　他の細かい工夫点などは追々説明します。</p>
+<h2 id="2作目">2作目
+</h2><p>　時は経って2023年、コロナ禍も鳴りを潜め大学祭のリアル開催が再開されたので、4年前に作ったVRブロック崩しをリメイクして再度体験展示しようと考えました。そうして完成したのがリメイク版の2作目になります。コンセプトや基本設計はそのままに、ビジュアルの部分やシステム面で進化させています。</p>
+<p>　次項からは1作目や2作目で工夫したポイントを、2作目を例にしながら細かく説明していきます。</p>
+<h2 id="工夫ポイント">工夫ポイント
+</h2><h3 id="全体のデザイン">全体のデザイン
+</h3><p>　1作目の時はとにかく幻想的な感じにしたくて、雲の上や宇宙空間に浮かんだステージというイメージで作りました。ステージには宝石用だったシェーダーをあてて、ガラス板、水晶のようなな感じにしています。ですが、壁が透明故に反射のタイミングがわかりづらかったり、どうしてもチープなビジュアルになってしまいました。ブロックが崩れた時のエフェクトは「立方体が崩れてさらに立方体の破片が飛び散る」というイメージのエフェクトにしています。</p>
+<p>　2作目はうってかわって室内モチーフに変え、ネオンサインのような映える光源を置いてライティングに気を配りました。結果として、大仰な背景を使わずともリッチな画面を作れていると思います。ブロックにも気を遣い、1作目ではランダムな色でのベタ塗りだったのに対し、2作目では色を固定しリッチなシェーダーをあてています。崩れた時の破片も、<strong>実際に立方体が砕けたときの破片</strong>を出すようにしてビジュアル面での強化を図りました。</p>
+<p><img src="/post/vr-block-break/232741.png"
+	width="1768"
+	height="1041"
+	srcset="/post/vr-block-break/232741_hu12009940979776965459.png 480w, /post/vr-block-break/232741_hu18097798606297939029.png 1024w"
+	loading="lazy"
+	
+		alt="青空とガラス"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="169"
+		data-flex-basis="407px"
+	
+>
+<img src="/post/vr-block-break/232902.png"
+	width="1491"
+	height="832"
+	srcset="/post/vr-block-break/232902_hu18121726776367825098.png 480w, /post/vr-block-break/232902_hu843171196985385992.png 1024w"
+	loading="lazy"
+	
+		alt="クラブハウスっぽい空間をイメージしました"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="179"
+		data-flex-basis="430px"
+	
+></p>
+<h3 id="ロビーエリア">ロビーエリア
+</h3><p>　ゲーム開始前のロビーエリアでは、主に以下の狙いがあります。</p>
+<ul>
+<li>プレイヤー、傍観者ともにゲームの雰囲気がわかる</li>
+<li>このゲームはラケットとボールで何かをするというのがわかる</li>
+<li>ラケットはボールを打てて、ボールでブロック崩しをするんだなというのがわかる</li>
+</ul>
+<p>　このゲームはラケットがコントローラーに直接紐づいていて、ボタン操作が一切ありません。なので、このロビーエリアが実質的な操作説明兼、チュートリアルステージになっています。</p>
+<p><img src="/post/vr-block-break/225036.png"
+	width="1910"
+	height="1071"
+	srcset="/post/vr-block-break/225036_hu213058747956898897.png 480w, /post/vr-block-break/225036_hu7834887282730068766.png 1024w"
+	loading="lazy"
+	
+		alt="目の前のボールをとりあえず打ってゲーム開始！"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="428px"
+	
+></p>
+<h3 id="1stステージ">1stステージ
+</h3><p>　1stステージはシンプルな3次元ブロック崩しです。ステージの形状を俯瞰すると、三角形に近い、適度に面取りされたモデルになっています。VR視点だとわかりづらいかも知れないですが、実は手前から奥にかけてかなり広がっています。これは、奥で反射したボールが自然にブロックの方めがけて反射するように工夫した結果です。また手前がすぼまっていることで、体から遠すぎてボールを返せないということを防いでいます。</p>
+<p>　ゲーム性のために、<strong>ボールの挙動</strong>に関してもかなり工夫しています。細かいスクリプトは紹介しませんが、以下のような調整が加わっています。必要以上に返すのが難しいボールを減らしたり、「なかなか手前に返ってこなくて暇」という状況を減らすための調整が多いです。</p>
+<ul>
+<li>一定ラインより奥で反射した場合、ブロックの塊の中心に向かいやすい</li>
+<li>一定ラインより奥である回数以上反射すると、プレイヤー側に向かわせる力がはたらく</li>
+<li>一定ラインより手前で反射した場合、プレイヤーの体に向かいやすい</li>
+<li>一定ラインより奥から反射せずプレイヤーに向かってきた場合、曲がりながらプレイヤーに向かってくる</li>
+</ul>
+<p>　動画を見ていると気づくかもしれませんが、ボールは<strong>反射を繰り返すと少しずつ速度が上がって</strong>いきます。プレイヤーはゲームの中でだんだんとゲームに慣れて（飽きて）いくので、変化のためにこういう調整もしています。ボールが埋まっているブロックが崩れるとボールが増えていくのも、プレイと見た目に変化をつけるためです。</p>
+<p><img src="/post/vr-block-break/224740.png"
+	width="1192"
+	height="851"
+	srcset="/post/vr-block-break/224740_hu5456325805811056437.png 480w, /post/vr-block-break/224740_hu1124962585797181721.png 1024w"
+	loading="lazy"
+	
+		alt="ステージのモデル"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="140"
+		data-flex-basis="336px"
+	
+>
+<img src="/post/vr-block-break/233204.png"
+	width="1268"
+	height="708"
+	srcset="/post/vr-block-break/233204_hu8890128562292478954.png 480w, /post/vr-block-break/233204_hu12912555874486377393.png 1024w"
+	loading="lazy"
+	
+		alt="ブロックの中心に向かうような挙動をしています"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="179"
+		data-flex-basis="429px"
+	
+></p>
+<h3 id="ステージ遷移">ステージ遷移
+</h3><p>　1作目の時はステージの遷移時にUnityのscene（ひとつの独立した空間みたいなもの）を切り替えていました。しかし、この方法だと、遷移する瞬間にノイズとともに画面がほんの一瞬止まってしまうという問題がありました。これを受けて、2作目では同じsceneの中にロビーエリアからスコア発表のステージまで詰め込んでいます。</p>
+<p>　2作目のステージ遷移の仕方は少しこだわりました。「<strong>破壊</strong>」がテーマのVRゲームなので、もういっそ<strong>ステージごと壊れれば面白いのでは</strong> と思いました。さっきまで自分がいたステージが吹き飛んで2ndステージが現れればこれ以上ないダイナミックな変化になりますし、<strong>「これから何が起こるんだ！？」というワクワク感</strong>を与えながら次のステージに進ませることができます。自分がいたVR空間が壊れて次のVR空間へ行くという、入れ子構造みたいなメタ的表現もしたくて作ったみたいなところもあります。一瞬の出来事でかつ地味ですが、個人的にはこのゲームのかなり好きな部分です。</p>
+<p><img src="/post/vr-block-break/230016.png"
+	width="1672"
+	height="982"
+	srcset="/post/vr-block-break/230016_hu16737302194111141771.png 480w, /post/vr-block-break/230016_hu15001505929382490840.png 1024w"
+	loading="lazy"
+	
+		alt="1stステージが2ndの中にすっぽり"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="170"
+		data-flex-basis="408px"
+	
+>
+<img src="/post/vr-block-break/230945.png"
+	width="1267"
+	height="711"
+	srcset="/post/vr-block-break/230945_hu14401329202061680032.png 480w, /post/vr-block-break/230945_hu9459396432913758394.png 1024w"
+	loading="lazy"
+	
+		alt="ステージの破片もそれっぽいものではなくステージを砕いた実際の破片です"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="427px"
+	
+></p>
+<h3 id="2ndステージ">2ndステージ
+</h3><p>　1作目に関して、2ndステージは1stステージとほぼ同一です。2作目の2ndステージは1stステージから大きく変えています。
+　新しい2ndステージは、ブロックの塊が「敵」として登場しボールをこちらに放ってきます。そして1stステージの同じボールを打ち返し続けるシステムとは違い、<strong>大量のボールをさばききるゲーム</strong>に変貌します。これは1stステージのゲーム性を引き継ぐとだんだん単調になり、飽きてしまうという問題があったからです。</p>
+<p>　ボールはラケットに当たると弧を描いて飛んでいき、どれかのブロックには必ず当たります。なのでプレイヤーは「どう打ち返すか」を気にする必要はなく、「ただただ打ち返す」ことに集中できるという設計にしています。</p>
+<p>　敵が放ってくるボールは、あらかじめ設定したタイミング、発射口から発射されます。が、どんな軌道を描くかはある程度ランダムです。タイミングや発射口の設定は最初は難易度低めで始まりますが、徐々に発射間隔が縮まり、同時発射数も多くなっていきます。このタイミングと発射口を決められるようになったおかげで、細かく難易度の調整ができるようになりました。</p>
+<p>　2ndステージで外せない要素として、「<strong>特殊ボール</strong>」があります。動画の後半に登場する、青色と赤色のブロックから出現するボールです。これらのボールは挙動こそ違えど、一度に多くのブロックを壊すことができるアイテム的な立ち位置です。これもゲームに変化をつけるための施策で、かつ「<strong>いっぱい壊れてなんだか気持ちいい</strong>」というゲームの根源的な面白さを狙ったシステムです。私は、ゲームとは「<strong>気持ちよさ</strong>」とそれによる「<strong>脳汁</strong>」が本質であると思うので、このシステムはかなりその点を意識して実装しました。</p>
+<p><img src="/post/vr-block-break/000756.png"
+	width="1266"
+	height="705"
+	srcset="/post/vr-block-break/000756_hu13496499023342236462.png 480w, /post/vr-block-break/000756_hu9244692632146978903.png 1024w"
+	loading="lazy"
+	
+		alt="ボールをさばききれ！"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="179"
+		data-flex-basis="430px"
+	
+>
+<img src="/post/vr-block-break/002640.png"
+	width="1270"
+	height="713"
+	srcset="/post/vr-block-break/002640_hu15507748408496965208.png 480w, /post/vr-block-break/002640_hu15704181440249899751.png 1024w"
+	loading="lazy"
+	
+		alt="爆発赤ボールと貫通青ボール"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="178"
+		data-flex-basis="427px"
+	
+></p>
+<h3 id="bgm">BGM
+</h3><p>　BGMはさすがに自作していません。インターネットの海でたまたま見つけた激オシャレ曲を拝借して使っています。曲の長さもちょうどよく、制限時間を使い切ったとほぼ同時に曲も終わるようにタイミングを調整してゲームを作っています。みなさんも是非原曲様を聞いてみてください。</p>
+<p>いつかBGMまで自作したいですね。</p>
+<ul>
+<li><a class="link" href="https://soundcloud.com/the-musical-ghost/ghost-stranger-love-future-bass?si=a15ae87f195644d99269126eca5a9806&amp;utm_source=clipboard&amp;utm_medium=text&amp;utm_campaign=social_sharing"  target="_blank" rel="noopener"
+    >1stステージ</a></li>
+<li><a class="link" href="https://soundcloud.com/the-musical-ghost/deltarune-hip-shop-drum-bass?si=26f8feda04884b5b8fe7ca203b757751&amp;utm_source=clipboard&amp;utm_medium=text&amp;utm_campaign=social_sharing"  target="_blank" rel="noopener"
+    >2ndステージ</a></li>
+</ul>
+<h2 id="さいごに">さいごに
+</h2><p>　いかがでしたでしょうか（疲弊）改めて工夫点を洗い出して言語化してみるとかなりの量になってしまいました。しかしまだまだ語れるくらい、このゲームは<strong>私の自信作であり、胸を張って面白いゲームであると言えます。</strong> このゲームの制作は間違いなく私の中で大きな成功体験として残り続けることでしょう。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/unity/">Unity</a>
+        
+            <a href="/tags/c%23/">C#</a>
+        
+            <a href="/tags/%E7%9F%A5%E8%A6%8B/">知見</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under CC BY-NC-SA 4.0</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">関連するコンテンツ</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/post/mosquite-in-unity/">
+        
+        
+            <div class="article-image">
+                <img src="/post/mosquite-in-unity/ka.819c860a6d2d690858871af6588fce51_hu11253523476972352430.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Unityで蚊っぽい動きをするやつを作る"
+                        data-key="Mosquite in Unity" 
+                        data-hash="md5-gZyGCm0taQhYhxr2WI/OUQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Unityで蚊っぽい動きをするやつを作る</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2021 - 
+        
+        2024 twoooooda.net
+    </section>
+    
+    <section class="powerby">
+        <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> で構築されています。 <br />
+        テーマ <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.29.0">Stack</a></b> は <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> によって設計されています。
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
