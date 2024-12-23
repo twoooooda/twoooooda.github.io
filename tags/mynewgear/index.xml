@@ -6,7 +6,248 @@
         <description>Recent content in MyNewGear on twoooooda.net</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>ja-jp</language>
-        <lastBuildDate>Mon, 03 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/tags/mynewgear/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 23 Dec 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://twoooooda.net/tags/mynewgear/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>2代目自作キーボード奮闘記</title>
+        <link>https://twoooooda.net/post/2nd-diy-keyboard/</link>
+        <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://twoooooda.net/post/2nd-diy-keyboard/</guid>
+        <description>&lt;img src="https://twoooooda.net/post/2nd-diy-keyboard/IMG_7608.JPG" alt="Featured image of post 2代目自作キーボード奮闘記" /&gt;&lt;p&gt;ちょうど3年前、人生初の自作キーボードをしました。そのキーボードもそろそろ汚れてきましたし、ハイエンドな自作キーボードをしてみたいという気持ちが高まっていたので、初ボーナスが出たこのタイミングで2代目を作ってみることにしました。&lt;/p&gt;
+&lt;h2 id=&#34;構成&#34;&gt;構成
+&lt;/h2&gt;&lt;h3 id=&#34;パーツ選定&#34;&gt;パーツ選定
+&lt;/h3&gt;&lt;p&gt;　当然ですが、こういった自作ものはパーツの選定がある意味最重要です。一般的に自作キーボードをしようとすると以下のようなものを揃える必要があります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基盤などがセットになった&lt;strong&gt;自作キット&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;場合によってはケースなどもバラバラで買うこともありますが、多くは基盤、ケース、プレート、間に挟む緩衝材などが一緒になったキットを買うことが多いです。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;キースイッチ&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;キーキャップ&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;いろいろ考え抜いて、時には個人輸入もしながらパーツを買い集めました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7596.JPG&#34;
+	width=&#34;5712&#34;
+	height=&#34;4284&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7596_hu9822018944561177622.JPG 480w, https://twoooooda.net/post/2nd-diy-keyboard/IMG_7596_hu15366129195080625983.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;買ったパーツたち&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;自作キット&#34;&gt;自作キット
+&lt;/h3&gt;&lt;p&gt;　今回私は例にもれずキットを買って作ることにしました。購入したものはKBDFansという中国の会社が出している&lt;a class=&#34;link&#34; href=&#34;https://kbdfans.com/collections/tofu60/products/tofu60-2-0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tofu60 2.0&lt;/a&gt;というキットを選びました。このキットは自作キーボード界隈では多い&lt;strong&gt;60%&lt;/strong&gt; といわれるレイアウトのキーボードを作れるキットです。ケースや基盤（PCB）、スタビライザー、緩衝材などキースイッチとキーキャップ以外のほぼすべてが同梱されているキットで、ガスケットマウントも2種類から選べるなどけっこう豪華なキットです。&lt;/p&gt;
+&lt;p&gt;　初代自作キーボードは98キーのキーボードを作ったのですが、テンキーはそこまで使わないし、机を広く使いたかったのでコンパクトなキーボードを探していました。海外からの個人輸入も視野に入れて探している時に、見た目もシンプルで、組み立てもそこまで大変じゃないとレビューにあったこのTofu60を選んだという感じです。ちなみに、Tofuというのは角ばったデザインが豆腐に似ているからだそうです。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/230437.png&#34;
+	width=&#34;1583&#34;
+	height=&#34;928&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/230437_hu11032174182963916924.png 480w, https://twoooooda.net/post/2nd-diy-keyboard/230437_hu8414735876794184149.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Tofuの中にはいろいろ詰まっています&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;170&#34;
+		data-flex-basis=&#34;409px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7598.JPG&#34;
+	width=&#34;5712&#34;
+	height=&#34;4284&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7598_hu5104230755119685467.JPG 480w, https://twoooooda.net/post/2nd-diy-keyboard/IMG_7598_hu11888755657487469621.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;グレーを選択。美しい..&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;キースイッチ&#34;&gt;キースイッチ
+&lt;/h3&gt;&lt;p&gt;　初代は&lt;a class=&#34;link&#34; href=&#34;https://shop.yushakobo.jp/products/4131?srsltid=AfmBOorHgFpTZ19D_DL_nTf_kRKud5PUkHvotemvau74xiOXmsAuuGc_&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Feker Holy Panda&lt;/a&gt;というタクタイル系のスイッチを選んでいたのですが、一周回ってやっぱりリニアがいいなとなったので、同じくTofuで組んでいたレビュアーが使っていた&lt;a class=&#34;link&#34; href=&#34;https://shop.yushakobo.jp/products/8472?srsltid=AfmBOoqsWisM2ZHlnzTRvlfcl0XHoHeOE17ZIPX6kQwCiCwk9gvMwm23&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Durock Ice King Liner&lt;/a&gt;を選びました。完全に透明な美しいボディで、まるで熱したナイフでバターを切るような滑らかさと称されるスイッチです。実際に触ってみると評判に恥じぬ滑らかさで、極上のタイピング体験をもたらしてくれます。&lt;/p&gt;
+&lt;h3 id=&#34;キーキャップ&#34;&gt;キーキャップ
+&lt;/h3&gt;&lt;p&gt;　キーボードの部品で一番目に入るのがキーキャップです。今回はこのキーキャップの選定に一番時間を使いました。最終的に選んだのはKBDFansが出している&lt;a class=&#34;link&#34; href=&#34;https://shop.yushakobo.jp/products/9784?srsltid=AfmBOorDe-LK357Es_jUjfkpzjWiSWCxu5vjBLr_kuaKz1WIa3vMPqN3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PBTFans Twist R2&lt;/a&gt;というキーキャップです。かなり値が張りますが、こだわりたかったので頑張りました。どこかメカっぽい意匠や、印字が絶対に摩耗しないダブルショット成型で作られているところなどが気に入って選定しました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/232501.png&#34;
+	width=&#34;732&#34;
+	height=&#34;457&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/232501_hu1464777120862186855.png 480w, https://twoooooda.net/post/2nd-diy-keyboard/232501_hu17948668363533856098.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;修飾キーの意匠がお気に入り&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;384px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;キーボード制作&#34;&gt;キーボード制作
+&lt;/h2&gt;&lt;h3 id=&#34;下準備&#34;&gt;下準備
+&lt;/h3&gt;&lt;p&gt;　自作キーボードと聞いて、みなさんはまず最初に何をすると想像しますか？正解は「スタビライザーの足を切って油を塗る」です。
+　スタビライザーとは、スペースキーやシフトキーなど横に長いキーを支えるパーツです。このパーツを適切に加工しないと後の打鍵感、打鍵音に影響してきます。↓の画像に示すように、スタビライザーの足を爪切りなどで切断し、スタビライザー内部やコの字型の金属棒の両端に潤滑油を塗ります。こうすることで、打鍵感が損なわれがちな横長キーの打鍵感を確保することができるらしいです（比較検証はしていません）。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7603.JPEG&#34;
+	width=&#34;5712&#34;
+	height=&#34;4284&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7603_hu801292370465325232.JPEG 480w, https://twoooooda.net/post/2nd-diy-keyboard/IMG_7603_hu360354367955584831.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;キーボード組み立て中とは思えない作業風景&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7601.JPG&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7601_hu540310484920475034.JPG 480w, https://twoooooda.net/post/2nd-diy-keyboard/IMG_7601_hu7647272969550399855.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;〇がついた足部分を爪切りで切るところから始まります&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;組み立て&#34;&gt;組み立て
+&lt;/h3&gt;&lt;p&gt;　スタビライザーの処理が完了したら、いよいよ組み込んでいきます。基盤の導通チェックをして、何かを貼り付け、スタビライザーをねじ止めし、衝撃吸収用のフォームを敷き&amp;hellip;やることは地味にいっぱいあります。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7602.JPG&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7602_hu6959026603163711429.JPG 480w, https://twoooooda.net/post/2nd-diy-keyboard/IMG_7602_hu15377778031814397438.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;導通チェックの後、ワッシャー固定用のシールを貼る&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7604.JPEG&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7604_hu11383003646215051167.JPEG 480w, https://twoooooda.net/post/2nd-diy-keyboard/IMG_7604_hu7671559273361060026.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;プレートの下にフォームが挟んでありその下に基盤があります&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;　基盤、プレートの準備ができたら、プレートにキースイッチをはめ込んでいきます。60個もあるので、ひとつひとつセットしていく様子はさながら苗を植えるようです。地味な作業ですが、かなり楽しいです。キースイッチをはめ込んだら、ケースにマウントしてねじを締めていきます。もう完成は目の前、それが終わればあとはキーキャップをつけたら完成です！！&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7605.JPEG&#34;
+	width=&#34;5712&#34;
+	height=&#34;4284&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7605_hu12322556591622786473.JPEG 480w, https://twoooooda.net/post/2nd-diy-keyboard/IMG_7605_hu2535533353544743567.JPEG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;キースイッチを取り付けたところ&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7606.JPG&#34;
+	width=&#34;5712&#34;
+	height=&#34;4284&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7606_hu16450176336722073276.JPG 480w, https://twoooooda.net/post/2nd-diy-keyboard/IMG_7606_hu10408690790528146714.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ケースにマウントしたところ&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7607.JPG&#34;
+	width=&#34;5712&#34;
+	height=&#34;4284&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7607_hu14556853608984359839.JPG 480w, https://twoooooda.net/post/2nd-diy-keyboard/IMG_7607_hu8102379227397401405.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;キーキャップを取り付けていくよ&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;自作キーボードはいいぞ&#34;&gt;自作キーボードはいいぞ
+&lt;/h2&gt;&lt;p&gt;　 さっそく今回組んだ2代目を使ってこの記事を書いたりしましたが、総合的にかなり満足度は高いです。初代もかなりいいものでしたが、今回はよりパーツに投資しているので、見た目、打鍵感、打鍵音などかなりパワーアップしていると思います。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7608.JPG&#34;
+	width=&#34;5712&#34;
+	height=&#34;4284&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7608_hu1063194184915250427.JPG 480w, https://twoooooda.net/post/2nd-diy-keyboard/IMG_7608_hu4125843302075594689.JPG 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;うちの子、超かっこいいんです&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;　最後に、かかった総額という怖い話をして終わりたいと思います（送料、関税、消費税全て込み）。仕事道具にもなるんだからこれくらい投資してもいいよね！&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;買ったもの&lt;/th&gt;
+          &lt;th&gt;価格&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Tofu60 2.0&lt;/td&gt;
+          &lt;td&gt;¥20349&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Ice King Linear (65個)&lt;/td&gt;
+          &lt;td&gt;¥5200&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;PBTFans Twist R2&lt;/td&gt;
+          &lt;td&gt;¥17600&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;GPL 205 G0（潤滑油）&lt;/td&gt;
+          &lt;td&gt;¥1430&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;総額&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;¥44579&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
         <title>私の自作キーボード奮闘記</title>
         <link>https://twoooooda.net/post/keybord-built-by-myself/</link>
         <pubDate>Mon, 03 Jan 2022 00:00:00 +0000</pubDate>
