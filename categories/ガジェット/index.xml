@@ -12,14 +12,15 @@
         <pubDate>Mon, 23 Dec 2024 00:00:00 +0000</pubDate>
         
         <guid>https://twoooooda.net/post/2nd-diy-keyboard/</guid>
-        <description>&lt;img src="https://twoooooda.net/post/2nd-diy-keyboard/IMG_7608.JPG" alt="Featured image of post 2代目自作キーボード奮闘記" /&gt;&lt;p&gt;ちょうど3年前、人生初の自作キーボードをしました。そのキーボードもそろそろ汚れてきましたし、ハイエンドな自作キーボードをしてみたいという気持ちが高まっていたので、初ボーナスが出たこのタイミングで2代目を作ってみることにしました。&lt;/p&gt;
+        <description>&lt;img src="https://twoooooda.net/post/2nd-diy-keyboard/IMG_7608.JPG" alt="Featured image of post 2代目自作キーボード奮闘記" /&gt;&lt;p&gt;ちょうど3年前、人生初の自作キーボードをしました（&lt;a class=&#34;link&#34; href=&#34;https://twoooooda.net/post/keybord-built-by-myself/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;その時の記事&lt;/a&gt;）。そのキーボードもそろそろ汚れてきましたし、ハイエンドな自作キーボードをしてみたいという気持ちが高まっていたので、初ボーナスが出たこのタイミングで2代目を作ってみることにしました。&lt;/p&gt;
 &lt;h2 id=&#34;構成&#34;&gt;構成
 &lt;/h2&gt;&lt;h3 id=&#34;パーツ選定&#34;&gt;パーツ選定
 &lt;/h3&gt;&lt;p&gt;　当然ですが、こういった自作ものはパーツの選定がある意味最重要です。一般的に自作キーボードをしようとすると以下のようなものを揃える必要があります。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;基盤などがセットになった&lt;strong&gt;自作キット&lt;/strong&gt;
 &lt;ul&gt;
-&lt;li&gt;場合によってはケースなどもバラバラで買うこともありますが、多くは基盤、ケース、プレート、間に挟む緩衝材などが一緒になったキットを買うことが多いです。&lt;/li&gt;
+&lt;li&gt;場合によってはケース等バラバラで買うこともありますが、多くは基盤、ケース、プレート、間に挟む緩衝材などが一緒になったキットを買うことが多いです。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;キースイッチ&lt;/strong&gt;&lt;/li&gt;
@@ -41,8 +42,8 @@
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;自作キット&#34;&gt;自作キット
-&lt;/h3&gt;&lt;p&gt;　今回私は例にもれずキットを買って作ることにしました。購入したものはKBDFansという中国の会社が出している&lt;a class=&#34;link&#34; href=&#34;https://kbdfans.com/collections/tofu60/products/tofu60-2-0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Tofu60 2.0&lt;/a&gt;というキットを選びました。このキットは自作キーボード界隈では多い&lt;strong&gt;60%&lt;/strong&gt; といわれるレイアウトのキーボードを作れるキットです。ケースや基盤（PCB）、スタビライザー、緩衝材などキースイッチとキーキャップ以外のほぼすべてが同梱されているキットで、ガスケットマウントも2種類から選べるなどけっこう豪華なキットです。&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;　今回私は例にもれずキットを買って作ることにしました。購入したものはKBDfansという中国の会社が出している&lt;a class=&#34;link&#34; href=&#34;https://kbdfans.com/collections/tofu60/products/tofu60-2-0&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Tofu60 2.0&lt;/a&gt;というキットです。このキットは自作キーボード界隈では多い&lt;strong&gt;60%&lt;/strong&gt; といわれるレイアウトのキーボードを作れるキットです。ケースや基盤（PCB）、スタビライザー、緩衝材などキースイッチとキーキャップ以外のほぼすべてが同梱されているキットで、ガスケットマウントも2種類から選べるなどけっこう豪華なキットです。&lt;/p&gt;
 &lt;p&gt;　初代自作キーボードは98キーのキーボードを作ったのですが、テンキーはそこまで使わないし、机を広く使いたかったのでコンパクトなキーボードを探していました。海外からの個人輸入も視野に入れて探している時に、見た目もシンプルで、組み立てもそこまで大変じゃないとレビューにあったこのTofu60を選んだという感じです。ちなみに、Tofuというのは角ばったデザインが豆腐に似ているからだそうです。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/230437.png&#34;
 	width=&#34;1583&#34;
@@ -77,8 +78,8 @@
     &gt;Feker Holy Panda&lt;/a&gt;というタクタイル系のスイッチを選んでいたのですが、一周回ってやっぱりリニアがいいなとなったので、同じくTofuで組んでいたレビュアーが使っていた&lt;a class=&#34;link&#34; href=&#34;https://shop.yushakobo.jp/products/8472?srsltid=AfmBOoqsWisM2ZHlnzTRvlfcl0XHoHeOE17ZIPX6kQwCiCwk9gvMwm23&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Durock Ice King Liner&lt;/a&gt;を選びました。完全に透明な美しいボディで、まるで熱したナイフでバターを切るような滑らかさと称されるスイッチです。実際に触ってみると評判に恥じぬ滑らかさで、極上のタイピング体験をもたらしてくれます。&lt;/p&gt;
 &lt;h3 id=&#34;キーキャップ&#34;&gt;キーキャップ
-&lt;/h3&gt;&lt;p&gt;　キーボードの部品で一番目に入るのがキーキャップです。今回はこのキーキャップの選定に一番時間を使いました。最終的に選んだのはKBDFansが出している&lt;a class=&#34;link&#34; href=&#34;https://shop.yushakobo.jp/products/9784?srsltid=AfmBOorDe-LK357Es_jUjfkpzjWiSWCxu5vjBLr_kuaKz1WIa3vMPqN3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;PBTFans Twist R2&lt;/a&gt;というキーキャップです。かなり値が張りますが、こだわりたかったので頑張りました。どこかメカっぽい意匠や、印字が絶対に摩耗しないダブルショット成型で作られているところなどが気に入って選定しました。&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;　キーボードの部品で一番目に入るのがキーキャップです。今回はこのキーキャップの選定に一番時間を使いました。最終的に選んだのはKBDfansが出している&lt;a class=&#34;link&#34; href=&#34;https://shop.yushakobo.jp/products/9784?srsltid=AfmBOorDe-LK357Es_jUjfkpzjWiSWCxu5vjBLr_kuaKz1WIa3vMPqN3&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PBTfans Twist R2&lt;/a&gt;というキーキャップです。かなり値が張りますが、こだわりたかったので頑張りました。どこかメカっぽい意匠や、印字が絶対に摩耗しないダブルショット成型で作られているところなどが気に入って選定しました。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/232501.png&#34;
 	width=&#34;732&#34;
 	height=&#34;457&#34;
@@ -95,7 +96,7 @@
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;キーボード制作&#34;&gt;キーボード制作
 &lt;/h2&gt;&lt;h3 id=&#34;下準備&#34;&gt;下準備
-&lt;/h3&gt;&lt;p&gt;　自作キーボードと聞いて、みなさんはまず最初に何をすると想像しますか？正解は「スタビライザーの足を切って油を塗る」です。
+&lt;/h3&gt;&lt;p&gt;　自作キーボードの組み立てと聞いて、みなさんはまず最初に何をすると想像しますか？正解は「スタビライザーの足を切って油を塗る」です。
 　スタビライザーとは、スペースキーやシフトキーなど横に長いキーを支えるパーツです。このパーツを適切に加工しないと後の打鍵感、打鍵音に影響してきます。↓の画像に示すように、スタビライザーの足を爪切りなどで切断し、スタビライザー内部やコの字型の金属棒の両端に潤滑油を塗ります。こうすることで、打鍵感が損なわれがちな横長キーの打鍵感を確保することができるらしいです（比較検証はしていません）。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7603.JPEG&#34;
 	width=&#34;5712&#34;
@@ -126,7 +127,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;組み立て&#34;&gt;組み立て
-&lt;/h3&gt;&lt;p&gt;　スタビライザーの処理が完了したら、いよいよ組み込んでいきます。基盤の導通チェックをして、何かを貼り付け、スタビライザーをねじ止めし、衝撃吸収用のフォームを敷き&amp;hellip;やることは地味にいっぱいあります。&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;　スタビライザーの処理が完了したら、いよいよ組み込んでいきます。基盤の導通チェックをして、何かを貼り付け、スタビライザーをねじ止めし、衝撃吸収用のフォームを敷き&amp;hellip;やることはなにげにいっぱいあります。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7602.JPG&#34;
 	width=&#34;4032&#34;
 	height=&#34;3024&#34;
@@ -155,7 +156,7 @@
 		data-flex-basis=&#34;320px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;　基盤、プレートの準備ができたら、プレートにキースイッチをはめ込んでいきます。60個もあるので、ひとつひとつセットしていく様子はさながら苗を植えるようです。地味な作業ですが、かなり楽しいです。キースイッチをはめ込んだら、ケースにマウントしてねじを締めていきます。もう完成は目の前、それが終わればあとはキーキャップをつけたら完成です！！&lt;/p&gt;
+&lt;p&gt;　基盤、プレートの準備ができたら、プレートにキースイッチをはめ込んでいきます。60個もあるので、ひとつひとつセットしていく様子はさながら苗を植えるようです。地味な作業ですが、精神を統一してできる楽しい作業です。キースイッチをはめ込んだら、ケースにマウントしてねじを締めていきます。もう完成は目の前、それが終わればあとはキーキャップをつけたら完成です！！&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7605.JPEG&#34;
 	width=&#34;5712&#34;
 	height=&#34;4284&#34;
@@ -176,7 +177,7 @@
 	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/IMG_7606_hu16450176336722073276.JPG 480w, https://twoooooda.net/post/2nd-diy-keyboard/IMG_7606_hu10408690790528146714.JPG 1024w&#34;
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;ケースにマウントしたところ&#34;
+		alt=&#34;ケースにマウントしたところ。美しッ&#34;
 	
 	
 		class=&#34;gallery-image&#34; 
@@ -196,6 +197,38 @@
 		class=&#34;gallery-image&#34; 
 		data-flex-grow=&#34;133&#34;
 		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;キーマップ&#34;&gt;キーマップ
+&lt;/h3&gt;&lt;p&gt;　このキーボードは60%レイアウトということでファンクションキーがありません。ではどうするかというと、&lt;strong&gt;レイヤー&lt;/strong&gt;を切り替えてファンクションキーを実現します。&lt;/p&gt;
+&lt;p&gt;　私は今回、&lt;a class=&#34;link&#34; href=&#34;https://www.caniusevia.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;VIA&lt;/a&gt;というGUIでキーのリマップができるツールを使ってみました。下のVIAのスクリーンショットのように、私は右Altの隣とCapsLockキーをレイヤー切り替えに使うキー（MO(1)ってなってるところ）として使っています。このレイヤー切り替えキーを押している間、キーボードのレイヤーがレイヤー1に切り替わります。レイヤー1では、数字キーをファンクションキーとして使う他、矢印キーを押しやすい位置に複数配置したり、右上にメディアコントロール用（音楽止めたりとか）のキーを置いていたりしています。レイヤー1のキーマップは最低限なので、今後も改善していけたらいいですね。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/004312.png&#34;
+	width=&#34;1065&#34;
+	height=&#34;507&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/004312_hu3656302529991255255.png 480w, https://twoooooda.net/post/2nd-diy-keyboard/004312_hu12529435371852662408.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;レイヤー0&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;210&#34;
+		data-flex-basis=&#34;504px&#34;
+	
+&gt;
+&lt;img src=&#34;https://twoooooda.net/post/2nd-diy-keyboard/004732.png&#34;
+	width=&#34;1052&#34;
+	height=&#34;521&#34;
+	srcset=&#34;https://twoooooda.net/post/2nd-diy-keyboard/004732_hu7664595585129043542.png 480w, https://twoooooda.net/post/2nd-diy-keyboard/004732_hu6072056572641442719.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;レイヤー1&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;201&#34;
+		data-flex-basis=&#34;484px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;自作キーボードはいいぞ&#34;&gt;自作キーボードはいいぞ
@@ -232,7 +265,7 @@
           &lt;td&gt;¥5200&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;PBTFans Twist R2&lt;/td&gt;
+          &lt;td&gt;PBTfans Twist R2&lt;/td&gt;
           &lt;td&gt;¥17600&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
